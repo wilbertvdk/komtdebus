@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Komt de bus? – lijn 272 en 302</title>
+<meta name="description" content="Onafhankelijke meting: rijden de bussen van U-OV lijn 272 en 302, en staat uitval op tijd in apps en op schermen bij de halte? Gebaseerd op open OV-data.">
+<style>
+:root {
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --text: #1c1f23;
+  --muted: #555c66;
+  --border: #d5d8dc;
+  --accent: #0b5cad;
+  --accent-text: #ffffff;
+  --warn-bg: #fff4d6;
+  --warn-border: #b7791f;
+  --c-gereden: #2e7d32;
+  --c-optijd: #1565c0;
+  --c-telaat: #c77700;
+  --c-nietgemeld: #b3261e;
+  --track: #e6e8ea;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --surface: #1d2126;
+    --text: #e8eaed;
+    --muted: #a9b0b8;
+    --border: #3a4048;
+    --accent: #7ab7f0;
+    --accent-text: #0d1117;
+    --warn-bg: #3a2f10;
+    --warn-border: #d9a441;
+    --c-gereden: #5fb862;
+    --c-optijd: #6aa9ee;
+    --c-telaat: #f0a63a;
+    --c-nietgemeld: #f2766d;
+    --track: #2b3036;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 12px; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 40px 0 12px; }
+h3 { font-size: 1.1rem; margin: 0 0 8px; }
+p { margin: 0 0 12px; }
+a { color: var(--accent); }
+a:focus-visible, summary:focus-visible, .knop:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.lead { font-size: 1.1rem; color: var(--text); }
+.muted { color: var(--muted); }
+.box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 0 16px;
+}
+.box.warn { background: var(--warn-bg); border-color: var(--warn-border); }
+dl.status { margin: 0 0 12px; display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; }
+dl.status dt { color: var(--muted); }
+dl.status dd { margin: 0; overflow-wrap: anywhere; }
+.box > :last-child { margin-bottom: 0; }
+
+.bar {
+  display: flex;
+  height: 28px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--track);
+  border: 1px solid var(--border);
+  margin: 12px 0;
+}
+.seg { height: 100%; min-width: 2px; }
+.seg + .seg { border-left: 2px solid var(--surface); }
+.seg.gereden { background: var(--c-gereden); }
+.seg.optijd { background: var(--c-optijd); }
+.seg.telaat { background: repeating-linear-gradient(45deg, var(--c-telaat) 0 6px, var(--surface) 6px 8px); }
+.seg.nietgemeld { background: repeating-linear-gradient(135deg, var(--c-nietgemeld) 0 3px, var(--surface) 3px 5px); }
+ul.legenda { list-style: none; margin: 0; padding: 0; }
+ul.legenda li { display: grid; grid-template-columns: 18px 1fr auto; gap: 8px; align-items: center; padding: 6px 0; border-top: 1px solid var(--border); }
+ul.legenda li:first-child { border-top: 0; }
+.sw { width: 18px; height: 18px; border-radius: 3px; border: 1px solid var(--border); }
+.sw.gereden { background: var(--c-gereden); }
+.sw.optijd { background: var(--c-optijd); }
+.sw.telaat { background: repeating-linear-gradient(45deg, var(--c-telaat) 0 4px, var(--surface) 4px 6px); }
+.sw.nietgemeld { background: repeating-linear-gradient(135deg, var(--c-nietgemeld) 0 2px, var(--surface) 2px 4px); }
+.getal { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+details { margin: 0 0 16px; }
+summary { cursor: pointer; font-weight: 600; padding: 8px 0; }
+.scroll { overflow-x: auto; max-width: 100%; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+th, td { padding: 8px 8px; text-align: right; border-bottom: 1px solid var(--border); }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+th { font-weight: 600; vertical-align: bottom; }
+tbody tr:last-child td { border-bottom: 0; }
+
+dl.def { margin: 0 0 12px; }
+dl.def dt { font-weight: 600; margin-top: 8px; }
+dl.def dd { margin: 0; }
+ul.lijst { margin: 0 0 12px; padding-left: 22px; }
+ul.lijst li { margin-bottom: 4px; }
+
+.knop {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 4px 0 12px;
+}
+.knop:hover { filter: brightness(1.1); }
+footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16px; font-size: 0.9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Komt de bus? Lijn 272 en 302</h1>
+  <p class="lead">Deze website meet of de bussen van U-OV lijn 272 (Baarn – Utrecht Science Park) en lijn 302 (U-liner Amersfoort – Vianen) rijden, en of uitval op tijd in apps en op de schermen bij de halte te zien is.</p>
+</header>
+
+<main>
+<noscript><p class="box warn">Voor deze pagina is JavaScript nodig om de cijfers te tonen.</p></noscript>
+
+<section id="status" aria-labelledby="h-status">
+  <h2 id="h-status">Stand van de metingen</h2>
+  <div class="box" id="status-box"><p class="muted">Gegevens laden…</p></div>
+</section>
+
+<section id="lijnen" aria-labelledby="h-lijnen">
+  <h2 id="h-lijnen">Resultaten per lijn</h2>
+  <div id="lijnen-box"></div>
+</section>
+
+<section id="dagen" aria-labelledby="h-dagen">
+  <h2 id="h-dagen">Per dag</h2>
+  <details id="dagen-details">
+    <summary>Toon de cijfers per dag</summary>
+    <div id="dagen-box"></div>
+  </details>
+</section>
+
+<section id="methode" aria-labelledby="h-methode">
+  <h2 id="h-methode">Hoe we meten</h2>
+  <p>Er wordt niets aangestuurd of aangepast; alleen openbare data wordt gelezen. Drie bronnen:</p>
+  <ul class="lijst">
+    <li>Elke 2 minuten: de posities van de voertuigen van lijn 272 en 302.</li>
+    <li>Elke 5 minuten: de ritupdates, waarin ook staat of een rit is geannuleerd.</li>
+    <li>Elke dag: de dienstregeling, dus welke ritten er gepland zijn.</li>
+  </ul>
+  <p>Elke geplande rit komt in één van deze groepen:</p>
+  <dl class="def">
+    <dt>Gereden</dt>
+    <dd>Er zijn voertuigposities van deze rit gezien.</dd>
+    <dt>Uitval, op tijd gemeld</dt>
+    <dd>De rit is geannuleerd en dat stond vóór het geplande vertrek in de reisinformatie.</dd>
+    <dt>Uitval, te laat gemeld</dt>
+    <dd>De rit is geannuleerd, maar dat stond pas ná het geplande vertrek in de reisinformatie.</dd>
+    <dt>Niet gemeld</dt>
+    <dd>Er is geen bus gezien en er stond geen annulering in de reisinformatie, terwijl er wel gemeten werd. Dit is de rit waar een reiziger tevergeefs op wacht.</dd>
+    <dt>Geen meting</dt>
+    <dd>Er zijn te weinig metingen rond de rit, bijvoorbeeld door een storing bij ons. Deze rit telt niet mee.</dd>
+  </dl>
+  <p><strong>Let op:</strong> “niet gemeld” is een bovengrens. Een bus met een kapot volgsysteem rijdt wel, maar lijkt in de data uitgevallen. Daarom controleren we ook met steekproeven bij de halte.</p>
+  <p>Ritten zonder genoeg metingen tellen niet mee in de percentages. Percentages gaan alleen over gemeten ritten.</p>
+</section>
+
+<section id="melden" aria-labelledby="h-melden">
+  <h2 id="h-melden">Meld wat jij meemaakt</h2>
+  <p>Meldingen van reizigers helpen om de metingen te controleren. Staat een rit als “niet gemeld” in onze cijfers, dan kan jouw ervaring laten zien of de bus echt niet kwam.</p>
+  <p>Wat is handig om te melden?</p>
+  <ul class="lijst">
+    <li>De datum en de tijd</li>
+    <li>De lijn (272 of 302)</li>
+    <li>De halte</li>
+    <li>De richting</li>
+    <li>Wat er gebeurde: de bus kwam niet, kwam te laat, reed een andere route, of de informatie klopte niet</li>
+    <li>Wat de app of het scherm bij de halte liet zien</li>
+  </ul>
+  <div id="meld-box"></div>
+  <p class="muted">Klachten over je reis kun je ook bij U-OV melden; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
+</section>
+
+<section id="over" aria-labelledby="h-over">
+  <h2 id="h-over">Over dit project</h2>
+  <p>Dit is een onafhankelijk burgerinitiatief van Wilbert van der Kruk. Het is niet verbonden aan een politieke partij, U-OV, de provincie of Rover. Ik ben lid van Volt en zeg dat open; dit project staat daar los van en de cijfers zijn voor iedereen.</p>
+  <p>De cijfers zijn gebaseerd op openbare open data van <a href="https://gtfs.ovapi.nl/nl/" rel="noopener">OVapi</a>. De broncode is op verzoek beschikbaar.</p>
+  <h3>Privacy</h3>
+  <p>Deze website gebruikt geen cookies en geen trackers. Bij een melding via het formulier wordt niet naar je naam gevraagd. Meldingen worden nooit op een herleidbare manier gepubliceerd.</p>
+</section>
+</main>
+
+<footer>
+  <p>Onafhankelijk onderzoek op basis van open data. Geen officiële cijfers van U-OV of de provincie Utrecht.</p>
+</footer>
+</div>
+
+<script>
+"use strict";
+
+// ---- Instelling: link naar het meldformulier. Leeg laten zolang het formulier er nog niet is. ----
+const MELDFORMULIER_URL = "https://forms.gle/fkQ1wAtPSvkiwW896";
+// ----------------------------------------------------------------------------------------------
+
+const KORTE_PERIODE_DAGEN = 28;
+const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
+                 "september", "oktober", "november", "december"];
+const KLASSEN = [
+  { sleutel: "gereden", label: "Gereden", css: "gereden" },
+  { sleutel: "uitval, op tijd", label: "Uitval, op tijd gemeld", css: "optijd" },
+  { sleutel: "uitval, te laat", label: "Uitval, te laat gemeld", css: "telaat" },
+  { sleutel: "niet gemeld", label: "Niet gemeld", css: "nietgemeld" },
+];
+const LIJN_NAMEN = { "272": "Baarn – Utrecht Science Park", "302": "U-liner Amersfoort – Vianen" };
+
+function el(tag, opts, kinderen) {
+  const e = document.createElement(tag);
+  if (opts) {
+    if (opts.cls) e.className = opts.cls;
+    if (opts.text != null) e.textContent = opts.text;
+    if (opts.attrs) for (const k of Object.keys(opts.attrs)) e.setAttribute(k, opts.attrs[k]);
+  }
+  (kinderen || []).forEach(function (k) { if (k) e.appendChild(k); });
+  return e;
+}
+
+function leeg(node) { while (node.firstChild) node.removeChild(node.firstChild); }
+
+// "2026-10-27" -> "27 oktober 2026"
+function datumTekst(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+  if (!m) return "onbekend";
+  return String(parseInt(m[3], 10)) + " " + MAANDEN[parseInt(m[2], 10) - 1] + " " + m[1];
+}
+
+// "2026-10-27T09:09:29+01:00" -> "27 oktober 2026 om 09:09" (tijd is al Nederlandse tijd)
+function tijdTekst(iso) {
+  const m = /^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/.exec(iso || "");
+  return m ? datumTekst(m[1]) + " om " + m[2] : "onbekend";
+}
+
+function dagenTussen(vanIso, totDatum) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(vanIso || "");
+  if (!m) return 0;
+  const van = Date.UTC(+m[1], +m[2] - 1, +m[3]);
+  const tot = Date.UTC(totDatum.getFullYear(), totDatum.getMonth(), totDatum.getDate());
+  return Math.round((tot - van) / 86400000);
+}
+
+function getal(n) { return String(n == null ? 0 : n); }
+function procent(p) {
+  if (p == null) return "–";
+  const afgerond = Math.round(p * 10) / 10;
+  return String(afgerond).replace(".", ",") + "%";
+}
+
+function totaalGemeten(data) {
+  let n = 0;
+  const l = (data && data.lijnen) || {};
+  Object.keys(l).forEach(function (k) { n += (l[k] && l[k].gemeten) || 0; });
+  return n;
+}
+
+function renderStatus(data, heeftMetingen) {
+  const box = document.getElementById("status-box");
+  leeg(box);
+  if (!data) {
+    box.appendChild(el("p", { text: "Nog geen afgeronde metingen. De cijfers verschijnen hier zodra ze beschikbaar zijn." }));
+    return;
+  }
+  const periode = data.meetperiode || {};
+  const dekking = data.meetdekking || {};
+  const dl = el("dl", { cls: "status" });
+  function rij(term, waarde) {
+    dl.appendChild(el("dt", { text: term }));
+    dl.appendChild(el("dd", { text: waarde }));
+  }
+  rij("Laatst bijgewerkt", tijdTekst(data.bijgewerkt));
+  rij("Meetperiode", periode.van
+    ? (periode.van === periode.tot ? datumTekst(periode.van) : datumTekst(periode.van) + " t/m " + datumTekst(periode.tot))
+    : "nog niet begonnen");
+  rij("Meetdekking", dekking.aandeel == null
+    ? "nog geen gegevens"
+    : Math.round(dekking.aandeel * 100) + "% van de 2-minuutmetingen is gelukt (" + getal(dekking.gelukt) + " van " + getal(dekking.verwacht) + ")");
+  box.appendChild(dl);
+
+  if (!heeftMetingen) {
+    box.appendChild(el("p", { text: "Nog geen afgeronde metingen. Zodra de eerste ritten zijn afgerond, verschijnen de cijfers hier." }));
+  } else if (periode.van && dagenTussen(periode.van, new Date()) < KORTE_PERIODE_DAGEN) {
+    box.className = "box warn";
+    box.appendChild(el("p", { text: "De metingen lopen sinds " + datumTekst(periode.van) + "; conclusies volgen na enkele weken." }));
+  }
+}
+
+function renderBalk(lijn, info) {
+  const gemeten = info.gemeten;
+  const beschrijving = KLASSEN.map(function (k) {
+    return k.label + ": " + getal(info.aantal[k.sleutel]) + " (" + procent(info.percentage[k.sleutel]) + ")";
+  }).join("; ");
+  const bar = el("div", { cls: "bar", attrs: { role: "img", "aria-label": "Verdeling van " + gemeten + " gemeten ritten van lijn " + lijn + ". " + beschrijving } });
+  KLASSEN.forEach(function (k) {
+    const n = info.aantal[k.sleutel] || 0;
+    if (!n) return;
+    const seg = el("div", { cls: "seg " + k.css, attrs: { title: k.label + ": " + n } });
+    seg.style.width = (100 * n / gemeten) + "%";
+    bar.appendChild(seg);
+  });
+  return bar;
+}
+
+function renderLegenda(info) {
+  const ul = el("ul", { cls: "legenda" });
+  KLASSEN.forEach(function (k) {
+    ul.appendChild(el("li", null, [
+      el("span", { cls: "sw " + k.css, attrs: { "aria-hidden": "true" } }),
+      el("span", { text: k.label }),
+      el("span", { cls: "getal", text: getal(info.aantal[k.sleutel]) + " · " + procent(info.percentage[k.sleutel]) }),
+    ]));
+  });
+  return ul;
+}
+
+function renderLijnen(data, heeftMetingen) {
+  const box = document.getElementById("lijnen-box");
+  leeg(box);
+  if (!heeftMetingen) {
+    box.appendChild(el("div", { cls: "box" }, [
+      el("h3", { text: "Nog geen afgeronde metingen" }),
+      el("p", { text: "Er zijn nog geen ritten afgerond waarvan we genoeg metingen hebben. Kom later terug." }),
+    ]));
+    return;
+  }
+  Object.keys(data.lijnen).sort().forEach(function (lijn) {
+    const info = data.lijnen[lijn];
+    const naam = LIJN_NAMEN[lijn] ? " (" + LIJN_NAMEN[lijn] + ")" : "";
+    const kaart = el("article", { cls: "box" });
+    kaart.appendChild(el("h3", { text: "Lijn " + lijn + naam }));
+    if (!info.gemeten) {
+      kaart.appendChild(el("p", { text: "Nog geen afgeronde metingen voor deze lijn." }));
+    } else {
+      kaart.appendChild(el("p", { text: "Gemeten ritten: " + info.gemeten + ". Percentages gaan over deze ritten." }));
+      kaart.appendChild(renderBalk(lijn, info));
+      kaart.appendChild(renderLegenda(info));
+    }
+    const zonder = info.aantal["geen meting"] || 0;
+    if (zonder) {
+      kaart.appendChild(el("p", { cls: "muted", text: zonder + " ritten zonder genoeg metingen tellen niet mee." }));
+    }
+    box.appendChild(kaart);
+  });
+}
+
+function renderDagen(data, heeftMetingen) {
+  const details = document.getElementById("dagen-details");
+  const box = document.getElementById("dagen-box");
+  leeg(box);
+  const dagen = ((data && data.dagen) || []).slice().sort(function (a, b) {
+    if (a.datum !== b.datum) return a.datum < b.datum ? 1 : -1;
+    return a.lijn < b.lijn ? -1 : 1;
+  });
+  if (!heeftMetingen || !dagen.length) {
+    details.hidden = true;
+    document.getElementById("h-dagen").parentNode.hidden = true;
+    return;
+  }
+  const kop = el("tr", null, [el("th", { text: "Datum", attrs: { scope: "col" } }), el("th", { text: "Lijn", attrs: { scope: "col" } })]);
+  KLASSEN.forEach(function (k) { kop.appendChild(el("th", { text: k.label.replace(" gemeld", ""), attrs: { scope: "col" } })); });
+  kop.appendChild(el("th", { text: "Geen meting", attrs: { scope: "col" } }));
+  const body = el("tbody");
+  dagen.forEach(function (d) {
+    const tr = el("tr", null, [el("td", { text: datumTekst(d.datum) }), el("td", { text: d.lijn })]);
+    KLASSEN.forEach(function (k) { tr.appendChild(el("td", { text: getal(d[k.sleutel]) })); });
+    tr.appendChild(el("td", { text: getal(d["geen meting"]) }));
+    body.appendChild(tr);
+  });
+  const tabel = el("table", null, [
+    el("caption", { cls: "muted", text: "Aantal ritten per dag en lijn, nieuwste dag bovenaan", attrs: { style: "text-align:left;padding:8px;caption-side:top" } }),
+    el("thead", null, [kop]),
+    body,
+  ]);
+  box.appendChild(el("div", { cls: "scroll" }, [tabel]));
+}
+
+function renderMelden() {
+  const box = document.getElementById("meld-box");
+  leeg(box);
+  let url = null;
+  try {
+    const u = new URL(MELDFORMULIER_URL);
+    if (u.protocol === "https:" || u.protocol === "http:") url = u.href;
+  } catch (e) { url = null; }
+  if (url) {
+    box.appendChild(el("a", { cls: "knop", text: "Open het meldformulier", attrs: { href: url, rel: "noopener" } }));
+  } else {
+    box.appendChild(el("p", { cls: "box", text: "Het meldformulier komt binnenkort online." }));
+  }
+}
+
+function render(data) {
+  const heeftMetingen = !!(data && data.lijnen && totaalGemeten(data) > 0);
+  renderStatus(data, heeftMetingen);
+  renderLijnen(data, heeftMetingen);
+  renderDagen(data, heeftMetingen);
+}
+
+renderMelden();
+fetch("data.json", { cache: "no-store" })
+  .then(function (r) {
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.json();
+  })
+  .then(render)
+  .catch(function () {
+    // data.json ontbreekt of is onleesbaar: toon een vriendelijke lege staat
+    render(null);
+    const box = document.getElementById("lijnen-box");
+    leeg(box);
+    box.appendChild(el("div", { cls: "box" }, [
+      el("h3", { text: "Nog geen afgeronde metingen" }),
+      el("p", { text: "De cijfers zijn nog niet beschikbaar. Kom later terug." }),
+    ]));
+    document.getElementById("dagen").hidden = true;
+  });
+</script>
+</body>
+</html>
