@@ -53,6 +53,9 @@ h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 12px; }
 h2 { font-size: 1.3rem; line-height: 1.3; margin: 40px 0 12px; }
 h3 { font-size: 1.1rem; margin: 0 0 8px; }
 p { margin: 0 0 12px; }
+h4 { font-size: 1rem; margin: 0 0 6px; }
+.meldnorm { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+#methode h3 { margin-top: 20px; }
 a { color: var(--accent); }
 a:focus-visible, summary:focus-visible, .knop:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .lead { font-size: 1.1rem; color: var(--text); }
@@ -176,6 +179,10 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   </dl>
   <p><strong>Let op:</strong> “niet gemeld” is een bovengrens. Een bus met een kapot volgsysteem rijdt wel, maar lijkt in de data uitgevallen. Daarom controleren we ook met steekproeven bij de halte.</p>
   <p>Ritten zonder genoeg metingen tellen niet mee in de percentages. Percentages gaan alleen over gemeten ritten.</p>
+
+  <h3>De norm</h3>
+  <p>De modelbijlage <a href="https://dova.nu/sites/default/files/Concessiebijlage_Datasets_OV%20V2.2.4_def%202024_0.pdf" rel="noopener">Datasets OV</a> (DOVA, versie 2.2.4) bevat de afspraken over reisinformatie in OV-concessies. Daarin staat dat een bericht over een vervallen rit in <strong>95% van de gevallen vóór de geplande haltepassagetijd</strong> ontvangen moet zijn (eis K17.2). Een rit die door een defect volgsysteem niet gevolgd kan worden, moet vóór het begin van de rit worden gemeld (K17.4).</p>
+  <p>Per vervallen rit tellen we de haltes waarvan de geplande tijd ná het moment valt waarop wij de annulering voor het eerst zagen. Zo toetsen we aan dezelfde maatstaf als de eis. Of precies deze norm in de concessie van de provincie Utrecht staat, hebben we nog niet kunnen vaststellen. Voor een reiziger bij de eerste halte is vooral het geplande vertrek van belang; daarom delen we de ritten ook in “op tijd” en “te laat” op dat moment in.</p>
 </section>
 
 <section id="melden" aria-labelledby="h-melden">
@@ -333,6 +340,26 @@ function renderLegenda(info) {
   return ul;
 }
 
+function minutenTekst(m) {
+  const n = Math.abs(m);
+  const eenheid = n === 1 ? " minuut" : " minuten";
+  if (m === 0) return "op het geplande vertrek";
+  return n + eenheid + (m > 0 ? " na" : " vóór") + " het geplande vertrek";
+}
+
+function renderMeldnorm(norm) {
+  if (!norm || !norm.haltes) return null;
+  const rit = norm.ritten === 1 ? "1 vervallen rit" : norm.ritten + " vervallen ritten";
+  return el("div", { cls: "meldnorm" }, [
+    el("h4", { text: "Werd de uitval op tijd gemeld?" }),
+    el("p", { text: "Bij " + procent(norm.percentage_op_tijd) + " van de haltepassages van vervallen ritten (" +
+      norm.haltes_op_tijd + " van " + norm.haltes + ", " + rit + ") stond de annulering al in de reisinformatie " +
+      "vóór de geplande passage. De norm in de modelbijlage voor concessies is " + norm.norm_percentage + "%." }),
+    el("p", { cls: "muted", text: "Een typische (mediaan) annulering verscheen " + minutenTekst(norm.mediaan_min_na_vertrek) +
+      ". Wij kijken elke 5 minuten, dus de melding kan iets eerder verschenen zijn dan wij zagen." }),
+  ]);
+}
+
 function renderLijnen(data, heeftMetingen) {
   const box = document.getElementById("lijnen-box");
   leeg(box);
@@ -354,6 +381,8 @@ function renderLijnen(data, heeftMetingen) {
       kaart.appendChild(el("p", { text: "Gemeten ritten: " + info.gemeten + ". Percentages gaan over deze ritten." }));
       kaart.appendChild(renderBalk(lijn, info));
       kaart.appendChild(renderLegenda(info));
+      const norm = renderMeldnorm(info.meldnorm);
+      if (norm) kaart.appendChild(norm);
     }
     const zonder = info.aantal["geen meting"] || 0;
     if (zonder) {
