@@ -26,8 +26,8 @@ zien op welke grond een halte als gesloten geldt. De meetcode leest het bestand.
     {
       "id": "pr-soesterberg-2026",
       "halte": "Soesterberg, P+R Soesterberg",
-      "stop_ids": [],
-      "lijnen": ["202", "302"],
+      "stop_ids": ["3256885", "3256886", "3256887"],
+      "lijnen": ["203", "299", "302", "315", "376"],
       "periodes": [
         {
           "van": "2026-08-10",
@@ -40,7 +40,7 @@ zien op welke grond een halte als gesloten geldt. De meetcode leest het bestand.
           "datum": "2026-10-22",
           "tijd": "20:55",
           "soort": "eigen waarneming",
-          "wat": "P+R afgesloten; bus lijn 202 stopte niet bij de halte"
+          "wat": "P+R afgesloten; bus lijn 302 stopte niet bij de halte"
         }
       ],
       "bronnen": [
@@ -71,6 +71,8 @@ Regels:
   de pagina noemt hem "nog niet gecontroleerd".
 - **`stop_ids`** zijn de halte-ID's uit `stops.txt` van de OVapi-GTFS. Een halte heeft er meestal
   één per richting. De meetcode zoekt ze eenmalig op naam op; daarna staan ze vast in het bestand.
+  Haltes waar alleen een Flex-bus op afroep stopt, tellen niet mee: daar is geen vaste
+  dienstregeling waarmee een passage te vergelijken is.
 
 ## 2. Welke dagen tellen als gesloten
 
@@ -89,12 +91,29 @@ Er komen geen nieuwe bronnen bij. Alleen de bestaande feeds van OVapi worden ook
 | Bron | Hoe vaak | Wat we eruit halen |
 |---|---|---|
 | Dienstregeling (GTFS) | elke dag | Alle geplande stops (`stop_times`) bij de `stop_ids`, per lijn en rit |
-| Ritupdates (GTFS-RT) | elke 5 minuten | Per stop: staat er `schedule_relationship = SKIPPED`, en vanaf wanneer |
+| Ritupdates (GTFS-RT) | elke 5 minuten | Per stop: staat er `schedule_relationship = SKIPPED`, en sinds welke opname |
 | Serviceberichten (GTFS-RT alerts) | elke 5 minuten | Berichten die de halte of de lijn noemen, met tekst en geldigheid |
 | Voertuigposities | elke 2 minuten | Alleen ter controle: kwam de bus langs de halte |
 
-Niet alle onderdelen zijn bevestigd. Zo is nog niet duidelijk of OVapi serviceberichten voor U-OV
-publiceert. Dat moet de eerste stap van de bouw zijn.
+### Wat de feeds bevatten (gecontroleerd 28 oktober 2026)
+
+Gecontroleerd met twee momentopnames (14:43 en 18:01) en de dienstregeling van die dag:
+
+- **Serviceberichten voor U-OV: ja.** 17 van de ruim 700 berichten gaan over U-OV, met id's die
+  beginnen met `KV15:KEOLIS:`. Ze verwijzen naar lijnen (`route_id`) en haltes (`stop_id`), niet
+  naar de vervoerder als geheel. Alle 201 `stop_id`'s in die berichten staan in `stops.txt`, dus
+  een bericht is aan de halte te koppelen. Veel berichten gaan over vervallen haltes ("vervallen de
+  haltes …") en staan er al dagen voor het begin in, met een geldigheidsperiode.
+- **Overgeslagen stops bij U-OV: ja.** Rond de 400 tot 550 stops per opname, onder meer op lijn
+  87, 350, 106 en 395. Bij lijn 395 staat tegelijk een bericht over vervallen haltes in Lopik, en
+  de ritupdates slaan daar ook stops over. De twee bronnen vullen elkaar dus aan.
+- **Een overgeslagen stop heeft geen tijd.** Of de melding op tijd was, volgt daarom niet uit de
+  feed zelf, maar uit de eerste opname waarin de stop als `SKIPPED` staat, vergeleken met de
+  geplande tijd uit `stop_times`. Met een opname elke 5 minuten is "op tijd" tot op 5 minuten nauwkeurig.
+  In de opname van 18:01 lag de geplande tijd bij ongeveer 6 van de 10 overgeslagen stops nog in
+  de toekomst. Melden vóór vertrek komt dus voor.
+- **P+R Soesterberg:** op 28 oktober geen bericht en geen overgeslagen stop. De halte stond
+  gewoon in de planning en de ritupdates (lijn 203, 299, 302, 315 en 376).
 
 ### Indeling per geplande haltepassage
 
@@ -146,7 +165,7 @@ Een nieuw blok `haltesluitingen`, naast `lijnen` en `dagen`. De bestaande velden
   {
     "id": "pr-soesterberg-2026",
     "halte": "Soesterberg, P+R Soesterberg",
-    "lijnen": ["202", "302"],
+    "lijnen": ["203", "299", "302", "315", "376"],
     "grond": [
       { "soort": "officieel", "van": "2026-08-10", "tot": "2026-08-28", "titel": "…", "url": "…", "gecontroleerd": false },
       { "soort": "eigen waarneming", "datum": "2026-10-22", "tijd": "20:55", "wat": "…" }
@@ -194,15 +213,27 @@ Ontbreekt het blok of is het leeg, dan toont de pagina de sectie niet. Zo blijft
   - de bewaarde berichten, inklapbaar.
 - **"Hoe we meten":** een alinea over haltes, met de groepen uit 3.
 - **"Meld wat jij meemaakt":** een punt erbij: "de halte was dicht, maar stond wel in de app of op het scherm".
-- **Lijn 202:** toevoegen aan `LIJN_NAMEN`, de titel en de introtekst zodra de lijn gemeten wordt.
-  De lijnnaam haal je uit de GTFS (`routes.txt`), niet uit het geheugen.
+- **Lijnnamen bij een sluiting:** haal ze uit de GTFS (`routes.txt`), niet uit het geheugen.
+  Lijnen die alleen in de haltemeting zitten, komen niet in `LIJN_NAMEN`, de titel of de
+  introtekst; die gaan over de ritmeting.
 
-## 7. Lijn 202
+## 7. De lijnen bij P+R Soesterberg
 
-De halte P+R Soesterberg is het eerste geval, en lijn 202 stopt daar volgens eigen waarneming ook.
-Het is daarom zinvol om lijn 202 mee te meten, zowel voor de ritten als voor de haltes.
-De ritmeting werkt al per lijn, dus het gaat vooral om configuratie. Controleer in de GTFS welke
-lijnen de halte bedienen, en neem die allemaal op in `lijnen` van de sluiting.
+Lijn 202 bestaat niet meer: het is de oude naam van lijn 302. De waarneming van 22 oktober gaat dus
+over lijn 302, die al in de ritmeting zit.
+
+Volgens de dienstregeling van 28 oktober 2026 (OVapi-GTFS) stoppen deze U-OV-lijnen bij de halte:
+
+| `stop_id` | Lijnen | Richting | Passages op 28 okt |
+|---|---|---|---|
+| 3256885 | 203, 299, 302, 315, 376 | Utrecht / Vianen | 124 |
+| 3256886 | 203, 299 | Amersfoort / Leusden | 38 |
+| 3256887 | 302, 315, 376 | Amersfoort / Vathorst / Spakenburg | 81 |
+
+Daarnaast is er `stop_id` 3924245 voor de Flex-bus op afroep; die telt niet mee (zie 1). De twee
+`stoparea:`-ID's in `stops.txt` zijn overkoepelende stations zonder eigen stops in de dienstregeling.
+
+De haltemeting dekt alle vijf lijnen. De ritmeting blijft voorlopig bij 272 en 302.
 
 ## 8. Het eerste geval: P+R Soesterberg
 
@@ -214,7 +245,7 @@ Wat bekend is, en hoe zeker:
 | Omleiding van 10 t/m 30 augustus, halte vervalt | U-OV | Gevonden via zoekmachine, nog niet zelf gelezen. Einddatum wijkt af van Rijkswaterstaat |
 | P+R en fietspad dicht op 24 en 25 oktober 2026 | Rijkswaterstaat (volgens zoekresultaat) | Nog niet zelf gelezen |
 | Halte vervalt van 10 oktober 07:00 t/m 26 oktober 05:00 (lijn 302, 315, 376) | U-OV/Keolis | Zonder jaartal, pagina op 27 oktober 2026 niet meer te vinden. **Niet opnemen tot bevestigd** |
-| 22 oktober 2026, rond 20:55: P+R afgesloten, bus lijn 202 stopte niet | Eigen waarneming | Vastgelegd |
+| 22 oktober 2026, rond 20:55: P+R afgesloten, bus lijn 302 (voorheen 202) stopte niet | Eigen waarneming | Vastgelegd |
 
 Alleen de waarneming van 22 oktober staat al vast. De officiële periode voor oktober volgt
 hopelijk uit het antwoord van U-OV en de provincie op de klacht.
@@ -225,9 +256,10 @@ bij het NDOV Loket. Dat is nog niet uitgezocht.
 
 ## 9. Volgorde van bouwen
 
-1. Controleren welke feeds OVapi heeft: zitten er serviceberichten voor U-OV in, en worden
-   overgeslagen stops (`SKIPPED`) in de ritupdates gebruikt?
-2. `stop_ids` voor P+R Soesterberg opzoeken en lijn 202 aan de meting toevoegen.
+1. ~~Controleren welke feeds OVapi heeft: zitten er serviceberichten voor U-OV in, en worden
+   overgeslagen stops (`SKIPPED`) in de ritupdates gebruikt?~~ Gedaan op 28 oktober 2026: beide ja (zie 3).
+2. ~~`stop_ids` voor P+R Soesterberg opzoeken~~ (gedaan, zie 7) en de haltemeting instellen voor
+   lijn 203, 299, 302, 315 en 376.
 3. `haltesluitingen.json` aanmaken met de bronnen uit 8.
 4. Archief: dagelijks `stop_times` voor gesloten haltes bewaren, en serviceberichten elke 5 minuten.
 5. Indeling per haltepassage bouwen, met tests op vaste voorbeeldbestanden (per groep minstens één
@@ -237,5 +269,6 @@ bij het NDOV Loket. Dat is nog niet uitgezocht.
 ## 10. Open vragen
 
 - Geldt de 95%-norm (K17.2) ook voor haltes die vervallen, of alleen voor ritten?
-- Wat is de officiële sluitingsperiode in oktober, en geldt die ook voor lijn 202?
+- Wat is de officiële sluitingsperiode in oktober, en voor welke van de vijf lijnen geldt die?
+- Moeten 203, 299, 315 en 376 ook in de ritmeting, of alleen in de haltemeting?
 - Heeft OVapi of het NDOV Loket een archief van de dienstregeling van 22 oktober 2026?
