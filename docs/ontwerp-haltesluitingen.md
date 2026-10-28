@@ -242,9 +242,9 @@ Wat bekend is, en hoe zeker:
 
 | Wat | Bron | Status |
 |---|---|---|
-| P+R en bushaltes dicht van 10 t/m 28 augustus 2026 | Rijkswaterstaat | Gevonden via zoekmachine, nog niet zelf gelezen |
+| P+R, fietspad en bushaltes dicht van 10 t/m 28 augustus 2026 | Rijkswaterstaat | Gelezen op 28 oktober 2026, tekst in het archief |
 | Omleiding van 10 t/m 30 augustus, halte vervalt | U-OV | Gevonden via zoekmachine, nog niet zelf gelezen. Einddatum wijkt af van Rijkswaterstaat |
-| P+R en fietspad dicht op 24 en 25 oktober 2026 | Rijkswaterstaat (volgens zoekresultaat) | Nog niet zelf gelezen |
+| P+R en fietspad dicht op 24 en 25 oktober 2026, ook de Richelleweg | Rijkswaterstaat (zelfde bericht) | Gelezen op 28 oktober 2026. Over de bushaltes staat er voor dit weekend niets, dus het telt niet als haltesluiting |
 | Halte vervalt van 10 oktober 07:00 t/m 26 oktober 05:00 (lijn 302, 315, 376) | U-OV/Keolis | Zonder jaartal, pagina op 27 oktober 2026 niet meer te vinden. **Niet opnemen tot bevestigd** |
 | 22 oktober 2026, rond 20:55: P+R afgesloten, bus lijn 302 (voorheen 202) stopte niet | Eigen waarneming | Vastgelegd |
 
