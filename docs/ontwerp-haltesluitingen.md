@@ -1,7 +1,8 @@
 # Ontwerp: gesloten haltes in de reisinformatie
 
-Status: ontwerp, nog niet gebouwd. De meetcode staat in een aparte repo; dit document beschrijft
-wat daar moet komen en hoe `data.json` en `index.html` worden uitgebreid.
+Status: gebouwd op 28 oktober 2026 (stap 1 t/m 6 hieronder). De meetcode staat in een aparte repo
+(`haltes.py`, met tests in `test_haltes.py`); dit document beschrijft hoe het werkt en hoe `data.json`
+en `index.html` zijn uitgebreid.
 
 ## De vraag
 
@@ -260,11 +261,21 @@ bij het NDOV Loket. Dat is nog niet uitgezocht.
    overgeslagen stops (`SKIPPED`) in de ritupdates gebruikt?~~ Gedaan op 28 oktober 2026: beide ja (zie 3).
 2. ~~`stop_ids` voor P+R Soesterberg opzoeken~~ (gedaan, zie 7) en de haltemeting instellen voor
    lijn 203, 299, 302, 315 en 376.
-3. `haltesluitingen.json` aanmaken met de bronnen uit 8.
-4. Archief: dagelijks `stop_times` voor gesloten haltes bewaren, en serviceberichten elke 5 minuten.
-5. Indeling per haltepassage bouwen, met tests op vaste voorbeeldbestanden (per groep minstens één
-   geval, plus een dag waarop de halte uit de planning is).
-6. `data.json` uitbreiden (5) en de pagina aanpassen (6).
+3. ~~`haltesluitingen.json` aanmaken met de bronnen uit 8.~~ Gedaan. Alleen de bron met een bekende
+   URL (Rijkswaterstaat, augustus) en de eigen waarneming staan erin; de andere bronnen uit 8 volgen
+   zodra iemand ze zelf heeft gelezen.
+4. ~~Archief: dagelijks `stop_times` voor gesloten haltes bewaren, en serviceberichten elke 5 minuten.~~
+   Gedaan (tabellen `halte_gepland`, `halte_dag`, `halte_update` en `halte_bericht`).
+5. ~~Indeling per haltepassage bouwen, met tests.~~ Gedaan (`haltes.py`, `test_haltes.py`).
+6. ~~`data.json` uitbreiden (5) en de pagina aanpassen (6).~~ Gedaan.
+
+Extra veld in `haltesluitingen.json`: `zoektermen`. Een servicebericht hoort bij de sluiting als het
+een van de `stop_ids` noemt, of een zoekterm in de tekst heeft (spaties en leestekens tellen niet mee).
+
+Wordt er nu gemeten? Alleen op meetdagen. De waarneming van 22 oktober en de periode in augustus
+liggen vóór de start van de meting, dus de kaart toont "nog geen meetdagen" tot er een officiële
+periode of een nieuwe waarneming bij komt. Overgeslagen stops en berichten worden wel altijd
+verzameld, zodat een later bevestigde periode terugwerkend meetelt.
 
 ## 10. Open vragen
 

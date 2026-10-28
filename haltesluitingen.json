@@ -1,0 +1,37 @@
+{
+  "sluitingen": [
+    {
+      "id": "pr-soesterberg-2026",
+      "halte": "Soesterberg, P+R Soesterberg",
+      "stop_ids": ["3256885", "3256886", "3256887"],
+      "lijnen": ["203", "299", "302", "315", "376"],
+      "zoektermen": ["P+R Soesterberg", "Soesterberg P+R", "Soesterberg, P+R"],
+      "periodes": [
+        {
+          "van": "2026-08-10",
+          "tot": "2026-08-28",
+          "bron": "rws-2026-08"
+        }
+      ],
+      "waarnemingen": [
+        {
+          "datum": "2026-10-22",
+          "tijd": "20:55",
+          "soort": "eigen waarneming",
+          "wat": "P+R afgesloten; bus lijn 302 (voorheen 202) stopte niet bij de halte"
+        }
+      ],
+      "bronnen": [
+        {
+          "id": "rws-2026-08",
+          "soort": "officieel",
+          "uitgever": "Rijkswaterstaat",
+          "titel": "Rijkswaterstaat vernieuwt P+R Soesterberg vanaf 10 augustus",
+          "url": "https://www.rijkswaterstaat.nl/nieuws/archief/2026/08/rijkswaterstaat-vernieuwt-p-r-soesterberg-vanaf-10-augustus-2026",
+          "geraadpleegd": null,
+          "archief": null
+        }
+      ]
+    }
+  ]
+}
