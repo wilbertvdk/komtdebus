@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-10-28T18:20:39+01:00",
+  "bijgewerkt": "2026-10-28T18:28:10+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-10-28"
@@ -24,10 +24,10 @@
       "meldnorm": null
     },
     "302": {
-      "gepland": 241,
-      "gemeten": 237,
+      "gepland": 242,
+      "gemeten": 238,
       "aantal": {
-        "gereden": 227,
+        "gereden": 228,
         "uitval, op tijd": 2,
         "uitval, te laat": 5,
         "niet gemeld": 3,
@@ -80,7 +80,7 @@
     {
       "datum": "2026-10-28",
       "lijn": "302",
-      "gereden": 107,
+      "gereden": 108,
       "uitval, op tijd": 1,
       "uitval, te laat": 1,
       "niet gemeld": 0,
@@ -89,9 +89,59 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-10-28T18:19:03+01:00",
-    "gelukt": 948,
-    "verwacht": 1000,
-    "aandeel": 0.948
-  }
+    "tot": "2026-10-28T18:28:03+01:00",
+    "gelukt": 953,
+    "verwacht": 1005,
+    "aandeel": 0.9483
+  },
+  "haltesluitingen": [
+    {
+      "id": "pr-soesterberg-2026",
+      "halte": "Soesterberg, P+R Soesterberg",
+      "lijnen": [
+        "203",
+        "299",
+        "302",
+        "315",
+        "376"
+      ],
+      "grond": [
+        {
+          "soort": "officieel",
+          "van": "2026-08-10",
+          "tot": "2026-08-28",
+          "uitgever": "Rijkswaterstaat",
+          "titel": "Rijkswaterstaat vernieuwt P+R Soesterberg vanaf 10 augustus",
+          "url": "https://www.rijkswaterstaat.nl/nieuws/archief/2026/08/rijkswaterstaat-vernieuwt-p-r-soesterberg-vanaf-10-augustus-2026",
+          "gecontroleerd": false
+        },
+        {
+          "soort": "eigen waarneming",
+          "datum": "2026-10-22",
+          "tijd": "20:55",
+          "wat": "P+R afgesloten; bus lijn 302 (voorheen 202) stopte niet bij de halte"
+        }
+      ],
+      "meetdagen": 0,
+      "dagen_uit_planning": 0,
+      "passages": {
+        "gepland": 0,
+        "gemeten": 0,
+        "aantal": {
+          "overgeslagen, op tijd": 0,
+          "overgeslagen, te laat": 0,
+          "alleen bericht": 0,
+          "niet gemeld": 0,
+          "geen meting": 0
+        },
+        "percentage": {
+          "overgeslagen, op tijd": null,
+          "overgeslagen, te laat": null,
+          "alleen bericht": null,
+          "niet gemeld": null
+        }
+      },
+      "berichten": []
+    }
+  ]
 }

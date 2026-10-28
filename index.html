@@ -20,6 +20,7 @@
   --c-optijd: #1565c0;
   --c-telaat: #c77700;
   --c-nietgemeld: #b3261e;
+  --c-bericht: #6b4fa3;
   --track: #e6e8ea;
 }
 @media (prefers-color-scheme: dark) {
@@ -37,6 +38,7 @@
     --c-optijd: #6aa9ee;
     --c-telaat: #f0a63a;
     --c-nietgemeld: #f2766d;
+    --c-bericht: #b59ce6;
     --track: #2b3036;
   }
 }
@@ -88,6 +90,7 @@ dl.status dd { margin: 0; overflow-wrap: anywhere; }
 .seg.optijd { background: var(--c-optijd); }
 .seg.telaat { background: repeating-linear-gradient(45deg, var(--c-telaat) 0 6px, var(--surface) 6px 8px); }
 .seg.nietgemeld { background: repeating-linear-gradient(135deg, var(--c-nietgemeld) 0 3px, var(--surface) 3px 5px); }
+.seg.bericht { background: var(--c-bericht); }
 ul.legenda { list-style: none; margin: 0; padding: 0; }
 ul.legenda li { display: grid; grid-template-columns: 18px 1fr auto; gap: 8px; align-items: center; padding: 6px 0; border-top: 1px solid var(--border); }
 ul.legenda li:first-child { border-top: 0; }
@@ -96,6 +99,10 @@ ul.legenda li:first-child { border-top: 0; }
 .sw.optijd { background: var(--c-optijd); }
 .sw.telaat { background: repeating-linear-gradient(45deg, var(--c-telaat) 0 4px, var(--surface) 4px 6px); }
 .sw.nietgemeld { background: repeating-linear-gradient(135deg, var(--c-nietgemeld) 0 2px, var(--surface) 2px 4px); }
+.sw.bericht { background: var(--c-bericht); }
+ul.grond { margin: 0 0 12px; padding-left: 22px; }
+.label { display: inline-block; font-size: 0.8rem; font-weight: 600; padding: 1px 8px; margin-left: 6px; border-radius: 10px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
+.bericht-tekst { white-space: pre-line; margin: 4px 0 12px; }
 .getal { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 details { margin: 0 0 16px; }
@@ -155,6 +162,12 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <div id="lijnen-box"></div>
 </section>
 
+<section id="haltes" aria-labelledby="h-haltes" hidden>
+  <h2 id="h-haltes">Gesloten haltes</h2>
+  <p>Een halte is dicht, maar staat nog in de dienstregeling en in de apps. Per gesloten halte meten we of de reisinformatie erbij zette dat de bus er niet stopt.</p>
+  <div id="haltes-box"></div>
+</section>
+
 <section id="dagen" aria-labelledby="h-dagen">
   <h2 id="h-dagen">Per dag</h2>
   <details id="dagen-details">
@@ -187,6 +200,22 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <p><strong>Let op:</strong> “niet gemeld” is een bovengrens. Een bus met een kapot volgsysteem rijdt wel, maar lijkt in de data uitgevallen. Daarom controleren we ook met steekproeven bij de halte.</p>
   <p>Ritten zonder genoeg metingen tellen niet mee in de percentages. Percentages gaan alleen over gemeten ritten.</p>
 
+  <h3>Gesloten haltes</h3>
+  <p>Voor een gesloten halte kijken we naar elke geplande haltepassage, van alle lijnen die er stoppen. Een halte geldt als gesloten op de dagen waarvoor een officiële bron dat zegt, en rond een eigen waarneming (een uur ervoor tot een uur erna). Elke passage komt in één groep:</p>
+  <dl class="def">
+    <dt>Overgeslagen, op tijd gemeld</dt>
+    <dd>De ritupdate meldde vóór de geplande tijd dat de bus de halte overslaat. Reisplanners kunnen er dan rekening mee houden.</dd>
+    <dt>Overgeslagen, te laat gemeld</dt>
+    <dd>Die melding kwam pas ná de geplande tijd.</dd>
+    <dt>Alleen een bericht</dt>
+    <dd>De halte werd niet als overgeslagen gemeld, maar er stond wel een servicebericht over. Alleen wie het bericht leest, weet het.</dd>
+    <dt>Niet gemeld</dt>
+    <dd>Geen overgeslagen stop en geen bericht: voor de reiziger bestaat de halte nog gewoon.</dd>
+    <dt>Geen meting</dt>
+    <dd>Te weinig ritupdates rond de geplande tijd. Deze passage telt niet mee.</dd>
+  </dl>
+  <p>Het beste is als de halte helemaal uit de dienstregeling is gehaald. Die dagen tellen we apart. Een rit die helemaal is geannuleerd, telt hier niet mee; die zit al in de ritmeting. Of de norm van 95% ook voor vervallen haltes geldt, staat niet vast. Daarom tonen we bij haltes geen norm.</p>
+
   <h3>De norm</h3>
   <p>De modelbijlage <a href="https://dova.nu/sites/default/files/Concessiebijlage_Datasets_OV%20V2.2.4_def%202024_0.pdf" rel="noopener">Datasets OV</a> (DOVA, versie 2.2.4) bevat de afspraken over reisinformatie in OV-concessies. Daarin staat dat een bericht over een vervallen rit in <strong>95% van de gevallen vóór de geplande haltepassagetijd</strong> ontvangen moet zijn (eis K17.2). Een rit die door een defect volgsysteem niet gevolgd kan worden, moet vóór het begin van de rit worden gemeld (K17.4).</p>
   <p>Per vervallen rit tellen we de haltes waarvan de geplande tijd ná het moment valt waarop wij de annulering voor het eerst zagen. Zo toetsen we aan dezelfde maatstaf als de eis. Of precies deze norm in de concessie van de provincie Utrecht staat, hebben we nog niet kunnen vaststellen. Voor een reiziger bij de eerste halte is vooral het geplande vertrek van belang; daarom delen we de ritten ook in “op tijd” en “te laat” op dat moment in.</p>
@@ -203,6 +232,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
     <li>De richting</li>
     <li>Wat er gebeurde: de bus kwam niet, kwam te laat, reed een andere route, of de informatie klopte niet</li>
     <li>Wat de app of het scherm bij de halte liet zien</li>
+    <li>Of de halte dicht was, terwijl hij wel in de app of op het scherm stond</li>
   </ul>
   <div id="meld-box"></div>
   <p class="muted">Klachten over je reis kun je ook bij U-OV melden; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
@@ -319,13 +349,14 @@ function renderStatus(data, heeftMetingen) {
   }
 }
 
-function renderBalk(lijn, info) {
+function renderBalk(lijn, info, klassen, onderwerp) {
+  klassen = klassen || KLASSEN;
   const gemeten = info.gemeten;
-  const beschrijving = KLASSEN.map(function (k) {
+  const beschrijving = klassen.map(function (k) {
     return k.label + ": " + getal(info.aantal[k.sleutel]) + " (" + procent(info.percentage[k.sleutel]) + ")";
   }).join("; ");
-  const bar = el("div", { cls: "bar", attrs: { role: "img", "aria-label": "Verdeling van " + gemeten + " gemeten ritten van lijn " + lijn + ". " + beschrijving } });
-  KLASSEN.forEach(function (k) {
+  const bar = el("div", { cls: "bar", attrs: { role: "img", "aria-label": "Verdeling van " + gemeten + " " + (onderwerp || "gemeten ritten van lijn " + lijn) + ". " + beschrijving } });
+  klassen.forEach(function (k) {
     const n = info.aantal[k.sleutel] || 0;
     if (!n) return;
     const seg = el("div", { cls: "seg " + k.css, attrs: { title: k.label + ": " + n } });
@@ -335,9 +366,9 @@ function renderBalk(lijn, info) {
   return bar;
 }
 
-function renderLegenda(info) {
+function renderLegenda(info, klassen) {
   const ul = el("ul", { cls: "legenda" });
-  KLASSEN.forEach(function (k) {
+  (klassen || KLASSEN).forEach(function (k) {
     ul.appendChild(el("li", null, [
       el("span", { cls: "sw " + k.css, attrs: { "aria-hidden": "true" } }),
       el("span", { text: k.label }),
@@ -399,6 +430,80 @@ function renderLijnen(data, heeftMetingen) {
   });
 }
 
+const HALTE_KLASSEN = [
+  { sleutel: "overgeslagen, op tijd", label: "Overgeslagen, op tijd gemeld", css: "optijd" },
+  { sleutel: "overgeslagen, te laat", label: "Overgeslagen, te laat gemeld", css: "telaat" },
+  { sleutel: "alleen bericht", label: "Alleen een bericht", css: "bericht" },
+  { sleutel: "niet gemeld", label: "Niet gemeld", css: "nietgemeld" },
+];
+
+function grondItem(g) {
+  if (g.soort === "officieel") {
+    const periode = g.van === g.tot ? datumTekst(g.van) : datumTekst(g.van) + " t/m " + datumTekst(g.tot);
+    const bron = g.url
+      ? el("a", { text: g.titel || g.url, attrs: { href: g.url, rel: "noopener" } })
+      : el("span", { text: g.titel || "" });
+    return el("li", null, [
+      el("span", { text: periode + ": " + (g.uitgever ? g.uitgever + ", " : "") }), bron,
+      el("span", { cls: "label", text: g.gecontroleerd ? "officieel" : "officieel, nog niet gecontroleerd" }),
+    ]);
+  }
+  return el("li", null, [
+    el("span", { text: datumTekst(g.datum) + (g.tijd ? " rond " + g.tijd : "") + ": " + (g.wat || "") }),
+    el("span", { cls: "label", text: g.soort }),
+  ]);
+}
+
+function renderHaltes(data) {
+  const sectie = document.getElementById("haltes");
+  const box = document.getElementById("haltes-box");
+  leeg(box);
+  const lijst = (data && data.haltesluitingen) || [];
+  sectie.hidden = !lijst.length;
+  lijst.forEach(function (h) {
+    const kaart = el("article", { cls: "box" });
+    kaart.appendChild(el("h3", { text: h.halte }));
+    if (h.lijnen && h.lijnen.length) {
+      kaart.appendChild(el("p", { cls: "muted", text: (h.lijnen.length === 1 ? "Lijn " : "Lijnen ") + h.lijnen.join(", ") }));
+    }
+    kaart.appendChild(el("h4", { text: "Waarom we deze halte als gesloten tellen" }));
+    kaart.appendChild(el("ul", { cls: "grond" }, (h.grond || []).map(grondItem)));
+
+    const p = h.passages || {};
+    if (!h.meetdagen) {
+      kaart.appendChild(el("p", { text: "Nog geen meetdagen: er is sinds de start van de meting geen officiële periode of waarneming voor deze halte." }));
+    } else {
+      const dagen = h.meetdagen === 1 ? "1 meetdag" : h.meetdagen + " meetdagen";
+      const uit = h.dagen_uit_planning === 1 ? "1 dag" : getal(h.dagen_uit_planning) + " dagen";
+      kaart.appendChild(el("p", { text: dagen + ". Op " + uit + " was de halte uit de dienstregeling gehaald, zoals het hoort." }));
+      if (p.gemeten) {
+        kaart.appendChild(el("p", { text: "Gemeten haltepassages: " + p.gemeten + ". Percentages gaan over deze passages." }));
+        kaart.appendChild(renderBalk(null, p, HALTE_KLASSEN, "gemeten haltepassages bij " + h.halte));
+        kaart.appendChild(renderLegenda(p, HALTE_KLASSEN));
+      } else {
+        kaart.appendChild(el("p", { text: "Nog geen gemeten haltepassages op de meetdagen." }));
+      }
+      const zonder = (p.aantal && p.aantal["geen meting"]) || 0;
+      if (zonder) kaart.appendChild(el("p", { cls: "muted", text: zonder + " passages zonder genoeg metingen tellen niet mee." }));
+    }
+
+    const berichten = h.berichten || [];
+    const details = el("details", null, [el("summary", { text: berichten.length === 1
+      ? "1 bewaard bericht over deze halte" : berichten.length + " bewaarde berichten over deze halte" })]);
+    if (!berichten.length) {
+      details.appendChild(el("p", { cls: "muted", text: "We hebben nog geen servicebericht over deze halte in de reisinformatie gezien." }));
+    }
+    berichten.forEach(function (b) {
+      details.appendChild(el("h4", { text: b.kop || "(zonder kop)" }));
+      details.appendChild(el("p", { cls: "muted", text: "Gezien van " + tijdTekst(b.eerst_gezien) + " tot " + tijdTekst(b.laatst_gezien) +
+        (b.geldig_tot ? ". Geldig tot " + tijdTekst(b.geldig_tot) : "") + "." }));
+      if (b.tekst) details.appendChild(el("p", { cls: "bericht-tekst", text: b.tekst }));
+    });
+    kaart.appendChild(details);
+    box.appendChild(kaart);
+  });
+}
+
 function renderDagen(data, heeftMetingen) {
   const details = document.getElementById("dagen-details");
   const box = document.getElementById("dagen-box");
@@ -452,6 +557,7 @@ function render(data) {
   const heeftMetingen = !!(data && data.lijnen && totaalGemeten(data) > 0);
   renderStatus(data, heeftMetingen);
   renderLijnen(data, heeftMetingen);
+  renderHaltes(data);
   renderDagen(data, heeftMetingen);
 }
 
