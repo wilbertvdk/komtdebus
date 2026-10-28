@@ -10,6 +10,14 @@
         {
           "van": "2026-08-10",
           "tot": "2026-08-28",
+          "wat": "P+R, fietspad en bushaltes dicht",
+          "bron": "rws-2026-08"
+        },
+        {
+          "van": "2026-10-24",
+          "tot": "2026-10-25",
+          "wat": "P+R, fietspad en Richelleweg dicht",
+          "halte": false,
           "bron": "rws-2026-08"
         }
       ],
