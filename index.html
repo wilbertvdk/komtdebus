@@ -125,6 +125,9 @@ ul.lijst li { margin-bottom: 4px; }
   margin: 4px 0 12px;
 }
 .knop:hover { filter: brightness(1.1); }
+.meld-top { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; margin: 16px 0 0; padding: 14px 16px; }
+.meld-top p { margin: 0; flex: 1 1 240px; }
+.meld-top .knop { margin: 0; }
 footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16px; font-size: 0.9rem; color: var(--muted); }
 </style>
 </head>
@@ -133,6 +136,10 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 <header>
   <h1>Komt de bus? Lijn 272 en 302</h1>
   <p class="lead">Deze website meet of de bussen van U-OV lijn 272 (Baarn – Utrecht Science Park) en lijn 302 (U-liner Amersfoort – Vianen) rijden, en of uitval op tijd in apps en op de schermen bij de halte te zien is.</p>
+  <div class="box meld-top" aria-label="Melden">
+    <p><strong>Bus niet gekomen, of klopte de informatie niet?</strong> Meld het, zonder je naam. <a href="#melden">Wat is handig om te melden?</a></p>
+    <a class="knop" id="meld-top-knop" href="#melden">Meld het</a>
+  </div>
 </header>
 
 <main>
@@ -431,7 +438,10 @@ function renderMelden() {
     const u = new URL(MELDFORMULIER_URL);
     if (u.protocol === "https:" || u.protocol === "http:") url = u.href;
   } catch (e) { url = null; }
+  const knopBoven = document.getElementById("meld-top-knop");
   if (url) {
+    knopBoven.href = url;
+    knopBoven.rel = "noopener";
     box.appendChild(el("a", { cls: "knop", text: "Open het meldformulier", attrs: { href: url, rel: "noopener" } }));
   } else {
     box.appendChild(el("p", { cls: "box", text: "Het meldformulier komt binnenkort online." }));
