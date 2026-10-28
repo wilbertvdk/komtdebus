@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-10-28T18:28:10+01:00",
+  "bijgewerkt": "2026-10-28T21:14:05+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-10-28"
   },
   "lijnen": {
     "272": {
-      "gepland": 26,
-      "gemeten": 26,
+      "gepland": 29,
+      "gemeten": 29,
       "aantal": {
-        "gereden": 26,
+        "gereden": 29,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
         "niet gemeld": 0,
@@ -24,20 +24,20 @@
       "meldnorm": null
     },
     "302": {
-      "gepland": 242,
-      "gemeten": 238,
+      "gepland": 263,
+      "gemeten": 259,
       "aantal": {
-        "gereden": 228,
+        "gereden": 248,
         "uitval, op tijd": 2,
         "uitval, te laat": 5,
-        "niet gemeld": 3,
+        "niet gemeld": 4,
         "geen meting": 4
       },
       "percentage": {
         "gereden": 95.8,
         "uitval, op tijd": 0.8,
-        "uitval, te laat": 2.1,
-        "niet gemeld": 1.3
+        "uitval, te laat": 1.9,
+        "niet gemeld": 1.5
       },
       "meldnorm": {
         "norm_percentage": 95,
@@ -71,7 +71,7 @@
     {
       "datum": "2026-10-28",
       "lijn": "272",
-      "gereden": 14,
+      "gereden": 17,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
@@ -80,19 +80,19 @@
     {
       "datum": "2026-10-28",
       "lijn": "302",
-      "gereden": 108,
+      "gereden": 128,
       "uitval, op tijd": 1,
       "uitval, te laat": 1,
-      "niet gemeld": 0,
+      "niet gemeld": 1,
       "geen meting": 3
     }
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-10-28T18:28:03+01:00",
-    "gelukt": 953,
-    "verwacht": 1005,
-    "aandeel": 0.9483
+    "tot": "2026-10-28T21:12:16+01:00",
+    "gelukt": 1035,
+    "verwacht": 1087,
+    "aandeel": 0.9522
   },
   "haltesluitingen": [
     {
@@ -122,6 +122,7 @@
           "wat": "P+R afgesloten; bus lijn 302 (voorheen 202) stopte niet bij de halte"
         }
       ],
+      "nu_gesloten": false,
       "meetdagen": 0,
       "dagen_uit_planning": 0,
       "passages": {
