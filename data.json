@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-10-28T21:24:51+01:00",
+  "bijgewerkt": "2026-10-28T21:26:09+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-10-28"
@@ -121,7 +121,7 @@
           "soort": "eigen waarneming",
           "datum": "2026-10-22",
           "tijd": "20:55",
-          "wat": "P+R afgesloten; bus lijn 302 (voorheen 202) stopte niet bij de halte"
+          "wat": "P+R afgesloten; bus lijn 302 (voorheen 202) stopte niet bij de halte. De reisplanner-app toonde de halte als gewoon in gebruik; het scherm in de bus stond uit"
         },
         {
           "soort": "officieel",
