@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-10-28T21:17:24+01:00",
+  "bijgewerkt": "2026-10-28T21:24:51+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-10-28"
@@ -89,10 +89,10 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-10-28T21:16:16+01:00",
-    "gelukt": 1037,
-    "verwacht": 1089,
-    "aandeel": 0.9522
+    "tot": "2026-10-28T21:24:16+01:00",
+    "gelukt": 1041,
+    "verwacht": 1093,
+    "aandeel": 0.9524
   },
   "haltesluitingen": [
     {
@@ -110,6 +110,8 @@
           "soort": "officieel",
           "van": "2026-08-10",
           "tot": "2026-08-28",
+          "wat": "P+R, fietspad en bushaltes dicht",
+          "halte": true,
           "uitgever": "Rijkswaterstaat",
           "titel": "Rijkswaterstaat vernieuwt P+R Soesterberg vanaf 10 augustus",
           "url": "https://www.rijkswaterstaat.nl/nieuws/archief/2026/08/rijkswaterstaat-vernieuwt-p-r-soesterberg-vanaf-10-augustus-2026",
@@ -120,6 +122,17 @@
           "datum": "2026-10-22",
           "tijd": "20:55",
           "wat": "P+R afgesloten; bus lijn 302 (voorheen 202) stopte niet bij de halte"
+        },
+        {
+          "soort": "officieel",
+          "van": "2026-10-24",
+          "tot": "2026-10-25",
+          "wat": "P+R, fietspad en Richelleweg dicht",
+          "halte": false,
+          "uitgever": "Rijkswaterstaat",
+          "titel": "Rijkswaterstaat vernieuwt P+R Soesterberg vanaf 10 augustus",
+          "url": "https://www.rijkswaterstaat.nl/nieuws/archief/2026/08/rijkswaterstaat-vernieuwt-p-r-soesterberg-vanaf-10-augustus-2026",
+          "gecontroleerd": true
         }
       ],
       "nu_gesloten": false,

@@ -445,9 +445,10 @@ function grondItem(g) {
       ? el("a", { text: g.titel || g.url, attrs: { href: g.url, rel: "noopener" } })
       : el("span", { text: g.titel || "" });
     return el("li", null, [
-      el("span", { text: periode + ": " + (g.uitgever ? g.uitgever + ", " : "") }), bron,
+      el("span", { text: periode + ": " + (g.wat ? g.wat + ". " : "") + "Bron: " + (g.uitgever ? g.uitgever + ", " : "") }), bron,
       el("span", { cls: "label", text: g.gecontroleerd ? "officieel" : "officieel, nog niet gecontroleerd" }),
-    ]);
+      g.halte === false ? el("span", { cls: "muted", text: " Telt niet als haltesluiting: de bron noemt de bushalte niet." }) : null,
+    ].filter(Boolean));
   }
   return el("li", null, [
     el("span", { text: datumTekst(g.datum) + (g.tijd ? " rond " + g.tijd : "") + ": " + (g.wat || "") }),
@@ -469,8 +470,8 @@ function renderHaltes(data) {
     }
     kaart.appendChild(el("p", { cls: "halte-nu", text: h.nu_gesloten
       ? "Nu: dicht."
-      : "Nu: open, voor zover wij weten. Hieronder staat wanneer de halte dicht was." }));
-    kaart.appendChild(el("h4", { text: "Wanneer de halte dicht was" }));
+      : "Nu: open, voor zover wij weten." }));
+    kaart.appendChild(el("h4", { text: "Bekende sluitingen" }));
     kaart.appendChild(el("ul", { cls: "grond" }, (h.grond || []).map(grondItem)));
 
     const p = h.passages || {};
