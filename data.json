@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-10-28T21:14:39+01:00",
+  "bijgewerkt": "2026-10-28T21:17:24+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-10-28"
@@ -89,9 +89,9 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-10-28T21:14:16+01:00",
-    "gelukt": 1036,
-    "verwacht": 1088,
+    "tot": "2026-10-28T21:16:16+01:00",
+    "gelukt": 1037,
+    "verwacht": 1089,
     "aandeel": 0.9522
   },
   "haltesluitingen": [
@@ -113,7 +113,7 @@
           "uitgever": "Rijkswaterstaat",
           "titel": "Rijkswaterstaat vernieuwt P+R Soesterberg vanaf 10 augustus",
           "url": "https://www.rijkswaterstaat.nl/nieuws/archief/2026/08/rijkswaterstaat-vernieuwt-p-r-soesterberg-vanaf-10-augustus-2026",
-          "gecontroleerd": false
+          "gecontroleerd": true
         },
         {
           "soort": "eigen waarneming",
