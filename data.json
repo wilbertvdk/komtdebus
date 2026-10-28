@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-10-28T06:30:05+01:00",
+  "bijgewerkt": "2026-10-28T18:00:05+01:00",
   "meetperiode": {
     "van": "2026-10-27",
-    "tot": "2026-10-27"
+    "tot": "2026-10-28"
   },
   "lijnen": {
     "272": {
-      "gepland": 34,
-      "gemeten": 13,
+      "gepland": 47,
+      "gemeten": 26,
       "aantal": {
-        "gereden": 13,
+        "gereden": 26,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
         "niet gemeld": 0,
@@ -24,28 +24,28 @@
       "meldnorm": null
     },
     "302": {
-      "gepland": 296,
-      "gemeten": 134,
+      "gepland": 402,
+      "gemeten": 240,
       "aantal": {
-        "gereden": 126,
-        "uitval, op tijd": 1,
-        "uitval, te laat": 4,
+        "gereden": 230,
+        "uitval, op tijd": 2,
+        "uitval, te laat": 5,
         "niet gemeld": 3,
         "geen meting": 162
       },
       "percentage": {
-        "gereden": 94.0,
-        "uitval, op tijd": 0.7,
-        "uitval, te laat": 3.0,
-        "niet gemeld": 2.2
+        "gereden": 95.8,
+        "uitval, op tijd": 0.8,
+        "uitval, te laat": 2.1,
+        "niet gemeld": 1.2
       },
       "meldnorm": {
         "norm_percentage": 95,
-        "ritten": 5,
-        "haltes": 89,
-        "haltes_op_tijd": 45,
-        "mediaan_min_na_vertrek": 22,
-        "percentage_op_tijd": 50.6
+        "ritten": 7,
+        "haltes": 120,
+        "haltes_op_tijd": 72,
+        "mediaan_min_na_vertrek": 12,
+        "percentage_op_tijd": 60.0
       }
     }
   },
@@ -85,13 +85,31 @@
       "uitval, te laat": 4,
       "niet gemeld": 3,
       "geen meting": 14
+    },
+    {
+      "datum": "2026-10-28",
+      "lijn": "272",
+      "gereden": 13,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-10-28",
+      "lijn": "302",
+      "gereden": 104,
+      "uitval, op tijd": 1,
+      "uitval, te laat": 1,
+      "niet gemeld": 0,
+      "geen meting": 0
     }
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-10-28T06:29:07+01:00",
-    "gelukt": 637,
-    "verwacht": 645,
-    "aandeel": 0.9876
+    "tot": "2026-10-28T17:59:00+01:00",
+    "gelukt": 938,
+    "verwacht": 990,
+    "aandeel": 0.9475
   }
 }
