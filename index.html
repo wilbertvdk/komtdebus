@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Komt de bus? – lijn 272 en 302</title>
 <meta name="description" content="Onafhankelijke meting: rijden de bussen van U-OV lijn 272 en 302, en staat uitval op tijd in apps en op schermen bij de halte? Gebaseerd op open OV-data.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://komtdebus.nl/">
+<meta property="og:title" content="Komt de bus? Lijn 272 en 302">
+<meta property="og:description" content="Onafhankelijke meting: rijden de bussen van U-OV lijn 272 en 302, en staat uitval op tijd in apps en op schermen bij de halte? Meld ook wat jij meemaakt.">
+<meta property="og:locale" content="nl_NL">
 <style>
 :root {
   --bg: #fafaf7;
@@ -244,7 +249,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <p>Dit is een onafhankelijk burgerinitiatief van Wilbert van der Kruk. Het is niet verbonden aan een politieke partij, U-OV, de provincie of Rover. Ik ben lid van Volt en zeg dat open; dit project staat daar los van en de cijfers zijn voor iedereen.</p>
   <p>De cijfers zijn gebaseerd op openbare open data van <a href="https://gtfs.ovapi.nl/nl/" rel="noopener">OVapi</a>. De broncode is op verzoek beschikbaar.</p>
   <h3>Privacy</h3>
-  <p>Deze website gebruikt geen cookies en geen trackers. Bij een melding via het formulier wordt niet naar je naam gevraagd. Meldingen worden nooit op een herleidbare manier gepubliceerd.</p>
+  <p>Deze website gebruikt geen cookies. We tellen anoniem hoe vaak de pagina bezocht wordt, met <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a>: zonder cookies en zonder persoonsgegevens. Bij een melding via het formulier wordt niet naar je naam gevraagd. Meldingen worden nooit op een herleidbare manier gepubliceerd.</p>
 </section>
 </main>
 
@@ -252,6 +257,8 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <p>Onafhankelijk onderzoek op basis van open data. Geen officiële cijfers van U-OV of de provincie Utrecht.</p>
 </footer>
 </div>
+
+<script data-goatcounter="https://komtdebus.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
 <script>
 "use strict";
@@ -540,6 +547,11 @@ function renderDagen(data, heeftMetingen) {
   box.appendChild(el("div", { cls: "scroll" }, [tabel]));
 }
 
+// Telt een klik als anonieme gebeurtenis in GoatCounter; doet niets als het script niet geladen is.
+function telKlik(naam) {
+  try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: naam, title: naam, event: true }); } catch (e) {}
+}
+
 function renderMelden() {
   const box = document.getElementById("meld-box");
   leeg(box);
@@ -552,7 +564,10 @@ function renderMelden() {
   if (url) {
     knopBoven.href = url;
     knopBoven.rel = "noopener";
-    box.appendChild(el("a", { cls: "knop", text: "Open het meldformulier", attrs: { href: url, rel: "noopener" } }));
+    knopBoven.addEventListener("click", function () { telKlik("meldformulier-boven"); });
+    const knopOnder = el("a", { cls: "knop", text: "Open het meldformulier", attrs: { href: url, rel: "noopener" } });
+    knopOnder.addEventListener("click", function () { telKlik("meldformulier-onder"); });
+    box.appendChild(knopOnder);
   } else {
     box.appendChild(el("p", { cls: "box", text: "Het meldformulier komt binnenkort online." }));
   }
