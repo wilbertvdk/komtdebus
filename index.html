@@ -390,23 +390,44 @@ function renderLegenda(info, klassen) {
   return ul;
 }
 
-function minutenTekst(m) {
-  const n = Math.abs(m);
-  const eenheid = n === 1 ? " minuut" : " minuten";
-  if (m === 0) return "op het geplande vertrek";
-  return n + eenheid + (m > 0 ? " na" : " vóór") + " het geplande vertrek";
+function minuten(m) {
+  const n = Math.round(m);
+  return n + (n === 1 ? " minuut" : " minuten");
+}
+
+// Zin per rit: hoeveel annuleringen stonden er vóór vertrek, en hoe laat kwamen de andere.
+function meldingPerRit(norm) {
+  const n = norm.ritten, vooraf = norm.ritten_vooraf, laat = norm.ritten_na_vertrek;
+  if (vooraf == null || laat == null) return null;
+  const vooraanHalte = " Wie bij de eerste haltes stond, wist het dus niet.";
+  if (laat === 0) {
+    return n === 1
+      ? "De uitgevallen rit stond al vóór vertrek als geannuleerd in de open data."
+      : "Alle " + n + " uitgevallen ritten stonden al vóór vertrek als geannuleerd in de open data.";
+  }
+  const hoeLaat = laat === 1
+    ? "pas " + minuten(norm.mediaan_min_na_vertrek_laat) + " na het geplande vertrek."
+    : "pas ná het geplande vertrek, meestal zo'n " + minuten(norm.mediaan_min_na_vertrek_laat) + " later.";
+  if (vooraf === 0) {
+    return (n === 1 ? "Bij de uitgevallen rit" : "Bij alle " + n + " uitgevallen ritten") +
+      " verscheen de annulering " + hoeLaat + vooraanHalte;
+  }
+  return "Van de " + n + " uitgevallen ritten " + (vooraf === 1 ? "stond er 1" : "stonden er " + vooraf) +
+    " al vóór vertrek als geannuleerd in de open data. Bij " + (laat === 1 ? "de andere rit" : "de andere " + laat) +
+    " verscheen de annulering " + hoeLaat + vooraanHalte;
 }
 
 function renderMeldnorm(norm) {
   if (!norm || !norm.haltes) return null;
-  const rit = norm.ritten === 1 ? "1 vervallen rit" : norm.ritten + " vervallen ritten";
+  const perRit = meldingPerRit(norm);
   return el("div", { cls: "meldnorm" }, [
     el("h4", { text: "Werd de uitval op tijd gemeld?" }),
-    el("p", { text: "Bij " + procent(norm.percentage_op_tijd) + " van de haltepassages van vervallen ritten (" +
-      norm.haltes_op_tijd + " van " + norm.haltes + ", " + rit + ") stond de annulering al in de reisinformatie " +
-      "vóór de geplande passage. De norm in de modelbijlage voor concessies is " + norm.norm_percentage + "%." }),
-    el("p", { cls: "muted", text: "Een typische (mediaan) annulering verscheen " + minutenTekst(norm.mediaan_min_na_vertrek) +
-      ". Wij kijken elke 5 minuten, dus de melding kan iets eerder verschenen zijn dan wij zagen." }),
+    perRit ? el("p", { text: perRit }) : null,
+    el("p", { text: "De norm rekent per halte. Bij " + norm.haltes_op_tijd + " van de " + norm.haltes +
+      " haltepassages (" + procent(norm.percentage_op_tijd) + ") stond de annulering er al vóór de bus langs had moeten komen. " +
+      "De norm in de modelbijlage voor concessies is " + norm.norm_percentage + "%." }),
+    el("p", { cls: "muted", text: "We kijken elke 5 minuten in de open data van OVapi, dus een melding kan tot 5 minuten " +
+      "eerder verschenen zijn dan wij zagen. Wat apps als 9292 of de NS-app laten zien, kan hiervan afwijken." }),
   ]);
 }
 
