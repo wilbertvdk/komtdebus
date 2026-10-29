@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-10-29T16:33:25+01:00",
+  "bijgewerkt": "2026-10-29T18:00:04+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-10-29"
   },
   "lijnen": {
     "272": {
-      "gepland": 40,
-      "gemeten": 40,
+      "gepland": 42,
+      "gemeten": 42,
       "aantal": {
-        "gereden": 40,
+        "gereden": 42,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
         "niet gemeld": 0,
@@ -24,19 +24,19 @@
       "meldnorm": null
     },
     "302": {
-      "gepland": 363,
-      "gemeten": 359,
+      "gepland": 383,
+      "gemeten": 379,
       "aantal": {
-        "gereden": 348,
+        "gereden": 368,
         "uitval, op tijd": 2,
         "uitval, te laat": 5,
         "niet gemeld": 4,
         "geen meting": 4
       },
       "percentage": {
-        "gereden": 96.9,
-        "uitval, op tijd": 0.6,
-        "uitval, te laat": 1.4,
+        "gereden": 97.1,
+        "uitval, op tijd": 0.5,
+        "uitval, te laat": 1.3,
         "niet gemeld": 1.1
       },
       "meldnorm": {
@@ -89,7 +89,7 @@
     {
       "datum": "2026-10-29",
       "lijn": "272",
-      "gereden": 11,
+      "gereden": 13,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
@@ -98,7 +98,7 @@
     {
       "datum": "2026-10-29",
       "lijn": "302",
-      "gereden": 86,
+      "gereden": 106,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
@@ -107,10 +107,10 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-10-29T16:33:22+01:00",
-    "gelukt": 1614,
-    "verwacht": 1668,
-    "aandeel": 0.9676
+    "tot": "2026-10-29T17:59:25+01:00",
+    "gelukt": 1657,
+    "verwacht": 1711,
+    "aandeel": 0.9684
   },
   "haltesluitingen": [
     {
