@@ -145,6 +145,7 @@ ul.lijst li { margin-bottom: 4px; }
 .meld-top { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; margin: 16px 0 0; padding: 14px 16px; }
 .meld-top p { margin: 0; flex: 1 1 240px; }
 .meld-top .knop { margin: 0; }
+.knop.tweede { background: transparent; color: var(--accent); border: 2px solid var(--accent); padding: 12px 22px; }
 footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16px; font-size: 0.9rem; color: var(--muted); }
 </style>
 </head>
@@ -156,6 +157,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <div class="box meld-top" aria-label="Melden">
     <p><strong>Bus niet gekomen, of klopte de informatie niet?</strong> Meld het. <a href="#melden">Wat is handig om te melden?</a></p>
     <a class="knop" id="meld-top-knop" href="#melden">Meld het</a>
+    <a class="knop tweede deel-whatsapp" data-teller="whatsapp-boven" href="https://wa.me/?text=Wacht%20jij%20ook%20weleens%20op%20een%20bus%20van%20lijn%20272%20of%20302%20die%20niet%20komt%3F%20Op%20deze%20site%20zie%20je%20hoe%20vaak%20dat%20gebeurt%2C%20en%20kun%20je%20het%20melden%3A%20https%3A%2F%2Fkomtdebus.nl" rel="noopener">Deel via WhatsApp</a>
   </div>
 </header>
 
@@ -246,6 +248,8 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   </ul>
   <div id="meld-box"></div>
   <p class="muted">Klachten over je reis kun je ook bij U-OV melden; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
+  <p>Hoe meer reizigers meedoen, hoe sterker de cijfers. Ken je iemand die met lijn 272 of 302 reist? Stuur deze site door.</p>
+  <a class="knop tweede deel-whatsapp" data-teller="whatsapp-onder" href="https://wa.me/?text=Wacht%20jij%20ook%20weleens%20op%20een%20bus%20van%20lijn%20272%20of%20302%20die%20niet%20komt%3F%20Op%20deze%20site%20zie%20je%20hoe%20vaak%20dat%20gebeurt%2C%20en%20kun%20je%20het%20melden%3A%20https%3A%2F%2Fkomtdebus.nl" rel="noopener">Deel via WhatsApp</a>
 </section>
 
 <section id="over" aria-labelledby="h-over">
@@ -398,7 +402,7 @@ function minuten(m) {
 // Zin per rit: hoeveel annuleringen stonden er vóór vertrek, en hoe laat kwamen de andere.
 function meldingPerRit(norm) {
   const n = norm.ritten, vooraf = norm.ritten_vooraf, laat = norm.ritten_na_vertrek;
-  if (vooraf == null || laat == null) return null;
+  if (!n || vooraf == null || laat == null) return null;
   const vooraanHalte = " Wie bij de eerste haltes stond, wist het dus niet.";
   if (laat === 0) {
     return n === 1
@@ -417,17 +421,29 @@ function meldingPerRit(norm) {
     " verscheen de annulering " + hoeLaat + vooraanHalte;
 }
 
-function renderMeldnorm(norm) {
+// Vanaf deze dag leggen we per halte vast sinds wanneer hij als overgeslagen gemeld is.
+const PER_HALTE_SINDS = "2026-10-31";
+
+function renderMeldnorm(norm, periode) {
   if (!norm || !norm.haltes) return null;
+  const teStreng = periode && periode.van && periode.van < PER_HALTE_SINDS;
   const perRit = meldingPerRit(norm);
+  const ingekort = norm.ritten_ingekort || 0;
+  const ingekortTekst = ingekort === 0 ? "" : (ingekort === 1 ? "1 rit werd" : ingekort + " ritten werden") +
+    " ingekort: de bus reed maar een deel van de route. " + (ingekort === 1 ? "De" : "Hun") +
+    " overgeslagen haltes tellen hieronder mee.";
   return el("div", { cls: "meldnorm" }, [
     el("h4", { text: "Werd de uitval op tijd gemeld?" }),
     perRit ? el("p", { text: perRit }) : null,
+    ingekortTekst ? el("p", { text: ingekortTekst }) : null,
     el("p", { text: "De norm rekent per halte. Bij " + norm.haltes_op_tijd + " van de " + norm.haltes +
-      " haltepassages (" + procent(norm.percentage_op_tijd) + ") stond de annulering er al vóór de bus langs had moeten komen. " +
+      " vervallen haltepassages (" + procent(norm.percentage_op_tijd) + ") stond dat er al vóór de bus langs had moeten komen. " +
       "De norm in de modelbijlage voor concessies is " + norm.norm_percentage + "%." }),
     el("p", { cls: "muted", text: "We kijken elke 5 minuten in de open data van OVapi, dus een melding kan tot 5 minuten " +
       "eerder verschenen zijn dan wij zagen. Wat apps als 9292 of de NS-app laten zien, kan hiervan afwijken." }),
+    teStreng ? el("p", { cls: "muted", text: "Tot en met 30 oktober legden we niet vast welke haltes al eerder als overgeslagen " +
+      "gemeld waren. Voor die dagen telt pas het moment waarop de hele rit geannuleerd werd, en ritten die alleen ingekort " +
+      "werden ontbreken. Het percentage is daardoor waarschijnlijk te laag; vanaf 31 oktober meten we dit per halte." }) : null,
   ]);
 }
 
@@ -452,7 +468,7 @@ function renderLijnen(data, heeftMetingen) {
       kaart.appendChild(el("p", { text: "Gemeten ritten: " + info.gemeten + ". Percentages gaan over deze ritten." }));
       kaart.appendChild(renderBalk(lijn, info));
       kaart.appendChild(renderLegenda(info));
-      const norm = renderMeldnorm(info.meldnorm);
+      const norm = renderMeldnorm(info.meldnorm, data.meetperiode);
       if (norm) kaart.appendChild(norm);
     }
     const zonder = info.aantal["geen meting"] || 0;
@@ -607,6 +623,9 @@ function render(data) {
 }
 
 renderMelden();
+document.querySelectorAll(".deel-whatsapp").forEach(function (a) {
+  a.addEventListener("click", function () { telKlik(a.dataset.teller); });
+});
 fetch("data.json", { cache: "no-store" })
   .then(function (r) {
     if (!r.ok) throw new Error("HTTP " + r.status);
