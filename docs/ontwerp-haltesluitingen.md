@@ -39,7 +39,7 @@ zien op welke grond een halte als gesloten geldt. De meetcode leest het bestand.
       "waarnemingen": [
         {
           "datum": "2026-10-22",
-          "tijd": "20:55",
+          "tijd": "20:50",
           "soort": "eigen waarneming",
           "wat": "P+R afgesloten; bus lijn 302 stopte niet bij de halte"
         }
@@ -169,7 +169,7 @@ Een nieuw blok `haltesluitingen`, naast `lijnen` en `dagen`. De bestaande velden
     "lijnen": ["203", "299", "302", "315", "376"],
     "grond": [
       { "soort": "officieel", "van": "2026-08-10", "tot": "2026-08-28", "titel": "…", "url": "…", "gecontroleerd": false },
-      { "soort": "eigen waarneming", "datum": "2026-10-22", "tijd": "20:55", "wat": "…" }
+      { "soort": "eigen waarneming", "datum": "2026-10-22", "tijd": "20:50", "wat": "…" }
     ],
     "meetdagen": 1,
     "dagen_uit_planning": 0,
@@ -246,7 +246,7 @@ Wat bekend is, en hoe zeker:
 | Omleiding van 10 t/m 30 augustus, halte vervalt | U-OV | Gevonden via zoekmachine, nog niet zelf gelezen. Einddatum wijkt af van Rijkswaterstaat |
 | P+R en fietspad dicht op 24 en 25 oktober 2026, ook de Richelleweg | Rijkswaterstaat (zelfde bericht) | Gelezen op 28 oktober 2026. Over de bushaltes staat er voor dit weekend niets, dus het telt niet als haltesluiting |
 | Halte vervalt van 10 oktober 07:00 t/m 26 oktober 05:00 (lijn 302, 315, 376) | U-OV/Keolis | Zonder jaartal, pagina op 27 oktober 2026 niet meer te vinden. **Niet opnemen tot bevestigd** |
-| 22 oktober 2026, rond 20:55: P+R afgesloten, bus lijn 302 (voorheen 202) stopte niet | Eigen waarneming | Vastgelegd |
+| 22 oktober 2026, bus van 20:50 (dienstregeling): P+R afgesloten, bus lijn 302 (voorheen 202) stopte niet | Eigen waarneming | Vastgelegd |
 
 Alleen de waarneming van 22 oktober staat al vast. De officiële periode voor oktober volgt
 hopelijk uit het antwoord van U-OV en de provincie op de klacht.
