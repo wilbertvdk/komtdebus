@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-10-31T09:12:55+01:00",
+  "bijgewerkt": "2026-10-31T09:14:26+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-10-31"
@@ -137,10 +137,10 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-10-31T09:12:19+01:00",
-    "gelukt": 2832,
-    "verwacht": 2887,
-    "aandeel": 0.9809
+    "tot": "2026-10-31T09:14:19+01:00",
+    "gelukt": 2833,
+    "verwacht": 2888,
+    "aandeel": 0.981
   },
   "haltesluitingen": [
     {
@@ -168,8 +168,8 @@
         {
           "soort": "eigen waarneming",
           "datum": "2026-10-22",
-          "tijd": "20:55",
-          "wat": "P+R afgesloten; bus lijn 302 (voorheen 202) stopte niet bij de halte. De reiziger had vooraf in de NS-reisplanner gekeken: die gaf aan dat de bus om 20:50 bij P+R Soesterberg zou stoppen. Het scherm in de bus stond uit"
+          "tijd": "20:50",
+          "wat": "P+R afgesloten; de bus van lijn 302 (voorheen 202), volgens de dienstregeling om 20:50 bij deze halte, stopte er niet. De reiziger had vooraf in de NS-reisplanner gekeken: die gaf aan dat de bus hier zou stoppen. Het scherm in de bus stond uit"
         },
         {
           "soort": "officieel",
