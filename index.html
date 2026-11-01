@@ -153,10 +153,9 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 <div class="wrap">
 <header>
   <h1>Komt de bus? Lijn 272, 302, 315 en 376</h1>
-  <p class="lead">Deze website meet of de bussen van U-OV tussen Baarn, Amersfoort en Utrecht Science Park rijden, en of uitval op tijd in apps en op de schermen bij de halte te zien is. Het gaat om lijn 272 (Baarn – Utrecht Science Park) en de U-liners 302, 315 en 376 tussen Amersfoort en Utrecht Science Park, via Soesterberg.</p>
-  <p>Vanaf 13 december 2026 neemt lijn 376 het grootste deel van lijn 302 over: 376 wordt dan de doorgaande lijn Bunschoten – Amersfoort – Utrecht Science Park – Vianen, en 302 rijdt alleen nog van en naar Amersfoort Nieuwland. Daarom meten we sinds 1 november ook lijn 315 en 376.</p>
+  <p class="lead">Rijden de bussen van U-OV tussen Baarn, Amersfoort en Utrecht Science Park, en zie je uitval op tijd in de app en op het scherm bij de halte? Dat meten we hier, elke rit.</p>
   <div class="box meld-top" aria-label="Melden">
-    <p><strong>Bus niet gekomen, of klopte de informatie niet?</strong> Meld het. <a href="#melden">Wat is handig om te melden?</a></p>
+    <p><strong>Bus niet gekomen, of klopte de informatie niet?</strong></p>
     <a class="knop" id="meld-top-knop" href="#melden">Meld het</a>
     <a class="knop tweede deel-whatsapp" data-teller="whatsapp-boven" href="https://wa.me/?text=Wacht%20jij%20ook%20weleens%20op%20een%20bus%20van%20lijn%20272%2C%20302%2C%20315%20of%20376%20die%20niet%20komt%3F%20Op%20deze%20site%20zie%20je%20hoe%20vaak%20dat%20gebeurt%2C%20en%20kun%20je%20het%20melden%3A%20https%3A%2F%2Fkomtdebus.nl" rel="noopener">Deel via WhatsApp</a>
   </div>
@@ -176,8 +175,8 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 </section>
 
 <section id="haltes" aria-labelledby="h-haltes" hidden>
-  <h2 id="h-haltes">Tijdelijk gesloten haltes</h2>
-  <p>Soms is een halte een tijd dicht, bijvoorbeeld door werk aan de weg, terwijl hij nog in de dienstregeling en in de apps staat. Voor zulke haltes meten we, zolang ze dicht zijn, of de reisinformatie erbij zette dat de bus er niet stopt.</p>
+  <h2 id="h-haltes">Halte nu gesloten</h2>
+  <p>Staat de bus hier in de app, terwijl de halte dicht is? We meten of de reisinformatie meldt dat de bus er niet stopt.</p>
   <div id="haltes-box"></div>
 </section>
 
@@ -191,74 +190,42 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 
 <section id="methode" aria-labelledby="h-methode">
   <h2 id="h-methode">Hoe we meten</h2>
-  <p>Er wordt niets aangestuurd of aangepast; alleen openbare data wordt gelezen. Drie bronnen:</p>
-  <ul class="lijst">
-    <li>Elke 2 minuten: de posities van de voertuigen van lijn 272, 302, 315 en 376.</li>
-    <li>Elke 5 minuten: de ritupdates, waarin ook staat of een rit is geannuleerd.</li>
-    <li>Elke dag: de dienstregeling, dus welke ritten er gepland zijn.</li>
-  </ul>
-  <p>Elke geplande rit komt in één van deze groepen:</p>
-  <dl class="def">
-    <dt>Gereden</dt>
-    <dd>Er zijn voertuigposities van deze rit gezien.</dd>
-    <dt>Uitval, op tijd gemeld</dt>
-    <dd>De rit is geannuleerd en dat stond vóór het geplande vertrek in de reisinformatie.</dd>
-    <dt>Uitval, te laat gemeld</dt>
-    <dd>De rit is geannuleerd, maar dat stond pas ná het geplande vertrek in de reisinformatie.</dd>
-    <dt>Niet gemeld</dt>
-    <dd>Er is geen bus gezien en er stond geen annulering in de reisinformatie, terwijl er wel gemeten werd. Dit is de rit waar een reiziger tevergeefs op wacht.</dd>
-    <dt>Geen meting</dt>
-    <dd>Er zijn te weinig metingen rond de rit, bijvoorbeeld door een storing bij ons. Deze rit telt niet mee.</dd>
-  </dl>
-  <p><strong>Let op:</strong> “niet gemeld” is een bovengrens. Een bus met een kapot volgsysteem rijdt wel, maar lijkt in de data uitgevallen. Daarom controleren we ook met steekproeven bij de halte.</p>
-  <p>Ritten zonder genoeg metingen tellen niet mee in de percentages. Percentages gaan alleen over gemeten ritten.</p>
-
-  <h3>Gesloten haltes</h3>
-  <p>Voor een gesloten halte kijken we naar elke geplande haltepassage, van alle lijnen die er stoppen. Een halte geldt als gesloten op de dagen waarvoor een officiële bron dat zegt, en rond een eigen waarneming (een uur ervoor tot een uur erna). Elke passage komt in één groep:</p>
-  <dl class="def">
-    <dt>Overgeslagen, op tijd gemeld</dt>
-    <dd>De ritupdate meldde vóór de geplande tijd dat de bus de halte overslaat. Reisplanners kunnen er dan rekening mee houden.</dd>
-    <dt>Overgeslagen, te laat gemeld</dt>
-    <dd>Die melding kwam pas ná de geplande tijd.</dd>
-    <dt>Alleen een bericht</dt>
-    <dd>De halte werd niet als overgeslagen gemeld, maar er stond wel een servicebericht over. Alleen wie het bericht leest, weet het.</dd>
-    <dt>Niet gemeld</dt>
-    <dd>Geen overgeslagen stop en geen bericht: voor de reiziger bestaat de halte nog gewoon.</dd>
-    <dt>Geen meting</dt>
-    <dd>Te weinig ritupdates rond de geplande tijd. Deze passage telt niet mee.</dd>
-  </dl>
-  <p>Het beste is als de halte helemaal uit de dienstregeling is gehaald. Die dagen tellen we apart. Een rit die helemaal is geannuleerd, telt hier niet mee; die zit al in de ritmeting. Of de norm van 95% ook voor vervallen haltes geldt, staat niet vast. Daarom tonen we bij haltes geen norm.</p>
-
-  <h3>De norm</h3>
-  <p>De modelbijlage <a href="https://dova.nu/sites/default/files/Concessiebijlage_Datasets_OV%20V2.2.4_def%202024_0.pdf" rel="noopener">Datasets OV</a> (DOVA, versie 2.2.4) bevat de afspraken over reisinformatie in OV-concessies. Daarin staat dat een bericht over een vervallen rit in <strong>95% van de gevallen vóór de geplande haltepassagetijd</strong> ontvangen moet zijn (eis K17.2). Een rit die door een defect volgsysteem niet gevolgd kan worden, moet vóór het begin van de rit worden gemeld (K17.4).</p>
-  <p>Per vervallen rit tellen we de haltes waarvan de geplande tijd ná het moment valt waarop wij de annulering voor het eerst zagen. Zo toetsen we aan dezelfde maatstaf als de eis. Of precies deze norm in de concessie van de provincie Utrecht staat, hebben we nog niet kunnen vaststellen. Voor een reiziger bij de eerste halte is vooral het geplande vertrek van belang; daarom delen we de ritten ook in “op tijd” en “te laat” op dat moment in.</p>
+  <p>We lezen alleen openbare reisinformatie: elke 2 minuten waar de bussen rijden, elke 5 minuten welke ritten vervallen, en elke dag de dienstregeling.</p>
+  <details>
+    <summary>Wat betekenen de groepen?</summary>
+    <dl class="def">
+      <dt>Gereden</dt>
+      <dd>We hebben de bus zien rijden.</dd>
+      <dt>Uitval, op tijd gemeld</dt>
+      <dd>De rit viel uit en dat stond vóór het geplande vertrek in de reisinformatie.</dd>
+      <dt>Uitval, te laat gemeld</dt>
+      <dd>De rit viel uit, maar dat stond er pas ná het geplande vertrek.</dd>
+      <dt>Niet gemeld</dt>
+      <dd>Geen bus gezien en geen melding: de rit waar je tevergeefs op wacht. Dit is een bovengrens, want een bus met een kapot volgsysteem rijdt wel maar lijkt uitgevallen.</dd>
+      <dt>Geen meting</dt>
+      <dd>Te weinig metingen, bijvoorbeeld door een storing bij ons. Telt niet mee.</dd>
+    </dl>
+    <p>Wat apps als de NS-app of 9292 laten zien, kan afwijken van de open data die wij lezen. Lijn 315 en 376 meten we sinds 1 november; vanaf 13 december neemt 376 het grootste deel van 302 over.</p>
+  </details>
+  <details>
+    <summary>De norm</summary>
+    <p>Volgens de landelijke afspraken over reisinformatie (<a href="https://dova.nu/sites/default/files/Concessiebijlage_Datasets_OV%20V2.2.4_def%202024_0.pdf" rel="noopener">DOVA, eis K17.2</a>) moet uitval in <strong>95% van de gevallen vóór de geplande passage bij de halte</strong> gemeld zijn. Wij tellen per vervallen rit de haltes waar de melding op tijd was. Of precies deze norm in de Utrechtse concessie staat, is nog niet vastgesteld.</p>
+  </details>
 </section>
 
 <section id="melden" aria-labelledby="h-melden">
   <h2 id="h-melden">Meld wat jij meemaakt</h2>
-  <p>Meldingen van reizigers helpen om de metingen te controleren. Staat een rit als “niet gemeld” in onze cijfers, dan kan jouw ervaring laten zien of de bus echt niet kwam.</p>
-  <p>Wat is handig om te melden?</p>
-  <ul class="lijst">
-    <li>De datum en de tijd</li>
-    <li>De lijn (272, 302, 315 of 376)</li>
-    <li>De halte</li>
-    <li>De richting</li>
-    <li>Wat er gebeurde: de bus kwam niet, kwam te laat, reed een andere route, of de informatie klopte niet</li>
-    <li>Wat de app of het scherm bij de halte liet zien</li>
-    <li>Of de halte dicht was, terwijl hij wel in de app of op het scherm stond</li>
-  </ul>
+  <p>Jouw ervaring laat zien wat de data mist. Noem de datum, tijd, lijn en halte, en wat de app of het scherm liet zien. Een screenshot met de klok erop helpt extra.</p>
   <div id="meld-box"></div>
-  <p class="muted">Klachten over je reis kun je ook bij U-OV melden; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
-  <p>Hoe meer reizigers meedoen, hoe sterker de cijfers. Ken je iemand die met lijn 272, 302, 315 of 376 reist? Stuur deze site door.</p>
+  <p class="muted">Een klacht kun je ook bij U-OV indienen; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
+  <p>Ken je iemand die met deze bussen reist? Stuur de site door.</p>
   <a class="knop tweede deel-whatsapp" data-teller="whatsapp-onder" href="https://wa.me/?text=Wacht%20jij%20ook%20weleens%20op%20een%20bus%20van%20lijn%20272%2C%20302%2C%20315%20of%20376%20die%20niet%20komt%3F%20Op%20deze%20site%20zie%20je%20hoe%20vaak%20dat%20gebeurt%2C%20en%20kun%20je%20het%20melden%3A%20https%3A%2F%2Fkomtdebus.nl" rel="noopener">Deel via WhatsApp</a>
 </section>
 
 <section id="over" aria-labelledby="h-over">
   <h2 id="h-over">Over dit project</h2>
-  <p>Dit is een onafhankelijk burgerinitiatief van Wilbert van der Kruk. Het is niet verbonden aan een politieke partij, U-OV, de provincie of Rover. Ik ben lid van Volt en zeg dat open; dit project staat daar los van en de cijfers zijn voor iedereen.</p>
-  <p>De cijfers zijn gebaseerd op openbare open data van <a href="https://gtfs.ovapi.nl/nl/" rel="noopener">OVapi</a>. De broncode is op verzoek beschikbaar.</p>
-  <h3>Privacy</h3>
-  <p>Deze website gebruikt geen cookies. We tellen anoniem hoe vaak de pagina bezocht wordt, met <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a>: zonder cookies en zonder persoonsgegevens. Bij een melding via het formulier wordt niet naar je naam gevraagd. Meldingen worden nooit op een herleidbare manier gepubliceerd.</p>
+  <p>Een onafhankelijk burgerinitiatief van Wilbert van der Kruk, op basis van open data van <a href="https://gtfs.ovapi.nl/nl/" rel="noopener">OVapi</a>. Niet verbonden aan U-OV, de provincie, Rover of een partij. Ik ben lid van Volt; dit project staat daar los van.</p>
+  <p class="muted">Geen cookies. Bezoeken tellen we anoniem met <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a>. Meldingen zijn zonder naam en worden nooit herleidbaar gepubliceerd.</p>
 </section>
 </main>
 
@@ -360,7 +327,7 @@ function renderStatus(data, heeftMetingen) {
     : "nog niet begonnen");
   rij("Meetdekking", dekking.aandeel == null
     ? "nog geen gegevens"
-    : Math.round(dekking.aandeel * 100) + "% van de 2-minuutmetingen is gelukt (" + getal(dekking.gelukt) + " van " + getal(dekking.verwacht) + ")");
+    : Math.round(dekking.aandeel * 100) + "% van de metingen gelukt");
   box.appendChild(dl);
 
   if (!heeftMetingen) {
@@ -409,22 +376,16 @@ function minuten(m) {
 function meldingPerRit(norm) {
   const n = norm.ritten, vooraf = norm.ritten_vooraf, laat = norm.ritten_na_vertrek;
   if (!n || vooraf == null || laat == null) return null;
-  const vooraanHalte = " Wie bij de eerste haltes stond, wist het dus niet.";
   if (laat === 0) {
-    return n === 1
-      ? "De uitgevallen rit stond al vóór vertrek als geannuleerd in de open data."
-      : "Alle " + n + " uitgevallen ritten stonden al vóór vertrek als geannuleerd in de open data.";
+    return n === 1 ? "De uitgevallen rit was vóór vertrek gemeld." : "Alle " + n + " uitgevallen ritten waren vóór vertrek gemeld.";
   }
   const hoeLaat = laat === 1
-    ? "pas " + minuten(norm.mediaan_min_na_vertrek_laat) + " na het geplande vertrek."
-    : "pas ná het geplande vertrek, meestal zo'n " + minuten(norm.mediaan_min_na_vertrek_laat) + " later.";
+    ? "pas " + minuten(norm.mediaan_min_na_vertrek_laat) + " na vertrek gemeld."
+    : "pas na vertrek gemeld, meestal zo'n " + minuten(norm.mediaan_min_na_vertrek_laat) + " later.";
   if (vooraf === 0) {
-    return (n === 1 ? "Bij de uitgevallen rit" : "Bij alle " + n + " uitgevallen ritten") +
-      " verscheen de annulering " + hoeLaat + vooraanHalte;
+    return (n === 1 ? "De uitgevallen rit werd " : "Alle " + n + " uitgevallen ritten werden ") + hoeLaat;
   }
-  return "Van de " + n + " uitgevallen ritten " + (vooraf === 1 ? "stond er 1" : "stonden er " + vooraf) +
-    " al vóór vertrek als geannuleerd in de open data. Bij " + (laat === 1 ? "de andere rit" : "de andere " + laat) +
-    " verscheen de annulering " + hoeLaat + vooraanHalte;
+  return "Van de " + n + " uitgevallen ritten " + (laat === 1 ? "werd er 1 " : "werden er " + laat + " ") + hoeLaat;
 }
 
 // Vanaf deze dag leggen we per halte vast sinds wanneer hij als overgeslagen gemeld is.
@@ -436,20 +397,13 @@ function renderMeldnorm(norm, periode) {
   const perRit = meldingPerRit(norm);
   const ingekort = norm.ritten_ingekort || 0;
   const ingekortTekst = ingekort === 0 ? "" : (ingekort === 1 ? "1 rit werd" : ingekort + " ritten werden") +
-    " ingekort: de bus reed maar een deel van de route. " + (ingekort === 1 ? "De" : "Hun") +
-    " overgeslagen haltes tellen hieronder mee.";
+    " ingekort; die haltes tellen mee.";
   return el("div", { cls: "meldnorm" }, [
-    el("h4", { text: "Werd de uitval op tijd gemeld?" }),
-    perRit ? el("p", { text: perRit }) : null,
-    ingekortTekst ? el("p", { text: ingekortTekst }) : null,
-    el("p", { text: "De norm rekent per halte. Bij " + norm.haltes_op_tijd + " van de " + norm.haltes +
-      " vervallen haltepassages (" + procent(norm.percentage_op_tijd) + ") stond dat er al vóór de bus langs had moeten komen. " +
-      "De norm in de modelbijlage voor concessies is " + norm.norm_percentage + "%." }),
-    el("p", { cls: "muted", text: "We kijken elke 5 minuten in de open data van OVapi, dus een melding kan tot 5 minuten " +
-      "eerder verschenen zijn dan wij zagen. Wat apps als 9292 of de NS-app laten zien, kan hiervan afwijken." }),
-    teStreng ? el("p", { cls: "muted", text: "Tot en met 30 oktober legden we niet vast welke haltes al eerder als overgeslagen " +
-      "gemeld waren. Voor die dagen telt pas het moment waarop de hele rit geannuleerd werd, en ritten die alleen ingekort " +
-      "werden ontbreken. Het percentage is daardoor waarschijnlijk te laag; vanaf 31 oktober meten we dit per halte." }) : null,
+    el("h4", { text: "Op tijd gemeld?" }),
+    perRit || ingekortTekst ? el("p", { text: [perRit, ingekortTekst].filter(Boolean).join(" ") }) : null,
+    el("p", { text: "Per halte: " + procent(norm.percentage_op_tijd) + " op tijd gemeld (" + norm.haltes_op_tijd + " van " +
+      norm.haltes + "). Norm: " + norm.norm_percentage + "%." }),
+    teStreng ? el("p", { cls: "muted", text: "Tot 31 oktober maten we dit nog niet per halte; het percentage is daardoor waarschijnlijk te laag." }) : null,
   ]);
 }
 
@@ -474,7 +428,7 @@ function renderLijnen(data, heeftMetingen) {
     if (!info.gemeten) {
       kaart.appendChild(el("p", { text: "Nog geen afgeronde metingen voor deze lijn." }));
     } else {
-      kaart.appendChild(el("p", { text: "Gemeten ritten: " + info.gemeten + ". Percentages gaan over deze ritten." }));
+      kaart.appendChild(el("p", { cls: "muted", text: info.gemeten + " gemeten ritten" }));
       kaart.appendChild(renderBalk(lijn, info));
       kaart.appendChild(renderLegenda(info));
       const norm = renderMeldnorm(info.meldnorm, info.meetperiode || data.meetperiode);
@@ -517,7 +471,8 @@ function renderHaltes(data) {
   const sectie = document.getElementById("haltes");
   const box = document.getElementById("haltes-box");
   leeg(box);
-  const lijst = (data && data.haltesluitingen) || [];
+  // Alleen haltes die nu dicht zijn; afgelopen sluitingen blijven in data.json maar niet op de pagina.
+  const lijst = ((data && data.haltesluitingen) || []).filter(function (h) { return h.nu_gesloten; });
   sectie.hidden = !lijst.length;
   lijst.forEach(function (h) {
     const kaart = el("article", { cls: "box" });
