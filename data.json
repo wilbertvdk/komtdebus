@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-01T11:16:34+01:00",
+  "bijgewerkt": "2026-11-01T11:19:47+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-11-01"
@@ -83,10 +83,10 @@
       }
     },
     "376": {
-      "gepland": 11,
-      "gemeten": 11,
+      "gepland": 12,
+      "gemeten": 12,
       "aantal": {
-        "gereden": 11,
+        "gereden": 12,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
         "niet gemeld": 0,
@@ -219,7 +219,7 @@
     {
       "datum": "2026-11-01",
       "lijn": "376",
-      "gereden": 8,
+      "gereden": 9,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
@@ -228,9 +228,9 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-11-01T11:14:52+01:00",
-    "gelukt": 3614,
-    "verwacht": 3668,
+    "tot": "2026-11-01T11:18:52+01:00",
+    "gelukt": 3616,
+    "verwacht": 3670,
     "aandeel": 0.9853
   },
   "haltesluitingen": [
