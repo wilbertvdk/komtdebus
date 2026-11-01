@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-01T11:19:47+01:00",
+  "bijgewerkt": "2026-11-01T18:00:06+01:00",
   "meetperiode": {
     "van": "2026-10-27",
     "tot": "2026-11-01"
@@ -28,32 +28,32 @@
       }
     },
     "302": {
-      "gepland": 618,
-      "gemeten": 614,
+      "gepland": 631,
+      "gemeten": 627,
       "aantal": {
-        "gereden": 601,
-        "uitval, op tijd": 4,
-        "uitval, te laat": 5,
+        "gereden": 612,
+        "uitval, op tijd": 5,
+        "uitval, te laat": 6,
         "niet gemeld": 4,
         "geen meting": 4
       },
       "percentage": {
-        "gereden": 97.9,
-        "uitval, op tijd": 0.7,
-        "uitval, te laat": 0.8,
-        "niet gemeld": 0.7
+        "gereden": 97.6,
+        "uitval, op tijd": 0.8,
+        "uitval, te laat": 1.0,
+        "niet gemeld": 0.6
       },
       "meldnorm": {
         "norm_percentage": 95,
-        "ritten": 9,
-        "ritten_vooraf": 4,
+        "ritten": 11,
+        "ritten_vooraf": 5,
         "ritten_ingekort": 0,
-        "haltes": 148,
-        "haltes_op_tijd": 100,
+        "haltes": 168,
+        "haltes_op_tijd": 116,
         "mediaan_min_na_vertrek": 12,
-        "ritten_na_vertrek": 5,
-        "mediaan_min_na_vertrek_laat": 22,
-        "percentage_op_tijd": 67.6
+        "ritten_na_vertrek": 6,
+        "mediaan_min_na_vertrek_laat": 17.0,
+        "percentage_op_tijd": 69.0
       },
       "meetperiode": {
         "van": "2026-10-27",
@@ -83,29 +83,29 @@
       }
     },
     "376": {
-      "gepland": 12,
-      "gemeten": 12,
+      "gepland": 38,
+      "gemeten": 38,
       "aantal": {
-        "gereden": 12,
-        "uitval, op tijd": 0,
+        "gereden": 34,
+        "uitval, op tijd": 4,
         "uitval, te laat": 0,
         "niet gemeld": 0,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 100.0,
-        "uitval, op tijd": 0.0,
+        "gereden": 89.5,
+        "uitval, op tijd": 10.5,
         "uitval, te laat": 0.0,
         "niet gemeld": 0.0
       },
       "meldnorm": {
         "norm_percentage": 95,
-        "ritten": 0,
-        "ritten_vooraf": 0,
-        "ritten_ingekort": 6,
-        "haltes": 6,
-        "haltes_op_tijd": 6,
-        "mediaan_min_na_vertrek": null,
+        "ritten": 4,
+        "ritten_vooraf": 4,
+        "ritten_ingekort": 17,
+        "haltes": 89,
+        "haltes_op_tijd": 89,
+        "mediaan_min_na_vertrek": -677.0,
         "ritten_na_vertrek": 0,
         "mediaan_min_na_vertrek_laat": null,
         "percentage_op_tijd": 100.0
@@ -210,17 +210,17 @@
     {
       "datum": "2026-11-01",
       "lijn": "302",
-      "gereden": 9,
-      "uitval, op tijd": 0,
-      "uitval, te laat": 0,
+      "gereden": 20,
+      "uitval, op tijd": 1,
+      "uitval, te laat": 1,
       "niet gemeld": 0,
       "geen meting": 0
     },
     {
       "datum": "2026-11-01",
       "lijn": "376",
-      "gereden": 9,
-      "uitval, op tijd": 0,
+      "gereden": 31,
+      "uitval, op tijd": 4,
       "uitval, te laat": 0,
       "niet gemeld": 0,
       "geen meting": 0
@@ -228,10 +228,10 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-11-01T11:18:52+01:00",
-    "gelukt": 3616,
-    "verwacht": 3670,
-    "aandeel": 0.9853
+    "tot": "2026-11-01T17:58:58+01:00",
+    "gelukt": 3817,
+    "verwacht": 3870,
+    "aandeel": 0.9863
   },
   "haltesluitingen": [
     {
