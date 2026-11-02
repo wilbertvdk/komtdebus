@@ -97,6 +97,7 @@ dl.status dd { margin: 0; overflow-wrap: anywhere; }
 .seg { height: 100%; min-width: 2px; }
 .seg + .seg { border-left: 2px solid var(--surface); }
 .seg.gereden { background: var(--c-gereden); }
+.seg.ingekort { background: repeating-linear-gradient(90deg, var(--c-gereden) 0 6px, var(--surface) 6px 9px); }
 .seg.optijd { background: var(--c-optijd); }
 .seg.telaat { background: repeating-linear-gradient(45deg, var(--c-telaat) 0 6px, var(--surface) 6px 8px); }
 .seg.nietgemeld { background: repeating-linear-gradient(135deg, var(--c-nietgemeld) 0 3px, var(--surface) 3px 5px); }
@@ -106,6 +107,7 @@ ul.legenda li { display: grid; grid-template-columns: 18px 1fr auto; gap: 8px; a
 ul.legenda li:first-child { border-top: 0; }
 .sw { width: 18px; height: 18px; border-radius: 3px; border: 1px solid var(--border); }
 .sw.gereden { background: var(--c-gereden); }
+.sw.ingekort { background: repeating-linear-gradient(90deg, var(--c-gereden) 0 3px, var(--surface) 3px 5px); }
 .sw.optijd { background: var(--c-optijd); }
 .sw.telaat { background: repeating-linear-gradient(45deg, var(--c-telaat) 0 4px, var(--surface) 4px 6px); }
 .sw.nietgemeld { background: repeating-linear-gradient(135deg, var(--c-nietgemeld) 0 2px, var(--surface) 2px 4px); }
@@ -196,6 +198,8 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
     <dl class="def">
       <dt>Gereden</dt>
       <dd>We hebben de bus zien rijden.</dd>
+      <dt>Ingekort</dt>
+      <dd>De bus reed, maar niet de hele route: de vervoerder meldde een deel van de haltes als overgeslagen. Vaak keert een bus die te laat is eerder, om de terugrit te halen. Wie bij die haltes wacht, ziet de bus niet komen.</dd>
       <dt>Uitval, op tijd gemeld</dt>
       <dd>De rit viel uit en dat stond vóór het geplande vertrek in de reisinformatie.</dd>
       <dt>Uitval, te laat gemeld</dt>
@@ -205,7 +209,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
       <dt>Geen meting</dt>
       <dd>Te weinig metingen, bijvoorbeeld door een storing bij ons. Telt niet mee.</dd>
     </dl>
-    <p>Wat apps als de NS-app of 9292 laten zien, kan afwijken van de open data die wij lezen. Lijn 315 en 376 meten we sinds 1 november; vanaf 13 december neemt 376 het grootste deel van 302 over.</p>
+    <p>Wat apps als de NS-app of 9292 laten zien, kan afwijken van de open data die wij lezen. De cijfers lopen vanaf 1 november 2026. Vanaf 13 december neemt 376 het grootste deel van 302 over.</p>
   </details>
   <details>
     <summary>De norm</summary>
@@ -248,6 +252,7 @@ const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli",
                  "september", "oktober", "november", "december"];
 const KLASSEN = [
   { sleutel: "gereden", label: "Gereden", css: "gereden" },
+  { sleutel: "ingekort", label: "Ingekort", css: "ingekort" },
   { sleutel: "uitval, op tijd", label: "Uitval, op tijd gemeld", css: "optijd" },
   { sleutel: "uitval, te laat", label: "Uitval, te laat gemeld", css: "telaat" },
   { sleutel: "niet gemeld", label: "Niet gemeld", css: "nietgemeld" },
@@ -388,22 +393,45 @@ function meldingPerRit(norm) {
   return "Van de " + n + " uitgevallen ritten " + (laat === 1 ? "werd er 1 " : "werden er " + laat + " ") + hoeLaat;
 }
 
-// Vanaf deze dag leggen we per halte vast sinds wanneer hij als overgeslagen gemeld is.
-const PER_HALTE_SINDS = "2026-10-31";
-
-function renderMeldnorm(norm, periode) {
+function renderMeldnorm(norm) {
   if (!norm || !norm.haltes) return null;
-  const teStreng = periode && periode.van && periode.van < PER_HALTE_SINDS;
   const perRit = meldingPerRit(norm);
   const ingekort = norm.ritten_ingekort || 0;
-  const ingekortTekst = ingekort === 0 ? "" : (ingekort === 1 ? "1 rit werd" : ingekort + " ritten werden") +
-    " ingekort; die haltes tellen mee.";
+  const ingekortTekst = ingekort === 0 ? "" : "Ook voor de overgeslagen haltes van " +
+    (ingekort === 1 ? "de ingekorte rit" : "de " + ingekort + " ingekorte ritten") + " kijken we of het op tijd gemeld was.";
+  const dicht = norm.haltes_dicht || 0;
   return el("div", { cls: "meldnorm" }, [
     el("h4", { text: "Op tijd gemeld?" }),
     perRit || ingekortTekst ? el("p", { text: [perRit, ingekortTekst].filter(Boolean).join(" ") }) : null,
     el("p", { text: "Per halte: " + procent(norm.percentage_op_tijd) + " op tijd gemeld (" + norm.haltes_op_tijd + " van " +
       norm.haltes + "). Norm: " + norm.norm_percentage + "%." }),
-    teStreng ? el("p", { cls: "muted", text: "Tot 31 oktober maten we dit nog niet per halte; het percentage is daardoor waarschijnlijk te laag." }) : null,
+    dicht ? el("p", { cls: "muted", text: "Niet meegeteld: haltes die die dag de hele dag dicht waren " +
+      "(een haltesluiting, geen uitval; zie hieronder)." }) : null,
+  ]);
+}
+
+// Haltes die op een dag door minstens de helft van de ritten werden overgeslagen. Lange lijsten vatten we samen.
+const MAX_DICHT = 5;
+
+function renderDicht(lijst) {
+  if (!lijst || !lijst.length) return null;
+  function periode(h) {
+    return h.van === h.tot ? datumTekst(h.van) : datumTekst(h.van) + " t/m " + datumTekst(h.tot);
+  }
+  const items = lijst.slice(0, MAX_DICHT).map(function (h) {
+    const dagen = h.dagen === 1 ? "1 dag" : h.dagen + " dagen";
+    if (h.sinds) {
+      const tot = h.gemeld_tot ? " (volgens het servicebericht tot en met " + datumTekst(h.gemeld_tot) + ")" : "";
+      return el("li", { text: h.halte + ": de bussen rijden erlangs zonder te stoppen, sinds " + datumTekst(h.sinds) + tot +
+        ". In onze meting dicht op " + dagen + "." });
+    }
+    return el("li", { text: h.halte + ": dicht op " + dagen + " (" + periode(h) + "). De bussen rijden erlangs zonder te stoppen." });
+  });
+  const rest = lijst.length - MAX_DICHT;
+  return el("div", { cls: "meldnorm" }, [
+    el("h4", { text: lijst.length === 1 ? "Haltesluiting" : "Haltesluitingen (" + lijst.length + ")" }),
+    el("ul", {}, items),
+    rest > 0 ? el("p", { cls: "muted", text: "En " + rest + " andere " + (rest === 1 ? "halte" : "haltes") + " die korter dicht waren." }) : null,
   ]);
 }
 
@@ -422,17 +450,16 @@ function renderLijnen(data, heeftMetingen) {
     const naam = LIJN_NAMEN[lijn] ? " (" + LIJN_NAMEN[lijn] + ")" : "";
     const kaart = el("article", { cls: "box" });
     kaart.appendChild(el("h3", { text: "Lijn " + lijn + naam }));
-    if (info.meetperiode && info.meetperiode.van && data.meetperiode && info.meetperiode.van > data.meetperiode.van) {
-      kaart.appendChild(el("p", { cls: "muted", text: "Deze lijn meten we sinds " + datumTekst(info.meetperiode.van) + "." }));
-    }
     if (!info.gemeten) {
       kaart.appendChild(el("p", { text: "Nog geen afgeronde metingen voor deze lijn." }));
     } else {
       kaart.appendChild(el("p", { cls: "muted", text: info.gemeten + " gemeten ritten" }));
       kaart.appendChild(renderBalk(lijn, info));
       kaart.appendChild(renderLegenda(info));
-      const norm = renderMeldnorm(info.meldnorm, info.meetperiode || data.meetperiode);
+      const norm = renderMeldnorm(info.meldnorm);
       if (norm) kaart.appendChild(norm);
+      const dicht = renderDicht(info.dicht);
+      if (dicht) kaart.appendChild(dicht);
     }
     const zonder = info.aantal["geen meting"] || 0;
     if (zonder) {
