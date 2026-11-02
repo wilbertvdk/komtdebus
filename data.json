@@ -1,8 +1,8 @@
 {
-  "bijgewerkt": "2026-11-01T18:00:06+01:00",
+  "bijgewerkt": "2026-11-02T06:30:05+01:00",
   "meetperiode": {
     "van": "2026-10-27",
-    "tot": "2026-11-01"
+    "tot": "2026-11-02"
   },
   "lijnen": {
     "272": {
@@ -28,19 +28,19 @@
       }
     },
     "302": {
-      "gepland": 631,
-      "gemeten": 627,
+      "gepland": 645,
+      "gemeten": 641,
       "aantal": {
-        "gereden": 612,
+        "gereden": 626,
         "uitval, op tijd": 5,
         "uitval, te laat": 6,
         "niet gemeld": 4,
         "geen meting": 4
       },
       "percentage": {
-        "gereden": 97.6,
+        "gereden": 97.7,
         "uitval, op tijd": 0.8,
-        "uitval, te laat": 1.0,
+        "uitval, te laat": 0.9,
         "niet gemeld": 0.6
       },
       "meldnorm": {
@@ -83,18 +83,18 @@
       }
     },
     "376": {
-      "gepland": 38,
-      "gemeten": 38,
+      "gepland": 70,
+      "gemeten": 70,
       "aantal": {
-        "gereden": 34,
+        "gereden": 66,
         "uitval, op tijd": 4,
         "uitval, te laat": 0,
         "niet gemeld": 0,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 89.5,
-        "uitval, op tijd": 10.5,
+        "gereden": 94.3,
+        "uitval, op tijd": 5.7,
         "uitval, te laat": 0.0,
         "niet gemeld": 0.0
       },
@@ -102,9 +102,9 @@
         "norm_percentage": 95,
         "ritten": 4,
         "ritten_vooraf": 4,
-        "ritten_ingekort": 17,
-        "haltes": 89,
-        "haltes_op_tijd": 89,
+        "ritten_ingekort": 34,
+        "haltes": 106,
+        "haltes_op_tijd": 106,
         "mediaan_min_na_vertrek": -677.0,
         "ritten_na_vertrek": 0,
         "mediaan_min_na_vertrek_laat": null,
@@ -112,7 +112,7 @@
       },
       "meetperiode": {
         "van": "2026-10-31",
-        "tot": "2026-11-01"
+        "tot": "2026-11-02"
       }
     }
   },
@@ -210,7 +210,7 @@
     {
       "datum": "2026-11-01",
       "lijn": "302",
-      "gereden": 20,
+      "gereden": 34,
       "uitval, op tijd": 1,
       "uitval, te laat": 1,
       "niet gemeld": 0,
@@ -219,8 +219,17 @@
     {
       "datum": "2026-11-01",
       "lijn": "376",
-      "gereden": 31,
+      "gereden": 62,
       "uitval, op tijd": 4,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-02",
+      "lijn": "376",
+      "gereden": 1,
+      "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
       "geen meting": 0
@@ -228,10 +237,10 @@
   ],
   "meetdekking": {
     "van": "2026-10-27T08:59:08+01:00",
-    "tot": "2026-11-01T17:58:58+01:00",
-    "gelukt": 3817,
-    "verwacht": 3870,
-    "aandeel": 0.9863
+    "tot": "2026-11-02T06:29:43+01:00",
+    "gelukt": 4192,
+    "verwacht": 4246,
+    "aandeel": 0.9873
   },
   "haltesluitingen": [
     {
