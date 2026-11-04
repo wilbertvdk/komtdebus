@@ -151,8 +151,8 @@ ul.lijst li { margin-bottom: 4px; }
 .prov-lijst { list-style: none; margin: 0; padding: 0; }
 .prov-lijst li { padding: 10px 0; border-top: 1px solid var(--border); }
 .prov-lijst li:first-child { border-top: 0; padding-top: 0; }
-.bron { display: inline-block; font-size: 0.75rem; padding: 1px 7px; margin-right: 6px; border-radius: 10px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
-.bron.eigen { border-color: var(--accent); color: var(--accent); }
+.prov-lijst .klein, .klein { font-size: 0.85rem; margin-top: 4px; }
+.dag-details h4 { font-size: 0.95rem; margin: 14px 0 6px; }
 .kern { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 0 0 12px; }
 .kern div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
 .kern b { display: block; font-size: 1.5rem; font-variant-numeric: tabular-nums; }
@@ -668,37 +668,60 @@ function meldLink(r) {
   return a;
 }
 
-// Een lijn komt in het nieuws bij 2 of meer uitgevallen ritten, of één te laat gemelde; de gevolgde lijnen ook
-// bij een niet gemelde of ingekorte rit.
-function opvallend(r) {
-  return r.uitval >= 2 || r.te_laat >= 1 || (r.gevolgd && (r.niet_gemeld >= 1 || r.ingekort >= 1));
+function opLijnnummer(a, b) {
+  return a.lijn.localeCompare(b.lijn, "nl", { numeric: true });
 }
 
-function lijnZin(r) {
+// Tabel met de lijnen waarop ritten uitvielen, op lijnnummer
+function uitvalTabel(lijnen) {
+  const body = el("tbody");
+  lijnen.filter(function (r) { return r.uitval > 0; }).sort(opLijnnummer).forEach(function (r) {
+    body.appendChild(el("tr", null, [
+      el("td", null, [el("strong", { text: r.lijn + " " }), el("span", { cls: "muted", text: r.naam + " · " }), meldLink(r)]),
+      el("td", { text: getal(r.ritten) }),
+      el("td", { text: getal(r.uitval) }),
+      el("td", { cls: r.te_laat ? "telaat" : "", text: getal(r.te_laat) }),
+    ]));
+  });
+  if (!body.children.length) return null;
+  return el("div", { cls: "scroll", attrs: { style: "border:0;background:transparent" } }, [el("table", { cls: "prov" }, [
+    el("thead", null, [el("tr", null, [
+      el("th", { text: "Lijn", attrs: { scope: "col" } }), el("th", { text: "Ritten", attrs: { scope: "col" } }),
+      el("th", { text: "Uitval", attrs: { scope: "col" } }), el("th", { text: "Te laat gemeld", attrs: { scope: "col" } })])]),
+    body])]);
+}
+
+function opsomming(lijst) {
+  return lijst.length < 2 ? lijst.join("") : lijst.slice(0, -1).join(", ") + " en " + lijst[lijst.length - 1];
+}
+
+// Waar het bericht op het scherm staat: "Lijn 395 · haltes Lopik, Zijdeweg; Lopik, Gemeentehuis" of
+// "Lijn 395 · 35 haltes in Utrecht, IJsselstein, Lopik en 10 andere plaatsen"
+function berichtWaar(b) {
   const delen = [];
-  if (r.uitval) {
-    let z = r.uitval + " van de " + r.ritten + " ritten uitgevallen";
-    if (r.te_laat) z += r.te_laat === r.uitval
-      ? (r.uitval === 1 ? ", pas na de vertrektijd gemeld" : r.uitval === 2 ? ", allebei pas na de vertrektijd gemeld" : ", allemaal pas na de vertrektijd gemeld")
-      : ", " + r.te_laat + " daarvan pas na de vertrektijd gemeld";
-    delen.push(z);
+  if (b.lijnen && b.lijnen.length) delen.push((b.lijnen.length === 1 ? "Lijn " : "Lijnen ") + opsomming(b.lijnen));
+  if (b.haltes && b.haltes.length) {
+    delen.push((b.haltes.length === 1 ? "halte " : "haltes ") + b.haltes.join("; "));
+  } else if (b.haltes_aantal) {
+    const pl = b.plaatsen || [];
+    const toon = pl.slice(0, 4);
+    if (pl.length > toon.length) toon.push(pl.length - toon.length + " andere plaatsen");
+    delen.push(b.haltes_aantal + " haltes" + (toon.length ? " in " + opsomming(toon) : ""));
   }
-  if (r.niet_gemeld) delen.push(r.niet_gemeld + (r.niet_gemeld === 1 ? " rit" : " ritten") + " niet gezien en niet gemeld");
-  if (r.ingekort) delen.push(r.ingekort + (r.ingekort === 1 ? " rit" : " ritten") + " ingekort");
-  return delen.join("; ") + ".";
+  return delen.join(" · ");
 }
 
-function nieuwsItem(bron, eigen, kop, tekst, extra) {
+function berichtItem(b, vandaagIso) {
+  // De einddatum alleen noemen als de tekst hem zelf niet al noemt
+  const tot = kortMoment(b.eind, vandaagIso);
+  const dag = /^\d{4}-(\d{2})-(\d{2})/.exec(b.eind || "");
+  const alGenoemd = dag && b.tekst.toLowerCase().indexOf(parseInt(dag[2], 10) + " " + MAANDEN[+dag[1] - 1]) >= 0;
+  const waarTekst = berichtWaar(b);
   return el("li", null, [
-    el("span", { cls: "bron" + (eigen ? " eigen" : ""), text: bron }),
-    kop ? el("strong", { text: kop + " " }) : null,
-    el("span", { text: tekst }),
-    extra ? el("span", { cls: "muted", text: " " + extra }) : null,
+    el("span", { text: hoofdletter(b.tekst) }),
+    tot && !alGenoemd ? el("span", { cls: "muted", text: " Geldt tot " + tot + "." }) : null,
+    waarTekst ? el("div", { cls: "muted klein", text: waarTekst }) : null,
   ]);
-}
-
-function lijnItem(r) {
-  return nieuwsItem("eigen meting", true, "Lijn " + r.lijn + (r.naam ? " " + r.naam : "") + ":", lijnZin(r));
 }
 
 function renderProvincie(data) {
@@ -719,17 +742,6 @@ function renderProvincie(data) {
   const vandaagIso = (data.bijgewerkt || "").slice(0, 10);
   const isVandaag = vandaag.datum === vandaagIso;
 
-  // Nu aan de hand: schermteksten die nu gelden, en lijnen die vandaag opvallen
-  box.appendChild(el("h3", { text: "Nu aan de hand" }));
-  const items = (p.berichten_nu || []).map(function (b) {
-    const tot = kortMoment(b.eind, vandaagIso);
-    return nieuwsItem("U-OV · schermtekst", false, null, hoofdletter(b.tekst), tot ? "(Bericht geldt tot " + tot + ".)" : null);
-  });
-  if (isVandaag) vandaag.lijnen.filter(opvallend).forEach(function (r) { items.push(lijnItem(r)); });
-  box.appendChild(el("div", { cls: "box" }, [items.length
-    ? el("ul", { cls: "prov-lijst" }, items)
-    : el("p", { text: "Geen schermteksten van U-OV en tot nu toe geen opvallende uitval." })]));
-
   // Uitval vandaag
   if (isVandaag) {
     const t = vandaag.totaal || {};
@@ -740,23 +752,7 @@ function renderProvincie(data) {
       el("div", null, [el("b", { cls: "telaat", text: aantal(t.te_laat) }), el("span", { text: "daarvan pas na de vertrektijd gemeld" })]),
     ]));
     const metUitval = vandaag.lijnen.filter(function (r) { return r.uitval > 0; });
-    const kaart = el("div", { cls: "box" });
-    if (metUitval.length) {
-      const body = el("tbody");
-      metUitval.forEach(function (r) {
-        body.appendChild(el("tr", null, [
-          el("td", null, [el("strong", { text: r.lijn + " " }), el("span", { cls: "muted", text: r.naam + " · " }), meldLink(r)]),
-          el("td", { text: getal(r.ritten) }),
-          el("td", { text: getal(r.uitval) }),
-          el("td", { cls: r.te_laat ? "telaat" : "", text: getal(r.te_laat) }),
-        ]));
-      });
-      kaart.appendChild(el("div", { cls: "scroll", attrs: { style: "border:0;background:transparent" } }, [el("table", { cls: "prov" }, [
-        el("thead", null, [el("tr", null, [
-          el("th", { text: "Lijn", attrs: { scope: "col" } }), el("th", { text: "Ritten", attrs: { scope: "col" } }),
-          el("th", { text: "Uitval", attrs: { scope: "col" } }), el("th", { text: "Te laat gemeld", attrs: { scope: "col" } })])]),
-        body])]));
-    }
+    const kaart = el("div", { cls: "box" }, [uitvalTabel(vandaag.lijnen)]);
     const gevolgd = vandaag.lijnen.filter(function (r) { return r.gevolgd; });
     const metProbleem = gevolgd.filter(function (r) { return r.uitval || r.niet_gemeld || r.ingekort; });
     const rest = vandaag.lijnen_gemeten - metUitval.length;
@@ -765,11 +761,18 @@ function renderProvincie(data) {
       ? "Lijn 272, 302, 315 en 376: de details staan verderop bij de resultaten per lijn."
       : "Lijn 272, 302, 315 en 376: tot nu toe alles gereden.");
     zinnen.push(metUitval.length ? "Op de andere " + rest + " lijnen viel tot nu toe geen rit uit." : "Op geen enkele lijn viel tot nu toe een rit uit.");
-    kaart.appendChild(el("p", { cls: "muted", attrs: { style: "margin:10px 0 0" }, text: zinnen.join(" ") }));
+    kaart.appendChild(el("p", { cls: "muted", attrs: { style: metUitval.length ? "margin:10px 0 0" : "margin:0" }, text: zinnen.join(" ") }));
     box.appendChild(kaart);
     box.appendChild(el("p", { cls: "muted", text: "Alleen afgeronde ritten. Ritten die we niet zagen rijden en die niet gemeld waren, tellen we hier alleen " +
       "voor de vier lijnen die we helemaal volgen: op de andere lijnen kan het ook aan de meting liggen." }));
   }
+
+  // Schermteksten die nu gelden
+  const nu = p.berichten_nu || [];
+  box.appendChild(el("h3", { text: "Op de schermen bij de halte" }));
+  box.appendChild(el("div", { cls: "box" }, [nu.length
+    ? el("ul", { cls: "prov-lijst" }, nu.map(function (b) { return berichtItem(b, vandaagIso); }))
+    : el("p", { attrs: { style: "margin:0" }, text: "U-OV heeft op dit moment geen berichten op de schermen staan." })]));
 
   // Eerdere dagen
   const eerder = p.dagen.slice(isVandaag ? 1 : 0);
@@ -779,13 +782,13 @@ function renderProvincie(data) {
       const t = d.totaal || {};
       const kop = hoofdletter(dagTekst(d.datum)) + ": " + aantal(t.uitval) + " van " + aantal(t.ritten) + " ritten uitgevallen, " +
         aantal(t.te_laat) + " te laat gemeld";
-      const lijst = d.lijnen.filter(opvallend).slice(0, 10).map(lijnItem);
-      const meer = d.lijnen.filter(opvallend).length - lijst.length;
-      (d.berichten || []).forEach(function (b) { lijst.push(nieuwsItem("U-OV · schermtekst", false, null, hoofdletter(b))); });
+      const berichten = d.berichten || [];
       box.appendChild(el("details", { cls: "dag-details" }, [
         el("summary", { text: kop }),
-        lijst.length ? el("ul", { cls: "prov-lijst", attrs: { style: "margin-bottom:12px" } }, lijst) : el("p", { cls: "muted", text: "Niets opvallends." }),
-        meer > 0 ? el("p", { cls: "muted", text: "En " + meer + " andere lijnen met uitval." }) : null,
+        uitvalTabel(d.lijnen) || el("p", { cls: "muted", text: "Geen uitval." }),
+        berichten.length ? el("h4", { text: "Nieuwe berichten op de schermen" }) : null,
+        berichten.length ? el("ul", { cls: "prov-lijst", attrs: { style: "margin-bottom:12px" } },
+          berichten.map(function (b) { return berichtItem(typeof b === "string" ? { tekst: b } : b, vandaagIso); })) : null,
       ]));
     });
   }
