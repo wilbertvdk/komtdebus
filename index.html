@@ -152,6 +152,8 @@ ul.lijst li { margin-bottom: 4px; }
 .prov-lijst li { padding: 10px 0; border-top: 1px solid var(--border); }
 .prov-lijst li:first-child { border-top: 0; padding-top: 0; }
 .prov-lijst .klein, .klein { font-size: 0.85rem; margin-top: 4px; }
+details.meer summary { cursor: pointer; padding: 10px 0 0; border-top: 1px solid var(--border); color: var(--accent); }
+details.meer[open] summary { padding-bottom: 10px; }
 .dag-details h4 { font-size: 0.95rem; margin: 14px 0 6px; }
 .kern { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 0 0 12px; }
 .kern div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
@@ -272,6 +274,7 @@ const MELDFORMULIER_URL = "https://forms.gle/fkQ1wAtPSvkiwW896";
 // Volledige formulierlink, voor een melding met de lijn al ingevuld; het veld Lijn is entry.1410092131.
 const MELDFORMULIER_VOLLEDIG = "https://docs.google.com/forms/d/e/1FAIpQLSfDzZQxWUsf0fp8VZTf10qiqXMmhV2lzkdcaB4hVhB5-Eqosg/viewform";
 const FORM_LIJN = "entry.1410092131";
+const BERICHTEN_ZICHTBAAR = 5;
 const ACHTERSTAND_MIN = 45;   // ouder dan dit: waarschuwen dat de cijfers niet actueel zijn
 
 const KORTE_PERIODE_DAGEN = 28;
@@ -695,13 +698,26 @@ function opsomming(lijst) {
   return lijst.length < 2 ? lijst.join("") : lijst.slice(0, -1).join(", ") + " en " + lijst[lijst.length - 1];
 }
 
-// Waar het bericht op het scherm staat: "Lijn 395 · haltes Lopik, Zijdeweg; Lopik, Gemeentehuis" of
+// Haltes per plaats: ["Lopik, Zijdeweg", "Lopik, Gemeentehuis", "Cabauw, Provincialeweg"]
+// -> "Lopik: Zijdeweg, Gemeentehuis · Cabauw: Provincialeweg"
+function haltesPerPlaats(haltes) {
+  const per = new Map();
+  haltes.forEach(function (h) {
+    const i = h.indexOf(", ");
+    const plaats = i > 0 ? h.slice(0, i) : "";
+    if (!per.has(plaats)) per.set(plaats, []);
+    per.get(plaats).push(i > 0 ? h.slice(i + 2) : h);
+  });
+  return Array.from(per, function (e) { return (e[0] ? e[0] + ": " : "") + e[1].join(", "); }).join(" · ");
+}
+
+// Waar het bericht op het scherm staat: "Lijn 395 · Lopik: Zijdeweg, Gemeentehuis" of
 // "Lijn 395 · 35 haltes in Utrecht, IJsselstein, Lopik en 10 andere plaatsen"
 function berichtWaar(b) {
   const delen = [];
   if (b.lijnen && b.lijnen.length) delen.push((b.lijnen.length === 1 ? "Lijn " : "Lijnen ") + opsomming(b.lijnen));
   if (b.haltes && b.haltes.length) {
-    delen.push((b.haltes.length === 1 ? "halte " : "haltes ") + b.haltes.join("; "));
+    delen.push(haltesPerPlaats(b.haltes));
   } else if (b.haltes_aantal) {
     const pl = b.plaatsen || [];
     const toon = pl.slice(0, 4);
@@ -767,12 +783,16 @@ function renderProvincie(data) {
       "voor de vier lijnen die we helemaal volgen: op de andere lijnen kan het ook aan de meting liggen." }));
   }
 
-  // Schermteksten die nu gelden
+  // Schermteksten die nu gelden, nieuwste eerst; na de eerste vijf ingeklapt
   const nu = p.berichten_nu || [];
+  const items = nu.map(function (b) { return berichtItem(b, vandaagIso); });
   box.appendChild(el("h3", { text: "Op de schermen bij de halte" }));
-  box.appendChild(el("div", { cls: "box" }, [nu.length
-    ? el("ul", { cls: "prov-lijst" }, nu.map(function (b) { return berichtItem(b, vandaagIso); }))
-    : el("p", { attrs: { style: "margin:0" }, text: "U-OV heeft op dit moment geen berichten op de schermen staan." })]));
+  box.appendChild(el("div", { cls: "box" }, nu.length ? [
+    el("ul", { cls: "prov-lijst" }, items.slice(0, BERICHTEN_ZICHTBAAR)),
+    items.length > BERICHTEN_ZICHTBAAR ? el("details", { cls: "meer" }, [
+      el("summary", { text: "Nog " + (items.length - BERICHTEN_ZICHTBAAR) + " berichten" }),
+      el("ul", { cls: "prov-lijst" }, items.slice(BERICHTEN_ZICHTBAAR))]) : null,
+  ] : [el("p", { attrs: { style: "margin:0" }, text: "U-OV heeft op dit moment geen berichten op de schermen staan." })]));
 
   // Eerdere dagen
   const eerder = p.dagen.slice(isVandaag ? 1 : 0);
