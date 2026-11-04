@@ -184,7 +184,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 
 <section id="provincie" aria-labelledby="h-provincie" hidden>
   <h2 id="h-provincie">Vandaag in de provincie Utrecht</h2>
-  <p class="muted">Automatisch, elk kwartier bijgewerkt: de teksten die U-OV naar de schermen bij de halte stuurt, en onze eigen meting van alle U-OV-lijnen.</p>
+  <p class="muted">Bijgewerkt: <span id="provincie-tijd">onbekend</span>. Eigen meting van alle U-OV-lijnen en de teksten op de schermen bij de halte.</p>
   <div id="provincie-box"></div>
 </section>
 
@@ -747,6 +747,7 @@ function renderProvincie(data) {
   const p = data && data.provincie;
   if (!p || !p.dagen || !p.dagen.length) { sectie.hidden = true; return; }
   sectie.hidden = false;
+  document.getElementById("provincie-tijd").textContent = tijdTekst(data.bijgewerkt);
 
   const bijgewerkt = Date.parse(data.bijgewerkt);
   if (!isNaN(bijgewerkt) && Date.now() - bijgewerkt > ACHTERSTAND_MIN * 60000) {

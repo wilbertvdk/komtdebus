@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-04T11:51:18+01:00",
+  "bijgewerkt": "2026-11-04T11:57:01+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-04"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 378,
-      "gemeten": 378,
+      "gepland": 379,
+      "gemeten": 379,
       "aantal": {
-        "gereden": 365,
+        "gereden": 366,
         "ingekort": 6,
         "uitval, op tijd": 4,
         "uitval, te laat": 3,
@@ -266,7 +266,7 @@
     {
       "datum": "2026-11-04",
       "lijn": "302",
-      "gereden": 46,
+      "gereden": 47,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -296,9 +296,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-04T11:49:41+01:00",
-    "gelukt": 2528,
-    "verwacht": 2515,
+    "tot": "2026-11-04T11:56:34+01:00",
+    "gelukt": 2532,
+    "verwacht": 2518,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -570,7 +570,7 @@
         "datum": "2026-11-04",
         "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 2211,
+          "ritten": 2253,
           "uitval": 22,
           "te_laat": 7
         },
@@ -587,7 +587,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 40,
+            "ritten": 42,
             "uitval": 2,
             "te_laat": 0
           },
@@ -643,7 +643,7 @@
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 33,
+            "ritten": 34,
             "uitval": 2,
             "te_laat": 2
           },
@@ -662,7 +662,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 46,
+            "ritten": 47,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -673,7 +673,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 37,
+            "ritten": 38,
             "uitval": 2,
             "te_laat": 0
           },
@@ -692,7 +692,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 41,
+            "ritten": 42,
             "uitval": 4,
             "te_laat": 1
           },
