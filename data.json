@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-04T11:57:01+01:00",
+  "bijgewerkt": "2026-11-04T12:01:44+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-04"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 379,
-      "gemeten": 379,
+      "gepland": 380,
+      "gemeten": 380,
       "aantal": {
-        "gereden": 366,
+        "gereden": 367,
         "ingekort": 6,
         "uitval, op tijd": 4,
         "uitval, te laat": 3,
@@ -266,7 +266,7 @@
     {
       "datum": "2026-11-04",
       "lijn": "302",
-      "gereden": 47,
+      "gereden": 48,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -296,9 +296,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-04T11:56:34+01:00",
-    "gelukt": 2532,
-    "verwacht": 2518,
+    "tot": "2026-11-04T12:00:56+01:00",
+    "gelukt": 2535,
+    "verwacht": 2520,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -570,7 +570,7 @@
         "datum": "2026-11-04",
         "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 2253,
+          "ritten": 2284,
           "uitval": 22,
           "te_laat": 7
         },
@@ -579,7 +579,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 41,
+            "ritten": 43,
             "uitval": 1,
             "te_laat": 0
           },
@@ -611,7 +611,7 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 24,
             "uitval": 2,
             "te_laat": 0
           },
@@ -619,7 +619,7 @@
             "lijn": "31",
             "naam": "IJsselstein – Science Park",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 33,
             "uitval": 3,
             "te_laat": 0
           },
@@ -662,7 +662,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 47,
+            "ritten": 48,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
