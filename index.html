@@ -244,6 +244,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <h2 id="h-melden">Meld wat jij meemaakt</h2>
   <p>Jouw ervaring laat zien wat de data mist. Noem de datum, tijd, lijn en halte, en beschrijf zo precies mogelijk wat de app of het scherm liet zien, en hoe laat.</p>
   <div id="meld-box"></div>
+  <p id="meld-teller" class="muted" hidden></p>
   <p>Ik leg elke melding naast de ritdata: reed de bus, en stond uitval op tijd in de app? Klopt een melding niet met de data, dan zoek ik uit waarom. Dat kan wijzen op iets wat de data mist, zoals een bus die van het scherm verdwijnt en toch komt.</p>
   <p>Meldingen over andere lijnen zijn ook welkom: kies bij Lijn de laatste optie en vul het lijnnummer in.</p>
   <p class="muted">Een klacht kun je ook bij U-OV indienen; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
@@ -741,6 +742,23 @@ function berichtItem(b, vandaagIso) {
   ]);
 }
 
+// "3 meldingen van reizigers (lijn 302)" voor één dag, of null
+function meldingenZin(data, datum) {
+  const per = data && data.meldingen && data.meldingen.per_dag && data.meldingen.per_dag[datum];
+  if (!per) return null;
+  const lijnen = Object.keys(per).sort(function (a, b) { return a.localeCompare(b, "nl", { numeric: true }); });
+  const n = lijnen.reduce(function (s, l) { return s + per[l]; }, 0);
+  return n + (n === 1 ? " melding" : " meldingen") + " van reizigers (" + (lijnen.length === 1 ? "lijn " : "lijnen ") +
+    opsomming(lijnen.map(function (l) { return per[l] > 1 && lijnen.length > 1 ? l + " (" + per[l] + ")" : l; })) + ")";
+}
+
+function renderMeldTeller(data) {
+  const p = document.getElementById("meld-teller");
+  const n = data && data.meldingen && data.meldingen.totaal;
+  p.hidden = !n;
+  if (n) p.textContent = "Tot nu toe " + aantal(n) + (n === 1 ? " melding" : " meldingen") + " ontvangen. Dank je wel!";
+}
+
 function renderProvincie(data) {
   const sectie = document.getElementById("provincie");
   const box = document.getElementById("provincie-box");
@@ -779,6 +797,8 @@ function renderProvincie(data) {
       ? "Lijn 272, 302, 315 en 376: de details staan verderop bij de resultaten per lijn."
       : "Lijn 272, 302, 315 en 376: tot nu toe alles gereden.");
     zinnen.push(metUitval.length ? "Op de andere " + rest + " lijnen viel tot nu toe geen rit uit." : "Op geen enkele lijn viel tot nu toe een rit uit.");
+    const gemeld = meldingenZin(data, vandaag.datum);
+    if (gemeld) zinnen.push("Vandaag " + gemeld + ".");
     kaart.appendChild(el("p", { cls: "muted", attrs: { style: metUitval.length ? "margin:10px 0 0" : "margin:0" }, text: zinnen.join(" ") }));
     box.appendChild(kaart);
     box.appendChild(el("p", { cls: "muted", text: "Alleen afgeronde ritten. Ritten die we niet zagen rijden en die niet gemeld waren, tellen we hier alleen " +
@@ -808,6 +828,7 @@ function renderProvincie(data) {
       box.appendChild(el("details", { cls: "dag-details" }, [
         el("summary", { text: kop }),
         uitvalTabel(d.lijnen) || el("p", { cls: "muted", text: "Geen uitval." }),
+        meldingenZin(data, d.datum) ? el("p", { cls: "muted", text: hoofdletter(meldingenZin(data, d.datum)) + "." }) : null,
         berichten.length ? el("h4", { text: "Nieuwe berichten op de schermen" }) : null,
         berichten.length ? el("ul", { cls: "prov-lijst", attrs: { style: "margin-bottom:12px" } },
           berichten.map(function (b) { return berichtItem(typeof b === "string" ? { tekst: b } : b, vandaagIso); })) : null,
@@ -820,6 +841,7 @@ function render(data) {
   const heeftMetingen = !!(data && data.lijnen && totaalGemeten(data) > 0);
   renderStatus(data, heeftMetingen);
   renderProvincie(data);
+  renderMeldTeller(data);
   renderLijnen(data, heeftMetingen);
   renderHaltes(data);
   renderDagen(data, heeftMetingen);
