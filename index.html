@@ -851,11 +851,21 @@ renderMelden();
 document.querySelectorAll(".deel-whatsapp").forEach(function (a) {
   a.addEventListener("click", function () { telKlik(a.dataset.teller); });
 });
-fetch("data.json", { cache: "no-store" })
-  .then(function (r) {
-    if (!r.ok) throw new Error("HTTP " + r.status);
-    return r.json();
-  })
+// De cijfers komen rechtstreeks van de meetserver: dan zijn ze vers, ook als GitHub Pages met bouwen achterloopt.
+// Lukt dat niet binnen een paar seconden, dan de kopie naast deze pagina. Lokaal (voorbeeldserver) alleen die kopie.
+const DATA_SERVER = "https://data.komtdebus.nl/data.json";
+function haalJson(url, wachtMs) {
+  const stop = typeof AbortController === "function" ? new AbortController() : null;
+  const klok = stop && wachtMs ? setTimeout(function () { stop.abort(); }, wachtMs) : null;
+  return fetch(url, { cache: "no-store", signal: stop ? stop.signal : undefined })
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .finally(function () { if (klok) clearTimeout(klok); });
+}
+const lokaal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+(lokaal ? haalJson("data.json") : haalJson(DATA_SERVER, 4000).catch(function () { return haalJson("data.json"); }))
   .then(render)
   .catch(function () {
     // data.json ontbreekt of is onleesbaar: toon een vriendelijke lege staat
