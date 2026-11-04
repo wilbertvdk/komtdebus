@@ -148,6 +148,20 @@ ul.lijst li { margin-bottom: 4px; }
 .meld-top p { margin: 0; flex: 1 1 240px; }
 .meld-top .knop { margin: 0; }
 .knop.tweede { background: transparent; color: var(--accent); border: 2px solid var(--accent); padding: 12px 22px; }
+.prov-lijst { list-style: none; margin: 0; padding: 0; }
+.prov-lijst li { padding: 10px 0; border-top: 1px solid var(--border); }
+.prov-lijst li:first-child { border-top: 0; padding-top: 0; }
+.bron { display: inline-block; font-size: 0.75rem; padding: 1px 7px; margin-right: 6px; border-radius: 10px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
+.bron.eigen { border-color: var(--accent); color: var(--accent); }
+.kern { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 0 0 12px; }
+.kern div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.kern b { display: block; font-size: 1.5rem; font-variant-numeric: tabular-nums; }
+.kern .telaat { color: var(--c-telaat); }
+table.prov th:nth-child(2), table.prov td:nth-child(2) { text-align: right; }
+table.prov th, table.prov td { padding: 8px 4px; }
+table.prov td.telaat { color: var(--c-telaat); font-weight: 600; }
+a.meld { font-size: 0.85rem; white-space: nowrap; }
+.dag-details { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2px 16px; margin: 0 0 10px; }
 footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16px; font-size: 0.9rem; color: var(--muted); }
 </style>
 </head>
@@ -157,7 +171,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <h1>Komt de bus? Lijn 272, 302, 315 en 376</h1>
   <p class="lead">Rijden de bussen van U-OV tussen Baarn, Amersfoort en Utrecht Science Park, en zie je uitval op tijd in de app en op het scherm bij de halte? Dat meten we hier, elke rit.</p>
   <div class="box meld-top" aria-label="Melden">
-    <p><strong>Bus niet gekomen, of klopte de informatie niet?</strong></p>
+    <p><strong>Bus niet gekomen, of klopte de informatie niet?</strong> Meld het, voor elke lijn.</p>
     <a class="knop" id="meld-top-knop" href="#melden">Meld het</a>
     <a class="knop tweede deel-whatsapp" data-teller="whatsapp-boven" href="https://wa.me/?text=Wacht%20jij%20ook%20weleens%20op%20een%20bus%20van%20lijn%20272%2C%20302%2C%20315%20of%20376%20die%20niet%20komt%3F%20Op%20deze%20site%20zie%20je%20hoe%20vaak%20dat%20gebeurt%2C%20en%20kun%20je%20het%20melden%3A%20https%3A%2F%2Fkomtdebus.nl" rel="noopener">Deel via WhatsApp</a>
   </div>
@@ -165,6 +179,12 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 
 <main>
 <noscript><p class="box warn">Voor deze pagina is JavaScript nodig om de cijfers te tonen.</p></noscript>
+
+<section id="provincie" aria-labelledby="h-provincie" hidden>
+  <h2 id="h-provincie">Vandaag in de provincie Utrecht</h2>
+  <p class="muted">Automatisch, elk kwartier bijgewerkt: de teksten die U-OV naar de schermen bij de halte stuurt, en onze eigen meting van alle U-OV-lijnen.</p>
+  <div id="provincie-box"></div>
+</section>
 
 <section id="status" aria-labelledby="h-status">
   <h2 id="h-status">Stand van de metingen</h2>
@@ -221,6 +241,8 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   <h2 id="h-melden">Meld wat jij meemaakt</h2>
   <p>Jouw ervaring laat zien wat de data mist. Noem de datum, tijd, lijn en halte, en beschrijf zo precies mogelijk wat de app of het scherm liet zien, en hoe laat.</p>
   <div id="meld-box"></div>
+  <p>Ik leg elke melding naast de ritdata: reed de bus, en stond uitval op tijd in de app? Klopt een melding niet met de data, dan zoek ik uit waarom. Dat kan wijzen op iets wat de data mist, zoals een bus die van het scherm verdwijnt en toch komt.</p>
+  <p>Meldingen over andere lijnen zijn ook welkom: kies bij Lijn de laatste optie en vul het lijnnummer in.</p>
   <p class="muted">Een klacht kun je ook bij U-OV indienen; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
   <p>Ken je iemand die met deze bussen reist? Stuur de site door.</p>
   <a class="knop tweede deel-whatsapp" data-teller="whatsapp-onder" href="https://wa.me/?text=Wacht%20jij%20ook%20weleens%20op%20een%20bus%20van%20lijn%20272%2C%20302%2C%20315%20of%20376%20die%20niet%20komt%3F%20Op%20deze%20site%20zie%20je%20hoe%20vaak%20dat%20gebeurt%2C%20en%20kun%20je%20het%20melden%3A%20https%3A%2F%2Fkomtdebus.nl" rel="noopener">Deel via WhatsApp</a>
@@ -246,6 +268,11 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 // ---- Instelling: link naar het meldformulier. Leeg laten zolang het formulier er nog niet is. ----
 const MELDFORMULIER_URL = "https://forms.gle/fkQ1wAtPSvkiwW896";
 // ----------------------------------------------------------------------------------------------
+
+// Volledige formulierlink, voor een melding met de lijn al ingevuld; het veld Lijn is entry.1410092131.
+const MELDFORMULIER_VOLLEDIG = "https://docs.google.com/forms/d/e/1FAIpQLSfDzZQxWUsf0fp8VZTf10qiqXMmhV2lzkdcaB4hVhB5-Eqosg/viewform";
+const FORM_LIJN = "entry.1410092131";
+const ACHTERSTAND_MIN = 45;   // ouder dan dit: waarschuwen dat de cijfers niet actueel zijn
 
 const KORTE_PERIODE_DAGEN = 28;
 const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
@@ -605,9 +632,169 @@ function renderMelden() {
   }
 }
 
+const WEEKDAGEN = ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"];
+
+function aantal(n) { return Number(n || 0).toLocaleString("nl-NL"); }
+function hoofdletter(t) { return t ? t.charAt(0).toUpperCase() + t.slice(1) : t; }
+
+// "2026-11-03" -> "dinsdag 3 november"
+function dagTekst(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+  if (!m) return "onbekend";
+  return WEEKDAGEN[new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])).getUTCDay()] + " " + parseInt(m[3], 10) + " " + MAANDEN[+m[2] - 1];
+}
+
+// "2026-11-05T05:00+01:00" -> "5 november 05:00" (vandaag: alleen de tijd)
+function kortMoment(iso, vandaagIso) {
+  const m = /^(\d{4}-(\d{2})-(\d{2}))T(\d{2}:\d{2})/.exec(iso || "");
+  if (!m) return null;
+  return m[1] === vandaagIso ? m[4] : parseInt(m[3], 10) + " " + MAANDEN[+m[2] - 1] + " " + m[4];
+}
+
+function meldUrl(lijn, gevolgd) {
+  const u = new URL(MELDFORMULIER_VOLLEDIG);
+  if (gevolgd) {
+    u.searchParams.set(FORM_LIJN, lijn);
+  } else {
+    u.searchParams.set(FORM_LIJN, "__other_option__");
+    u.searchParams.set(FORM_LIJN + ".other_option_response", lijn);
+  }
+  return u.href;
+}
+
+function meldLink(r) {
+  const a = el("a", { cls: "meld", text: "Meld", attrs: { href: meldUrl(r.lijn, r.gevolgd), rel: "noopener", "aria-label": "Meld iets over lijn " + r.lijn } });
+  a.addEventListener("click", function () { telKlik("meldformulier-lijn"); });
+  return a;
+}
+
+// Een lijn komt in het nieuws bij 2 of meer uitgevallen ritten, of één te laat gemelde; de gevolgde lijnen ook
+// bij een niet gemelde of ingekorte rit.
+function opvallend(r) {
+  return r.uitval >= 2 || r.te_laat >= 1 || (r.gevolgd && (r.niet_gemeld >= 1 || r.ingekort >= 1));
+}
+
+function lijnZin(r) {
+  const delen = [];
+  if (r.uitval) {
+    let z = r.uitval + " van de " + r.ritten + " ritten uitgevallen";
+    if (r.te_laat) z += r.te_laat === r.uitval
+      ? (r.uitval === 1 ? ", pas na de vertrektijd gemeld" : r.uitval === 2 ? ", allebei pas na de vertrektijd gemeld" : ", allemaal pas na de vertrektijd gemeld")
+      : ", " + r.te_laat + " daarvan pas na de vertrektijd gemeld";
+    delen.push(z);
+  }
+  if (r.niet_gemeld) delen.push(r.niet_gemeld + (r.niet_gemeld === 1 ? " rit" : " ritten") + " niet gezien en niet gemeld");
+  if (r.ingekort) delen.push(r.ingekort + (r.ingekort === 1 ? " rit" : " ritten") + " ingekort");
+  return delen.join("; ") + ".";
+}
+
+function nieuwsItem(bron, eigen, kop, tekst, extra) {
+  return el("li", null, [
+    el("span", { cls: "bron" + (eigen ? " eigen" : ""), text: bron }),
+    kop ? el("strong", { text: kop + " " }) : null,
+    el("span", { text: tekst }),
+    extra ? el("span", { cls: "muted", text: " " + extra }) : null,
+  ]);
+}
+
+function lijnItem(r) {
+  return nieuwsItem("eigen meting", true, "Lijn " + r.lijn + (r.naam ? " " + r.naam : "") + ":", lijnZin(r));
+}
+
+function renderProvincie(data) {
+  const sectie = document.getElementById("provincie");
+  const box = document.getElementById("provincie-box");
+  leeg(box);
+  const p = data && data.provincie;
+  if (!p || !p.dagen || !p.dagen.length) { sectie.hidden = true; return; }
+  sectie.hidden = false;
+
+  const bijgewerkt = Date.parse(data.bijgewerkt);
+  if (!isNaN(bijgewerkt) && Date.now() - bijgewerkt > ACHTERSTAND_MIN * 60000) {
+    box.appendChild(el("p", { cls: "box warn", text: "Let op: deze cijfers zijn van " + tijdTekst(data.bijgewerkt) +
+      ". De meting loopt achter, dus wat er nu aan de hand is, staat hier mogelijk niet." }));
+  }
+
+  const vandaag = p.dagen[0];
+  const vandaagIso = (data.bijgewerkt || "").slice(0, 10);
+  const isVandaag = vandaag.datum === vandaagIso;
+
+  // Nu aan de hand: schermteksten die nu gelden, en lijnen die vandaag opvallen
+  box.appendChild(el("h3", { text: "Nu aan de hand" }));
+  const items = (p.berichten_nu || []).map(function (b) {
+    const tot = kortMoment(b.eind, vandaagIso);
+    return nieuwsItem("U-OV · schermtekst", false, null, hoofdletter(b.tekst), tot ? "(Bericht geldt tot " + tot + ".)" : null);
+  });
+  if (isVandaag) vandaag.lijnen.filter(opvallend).forEach(function (r) { items.push(lijnItem(r)); });
+  box.appendChild(el("div", { cls: "box" }, [items.length
+    ? el("ul", { cls: "prov-lijst" }, items)
+    : el("p", { text: "Geen schermteksten van U-OV en tot nu toe geen opvallende uitval." })]));
+
+  // Uitval vandaag
+  if (isVandaag) {
+    const t = vandaag.totaal || {};
+    box.appendChild(el("h3", { text: "Uitval vandaag tot nu toe" }));
+    box.appendChild(el("div", { cls: "kern" }, [
+      el("div", null, [el("b", { text: aantal(t.ritten) }), el("span", { text: "ritten afgerond, op " + vandaag.lijnen_gemeten + " lijnen" })]),
+      el("div", null, [el("b", { text: aantal(t.uitval) }), el("span", { text: "uitgevallen en gemeld" })]),
+      el("div", null, [el("b", { cls: "telaat", text: aantal(t.te_laat) }), el("span", { text: "daarvan pas na de vertrektijd gemeld" })]),
+    ]));
+    const metUitval = vandaag.lijnen.filter(function (r) { return r.uitval > 0; });
+    const kaart = el("div", { cls: "box" });
+    if (metUitval.length) {
+      const body = el("tbody");
+      metUitval.forEach(function (r) {
+        body.appendChild(el("tr", null, [
+          el("td", null, [el("strong", { text: r.lijn + " " }), el("span", { cls: "muted", text: r.naam + " · " }), meldLink(r)]),
+          el("td", { text: getal(r.ritten) }),
+          el("td", { text: getal(r.uitval) }),
+          el("td", { cls: r.te_laat ? "telaat" : "", text: getal(r.te_laat) }),
+        ]));
+      });
+      kaart.appendChild(el("div", { cls: "scroll", attrs: { style: "border:0;background:transparent" } }, [el("table", { cls: "prov" }, [
+        el("thead", null, [el("tr", null, [
+          el("th", { text: "Lijn", attrs: { scope: "col" } }), el("th", { text: "Ritten", attrs: { scope: "col" } }),
+          el("th", { text: "Uitval", attrs: { scope: "col" } }), el("th", { text: "Te laat gemeld", attrs: { scope: "col" } })])]),
+        body])]));
+    }
+    const gevolgd = vandaag.lijnen.filter(function (r) { return r.gevolgd; });
+    const metProbleem = gevolgd.filter(function (r) { return r.uitval || r.niet_gemeld || r.ingekort; });
+    const rest = vandaag.lijnen_gemeten - metUitval.length;
+    const zinnen = [];
+    if (gevolgd.length) zinnen.push(metProbleem.length
+      ? "Lijn 272, 302, 315 en 376: de details staan verderop bij de resultaten per lijn."
+      : "Lijn 272, 302, 315 en 376: tot nu toe alles gereden.");
+    zinnen.push(metUitval.length ? "Op de andere " + rest + " lijnen viel tot nu toe geen rit uit." : "Op geen enkele lijn viel tot nu toe een rit uit.");
+    kaart.appendChild(el("p", { cls: "muted", attrs: { style: "margin:10px 0 0" }, text: zinnen.join(" ") }));
+    box.appendChild(kaart);
+    box.appendChild(el("p", { cls: "muted", text: "Alleen afgeronde ritten. Ritten die we niet zagen rijden en die niet gemeld waren, tellen we hier alleen " +
+      "voor de vier lijnen die we helemaal volgen: op de andere lijnen kan het ook aan de meting liggen." }));
+  }
+
+  // Eerdere dagen
+  const eerder = p.dagen.slice(isVandaag ? 1 : 0);
+  if (eerder.length) {
+    box.appendChild(el("h3", { text: "Eerdere dagen" }));
+    eerder.forEach(function (d) {
+      const t = d.totaal || {};
+      const kop = hoofdletter(dagTekst(d.datum)) + ": " + aantal(t.uitval) + " van " + aantal(t.ritten) + " ritten uitgevallen, " +
+        aantal(t.te_laat) + " te laat gemeld";
+      const lijst = d.lijnen.filter(opvallend).slice(0, 10).map(lijnItem);
+      const meer = d.lijnen.filter(opvallend).length - lijst.length;
+      (d.berichten || []).forEach(function (b) { lijst.push(nieuwsItem("U-OV · schermtekst", false, null, hoofdletter(b))); });
+      box.appendChild(el("details", { cls: "dag-details" }, [
+        el("summary", { text: kop }),
+        lijst.length ? el("ul", { cls: "prov-lijst", attrs: { style: "margin-bottom:12px" } }, lijst) : el("p", { cls: "muted", text: "Niets opvallends." }),
+        meer > 0 ? el("p", { cls: "muted", text: "En " + meer + " andere lijnen met uitval." }) : null,
+      ]));
+    });
+  }
+}
+
 function render(data) {
   const heeftMetingen = !!(data && data.lijnen && totaalGemeten(data) > 0);
   renderStatus(data, heeftMetingen);
+  renderProvincie(data);
   renderLijnen(data, heeftMetingen);
   renderHaltes(data);
   renderDagen(data, heeftMetingen);
