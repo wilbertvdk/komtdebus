@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-04T14:18:49+01:00",
+  "bijgewerkt": "2026-11-04T14:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-04"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 398,
-      "gemeten": 398,
+      "gepland": 399,
+      "gemeten": 399,
       "aantal": {
-        "gereden": 385,
+        "gereden": 386,
         "ingekort": 6,
         "uitval, op tijd": 4,
         "uitval, te laat": 3,
@@ -266,7 +266,7 @@
     {
       "datum": "2026-11-04",
       "lijn": "302",
-      "gereden": 66,
+      "gereden": 67,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -296,9 +296,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-04T14:18:32+01:00",
-    "gelukt": 2605,
-    "verwacht": 2589,
+    "tot": "2026-11-04T14:20:09+01:00",
+    "gelukt": 2606,
+    "verwacht": 2590,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -570,7 +570,7 @@
         "datum": "2026-11-04",
         "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 3165,
+          "ritten": 3173,
           "uitval": 30,
           "te_laat": 10
         },
@@ -579,7 +579,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 58,
+            "ritten": 59,
             "uitval": 1,
             "te_laat": 1
           },
@@ -603,7 +603,7 @@
             "lijn": "5",
             "naam": "Maarssen – Utrecht CS – Voordorp",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 39,
             "uitval": 2,
             "te_laat": 1
           },
@@ -635,7 +635,7 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 33,
             "uitval": 2,
             "te_laat": 0
           },
@@ -694,7 +694,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 66,
+            "ritten": 67,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
