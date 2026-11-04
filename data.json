@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-04T11:50:39+01:00",
+  "bijgewerkt": "2026-11-04T11:51:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-04"
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 387,
-      "gemeten": 387,
+      "gepland": 388,
+      "gemeten": 388,
       "aantal": {
-        "gereden": 379,
+        "gereden": 380,
         "ingekort": 3,
         "uitval, op tijd": 5,
         "uitval, te laat": 0,
@@ -129,7 +129,7 @@
         "ritten_ingekort": 3,
         "haltes": 98,
         "haltes_op_tijd": 96,
-        "haltes_dicht": 197,
+        "haltes_dicht": 198,
         "mediaan_min_na_vertrek": -657,
         "ritten_na_vertrek": 0,
         "mediaan_min_na_vertrek_laat": null,
@@ -286,7 +286,7 @@
     {
       "datum": "2026-11-04",
       "lijn": "376",
-      "gereden": 49,
+      "gereden": 50,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -570,7 +570,7 @@
         "datum": "2026-11-04",
         "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 2201,
+          "ritten": 2211,
           "uitval": 22,
           "te_laat": 7
         },
@@ -627,7 +627,7 @@
             "lijn": "47",
             "naam": "Utrecht – Houten",
             "gevolgd": false,
-            "ritten": 26,
+            "ritten": 27,
             "uitval": 1,
             "te_laat": 1
           },
@@ -635,7 +635,7 @@
             "lijn": "48",
             "naam": "Houten – Nieuwegein – Maarssen",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 20,
             "uitval": 1,
             "te_laat": 1
           },
@@ -700,7 +700,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 49,
+            "ritten": 50,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
