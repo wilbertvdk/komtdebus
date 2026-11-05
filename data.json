@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-05T04:50:15+01:00",
+  "bijgewerkt": "2026-11-05T05:05:10+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-04"
@@ -296,9 +296,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-05T04:49:55+01:00",
-    "gelukt": 3042,
-    "verwacht": 3025,
+    "tot": "2026-11-05T05:03:55+01:00",
+    "gelukt": 3049,
+    "verwacht": 3032,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -391,25 +391,6 @@
         "haltes_aantal": 1,
         "plaatsen": [
           "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-04T11:02+01:00",
-        "eind": "2026-11-05T05:00+01:00",
-        "tekst": "Vanaf 20.00 uur vervallen de haltes J, K en L i.v.m. werkzaamheden. De bussen stoppen dan op de naastgelegen haltes. Check de bestemming op de voorzijde bus.",
-        "lijnen": [
-          "56",
-          "80",
-          "376",
-          "380"
-        ],
-        "haltes": [
-          "Amersfoort, Centraal Station",
-          "Amersfoort, Centraal Station (K)"
-        ],
-        "haltes_aantal": 2,
-        "plaatsen": [
-          "Amersfoort"
         ]
       },
       {
