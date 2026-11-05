@@ -71,6 +71,9 @@ h4 { font-size: 1rem; margin: 0 0 6px; }
 a { color: var(--accent); }
 a:focus-visible, summary:focus-visible, .knop:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .lead { font-size: 1.1rem; color: var(--text); }
+.quote { margin: 12px 0 0; padding: 2px 0 2px 14px; border-left: 3px solid var(--accent); }
+.quote p { margin: 0; font-style: italic; }
+.quote footer { margin: 4px 0 0; padding: 0; border: 0; font-size: 0.9rem; color: var(--muted); }
 .muted { color: var(--muted); }
 .halte-nu { font-weight: 600; }
 .box {
@@ -172,7 +175,8 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 <div class="wrap">
 <header>
   <h1>Komt de bus? Lijn 272, 302, 315 en 376</h1>
-  <p class="lead">Rijden de bussen van U-OV tussen Baarn, Amersfoort en Utrecht Science Park, en zie je uitval op tijd in de app en op het scherm bij de halte? Dat meten we hier, elke rit.</p>
+  <p class="lead">Wacht je weleens op een bus die volgens de app komt, maar niet verschijnt? Wij meten elke rit en laten vervoerder en provincie zien waar de reisinformatie niet klopt.</p>
+  <blockquote class="quote"><p>"Ik sta regelmatig een half uur buiten te wachten op een bus die toch niet blijkt te komen."</p><footer>Reiziger op lijn 272</footer></blockquote>
   <div class="box meld-top" aria-label="Melden">
     <p><strong>Bus niet gekomen, of klopte de informatie niet?</strong> Meld het, voor elke lijn.</p>
     <a class="knop" id="meld-top-knop" href="#melden">Meld het</a>
@@ -215,7 +219,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
 
 <section id="methode" aria-labelledby="h-methode">
   <h2 id="h-methode">Hoe we meten</h2>
-  <p>We lezen alleen openbare reisinformatie: elke 2 minuten waar de bussen rijden, elke 5 minuten welke ritten vervallen, en elke dag de dienstregeling.</p>
+  <p>Dit is geen reisplanner: je ziet hier hoe vaak de informatie over je lijn klopte. We lezen alleen openbare reisinformatie: elke 2 minuten waar de bussen rijden, elke 5 minuten welke ritten vervallen, en elke dag de dienstregeling.</p>
   <details>
     <summary>Wat betekenen de groepen?</summary>
     <dl class="def">
