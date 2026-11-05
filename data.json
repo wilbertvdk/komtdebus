@@ -1,8 +1,8 @@
 {
-  "bijgewerkt": "2026-11-05T06:05:10+01:00",
+  "bijgewerkt": "2026-11-05T06:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
-    "tot": "2026-11-04"
+    "tot": "2026-11-05"
   },
   "lijnen": {
     "272": {
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 474,
-      "gemeten": 474,
+      "gepland": 475,
+      "gemeten": 475,
       "aantal": {
-        "gereden": 466,
+        "gereden": 467,
         "ingekort": 3,
         "uitval, op tijd": 5,
         "uitval, te laat": 0,
@@ -129,7 +129,7 @@
         "ritten_ingekort": 3,
         "haltes": 98,
         "haltes_op_tijd": 96,
-        "haltes_dicht": 242,
+        "haltes_dicht": 243,
         "mediaan_min_na_vertrek": -657,
         "ritten_na_vertrek": 0,
         "mediaan_min_na_vertrek_laat": null,
@@ -137,7 +137,7 @@
       },
       "meetperiode": {
         "van": "2026-11-01",
-        "tot": "2026-11-04"
+        "tot": "2026-11-05"
       },
       "dicht": [
         {
@@ -292,13 +292,23 @@
       "uitval, te laat": 0,
       "niet gemeld": 0,
       "geen meting": 0
+    },
+    {
+      "datum": "2026-11-05",
+      "lijn": "376",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
     }
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-05T06:03:55+01:00",
-    "gelukt": 3079,
-    "verwacht": 3062,
+    "tot": "2026-11-05T06:19:55+01:00",
+    "gelukt": 3087,
+    "verwacht": 3070,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -545,13 +555,25 @@
     "dagen": [
       {
         "datum": "2026-11-05",
-        "lijnen_gemeten": 6,
+        "lijnen_gemeten": 14,
         "totaal": {
-          "ritten": 7,
+          "ritten": 21,
           "uitval": 0,
           "te_laat": 0
         },
-        "lijnen": [],
+        "lijnen": [
+          {
+            "lijn": "376",
+            "naam": "Science Park – Bunschoten-Spakenburg",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          }
+        ],
         "berichten": []
       },
       {
