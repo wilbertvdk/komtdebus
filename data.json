@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-05T03:20:14+01:00",
+  "bijgewerkt": "2026-11-05T03:35:09+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-04"
@@ -143,9 +143,9 @@
         {
           "halte": "Spakenburg, Broerswetering",
           "van": "2026-11-01",
-          "tot": "2026-11-04",
-          "dagen": 4,
-          "ritten": 242,
+          "tot": "2026-11-05",
+          "dagen": 5,
+          "ritten": 312,
           "sinds": "2026-07-10",
           "gemeld_tot": "2026-12-31"
         }
@@ -296,9 +296,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-05T03:19:55+01:00",
-    "gelukt": 2997,
-    "verwacht": 2980,
+    "tot": "2026-11-05T03:33:55+01:00",
+    "gelukt": 3004,
+    "verwacht": 2987,
     "aandeel": 1.0
   },
   "haltesluitingen": [
