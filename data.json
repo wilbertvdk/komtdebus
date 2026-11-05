@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-05T07:20:15+01:00",
+  "bijgewerkt": "2026-11-05T07:35:15+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-05"
   },
   "lijnen": {
     "272": {
-      "gepland": 51,
-      "gemeten": 51,
+      "gepland": 52,
+      "gemeten": 52,
       "aantal": {
-        "gereden": 51,
+        "gereden": 52,
         "ingekort": 0,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -26,7 +26,7 @@
       "meldnorm": null,
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-04"
+        "tot": "2026-11-05"
       },
       "dicht": []
     },
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 478,
-      "gemeten": 478,
+      "gepland": 480,
+      "gemeten": 480,
       "aantal": {
-        "gereden": 470,
+        "gereden": 472,
         "ingekort": 3,
         "uitval, op tijd": 5,
         "uitval, te laat": 0,
@@ -295,6 +295,16 @@
     },
     {
       "datum": "2026-11-05",
+      "lijn": "272",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-05",
       "lijn": "302",
       "gereden": 1,
       "ingekort": 0,
@@ -306,7 +316,7 @@
     {
       "datum": "2026-11-05",
       "lijn": "376",
-      "gereden": 4,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -316,9 +326,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-05T07:19:55+01:00",
-    "gelukt": 3117,
-    "verwacht": 3100,
+    "tot": "2026-11-05T07:33:55+01:00",
+    "gelukt": 3124,
+    "verwacht": 3107,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -565,13 +575,21 @@
     "dagen": [
       {
         "datum": "2026-11-05",
-        "lijnen_gemeten": 66,
+        "lijnen_gemeten": 78,
         "totaal": {
-          "ritten": 182,
-          "uitval": 1,
+          "ritten": 255,
+          "uitval": 2,
           "te_laat": 1
         },
         "lijnen": [
+          {
+            "lijn": "47",
+            "naam": "Utrecht – Houten",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 1,
+            "te_laat": 0
+          },
           {
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
@@ -579,6 +597,17 @@
             "ritten": 2,
             "uitval": 1,
             "te_laat": 1
+          },
+          {
+            "lijn": "272",
+            "naam": "Baarn – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
           },
           {
             "lijn": "302",
@@ -595,7 +624,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
