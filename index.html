@@ -236,7 +236,9 @@ footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16p
   </details>
   <details>
     <summary>De norm</summary>
-    <p>Volgens de landelijke afspraken over reisinformatie (<a href="https://dova.nu/sites/default/files/Concessiebijlage_Datasets_OV%20V2.2.4_def%202024_0.pdf" rel="noopener">DOVA, eis K17.2</a>) moet uitval in <strong>95% van de gevallen vóór de geplande passage bij de halte</strong> gemeld zijn. Wij tellen per vervallen rit de haltes waar de melding op tijd was. Of precies deze norm in de Utrechtse concessie staat, is nog niet vastgesteld.</p>
+    <p>Volgens de landelijke afspraken over reisinformatie (<a href="https://dova.nu/document/concessiebijlagen" rel="noopener">DOVA, Concessiebijlage Datasets OV, eis KV17.2</a>) moet het bericht dat een bus een halte niet aandoet in <strong>95% van de gevallen binnen zijn vóór de geplande tijd van de bus bij die halte</strong>.</p>
+    <p>De norm gaat dus alleen over bussen die niet komen, niet over alle ritten. Een lijn waarop bijna alles rijdt, kan de norm toch missen als de uitval die er is te laat gemeld wordt. Wij tellen bij een uitgevallen rit alle haltes, en bij een ingekorte rit de haltes die hij oversloeg.</p>
+    <p>Het Programma van Eisen van de Utrechtse busconcessies verwijst naar deze bijlage van DOVA (artikel 7.2.2). We hebben de provincie gevraagd te bevestigen dat de norm geldt. Ritten zonder bus én zonder melding ('niet gemeld') tellen hier niet mee; als dat echte uitval was, ligt het percentage lager. Wij kijken elke 5 minuten, dus een melding kan iets eerder binnen zijn geweest dan wij zagen.</p>
   </details>
 </section>
 
@@ -435,8 +437,12 @@ function renderMeldnorm(norm) {
   return el("div", { cls: "meldnorm" }, [
     el("h4", { text: "Op tijd gemeld?" }),
     perRit || ingekortTekst ? el("p", { text: [perRit, ingekortTekst].filter(Boolean).join(" ") }) : null,
-    el("p", { text: "Per halte: " + procent(norm.percentage_op_tijd) + " op tijd gemeld (" + norm.haltes_op_tijd + " van " +
-      norm.haltes + "). Norm: " + norm.norm_percentage + "%." }),
+    el("p", { text: (norm.haltes === 1
+      ? "Eén keer deed een bus een halte niet aan. Dat stond " + (norm.haltes_op_tijd ? "" : "niet ") +
+        "op tijd in de reisinformatie."
+      : "Van de " + norm.haltes + " keer dat een bus een halte niet aandeed, stond bij " + norm.haltes_op_tijd + " (" +
+        procent(norm.percentage_op_tijd) + ") op tijd in de reisinformatie dat hij niet kwam.") +
+      " De norm is " + norm.norm_percentage + "%." }),
     dicht ? el("p", { cls: "muted", text: "Niet meegeteld: haltes die die dag de hele dag dicht waren " +
       "(een haltesluiting, geen uitval; zie hieronder)." }) : null,
   ]);
