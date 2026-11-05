@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-05T20:50:15+01:00",
+  "bijgewerkt": "2026-11-05T21:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-05"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 612,
-      "gemeten": 612,
+      "gepland": 614,
+      "gemeten": 614,
       "aantal": {
-        "gereden": 595,
+        "gereden": 597,
         "ingekort": 6,
         "uitval, op tijd": 5,
         "uitval, te laat": 4,
@@ -306,7 +306,7 @@
     {
       "datum": "2026-11-05",
       "lijn": "302",
-      "gereden": 128,
+      "gereden": 130,
       "ingekort": 0,
       "uitval, op tijd": 1,
       "uitval, te laat": 1,
@@ -336,9 +336,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-05T20:50:06+01:00",
-    "gelukt": 3521,
-    "verwacht": 3505,
+    "tot": "2026-11-05T21:04:06+01:00",
+    "gelukt": 3528,
+    "verwacht": 3512,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -407,6 +407,39 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-05T13:00+01:00",
+        "eind": "2026-11-08T17:00+01:00",
+        "tekst": "Op 8 november van 13:00 t/m 17:00 vervallen de haltes Gouda Stolwijkersluis, Haastrecht Waaiersluis, Haastrecht Neerbos richting Gouda.",
+        "lijnen": [
+          "307"
+        ],
+        "haltes": [
+          "Haastrecht, Neerbos",
+          "Haastrecht, Waaiersluis",
+          "Gouda, Stolwijkersluis"
+        ],
+        "haltes_aantal": 3,
+        "plaatsen": [
+          "Haastrecht",
+          "Gouda"
+        ]
+      },
+      {
+        "begin": "2026-11-05T05:00+01:00",
+        "eind": "2026-11-09T23:00+01:00",
+        "tekst": "Op 9 november van 05:00 t/m 23:00 vervallen de haltes Vlist Vlisterstee t/m Haastrecht Waaiersluis en Gouda Stolwijkersluis richting Ijsselstein.",
+        "lijnen": [
+          "106"
+        ],
+        "haltes": [],
+        "haltes_aantal": 10,
+        "plaatsen": [
+          "Vlist",
+          "Haastrecht",
+          "Gouda"
+        ]
+      },
       {
         "begin": "2026-11-04T08:15+01:00",
         "eind": "2026-11-07T23:59+01:00",
@@ -547,8 +580,8 @@
         "datum": "2026-11-05",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6035,
-          "uitval": 149,
+          "ritten": 6103,
+          "uitval": 150,
           "te_laat": 59
         },
         "lijnen": [
@@ -556,7 +589,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 117,
+            "ritten": 119,
             "uitval": 2,
             "te_laat": 2
           },
@@ -564,7 +597,7 @@
             "lijn": "2",
             "naam": "Amersfoort CS – Nieuwland",
             "gevolgd": false,
-            "ritten": 115,
+            "ritten": 116,
             "uitval": 2,
             "te_laat": 0
           },
@@ -572,7 +605,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 60,
+            "ritten": 61,
             "uitval": 3,
             "te_laat": 3
           },
@@ -580,7 +613,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 60,
+            "ritten": 61,
             "uitval": 4,
             "te_laat": 3
           },
@@ -588,7 +621,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 113,
+            "ritten": 114,
             "uitval": 3,
             "te_laat": 1
           },
@@ -596,7 +629,7 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 113,
+            "ritten": 115,
             "uitval": 2,
             "te_laat": 0
           },
@@ -604,7 +637,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 109,
+            "ritten": 110,
             "uitval": 3,
             "te_laat": 2
           },
@@ -612,7 +645,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 56,
+            "ritten": 57,
             "uitval": 2,
             "te_laat": 1
           },
@@ -620,7 +653,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 117,
+            "ritten": 119,
             "uitval": 4,
             "te_laat": 2
           },
@@ -660,7 +693,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 128,
+            "ritten": 130,
             "uitval": 3,
             "te_laat": 1
           },
@@ -692,7 +725,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 151,
+            "ritten": 153,
             "uitval": 4,
             "te_laat": 1
           },
@@ -700,7 +733,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 110,
+            "ritten": 112,
             "uitval": 2,
             "te_laat": 0
           },
@@ -724,7 +757,7 @@
             "lijn": "34",
             "naam": "Amersfoort – Science Park – Westraven",
             "gevolgd": false,
-            "ritten": 103,
+            "ritten": 104,
             "uitval": 1,
             "te_laat": 0
           },
@@ -748,7 +781,7 @@
             "lijn": "48",
             "naam": "Houten – Nieuwegein – Maarssen",
             "gevolgd": false,
-            "ritten": 55,
+            "ritten": 56,
             "uitval": 3,
             "te_laat": 1
           },
@@ -756,7 +789,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 55,
             "uitval": 3,
             "te_laat": 1
           },
@@ -764,7 +797,7 @@
             "lijn": "58",
             "naam": "Hilversum – Zeist via Maartensdijk",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 29,
             "uitval": 1,
             "te_laat": 0
           },
@@ -772,7 +805,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 67,
+            "ritten": 68,
             "uitval": 5,
             "te_laat": 2
           },
@@ -788,7 +821,7 @@
             "lijn": "70",
             "naam": "Hilversum – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 117,
+            "ritten": 118,
             "uitval": 2,
             "te_laat": 1
           },
@@ -796,7 +829,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 117,
+            "ritten": 119,
             "uitval": 4,
             "te_laat": 2
           },
@@ -804,7 +837,7 @@
             "lijn": "80",
             "naam": "Amersfoort – Veenendaal-De Klomp",
             "gevolgd": false,
-            "ritten": 59,
+            "ritten": 60,
             "uitval": 1,
             "te_laat": 0
           },
@@ -828,7 +861,7 @@
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
-            "ritten": 47,
+            "ritten": 48,
             "uitval": 2,
             "te_laat": 2
           },
@@ -836,7 +869,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 75,
+            "ritten": 76,
             "uitval": 4,
             "te_laat": 4
           },
@@ -844,9 +877,17 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 79,
+            "ritten": 82,
             "uitval": 2,
             "te_laat": 1
+          },
+          {
+            "lijn": "121",
+            "naam": "Mijdrecht – Hilversum",
+            "gevolgd": false,
+            "ritten": 29,
+            "uitval": 1,
+            "te_laat": 0
           },
           {
             "lijn": "122",
@@ -903,7 +944,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 132,
+            "ritten": 134,
             "uitval": 2,
             "te_laat": 1,
             "niet_gemeld": 2,
@@ -914,7 +955,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 88,
+            "ritten": 89,
             "uitval": 2,
             "te_laat": 1
           },
@@ -933,7 +974,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 91,
+            "ritten": 92,
             "uitval": 7,
             "te_laat": 0
           },
@@ -941,7 +982,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 136,
+            "ritten": 138,
             "uitval": 5,
             "te_laat": 1
           },
@@ -949,7 +990,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 172,
+            "ritten": 174,
             "uitval": 2,
             "te_laat": 0
           },
@@ -974,6 +1015,35 @@
           }
         ],
         "berichten": [
+          {
+            "tekst": "Op 8 november van 13:00 t/m 17:00 vervallen de haltes Gouda Stolwijkersluis, Haastrecht Waaiersluis, Haastrecht Neerbos richting Gouda.",
+            "lijnen": [
+              "307"
+            ],
+            "haltes": [
+              "Haastrecht, Neerbos",
+              "Haastrecht, Waaiersluis",
+              "Gouda, Stolwijkersluis"
+            ],
+            "haltes_aantal": 3,
+            "plaatsen": [
+              "Haastrecht",
+              "Gouda"
+            ]
+          },
+          {
+            "tekst": "Op 9 november van 05:00 t/m 23:00 vervallen de haltes Vlist Vlisterstee t/m Haastrecht Waaiersluis en Gouda Stolwijkersluis richting Ijsselstein.",
+            "lijnen": [
+              "106"
+            ],
+            "haltes": [],
+            "haltes_aantal": 10,
+            "plaatsen": [
+              "Vlist",
+              "Haastrecht",
+              "Gouda"
+            ]
+          },
           {
             "tekst": "van 9 t/m 13 en op 16 november vervallen de volgende haltes vanaf 20:00: Woudenberg Zegheweg, Woudenberg Europaweg richting Veenendaal.",
             "lijnen": [
