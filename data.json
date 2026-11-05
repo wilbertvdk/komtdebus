@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-05T08:35:15+01:00",
+  "bijgewerkt": "2026-11-05T08:50:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-05"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 490,
-      "gemeten": 490,
+      "gepland": 492,
+      "gemeten": 492,
       "aantal": {
-        "gereden": 477,
+        "gereden": 479,
         "ingekort": 6,
         "uitval, op tijd": 4,
         "uitval, te laat": 3,
@@ -42,7 +42,7 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 97.3,
+        "gereden": 97.4,
         "ingekort": 1.2,
         "uitval, op tijd": 0.8,
         "uitval, te laat": 0.6,
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 491,
-      "gemeten": 491,
+      "gepland": 493,
+      "gemeten": 493,
       "aantal": {
-        "gereden": 483,
+        "gereden": 485,
         "ingekort": 3,
         "uitval, op tijd": 5,
         "uitval, te laat": 0,
@@ -129,7 +129,7 @@
         "ritten_ingekort": 3,
         "haltes": 98,
         "haltes_op_tijd": 96,
-        "haltes_dicht": 250,
+        "haltes_dicht": 251,
         "mediaan_min_na_vertrek": -657,
         "ritten_na_vertrek": 0,
         "mediaan_min_na_vertrek_laat": null,
@@ -306,7 +306,7 @@
     {
       "datum": "2026-11-05",
       "lijn": "302",
-      "gereden": 10,
+      "gereden": 12,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -326,7 +326,7 @@
     {
       "datum": "2026-11-05",
       "lijn": "376",
-      "gereden": 17,
+      "gereden": 19,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -336,9 +336,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-05T08:33:55+01:00",
-    "gelukt": 3154,
-    "verwacht": 3137,
+    "tot": "2026-11-05T08:49:55+01:00",
+    "gelukt": 3162,
+    "verwacht": 3145,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -585,10 +585,10 @@
     "dagen": [
       {
         "datum": "2026-11-05",
-        "lijnen_gemeten": 91,
+        "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 671,
-          "uitval": 7,
+          "ritten": 808,
+          "uitval": 9,
           "te_laat": 3
         },
         "lijnen": [
@@ -596,7 +596,15 @@
             "lijn": "13",
             "naam": "Utrecht CS – Lage Weide – Maarssen",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 14,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "28",
+            "naam": "Vleuterweide – Utrecht CS – Science Park",
+            "gevolgd": false,
+            "ritten": 13,
             "uitval": 1,
             "te_laat": 0
           },
@@ -612,7 +620,7 @@
             "lijn": "47",
             "naam": "Utrecht – Houten",
             "gevolgd": false,
-            "ritten": 9,
+            "ritten": 11,
             "uitval": 2,
             "te_laat": 1
           },
@@ -620,15 +628,15 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 10,
-            "uitval": 2,
+            "ritten": 13,
+            "uitval": 3,
             "te_laat": 1
           },
           {
             "lijn": "81",
             "naam": "Vianen – Meerkerk",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 1
           },
@@ -647,7 +655,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -669,7 +677,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
