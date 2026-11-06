@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-06T05:50:15+01:00",
+  "bijgewerkt": "2026-11-06T06:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-05"
@@ -336,9 +336,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-06T05:50:06+01:00",
-    "gelukt": 3791,
-    "verwacht": 3775,
+    "tot": "2026-11-06T06:04:06+01:00",
+    "gelukt": 3798,
+    "verwacht": 3782,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -526,45 +526,6 @@
         ]
       },
       {
-        "begin": "2026-10-30T08:40+01:00",
-        "eind": "2026-11-06T06:00+01:00",
-        "tekst": "Halte vervalt van 2 november t/m 6 november dagelijks van 20:00 tot 06:00. Plan je reis in de U-OV app.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Thomas à Kempisplantsoen"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-10-30T08:40+01:00",
-        "eind": "2026-11-06T06:00+01:00",
-        "tekst": "Lijn 5: halte vervalt van 2 november t/m 6 november dagelijks van 20:00 tot 06:00. Vervangende halte: Dafne Schippersbrug.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Everard Meysterlaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-10-30T08:40+01:00",
-        "eind": "2026-11-06T06:00+01:00",
-        "tekst": "Halte vervalt van 2 november t/m 6 november dagelijks van 20:00 tot 06:00. Vervangende halte: Dafne Schippersbrug.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Racinelaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
         "begin": "2026-10-30T09:10+01:00",
         "eind": "2026-11-06T15:00+01:00",
         "tekst": "Halte vervalt van 2 november t/m 6 november dagelijks van 09:00 tot 15:00. Vervangende halte: Slotlaan.",
@@ -594,9 +555,9 @@
     "dagen": [
       {
         "datum": "2026-11-06",
-        "lijnen_gemeten": 2,
+        "lijnen_gemeten": 6,
         "totaal": {
-          "ritten": 2,
+          "ritten": 7,
           "uitval": 0,
           "te_laat": 0
         },
