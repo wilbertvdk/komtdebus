@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-06T06:50:15+01:00",
+  "bijgewerkt": "2026-11-06T07:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-06"
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 612,
-      "gemeten": 612,
+      "gepland": 613,
+      "gemeten": 613,
       "aantal": {
-        "gereden": 600,
+        "gereden": 601,
         "ingekort": 3,
         "uitval, op tijd": 7,
         "uitval, te laat": 2,
@@ -129,7 +129,7 @@
         "ritten_ingekort": 3,
         "haltes": 177,
         "haltes_op_tijd": 169,
-        "haltes_dicht": 314,
+        "haltes_dicht": 315,
         "mediaan_min_na_vertrek": -20,
         "ritten_na_vertrek": 2,
         "mediaan_min_na_vertrek_laat": 18.5,
@@ -336,7 +336,7 @@
     {
       "datum": "2026-11-06",
       "lijn": "376",
-      "gereden": 2,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -346,9 +346,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-06T06:50:06+01:00",
-    "gelukt": 3821,
-    "verwacht": 3805,
+    "tot": "2026-11-06T07:04:06+01:00",
+    "gelukt": 3828,
+    "verwacht": 3812,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -565,9 +565,9 @@
     "dagen": [
       {
         "datum": "2026-11-06",
-        "lijnen_gemeten": 34,
+        "lijnen_gemeten": 49,
         "totaal": {
-          "ritten": 72,
+          "ritten": 116,
           "uitval": 2,
           "te_laat": 0
         },
@@ -584,7 +584,7 @@
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 1,
             "te_laat": 0
           },
@@ -592,7 +592,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
