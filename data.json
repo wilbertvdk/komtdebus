@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T10:20:16+01:00",
+  "bijgewerkt": "2026-11-07T10:35:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T10:20:13+01:00",
-    "gelukt": 4645,
-    "verwacht": 4630,
+    "tot": "2026-11-07T10:34:12+01:00",
+    "gelukt": 4652,
+    "verwacht": 4637,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -574,8 +574,8 @@
         "datum": "2026-11-07",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 548,
-          "uitval": 1,
+          "ritten": 610,
+          "uitval": 2,
           "te_laat": 1
         },
         "lijnen": [
@@ -583,8 +583,8 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 20,
-            "uitval": 1,
+            "ritten": 22,
+            "uitval": 2,
             "te_laat": 1
           },
           {
