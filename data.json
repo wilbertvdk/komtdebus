@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T07:50:16+01:00",
+  "bijgewerkt": "2026-11-07T08:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T07:50:13+01:00",
-    "gelukt": 4570,
-    "verwacht": 4555,
+    "tot": "2026-11-07T08:04:12+01:00",
+    "gelukt": 4577,
+    "verwacht": 4562,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -567,40 +567,14 @@
         "plaatsen": [
           "Utrecht"
         ]
-      },
-      {
-        "begin": "2026-11-06T19:00+01:00",
-        "eind": "2026-11-07T08:00+01:00",
-        "tekst": "Halte vervallen tot 7 november 08:00. Tijdelijke halte: op de parallelweg.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Kanaleneiland-Zuid"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-06T19:00+01:00",
-        "eind": "2026-11-07T08:00+01:00",
-        "tekst": "Halte vervallen tot 7 november 08:00. Tijdelijke halte: op de hoek van de Winthontlaan.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Kanaleneiland-Zuid"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
       }
     ],
     "dagen": [
       {
         "datum": "2026-11-07",
-        "lijnen_gemeten": 21,
+        "lijnen_gemeten": 31,
         "totaal": {
-          "ritten": 37,
+          "ritten": 71,
           "uitval": 0,
           "te_laat": 0
         },
