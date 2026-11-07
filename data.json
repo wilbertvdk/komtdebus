@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T09:50:16+01:00",
+  "bijgewerkt": "2026-11-07T10:05:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T09:50:14+01:00",
-    "gelukt": 4630,
-    "verwacht": 4615,
+    "tot": "2026-11-07T10:04:12+01:00",
+    "gelukt": 4637,
+    "verwacht": 4622,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -572,13 +572,21 @@
     "dagen": [
       {
         "datum": "2026-11-07",
-        "lijnen_gemeten": 58,
+        "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 426,
-          "uitval": 0,
-          "te_laat": 0
+          "ritten": 485,
+          "uitval": 1,
+          "te_laat": 1
         },
         "lijnen": [
+          {
+            "lijn": "17",
+            "naam": "Amersfoort CS – Leusden",
+            "gevolgd": false,
+            "ritten": 18,
+            "uitval": 1,
+            "te_laat": 1
+          },
           {
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
