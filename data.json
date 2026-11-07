@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T04:50:10+01:00",
+  "bijgewerkt": "2026-11-07T05:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-06"
@@ -376,9 +376,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T04:48:12+01:00",
-    "gelukt": 4479,
-    "verwacht": 4464,
+    "tot": "2026-11-07T05:04:12+01:00",
+    "gelukt": 4487,
+    "verwacht": 4472,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -534,25 +534,6 @@
         ]
       },
       {
-        "begin": "2026-09-30T06:00+02:00",
-        "eind": "2026-11-07T05:00+01:00",
-        "tekst": "Vanaf 3 oktober 06:00 t/m 7 november 05:00 vervallen de haltes: Lopik Zijdeweg, Lopik Vrijheidslaan, Lopik Gemeentehuis, Cabauw Provincialeweg richting Utrecht",
-        "lijnen": [
-          "395"
-        ],
-        "haltes": [
-          "Lopik, Gemeentehuis",
-          "Lopik, Vrijheidslaan",
-          "Lopik, Zijdeweg",
-          "Cabauw, Provincialeweg"
-        ],
-        "haltes_aantal": 4,
-        "plaatsen": [
-          "Lopik",
-          "Cabauw"
-        ]
-      },
-      {
         "begin": "2026-11-06T19:00+01:00",
         "eind": "2026-11-07T08:00+01:00",
         "tekst": "Halte vervallen tot 7 november 08:00. Tijdelijke halte: op de parallelweg.",
@@ -584,7 +565,7 @@
         "datum": "2026-11-06",
         "lijnen_gemeten": 107,
         "totaal": {
-          "ritten": 7026,
+          "ritten": 7027,
           "uitval": 130,
           "te_laat": 45
         },
