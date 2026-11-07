@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T21:35:18+01:00",
+  "bijgewerkt": "2026-11-07T21:50:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 805,
-      "gemeten": 805,
+      "gepland": 806,
+      "gemeten": 806,
       "aantal": {
-        "gereden": 780,
+        "gereden": 781,
         "ingekort": 9,
         "uitval, op tijd": 10,
         "uitval, te laat": 4,
@@ -105,19 +105,19 @@
       "dicht": []
     },
     "376": {
-      "gepland": 844,
-      "gemeten": 844,
+      "gepland": 847,
+      "gemeten": 847,
       "aantal": {
-        "gereden": 824,
-        "ingekort": 7,
+        "gereden": 826,
+        "ingekort": 8,
         "uitval, op tijd": 11,
         "uitval, te laat": 2,
         "niet gemeld": 0,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 97.6,
-        "ingekort": 0.8,
+        "gereden": 97.5,
+        "ingekort": 0.9,
         "uitval, op tijd": 1.3,
         "uitval, te laat": 0.2,
         "niet gemeld": 0.0
@@ -126,9 +126,9 @@
         "norm_percentage": 95,
         "ritten": 13,
         "ritten_vooraf": 11,
-        "ritten_ingekort": 7,
-        "haltes": 269,
-        "haltes_op_tijd": 258,
+        "ritten_ingekort": 8,
+        "haltes": 270,
+        "haltes_op_tijd": 259,
         "haltes_dicht": 381,
         "mediaan_min_na_vertrek": -20,
         "ritten_na_vertrek": 2,
@@ -376,7 +376,7 @@
     {
       "datum": "2026-11-07",
       "lijn": "302",
-      "gereden": 29,
+      "gereden": 30,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -386,8 +386,8 @@
     {
       "datum": "2026-11-07",
       "lijn": "376",
-      "gereden": 95,
-      "ingekort": 3,
+      "gereden": 97,
+      "ingekort": 4,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T21:33:57+01:00",
-    "gelukt": 4981,
-    "verwacht": 4967,
+    "tot": "2026-11-07T21:49:57+01:00",
+    "gelukt": 4989,
+    "verwacht": 4975,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -467,6 +467,87 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-11T20:00+01:00",
+        "eind": "2026-11-13T06:00+01:00",
+        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Plan uw reis in de app.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Thomas à Kempisplantsoen"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-07T21:50+01:00",
+        "eind": "2026-11-08T15:59+01:00",
+        "tekst": "Halte vervallen op 8 november van 16:00 tot 20:30 i.v.m. een voetbalwedstrijd.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Diakonessenhuis-Zuid",
+          "Utrecht, Herculesplein/Stadion"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-11T20:00+01:00",
+        "eind": "2026-11-13T06:00+01:00",
+        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Racinelaan",
+          "Utrecht, Everard Meysterlaan"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-07T21:50+01:00",
+        "eind": "2026-11-08T15:59+01:00",
+        "tekst": "Halte vervallen op 8 november van 16:00 tot 20:30 i.v.m. een voetbalwedstrijd. Tijdelijke halte: halte Gansstraat nabij Park Oosterspoorbaan.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Ina Boudier-Bakkerlaan"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-07T21:50+01:00",
+        "eind": "2026-11-08T15:59+01:00",
+        "tekst": "Halte vervallen op 8 november van 16:00 tot 20:30 i.v.m. een voetbalwedstrijd. Vervangende halte: Sterrenwijk aan de overzijde.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Sterrenwijk"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-11T20:00+01:00",
+        "eind": "2026-11-13T06:00+01:00",
+        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Den Hommel",
+          "Utrecht, Beethovenlaan"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-07T08:00+01:00",
         "eind": "2026-11-09T05:00+01:00",
@@ -574,7 +655,7 @@
         "datum": "2026-11-07",
         "lijnen_gemeten": 61,
         "totaal": {
-          "ritten": 3795,
+          "ritten": 3850,
           "uitval": 25,
           "te_laat": 15
         },
@@ -591,7 +672,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 59,
+            "ritten": 60,
             "uitval": 1,
             "te_laat": 1
           },
@@ -599,7 +680,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 59,
+            "ritten": 60,
             "uitval": 1,
             "te_laat": 1
           },
@@ -607,7 +688,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 104,
+            "ritten": 106,
             "uitval": 1,
             "te_laat": 1
           },
@@ -615,7 +696,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 92,
+            "ritten": 93,
             "uitval": 1,
             "te_laat": 1
           },
@@ -639,7 +720,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 110,
+            "ritten": 113,
             "uitval": 2,
             "te_laat": 1
           },
@@ -655,7 +736,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 134,
+            "ritten": 136,
             "uitval": 2,
             "te_laat": 1
           },
@@ -663,7 +744,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 51,
+            "ritten": 52,
             "uitval": 1,
             "te_laat": 1
           },
@@ -687,7 +768,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 55,
+            "ritten": 56,
             "uitval": 2,
             "te_laat": 1
           },
@@ -703,7 +784,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 29,
+            "ritten": 30,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -714,15 +795,84 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 98,
+            "ritten": 101,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
-            "ingekort": 3,
+            "ingekort": 4,
             "afgebroken": 0
           }
         ],
         "berichten": [
+          {
+            "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Plan uw reis in de app.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Thomas à Kempisplantsoen"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Halte vervallen op 8 november van 16:00 tot 20:30 i.v.m. een voetbalwedstrijd.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Diakonessenhuis-Zuid",
+              "Utrecht, Herculesplein/Stadion"
+            ],
+            "haltes_aantal": 2,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Racinelaan",
+              "Utrecht, Everard Meysterlaan"
+            ],
+            "haltes_aantal": 2,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Halte vervallen op 8 november van 16:00 tot 20:30 i.v.m. een voetbalwedstrijd. Tijdelijke halte: halte Gansstraat nabij Park Oosterspoorbaan.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Ina Boudier-Bakkerlaan"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Halte vervallen op 8 november van 16:00 tot 20:30 i.v.m. een voetbalwedstrijd. Vervangende halte: Sterrenwijk aan de overzijde.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Sterrenwijk"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Den Hommel",
+              "Utrecht, Beethovenlaan"
+            ],
+            "haltes_aantal": 2,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
           {
             "tekst": "Lijn 85: houdt rekening met enkele vertraging i.v.m. drukte in het verkeer.",
             "lijnen": [],
