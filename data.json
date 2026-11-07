@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T16:05:17+01:00",
+  "bijgewerkt": "2026-11-07T16:20:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 794,
-      "gemeten": 794,
+      "gepland": 795,
+      "gemeten": 795,
       "aantal": {
-        "gereden": 769,
+        "gereden": 770,
         "ingekort": 9,
         "uitval, op tijd": 10,
         "uitval, te laat": 4,
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 801,
-      "gemeten": 801,
+      "gepland": 803,
+      "gemeten": 803,
       "aantal": {
-        "gereden": 784,
+        "gereden": 786,
         "ingekort": 4,
         "uitval, op tijd": 11,
         "uitval, te laat": 2,
@@ -376,7 +376,7 @@
     {
       "datum": "2026-11-07",
       "lijn": "302",
-      "gereden": 18,
+      "gereden": 19,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -386,7 +386,7 @@
     {
       "datum": "2026-11-07",
       "lijn": "376",
-      "gereden": 55,
+      "gereden": 57,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T16:04:12+01:00",
-    "gelukt": 4817,
-    "verwacht": 4802,
+    "tot": "2026-11-07T16:20:13+01:00",
+    "gelukt": 4825,
+    "verwacht": 4810,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -574,16 +574,16 @@
         "datum": "2026-11-07",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 2259,
-          "uitval": 9,
-          "te_laat": 5
+          "ritten": 2332,
+          "uitval": 10,
+          "te_laat": 6
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 33,
+            "ritten": 34,
             "uitval": 1,
             "te_laat": 1
           },
@@ -591,7 +591,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 55,
+            "ritten": 57,
             "uitval": 1,
             "te_laat": 1
           },
@@ -599,7 +599,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 53,
+            "ritten": 55,
             "uitval": 3,
             "te_laat": 1
           },
@@ -607,7 +607,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 66,
+            "ritten": 68,
             "uitval": 2,
             "te_laat": 1
           },
@@ -620,10 +620,18 @@
             "te_laat": 1
           },
           {
+            "lijn": "85",
+            "naam": "Utrecht – Leerdam",
+            "gevolgd": false,
+            "ritten": 35,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -634,7 +642,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 55,
+            "ritten": 57,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
