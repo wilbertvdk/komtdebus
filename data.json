@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T01:50:20+01:00",
+  "bijgewerkt": "2026-11-07T02:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-06"
@@ -376,9 +376,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T01:50:12+01:00",
-    "gelukt": 4390,
-    "verwacht": 4375,
+    "tot": "2026-11-07T02:04:12+01:00",
+    "gelukt": 4397,
+    "verwacht": 4382,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -584,7 +584,7 @@
         "datum": "2026-11-06",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6983,
+          "ritten": 6999,
           "uitval": 130,
           "te_laat": 45
         },
@@ -681,7 +681,7 @@
             "lijn": "12",
             "naam": "Utrecht CS – Maarssen",
             "gevolgd": false,
-            "ritten": 67,
+            "ritten": 68,
             "uitval": 1,
             "te_laat": 1
           },
@@ -729,7 +729,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 185,
+            "ritten": 186,
             "uitval": 8,
             "te_laat": 3
           },
@@ -793,7 +793,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 64,
+            "ritten": 66,
             "uitval": 2,
             "te_laat": 0
           },
@@ -825,7 +825,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 141,
+            "ritten": 143,
             "uitval": 4,
             "te_laat": 2
           },
@@ -930,7 +930,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 158,
+            "ritten": 159,
             "uitval": 1,
             "te_laat": 0
           },
@@ -938,7 +938,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 231,
+            "ritten": 232,
             "uitval": 1,
             "te_laat": 0
           },
