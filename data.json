@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T11:20:17+01:00",
+  "bijgewerkt": "2026-11-07T11:35:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 763,
-      "gemeten": 763,
+      "gepland": 765,
+      "gemeten": 765,
       "aantal": {
-        "gereden": 746,
+        "gereden": 748,
         "ingekort": 4,
         "uitval, op tijd": 11,
         "uitval, te laat": 2,
@@ -386,7 +386,7 @@
     {
       "datum": "2026-11-07",
       "lijn": "376",
-      "gereden": 17,
+      "gereden": 19,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T11:20:12+01:00",
-    "gelukt": 4675,
-    "verwacht": 4660,
+    "tot": "2026-11-07T11:34:12+01:00",
+    "gelukt": 4682,
+    "verwacht": 4667,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -574,7 +574,7 @@
         "datum": "2026-11-07",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 819,
+          "ritten": 892,
           "uitval": 4,
           "te_laat": 2
         },
@@ -583,7 +583,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 15,
+            "ritten": 17,
             "uitval": 2,
             "te_laat": 1
           },
@@ -591,7 +591,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 30,
             "uitval": 2,
             "te_laat": 1
           },
@@ -610,7 +610,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
