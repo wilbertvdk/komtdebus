@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-07T22:50:17+01:00",
+  "bijgewerkt": "2026-11-07T23:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -105,19 +105,19 @@
       "dicht": []
     },
     "376": {
-      "gepland": 855,
-      "gemeten": 855,
+      "gepland": 857,
+      "gemeten": 857,
       "aantal": {
-        "gereden": 830,
-        "ingekort": 12,
+        "gereden": 831,
+        "ingekort": 13,
         "uitval, op tijd": 11,
         "uitval, te laat": 2,
         "niet gemeld": 0,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 97.1,
-        "ingekort": 1.4,
+        "gereden": 97.0,
+        "ingekort": 1.5,
         "uitval, op tijd": 1.3,
         "uitval, te laat": 0.2,
         "niet gemeld": 0.0
@@ -126,9 +126,9 @@
         "norm_percentage": 95,
         "ritten": 13,
         "ritten_vooraf": 11,
-        "ritten_ingekort": 12,
-        "haltes": 274,
-        "haltes_op_tijd": 263,
+        "ritten_ingekort": 13,
+        "haltes": 275,
+        "haltes_op_tijd": 264,
         "haltes_dicht": 381,
         "mediaan_min_na_vertrek": -20,
         "ritten_na_vertrek": 2,
@@ -386,8 +386,8 @@
     {
       "datum": "2026-11-07",
       "lijn": "376",
-      "gereden": 101,
-      "ingekort": 8,
+      "gereden": 102,
+      "ingekort": 9,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-07T22:49:57+01:00",
-    "gelukt": 5019,
-    "verwacht": 5005,
+    "tot": "2026-11-07T23:03:57+01:00",
+    "gelukt": 5026,
+    "verwacht": 5012,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -655,7 +655,7 @@
         "datum": "2026-11-07",
         "lijnen_gemeten": 61,
         "totaal": {
-          "ritten": 4073,
+          "ritten": 4132,
           "uitval": 25,
           "te_laat": 15
         },
@@ -672,7 +672,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 64,
+            "ritten": 65,
             "uitval": 1,
             "te_laat": 1
           },
@@ -680,7 +680,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 64,
+            "ritten": 65,
             "uitval": 1,
             "te_laat": 1
           },
@@ -688,7 +688,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 114,
+            "ritten": 116,
             "uitval": 1,
             "te_laat": 1
           },
@@ -696,7 +696,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 97,
+            "ritten": 98,
             "uitval": 1,
             "te_laat": 1
           },
@@ -720,7 +720,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 121,
+            "ritten": 123,
             "uitval": 2,
             "te_laat": 1
           },
@@ -736,7 +736,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 144,
+            "ritten": 146,
             "uitval": 2,
             "te_laat": 1
           },
@@ -744,7 +744,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 56,
+            "ritten": 57,
             "uitval": 1,
             "te_laat": 1
           },
@@ -760,7 +760,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 48,
+            "ritten": 49,
             "uitval": 2,
             "te_laat": 1
           },
@@ -768,7 +768,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 60,
+            "ritten": 61,
             "uitval": 2,
             "te_laat": 1
           },
@@ -776,7 +776,7 @@
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 55,
+            "ritten": 56,
             "uitval": 4,
             "te_laat": 4
           },
@@ -795,11 +795,11 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 109,
+            "ritten": 111,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
-            "ingekort": 8,
+            "ingekort": 9,
             "afgebroken": 0
           }
         ],
