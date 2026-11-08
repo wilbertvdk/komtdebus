@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T16:50:17+01:00",
+  "bijgewerkt": "2026-11-08T17:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-08"
@@ -416,9 +416,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T16:49:57+01:00",
-    "gelukt": 5559,
-    "verwacht": 5545,
+    "tot": "2026-11-08T17:03:58+01:00",
+    "gelukt": 5565,
+    "verwacht": 5552,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -609,24 +609,6 @@
         ]
       },
       {
-        "begin": "2026-11-05T13:00+01:00",
-        "eind": "2026-11-08T17:00+01:00",
-        "tekst": "Op 8 november van 13:00 t/m 17:00 vervallen de haltes Gouda Stolwijkersluis, Haastrecht Waaiersluis, Haastrecht Neerbos richting Gouda.",
-        "lijnen": [
-          "307"
-        ],
-        "haltes": [
-          "Haastrecht, Neerbos",
-          "Haastrecht, Waaiersluis",
-          "Gouda, Stolwijkersluis"
-        ],
-        "haltes_aantal": 3,
-        "plaatsen": [
-          "Haastrecht",
-          "Gouda"
-        ]
-      },
-      {
         "begin": "2026-11-05T05:00+01:00",
         "eind": "2026-11-09T23:00+01:00",
         "tekst": "Op 9 november van 05:00 t/m 23:00 vervallen de haltes Vlist Vlisterstee t/m Haastrecht Waaiersluis en Gouda Stolwijkersluis richting Ijsselstein.",
@@ -663,8 +645,8 @@
         "datum": "2026-11-08",
         "lijnen_gemeten": 53,
         "totaal": {
-          "ritten": 1805,
-          "uitval": 19,
+          "ritten": 1876,
+          "uitval": 20,
           "te_laat": 3
         },
         "lijnen": [
@@ -672,7 +654,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 27,
+            "ritten": 28,
             "uitval": 2,
             "te_laat": 0
           },
@@ -680,7 +662,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 56,
             "uitval": 1,
             "te_laat": 0
           },
@@ -688,7 +670,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 56,
             "uitval": 1,
             "te_laat": 1
           },
@@ -696,7 +678,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 77,
+            "ritten": 80,
             "uitval": 6,
             "te_laat": 1
           },
@@ -704,9 +686,17 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 33,
             "uitval": 6,
             "te_laat": 1
+          },
+          {
+            "lijn": "85",
+            "naam": "Utrecht – Leerdam",
+            "gevolgd": false,
+            "ritten": 16,
+            "uitval": 1,
+            "te_laat": 0
           },
           {
             "lijn": "302",
@@ -723,7 +713,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 30,
             "uitval": 2,
             "te_laat": 0
           },
@@ -731,7 +721,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 36,
+            "ritten": 37,
             "uitval": 1,
             "te_laat": 0
           },
