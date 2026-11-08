@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T18:20:17+01:00",
+  "bijgewerkt": "2026-11-08T18:35:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-08"
@@ -416,9 +416,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T18:19:58+01:00",
-    "gelukt": 5603,
-    "verwacht": 5590,
+    "tot": "2026-11-08T18:33:58+01:00",
+    "gelukt": 5610,
+    "verwacht": 5597,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -645,16 +645,16 @@
         "datum": "2026-11-08",
         "lijnen_gemeten": 53,
         "totaal": {
-          "ritten": 2192,
-          "uitval": 24,
-          "te_laat": 4
+          "ritten": 2261,
+          "uitval": 26,
+          "te_laat": 5
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 33,
+            "ritten": 34,
             "uitval": 2,
             "te_laat": 0
           },
@@ -662,7 +662,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 65,
+            "ritten": 66,
             "uitval": 3,
             "te_laat": 1
           },
@@ -670,7 +670,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 66,
+            "ritten": 68,
             "uitval": 2,
             "te_laat": 1
           },
@@ -678,23 +678,39 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 95,
+            "ritten": 98,
             "uitval": 7,
+            "te_laat": 1
+          },
+          {
+            "lijn": "29",
+            "naam": "Vleuterweide – Science Park – Bilthoven",
+            "gevolgd": false,
+            "ritten": 34,
+            "uitval": 1,
             "te_laat": 1
           },
           {
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 39,
             "uitval": 6,
             "te_laat": 1
+          },
+          {
+            "lijn": "73",
+            "naam": "Maarssenbroek – Utrecht CS – Zeist",
+            "gevolgd": false,
+            "ritten": 65,
+            "uitval": 1,
+            "te_laat": 0
           },
           {
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 0
           },
@@ -713,7 +729,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 34,
+            "ritten": 36,
             "uitval": 2,
             "te_laat": 0
           },
@@ -721,7 +737,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 42,
+            "ritten": 43,
             "uitval": 1,
             "te_laat": 0
           },
