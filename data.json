@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T11:50:17+01:00",
+  "bijgewerkt": "2026-11-08T12:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-08"
@@ -416,9 +416,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T11:49:57+01:00",
-    "gelukt": 5409,
-    "verwacht": 5395,
+    "tot": "2026-11-08T12:03:57+01:00",
+    "gelukt": 5416,
+    "verwacht": 5402,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -663,7 +663,7 @@
         "datum": "2026-11-08",
         "lijnen_gemeten": 53,
         "totaal": {
-          "ritten": 550,
+          "ritten": 610,
           "uitval": 3,
           "te_laat": 1
         },
@@ -672,7 +672,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 21,
             "uitval": 1,
             "te_laat": 1
           },
@@ -691,7 +691,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 8,
+            "ritten": 10,
             "uitval": 1,
             "te_laat": 0
           },
