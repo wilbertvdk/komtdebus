@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T00:50:16+01:00",
+  "bijgewerkt": "2026-11-08T01:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T00:49:57+01:00",
-    "gelukt": 5079,
-    "verwacht": 5065,
+    "tot": "2026-11-08T01:03:57+01:00",
+    "gelukt": 5086,
+    "verwacht": 5072,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -644,7 +644,7 @@
         "datum": "2026-11-07",
         "lijnen_gemeten": 61,
         "totaal": {
-          "ritten": 4498,
+          "ritten": 4546,
           "uitval": 26,
           "te_laat": 15
         },
@@ -661,7 +661,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 72,
+            "ritten": 73,
             "uitval": 1,
             "te_laat": 1
           },
@@ -677,7 +677,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 130,
+            "ritten": 132,
             "uitval": 1,
             "te_laat": 1
           },
@@ -685,7 +685,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 105,
+            "ritten": 106,
             "uitval": 1,
             "te_laat": 1
           },
@@ -709,7 +709,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 135,
+            "ritten": 136,
             "uitval": 2,
             "te_laat": 1
           },
@@ -725,7 +725,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 161,
+            "ritten": 163,
             "uitval": 2,
             "te_laat": 1
           },
@@ -749,7 +749,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 52,
+            "ritten": 53,
             "uitval": 2,
             "te_laat": 1
           },
@@ -757,7 +757,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 68,
+            "ritten": 69,
             "uitval": 2,
             "te_laat": 1
           },
@@ -765,7 +765,7 @@
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 59,
+            "ritten": 60,
             "uitval": 5,
             "te_laat": 4
           },
