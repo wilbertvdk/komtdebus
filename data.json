@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T09:50:17+01:00",
+  "bijgewerkt": "2026-11-08T10:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-08"
@@ -416,9 +416,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T09:49:57+01:00",
-    "gelukt": 5349,
-    "verwacht": 5335,
+    "tot": "2026-11-08T10:03:57+01:00",
+    "gelukt": 5356,
+    "verwacht": 5342,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -490,6 +490,59 @@
       {
         "begin": "2026-11-11T20:00+01:00",
         "eind": "2026-11-13T06:00+01:00",
+        "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Den Hommel",
+          "Utrecht, Beethovenlaan"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-11T20:00+01:00",
+        "eind": "2026-11-13T06:00+01:00",
+        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Download de Transdev-app voor meer actuele reisinfo.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Thomas à Kempisplantsoen"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-08T11:00+01:00",
+        "eind": "2026-11-11T19:59+01:00",
+        "tekst": "Lijn 5: halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Everard Meysterlaan"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-11T20:00+01:00",
+        "eind": "2026-11-13T06:00+01:00",
+        "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Racinelaan"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-11T20:00+01:00",
+        "eind": "2026-11-13T06:00+01:00",
         "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Plan uw reis in de app.",
         "lijnen": [],
         "haltes": [
@@ -520,10 +573,9 @@
         "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
         "lijnen": [],
         "haltes": [
-          "Utrecht, Racinelaan",
           "Utrecht, Everard Meysterlaan"
         ],
-        "haltes_aantal": 2,
+        "haltes_aantal": 1,
         "plaatsen": [
           "Utrecht"
         ]
@@ -662,9 +714,9 @@
     "dagen": [
       {
         "datum": "2026-11-08",
-        "lijnen_gemeten": 42,
+        "lijnen_gemeten": 49,
         "totaal": {
-          "ritten": 164,
+          "ritten": 206,
           "uitval": 0,
           "te_laat": 0
         },
@@ -692,7 +744,53 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Den Hommel",
+              "Utrecht, Beethovenlaan"
+            ],
+            "haltes_aantal": 2,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Download de Transdev-app voor meer actuele reisinfo.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Thomas à Kempisplantsoen"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 5: halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Everard Meysterlaan"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Racinelaan"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-07",
@@ -874,10 +972,9 @@
             "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
             "lijnen": [],
             "haltes": [
-              "Utrecht, Racinelaan",
               "Utrecht, Everard Meysterlaan"
             ],
-            "haltes_aantal": 2,
+            "haltes_aantal": 1,
             "plaatsen": [
               "Utrecht"
             ]
