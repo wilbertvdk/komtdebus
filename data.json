@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T09:20:16+01:00",
+  "bijgewerkt": "2026-11-08T09:36:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-08"
@@ -416,9 +416,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T09:19:57+01:00",
-    "gelukt": 5334,
-    "verwacht": 5320,
+    "tot": "2026-11-08T09:35:57+01:00",
+    "gelukt": 5342,
+    "verwacht": 5328,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -662,9 +662,9 @@
     "dagen": [
       {
         "datum": "2026-11-08",
-        "lijnen_gemeten": 34,
+        "lijnen_gemeten": 40,
         "totaal": {
-          "ritten": 89,
+          "ritten": 122,
           "uitval": 0,
           "te_laat": 0
         },
