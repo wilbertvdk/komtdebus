@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T01:50:17+01:00",
+  "bijgewerkt": "2026-11-08T02:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-07"
@@ -396,9 +396,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T01:49:57+01:00",
-    "gelukt": 5109,
-    "verwacht": 5095,
+    "tot": "2026-11-08T02:03:57+01:00",
+    "gelukt": 5116,
+    "verwacht": 5102,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -644,7 +644,7 @@
         "datum": "2026-11-07",
         "lijnen_gemeten": 61,
         "totaal": {
-          "ritten": 4678,
+          "ritten": 4696,
           "uitval": 26,
           "te_laat": 15
         },
@@ -685,7 +685,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 109,
+            "ritten": 110,
             "uitval": 1,
             "te_laat": 1
           },
@@ -709,7 +709,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 139,
+            "ritten": 140,
             "uitval": 2,
             "te_laat": 1
           },
@@ -725,7 +725,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 169,
+            "ritten": 170,
             "uitval": 2,
             "te_laat": 1
           },
@@ -749,7 +749,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 56,
             "uitval": 2,
             "te_laat": 1
           },
