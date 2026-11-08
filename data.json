@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-08T10:05:17+01:00",
+  "bijgewerkt": "2026-11-08T10:20:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-08"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 818,
-      "gemeten": 818,
+      "gepland": 819,
+      "gemeten": 819,
       "aantal": {
-        "gereden": 793,
+        "gereden": 794,
         "ingekort": 9,
         "uitval, op tijd": 10,
         "uitval, te laat": 4,
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 878,
-      "gemeten": 878,
+      "gepland": 880,
+      "gemeten": 880,
       "aantal": {
-        "gereden": 841,
+        "gereden": 843,
         "ingekort": 23,
         "uitval, op tijd": 11,
         "uitval, te laat": 2,
@@ -118,7 +118,7 @@
       "percentage": {
         "gereden": 95.8,
         "ingekort": 2.6,
-        "uitval, op tijd": 1.3,
+        "uitval, op tijd": 1.2,
         "uitval, te laat": 0.2,
         "niet gemeld": 0.1
       },
@@ -129,7 +129,7 @@
         "ritten_ingekort": 23,
         "haltes": 285,
         "haltes_op_tijd": 274,
-        "haltes_dicht": 382,
+        "haltes_dicht": 383,
         "mediaan_min_na_vertrek": -20,
         "ritten_na_vertrek": 2,
         "mediaan_min_na_vertrek_laat": 18.5,
@@ -396,7 +396,7 @@
     {
       "datum": "2026-11-08",
       "lijn": "302",
-      "gereden": 6,
+      "gereden": 7,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -406,7 +406,7 @@
     {
       "datum": "2026-11-08",
       "lijn": "376",
-      "gereden": 3,
+      "gereden": 5,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -416,9 +416,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-08T10:03:57+01:00",
-    "gelukt": 5356,
-    "verwacht": 5342,
+    "tot": "2026-11-08T10:19:57+01:00",
+    "gelukt": 5364,
+    "verwacht": 5350,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -487,59 +487,6 @@
   ],
   "provincie": {
     "berichten_nu": [
-      {
-        "begin": "2026-11-11T20:00+01:00",
-        "eind": "2026-11-13T06:00+01:00",
-        "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Den Hommel",
-          "Utrecht, Beethovenlaan"
-        ],
-        "haltes_aantal": 2,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-11T20:00+01:00",
-        "eind": "2026-11-13T06:00+01:00",
-        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Download de Transdev-app voor meer actuele reisinfo.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Thomas à Kempisplantsoen"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-08T11:00+01:00",
-        "eind": "2026-11-11T19:59+01:00",
-        "tekst": "Lijn 5: halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Everard Meysterlaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-11T20:00+01:00",
-        "eind": "2026-11-13T06:00+01:00",
-        "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Racinelaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
       {
         "begin": "2026-11-11T20:00+01:00",
         "eind": "2026-11-13T06:00+01:00",
@@ -716,7 +663,7 @@
         "datum": "2026-11-08",
         "lijnen_gemeten": 49,
         "totaal": {
-          "ritten": 206,
+          "ritten": 251,
           "uitval": 0,
           "te_laat": 0
         },
@@ -725,7 +672,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -736,7 +683,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 5,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -746,7 +693,7 @@
         ],
         "berichten": [
           {
-            "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
+            "tekst": "Halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
             "lijnen": [],
             "haltes": [
               "Utrecht, Den Hommel",
@@ -758,7 +705,7 @@
             ]
           },
           {
-            "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Download de Transdev-app voor meer actuele reisinfo.",
+            "tekst": "Lijn 5: halte vervalt van 11 novermber 20:00 t/m 13 november 06:00. Download de Transdev-app voor meer actuele reisinfo.",
             "lijnen": [],
             "haltes": [
               "Utrecht, Thomas à Kempisplantsoen"
@@ -780,7 +727,7 @@
             ]
           },
           {
-            "tekst": "Halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+            "tekst": "Halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
             "lijnen": [],
             "haltes": [
               "Utrecht, Racinelaan"
