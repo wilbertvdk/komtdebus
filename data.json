@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-09T04:50:17+01:00",
+  "bijgewerkt": "2026-11-09T05:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-08"
@@ -416,9 +416,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-09T04:49:58+01:00",
-    "gelukt": 5918,
-    "verwacht": 5905,
+    "tot": "2026-11-09T05:03:58+01:00",
+    "gelukt": 5925,
+    "verwacht": 5912,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -525,21 +525,6 @@
         "haltes_aantal": 2,
         "plaatsen": [
           "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-07T08:00+01:00",
-        "eind": "2026-11-09T05:00+01:00",
-        "tekst": "Lijn 85: houdt rekening met enkele vertraging i.v.m. drukte in het verkeer.",
-        "lijnen": [],
-        "haltes": [],
-        "haltes_aantal": 19,
-        "plaatsen": [
-          "Utrecht",
-          "Vianen",
-          "Zijderveld",
-          "Schoonrewoerd",
-          "Leerdam"
         ]
       },
       {
