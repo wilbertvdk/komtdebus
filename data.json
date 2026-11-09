@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-09T07:35:17+01:00",
+  "bijgewerkt": "2026-11-09T07:50:57+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-09"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 849,
-      "gemeten": 849,
+      "gepland": 851,
+      "gemeten": 851,
       "aantal": {
-        "gereden": 824,
+        "gereden": 826,
         "ingekort": 9,
         "uitval, op tijd": 10,
         "uitval, te laat": 4,
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 947,
-      "gemeten": 947,
+      "gepland": 950,
+      "gemeten": 950,
       "aantal": {
-        "gereden": 909,
+        "gereden": 912,
         "ingekort": 23,
         "uitval, op tijd": 12,
         "uitval, te laat": 2,
@@ -129,7 +129,7 @@
         "ritten_ingekort": 23,
         "haltes": 308,
         "haltes_op_tijd": 297,
-        "haltes_dicht": 417,
+        "haltes_dicht": 419,
         "mediaan_min_na_vertrek": -29.5,
         "ritten_na_vertrek": 2,
         "mediaan_min_na_vertrek_laat": 18.5,
@@ -426,7 +426,7 @@
     {
       "datum": "2026-11-09",
       "lijn": "302",
-      "gereden": 1,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -436,7 +436,7 @@
     {
       "datum": "2026-11-09",
       "lijn": "376",
-      "gereden": 5,
+      "gereden": 8,
       "ingekort": 0,
       "uitval, op tijd": 1,
       "uitval, te laat": 0,
@@ -446,9 +446,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-09T07:33:58+01:00",
-    "gelukt": 6000,
-    "verwacht": 5987,
+    "tot": "2026-11-09T07:49:58+01:00",
+    "gelukt": 6008,
+    "verwacht": 5995,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -618,20 +618,20 @@
     "dagen": [
       {
         "datum": "2026-11-09",
-        "lijnen_gemeten": 79,
+        "lijnen_gemeten": 84,
         "totaal": {
-          "ritten": 264,
-          "uitval": 4,
-          "te_laat": 2
+          "ritten": 366,
+          "uitval": 8,
+          "te_laat": 3
         },
         "lijnen": [
           {
             "lijn": "13",
             "naam": "Utrecht CS – Lage Weide – Maarssen",
             "gevolgd": false,
-            "ritten": 5,
-            "uitval": 1,
-            "te_laat": 1
+            "ritten": 7,
+            "uitval": 2,
+            "te_laat": 2
           },
           {
             "lijn": "29",
@@ -642,12 +642,28 @@
             "te_laat": 0
           },
           {
-            "lijn": "74",
-            "naam": "Hoef en Haag – Utrecht CS – Zeist",
+            "lijn": "47",
+            "naam": "Utrecht – Houten",
             "gevolgd": false,
             "ritten": 3,
             "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "74",
+            "naam": "Hoef en Haag – Utrecht CS – Zeist",
+            "gevolgd": false,
+            "ritten": 6,
+            "uitval": 1,
             "te_laat": 1
+          },
+          {
+            "lijn": "203",
+            "naam": "Amersfoort Schothorst – Utrecht Science Park",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 1,
+            "te_laat": 0
           },
           {
             "lijn": "272",
@@ -664,7 +680,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -675,12 +691,20 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 6,
+            "ritten": 9,
             "uitval": 1,
             "te_laat": 0,
             "niet_gemeld": 0,
             "ingekort": 0,
             "afgebroken": 0
+          },
+          {
+            "lijn": "380",
+            "naam": "Amersfoort – Veenendaal",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 1,
+            "te_laat": 0
           }
         ],
         "berichten": []
