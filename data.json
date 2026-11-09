@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-09T09:35:17+01:00",
+  "bijgewerkt": "2026-11-09T09:50:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-09"
@@ -31,10 +31,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 869,
-      "gemeten": 869,
+      "gepland": 873,
+      "gemeten": 873,
       "aantal": {
-        "gereden": 844,
+        "gereden": 848,
         "ingekort": 9,
         "uitval, op tijd": 10,
         "uitval, te laat": 4,
@@ -44,7 +44,7 @@
       "percentage": {
         "gereden": 97.1,
         "ingekort": 1.0,
-        "uitval, op tijd": 1.2,
+        "uitval, op tijd": 1.1,
         "uitval, te laat": 0.5,
         "niet gemeld": 0.2
       },
@@ -68,10 +68,10 @@
       "dicht": []
     },
     "315": {
-      "gepland": 63,
-      "gemeten": 63,
+      "gepland": 64,
+      "gemeten": 64,
       "aantal": {
-        "gereden": 59,
+        "gereden": 60,
         "ingekort": 3,
         "uitval, op tijd": 1,
         "uitval, te laat": 0,
@@ -79,8 +79,8 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 93.7,
-        "ingekort": 4.8,
+        "gereden": 93.8,
+        "ingekort": 4.7,
         "uitval, op tijd": 1.6,
         "uitval, te laat": 0.0,
         "niet gemeld": 0.0
@@ -105,35 +105,35 @@
       "dicht": []
     },
     "376": {
-      "gepland": 970,
-      "gemeten": 970,
+      "gepland": 972,
+      "gemeten": 972,
       "aantal": {
-        "gereden": 931,
+        "gereden": 932,
         "ingekort": 23,
-        "uitval, op tijd": 13,
+        "uitval, op tijd": 14,
         "uitval, te laat": 2,
         "niet gemeld": 1,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 96.0,
+        "gereden": 95.9,
         "ingekort": 2.4,
-        "uitval, op tijd": 1.3,
+        "uitval, op tijd": 1.4,
         "uitval, te laat": 0.2,
         "niet gemeld": 0.1
       },
       "meldnorm": {
         "norm_percentage": 95,
-        "ritten": 15,
-        "ritten_vooraf": 13,
+        "ritten": 16,
+        "ritten_vooraf": 14,
         "ritten_ingekort": 23,
-        "haltes": 320,
-        "haltes_op_tijd": 309,
-        "haltes_dicht": 428,
-        "mediaan_min_na_vertrek": -39,
+        "haltes": 332,
+        "haltes_op_tijd": 321,
+        "haltes_dicht": 429,
+        "mediaan_min_na_vertrek": -31.5,
         "ritten_na_vertrek": 2,
         "mediaan_min_na_vertrek_laat": 18.5,
-        "percentage_op_tijd": 96.6
+        "percentage_op_tijd": 96.7
       },
       "meetperiode": {
         "van": "2026-11-01",
@@ -426,7 +426,7 @@
     {
       "datum": "2026-11-09",
       "lijn": "302",
-      "gereden": 21,
+      "gereden": 25,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -436,7 +436,7 @@
     {
       "datum": "2026-11-09",
       "lijn": "315",
-      "gereden": 3,
+      "gereden": 4,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -446,9 +446,9 @@
     {
       "datum": "2026-11-09",
       "lijn": "376",
-      "gereden": 27,
+      "gereden": 28,
       "ingekort": 0,
-      "uitval, op tijd": 2,
+      "uitval, op tijd": 3,
       "uitval, te laat": 0,
       "niet gemeld": 0,
       "geen meting": 0
@@ -456,9 +456,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-09T09:33:58+01:00",
-    "gelukt": 6060,
-    "verwacht": 6047,
+    "tot": "2026-11-09T09:49:58+01:00",
+    "gelukt": 6068,
+    "verwacht": 6055,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -527,6 +527,22 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-09T09:53+01:00",
+        "eind": "2026-11-09T16:00+01:00",
+        "tekst": "Halte vervalt i.v.m. werkzaamheden Augustinushof. Tijdelijk halte: Clarissenhof",
+        "lijnen": [],
+        "haltes": [
+          "Vianen, Augustinushof",
+          "Vianen, Mariënhof",
+          "Vianen, 't Zand",
+          "Vianen, Weidekamp"
+        ],
+        "haltes_aantal": 4,
+        "plaatsen": [
+          "Vianen"
+        ]
+      },
       {
         "begin": "2026-11-09T08:50+01:00",
         "eind": "2026-11-09T13:00+01:00",
@@ -643,8 +659,8 @@
         "datum": "2026-11-09",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1242,
-          "uitval": 31,
+          "ritten": 1379,
+          "uitval": 36,
           "te_laat": 8
         },
         "lijnen": [
@@ -652,7 +668,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 22,
+            "ritten": 24,
             "uitval": 3,
             "te_laat": 0
           },
@@ -660,7 +676,7 @@
             "lijn": "5",
             "naam": "Maarssen – Utrecht CS – Voordorp",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 20,
             "uitval": 2,
             "te_laat": 1
           },
@@ -668,7 +684,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 20,
             "uitval": 1,
             "te_laat": 1
           },
@@ -676,7 +692,7 @@
             "lijn": "13",
             "naam": "Utrecht CS – Lage Weide – Maarssen",
             "gevolgd": false,
-            "ritten": 20,
+            "ritten": 22,
             "uitval": 2,
             "te_laat": 2
           },
@@ -684,7 +700,7 @@
             "lijn": "18",
             "naam": "Utrecht CS – Rijnsweerd",
             "gevolgd": false,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 0
           },
@@ -692,7 +708,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 22,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 1
           },
@@ -700,7 +716,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 20,
+            "ritten": 23,
             "uitval": 2,
             "te_laat": 0
           },
@@ -716,15 +732,15 @@
             "lijn": "34",
             "naam": "Amersfoort – Science Park – Westraven",
             "gevolgd": false,
-            "ritten": 17,
-            "uitval": 1,
+            "ritten": 21,
+            "uitval": 2,
             "te_laat": 0
           },
           {
             "lijn": "47",
             "naam": "Utrecht – Houten",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 18,
             "uitval": 1,
             "te_laat": 0
           },
@@ -732,7 +748,7 @@
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 20,
             "uitval": 1,
             "te_laat": 1
           },
@@ -740,7 +756,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 20,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 1
           },
@@ -748,7 +764,7 @@
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 24,
             "uitval": 1,
             "te_laat": 0
           },
@@ -756,7 +772,15 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 16,
+            "uitval": 2,
+            "te_laat": 0
+          },
+          {
+            "lijn": "128",
+            "naam": "Maarssen – Vleuten",
+            "gevolgd": false,
+            "ritten": 10,
             "uitval": 1,
             "te_laat": 0
           },
@@ -764,8 +788,8 @@
             "lijn": "203",
             "naam": "Amersfoort Schothorst – Utrecht Science Park",
             "gevolgd": false,
-            "ritten": 12,
-            "uitval": 2,
+            "ritten": 13,
+            "uitval": 3,
             "te_laat": 0
           },
           {
@@ -783,7 +807,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 21,
+            "ritten": 25,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -794,7 +818,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 28,
             "uitval": 2,
             "te_laat": 0
           },
@@ -802,7 +826,7 @@
             "lijn": "315",
             "naam": "Amersfoort Vathorst – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -813,7 +837,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 22,
+            "ritten": 24,
             "uitval": 4,
             "te_laat": 0
           },
@@ -821,8 +845,8 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 29,
-            "uitval": 2,
+            "ritten": 31,
+            "uitval": 3,
             "te_laat": 0,
             "niet_gemeld": 0,
             "ingekort": 0,
@@ -832,12 +856,26 @@
             "lijn": "380",
             "naam": "Amersfoort – Veenendaal",
             "gevolgd": false,
-            "ritten": 8,
+            "ritten": 10,
             "uitval": 2,
             "te_laat": 0
           }
         ],
         "berichten": [
+          {
+            "tekst": "Halte vervalt i.v.m. werkzaamheden Augustinushof. Tijdelijk halte: Clarissenhof",
+            "lijnen": [],
+            "haltes": [
+              "Vianen, Augustinushof",
+              "Vianen, Mariënhof",
+              "Vianen, 't Zand",
+              "Vianen, Weidekamp"
+            ],
+            "haltes_aantal": 4,
+            "plaatsen": [
+              "Vianen"
+            ]
+          },
           {
             "tekst": "Geen tramverkeer tussen Jaarbeursplein en Zuilenstein wegens spanningsuitval. Maak gebruik van buslijn 74 of 77 als alternatief.",
             "lijnen": [],
