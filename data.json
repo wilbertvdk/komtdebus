@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-09T10:35:58+01:00",
+  "bijgewerkt": "2026-11-09T10:50:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-09"
@@ -31,19 +31,19 @@
       "dicht": []
     },
     "302": {
-      "gepland": 883,
-      "gemeten": 883,
+      "gepland": 885,
+      "gemeten": 885,
       "aantal": {
-        "gereden": 858,
-        "ingekort": 9,
+        "gereden": 859,
+        "ingekort": 10,
         "uitval, op tijd": 10,
         "uitval, te laat": 4,
         "niet gemeld": 2,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 97.2,
-        "ingekort": 1.0,
+        "gereden": 97.1,
+        "ingekort": 1.1,
         "uitval, op tijd": 1.1,
         "uitval, te laat": 0.5,
         "niet gemeld": 0.2
@@ -52,14 +52,14 @@
         "norm_percentage": 95,
         "ritten": 14,
         "ritten_vooraf": 10,
-        "ritten_ingekort": 9,
-        "haltes": 256,
-        "haltes_op_tijd": 213,
+        "ritten_ingekort": 10,
+        "haltes": 266,
+        "haltes_op_tijd": 219,
         "haltes_dicht": 0,
         "mediaan_min_na_vertrek": -14.0,
         "ritten_na_vertrek": 4,
         "mediaan_min_na_vertrek_laat": 14.0,
-        "percentage_op_tijd": 83.2
+        "percentage_op_tijd": 82.3
       },
       "meetperiode": {
         "van": "2026-11-01",
@@ -105,10 +105,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 979,
-      "gemeten": 979,
+      "gepland": 982,
+      "gemeten": 982,
       "aantal": {
-        "gereden": 937,
+        "gereden": 940,
         "ingekort": 23,
         "uitval, op tijd": 16,
         "uitval, te laat": 2,
@@ -129,7 +129,7 @@
         "ritten_ingekort": 23,
         "haltes": 378,
         "haltes_op_tijd": 367,
-        "haltes_dicht": 433,
+        "haltes_dicht": 435,
         "mediaan_min_na_vertrek": -41.5,
         "ritten_na_vertrek": 2,
         "mediaan_min_na_vertrek_laat": 18.5,
@@ -426,8 +426,8 @@
     {
       "datum": "2026-11-09",
       "lijn": "302",
-      "gereden": 35,
-      "ingekort": 0,
+      "gereden": 36,
+      "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
       "niet gemeld": 0,
@@ -446,7 +446,7 @@
     {
       "datum": "2026-11-09",
       "lijn": "376",
-      "gereden": 33,
+      "gereden": 36,
       "ingekort": 0,
       "uitval, op tijd": 5,
       "uitval, te laat": 0,
@@ -456,9 +456,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-09T10:35:58+01:00",
-    "gelukt": 6091,
-    "verwacht": 6078,
+    "tot": "2026-11-09T10:49:58+01:00",
+    "gelukt": 6098,
+    "verwacht": 6085,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -546,7 +546,7 @@
       {
         "begin": "2026-11-09T08:50+01:00",
         "eind": "2026-11-09T13:00+01:00",
-        "tekst": "Geen tramverkeer tussen Jaarbeursplein en Zuilenstein wegens spanningsuitval. Maak gebruik van buslijn 74 of 77 als alternatief.",
+        "tekst": "Er wordt momenteel een verstoorde dienstregeling gereden. Tramverkeer rijdt, maar houd rekening met vertraging.",
         "lijnen": [],
         "haltes": [],
         "haltes_aantal": 33,
@@ -659,16 +659,16 @@
         "datum": "2026-11-09",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1746,
-          "uitval": 50,
-          "te_laat": 12
+          "ritten": 1857,
+          "uitval": 51,
+          "te_laat": 13
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 31,
+            "ritten": 33,
             "uitval": 3,
             "te_laat": 0
           },
@@ -676,7 +676,7 @@
             "lijn": "5",
             "naam": "Maarssen – Utrecht CS – Voordorp",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 24,
             "uitval": 2,
             "te_laat": 1
           },
@@ -684,7 +684,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 26,
+            "ritten": 28,
             "uitval": 2,
             "te_laat": 1
           },
@@ -692,7 +692,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 28,
             "uitval": 1,
             "te_laat": 1
           },
@@ -700,7 +700,7 @@
             "lijn": "13",
             "naam": "Utrecht CS – Lage Weide – Maarssen",
             "gevolgd": false,
-            "ritten": 26,
+            "ritten": 28,
             "uitval": 2,
             "te_laat": 2
           },
@@ -724,7 +724,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 34,
+            "ritten": 37,
             "uitval": 2,
             "te_laat": 1
           },
@@ -748,7 +748,7 @@
             "lijn": "34",
             "naam": "Amersfoort – Science Park – Westraven",
             "gevolgd": false,
-            "ritten": 27,
+            "ritten": 30,
             "uitval": 2,
             "te_laat": 0
           },
@@ -756,15 +756,23 @@
             "lijn": "47",
             "naam": "Utrecht – Houten",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 0
+          },
+          {
+            "lijn": "64",
+            "naam": "Hoef en Haag – Vianen",
+            "gevolgd": false,
+            "ritten": 8,
+            "uitval": 1,
+            "te_laat": 1
           },
           {
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 28,
             "uitval": 1,
             "te_laat": 1
           },
@@ -772,7 +780,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 29,
+            "ritten": 31,
             "uitval": 2,
             "te_laat": 2
           },
@@ -780,7 +788,7 @@
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 29,
             "uitval": 1,
             "te_laat": 0
           },
@@ -796,7 +804,7 @@
             "lijn": "128",
             "naam": "Maarssen – Vleuten",
             "gevolgd": false,
-            "ritten": 13,
+            "ritten": 14,
             "uitval": 4,
             "te_laat": 1
           },
@@ -804,7 +812,7 @@
             "lijn": "203",
             "naam": "Amersfoort Schothorst – Utrecht Science Park",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 3,
             "te_laat": 0
           },
@@ -823,18 +831,18 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 35,
+            "ritten": 37,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
-            "ingekort": 0,
-            "afgebroken": 0
+            "ingekort": 1,
+            "afgebroken": 1
           },
           {
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 33,
             "uitval": 2,
             "te_laat": 0
           },
@@ -853,7 +861,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 32,
             "uitval": 7,
             "te_laat": 1
           },
@@ -861,7 +869,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 38,
+            "ritten": 41,
             "uitval": 5,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -872,7 +880,7 @@
             "lijn": "380",
             "naam": "Amersfoort – Veenendaal",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 14,
             "uitval": 2,
             "te_laat": 0
           }
@@ -893,7 +901,7 @@
             ]
           },
           {
-            "tekst": "Geen tramverkeer tussen Jaarbeursplein en Zuilenstein wegens spanningsuitval. Maak gebruik van buslijn 74 of 77 als alternatief.",
+            "tekst": "Er wordt momenteel een verstoorde dienstregeling gereden. Tramverkeer rijdt, maar houd rekening met vertraging.",
             "lijnen": [],
             "haltes": [],
             "haltes_aantal": 33,
