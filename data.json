@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-10T23:50:18+01:00",
+  "bijgewerkt": "2026-11-11T00:05:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-10"
@@ -43,19 +43,19 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1140,
-      "gemeten": 1140,
+      "gepland": 1142,
+      "gemeten": 1142,
       "aantal": {
-        "gereden": 1084,
-        "ingekort": 37,
+        "gereden": 1085,
+        "ingekort": 38,
         "uitval, op tijd": 11,
         "uitval, te laat": 4,
         "niet gemeld": 4,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 95.1,
-        "ingekort": 3.2,
+        "gereden": 95.0,
+        "ingekort": 3.3,
         "uitval, op tijd": 1.0,
         "uitval, te laat": 0.4,
         "niet gemeld": 0.4
@@ -64,9 +64,9 @@
         "norm_percentage": 95,
         "ritten": 15,
         "ritten_vooraf": 11,
-        "ritten_ingekort": 38,
-        "haltes": 326,
-        "haltes_op_tijd": 278,
+        "ritten_ingekort": 39,
+        "haltes": 327,
+        "haltes_op_tijd": 279,
         "haltes_dicht": 0,
         "mediaan_min_na_vertrek": -12,
         "ritten_na_vertrek": 4,
@@ -478,8 +478,8 @@
     {
       "datum": "2026-11-10",
       "lijn": "302",
-      "gereden": 114,
-      "ingekort": 27,
+      "gereden": 115,
+      "ingekort": 28,
       "uitval, op tijd": 1,
       "uitval, te laat": 0,
       "niet gemeld": 2,
@@ -508,9 +508,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-10T23:50:00+01:00",
-    "gelukt": 7208,
-    "verwacht": 7195,
+    "tot": "2026-11-11T00:03:48+01:00",
+    "gelukt": 7214,
+    "verwacht": 7202,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -585,7 +585,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-10T23:49+01:00",
+          "laatst_gezien": "2026-11-11T00:01+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -626,6 +626,118 @@
         ]
       },
       {
+        "begin": "2026-11-11T12:00+01:00",
+        "eind": "2026-11-14T17:00+01:00",
+        "tekst": "Op 14 november van 12:00 t/m 17:00 vervallen de haltes Zeist Markt, Zeist Slotlaan, Zeist Hogeweg.",
+        "lijnen": [
+          "56"
+        ],
+        "haltes": [
+          "Zeist, Hogeweg",
+          "Zeist, Slotlaan",
+          "Zeist, Markt"
+        ],
+        "haltes_aantal": 3,
+        "plaatsen": [
+          "Zeist"
+        ]
+      },
+      {
+        "begin": "2026-11-11T13:30+01:00",
+        "eind": "2026-11-14T14:30+01:00",
+        "tekst": "Op 14 november van 13:30 t/m 14:30 vervalt de halte Zeist Steynlaan.",
+        "lijnen": [],
+        "haltes": [
+          "Zeist, Steynlaan"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Zeist"
+        ]
+      },
+      {
+        "begin": "2026-11-11T12:00+01:00",
+        "eind": "2026-11-14T17:00+01:00",
+        "tekst": "Op 14 november van 12:00 t/m 17:00 vervallen in Zeist de haltes Slotlaan, Markt, van Renesselaan en Griftlaan richting Driebergen. Tussen 13:30 en 14:30 vervalt Zeist Busstation ook.",
+        "lijnen": [
+          "58"
+        ],
+        "haltes": [
+          "Zeist, Slotlaan",
+          "Zeist, Markt",
+          "Zeist, Griftlaan",
+          "Zeist, Van Renesselaan",
+          "Zeist, Busstation (A)",
+          "Zeist, Busstation (B)"
+        ],
+        "haltes_aantal": 6,
+        "plaatsen": [
+          "Zeist"
+        ]
+      },
+      {
+        "begin": "2026-11-11T14:00+01:00",
+        "eind": "2026-11-14T17:30+01:00",
+        "tekst": "Op 14 november van 14:00 t/m 17:30 vervalt de halte Soest Winkelcentrum Soest Zuid.",
+        "lijnen": [],
+        "haltes": [
+          "Soest, Winkelc. Soest-Zuid"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Soest"
+        ]
+      },
+      {
+        "begin": "2026-11-11T14:00+01:00",
+        "eind": "2026-11-14T17:30+01:00",
+        "tekst": "Op 14 november van 14:00 t/m 17:30 vervalt de halte Soest Winkelcentrum Soest Zuid richting Amersfoort.",
+        "lijnen": [
+          "70"
+        ],
+        "haltes": [
+          "Soest, Winkelc. Soest-Zuid"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Soest"
+        ]
+      },
+      {
+        "begin": "2026-11-11T12:00+01:00",
+        "eind": "2026-11-14T16:30+01:00",
+        "tekst": "Op 14 november van 12:00 t/m 16:30 vervallen de haltes Woerden Westdam, Woerden Ridderstraat, Woerden Nicolaas Maesstraat, Woerden Oranjestraat/Havenstraat, Woerden Rijnstraat, Woerden Plantsoen.",
+        "lijnen": [],
+        "haltes": [
+          "Woerden, Rijnstraat",
+          "Woerden, Oranjestraat/Havenstraat",
+          "Woerden, Plantsoen",
+          "Woerden, Nicolaas Maesstraat",
+          "Woerden, Westdam",
+          "Woerden, Ridderstraat"
+        ],
+        "haltes_aantal": 6,
+        "plaatsen": [
+          "Woerden"
+        ]
+      },
+      {
+        "begin": "2026-11-11T16:45+01:00",
+        "eind": "2026-11-14T21:00+01:00",
+        "tekst": "Op 14 november van 16:45 t/m 21:00 vervallen de haltes  Rhenen Stad en Rhenen Paardenveld richting Wageningen.",
+        "lijnen": [
+          "350"
+        ],
+        "haltes": [
+          "Rhenen, Paardenveld",
+          "Rhenen, Stad"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Rhenen"
+        ]
+      },
+      {
         "begin": "2026-11-10T07:00+01:00",
         "eind": "2026-11-13T16:00+01:00",
         "tekst": "Op 13 november van 07:00 t/m 16:00 vervalt de halte Baarn Nieuwstraat.",
@@ -639,6 +751,15 @@
         "plaatsen": [
           "Baarn"
         ]
+      },
+      {
+        "begin": "2026-11-11T12:00+01:00",
+        "eind": "2026-11-14T18:00+01:00",
+        "tekst": "Op 14 november van 12:00 t/m 18:00 vervallen de haltes Weesp Groeneweg, Weesp Binnenveer, Weesp Achtergracht, Weesp Grote Plein, Weesp Nieuwstad.",
+        "lijnen": [],
+        "haltes": [],
+        "haltes_aantal": 0,
+        "plaatsen": []
       },
       {
         "begin": "2026-11-09T20:03+01:00",
@@ -668,6 +789,46 @@
           "Breukeleveen",
           "Tienhoven",
           "Nieuw-Loosdrecht"
+        ]
+      },
+      {
+        "begin": null,
+        "eind": null,
+        "tekst": "Halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Den Hommel",
+          "Utrecht, Beethovenlaan"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": null,
+        "eind": null,
+        "tekst": "Lijn 5: halte vervalt van 11 novermber 20:00 t/m 13 november 06:00. Download de Transdev-app voor meer actuele reisinfo.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Thomas à Kempisplantsoen"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": null,
+        "eind": null,
+        "tekst": "Halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Racinelaan"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
         ]
       },
       {
@@ -738,6 +899,25 @@
         "plaatsen": [
           "Woudenberg"
         ]
+      },
+      {
+        "begin": "2026-11-04T11:02+01:00",
+        "eind": "2026-11-05T05:00+01:00",
+        "tekst": "Vanaf 20.00 uur vervallen de haltes J, K en L i.v.m. werkzaamheden. De bussen stoppen dan op de naastgelegen haltes. Check de bestemming op de voorzijde bus.",
+        "lijnen": [
+          "56",
+          "80",
+          "376",
+          "380"
+        ],
+        "haltes": [
+          "Amersfoort, Centraal Station",
+          "Amersfoort, Centraal Station (K)"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Amersfoort"
+        ]
       }
     ],
     "dagen": [
@@ -745,8 +925,8 @@
         "datum": "2026-11-10",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6655,
-          "uitval": 40,
+          "ritten": 6702,
+          "uitval": 41,
           "te_laat": 19
         },
         "lijnen": [
@@ -754,7 +934,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 133,
+            "ritten": 134,
             "uitval": 2,
             "te_laat": 0
           },
@@ -762,7 +942,7 @@
             "lijn": "2",
             "naam": "Amersfoort CS – Nieuwland",
             "gevolgd": false,
-            "ritten": 127,
+            "ritten": 128,
             "uitval": 1,
             "te_laat": 1
           },
@@ -770,8 +950,8 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 69,
-            "uitval": 3,
+            "ritten": 70,
+            "uitval": 4,
             "te_laat": 2
           },
           {
@@ -786,7 +966,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 125,
+            "ritten": 126,
             "uitval": 1,
             "te_laat": 1
           },
@@ -842,7 +1022,7 @@
             "lijn": "21",
             "naam": "Science Park – Utrecht CS – IJsselstein",
             "gevolgd": false,
-            "ritten": 120,
+            "ritten": 121,
             "uitval": 1,
             "te_laat": 1
           },
@@ -850,7 +1030,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 175,
+            "ritten": 176,
             "uitval": 3,
             "te_laat": 1
           },
@@ -866,7 +1046,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 79,
+            "ritten": 80,
             "uitval": 2,
             "te_laat": 2
           },
@@ -874,7 +1054,7 @@
             "lijn": "70",
             "naam": "Hilversum – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 129,
+            "ritten": 130,
             "uitval": 2,
             "te_laat": 0
           },
@@ -882,7 +1062,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 143,
+            "ritten": 144,
             "uitval": 1,
             "te_laat": 1
           },
@@ -890,7 +1070,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 133,
+            "ritten": 135,
             "uitval": 1,
             "te_laat": 1
           },
@@ -949,11 +1129,11 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 144,
+            "ritten": 146,
             "uitval": 1,
             "te_laat": 0,
             "niet_gemeld": 2,
-            "ingekort": 27,
+            "ingekort": 28,
             "afgebroken": 1
           },
           {
@@ -979,7 +1159,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 123,
+            "ritten": 125,
             "uitval": 2,
             "te_laat": 0
           },
@@ -987,7 +1167,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 208,
+            "ritten": 210,
             "uitval": 3,
             "te_laat": 1
           },
@@ -3339,552 +3519,6 @@
               "Bergambacht",
               "Ammerstol",
               "Schoonhoven"
-            ]
-          }
-        ]
-      },
-      {
-        "datum": "2026-11-03",
-        "lijnen_gemeten": 100,
-        "totaal": {
-          "ritten": 7008,
-          "uitval": 119,
-          "te_laat": 35
-        },
-        "lijnen": [
-          {
-            "lijn": "1",
-            "naam": "Overvecht – Utrecht CS – Hoograven",
-            "gevolgd": false,
-            "ritten": 142,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "1",
-            "naam": "Soesterkwartier – Amersfoort CS",
-            "gevolgd": false,
-            "ritten": 64,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "2",
-            "naam": "Amersfoort CS – Nieuwland",
-            "gevolgd": false,
-            "ritten": 135,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "2",
-            "naam": "Utrecht CS – Museumkwartier – Utrecht CS",
-            "gevolgd": false,
-            "ritten": 26,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "3",
-            "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
-            "gevolgd": false,
-            "ritten": 74,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "3",
-            "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
-            "gevolgd": false,
-            "ritten": 74,
-            "uitval": 3,
-            "te_laat": 2
-          },
-          {
-            "lijn": "5",
-            "naam": "Maarssen – Utrecht CS – Voordorp",
-            "gevolgd": false,
-            "ritten": 98,
-            "uitval": 5,
-            "te_laat": 3
-          },
-          {
-            "lijn": "6",
-            "naam": "Amersfoort CS – Rustenburg/Liendert",
-            "gevolgd": false,
-            "ritten": 136,
-            "uitval": 8,
-            "te_laat": 1
-          },
-          {
-            "lijn": "6",
-            "naam": "Terwijde – Utrecht CS – Overvecht",
-            "gevolgd": false,
-            "ritten": 130,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "7",
-            "naam": "Zuilen – Utrecht CS – Westraven",
-            "gevolgd": false,
-            "ritten": 144,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "8",
-            "naam": "Wilhelminapark – Utrecht CS – Lunetten",
-            "gevolgd": false,
-            "ritten": 142,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "9",
-            "naam": "Amersfoort CS – Leusderkwartier",
-            "gevolgd": false,
-            "ritten": 79,
-            "uitval": 4,
-            "te_laat": 0
-          },
-          {
-            "lijn": "9",
-            "naam": "Galgenwaard – Utrecht CS",
-            "gevolgd": false,
-            "ritten": 107,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "11",
-            "naam": "Vleuten – Overvecht",
-            "gevolgd": false,
-            "ritten": 52,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "12",
-            "naam": "Utrecht CS – Maarssen",
-            "gevolgd": false,
-            "ritten": 68,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "13",
-            "naam": "Utrecht CS – Lage Weide – Maarssen",
-            "gevolgd": false,
-            "ritten": 75,
-            "uitval": 3,
-            "te_laat": 1
-          },
-          {
-            "lijn": "15",
-            "naam": "Amersfoort CS – Vathorst",
-            "gevolgd": false,
-            "ritten": 63,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "16",
-            "naam": "De Meern – Utrecht CS",
-            "gevolgd": false,
-            "ritten": 20,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "18",
-            "naam": "Utrecht CS – Rijnsweerd",
-            "gevolgd": false,
-            "ritten": 14,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "19",
-            "naam": "Utrecht CS – De Meern",
-            "gevolgd": false,
-            "ritten": 28,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "19",
-            "naam": "Amersfoort CS – Rusthof",
-            "gevolgd": false,
-            "ritten": 38,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "27",
-            "naam": "Zuilen – Science Park",
-            "gevolgd": false,
-            "ritten": 92,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "28",
-            "naam": "Vleuterweide – Utrecht CS – Science Park",
-            "gevolgd": false,
-            "ritten": 186,
-            "uitval": 2,
-            "te_laat": 1
-          },
-          {
-            "lijn": "29",
-            "naam": "Vleuterweide – Science Park – Bilthoven",
-            "gevolgd": false,
-            "ritten": 129,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "30",
-            "naam": "Overvecht – Science Park",
-            "gevolgd": false,
-            "ritten": 96,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "31",
-            "naam": "IJsselstein – Science Park",
-            "gevolgd": false,
-            "ritten": 71,
-            "uitval": 3,
-            "te_laat": 2
-          },
-          {
-            "lijn": "34",
-            "naam": "Amersfoort – Science Park – Westraven",
-            "gevolgd": false,
-            "ritten": 108,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "43",
-            "naam": "Houten – Driebergen",
-            "gevolgd": false,
-            "ritten": 52,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "44",
-            "naam": "Houten – Vianen",
-            "gevolgd": false,
-            "ritten": 49,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "47",
-            "naam": "Utrecht – Houten",
-            "gevolgd": false,
-            "ritten": 65,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "48",
-            "naam": "Houten – Nieuwegein – Maarssen",
-            "gevolgd": false,
-            "ritten": 64,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "58",
-            "naam": "Hilversum – Zeist via Maartensdijk",
-            "gevolgd": false,
-            "ritten": 30,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "59",
-            "naam": "Hilversum – Zeist via Lage Vuursche",
-            "gevolgd": false,
-            "ritten": 26,
-            "uitval": 2,
-            "te_laat": 1
-          },
-          {
-            "lijn": "65",
-            "naam": "Vianen – Utrecht CS",
-            "gevolgd": false,
-            "ritten": 88,
-            "uitval": 3,
-            "te_laat": 3
-          },
-          {
-            "lijn": "66",
-            "naam": "Nieuwegein Het Klooster – Utrecht CS",
-            "gevolgd": false,
-            "ritten": 74,
-            "uitval": 4,
-            "te_laat": 2
-          },
-          {
-            "lijn": "84",
-            "naam": "Utrecht – Hoef en Haag",
-            "gevolgd": false,
-            "ritten": 26,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "85",
-            "naam": "Utrecht – Leerdam",
-            "gevolgd": false,
-            "ritten": 91,
-            "uitval": 4,
-            "te_laat": 0
-          },
-          {
-            "lijn": "87",
-            "naam": "Veenendaal-De Klomp – Rhenen",
-            "gevolgd": false,
-            "ritten": 55,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "102",
-            "naam": "Utrecht – Woerden",
-            "gevolgd": false,
-            "ritten": 95,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "122",
-            "naam": "Utrecht – Nieuw Loosdrecht",
-            "gevolgd": false,
-            "ritten": 24,
-            "uitval": 7,
-            "te_laat": 1
-          },
-          {
-            "lijn": "123",
-            "naam": "Uithoorn – Oudewater",
-            "gevolgd": false,
-            "ritten": 54,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "128",
-            "naam": "Maarssen – Vleuten",
-            "gevolgd": false,
-            "ritten": 50,
-            "uitval": 14,
-            "te_laat": 2
-          },
-          {
-            "lijn": "184",
-            "naam": "Utrecht – Vianen",
-            "gevolgd": false,
-            "ritten": 20,
-            "uitval": 3,
-            "te_laat": 1
-          },
-          {
-            "lijn": "203",
-            "naam": "Amersfoort Schothorst – Utrecht Science Park",
-            "gevolgd": false,
-            "ritten": 61,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "272",
-            "naam": "Baarn – Utrecht Science Park",
-            "gevolgd": true,
-            "ritten": 17,
-            "uitval": 0,
-            "te_laat": 0,
-            "niet_gemeld": 0,
-            "ingekort": 0,
-            "afgebroken": 0
-          },
-          {
-            "lijn": "299",
-            "naam": "Leusden – Utrecht Science Park",
-            "gevolgd": false,
-            "ritten": 19,
-            "uitval": 1,
-            "te_laat": 0
-          },
-          {
-            "lijn": "302",
-            "naam": "Amersfoort – Vianen",
-            "gevolgd": true,
-            "ritten": 148,
-            "uitval": 4,
-            "te_laat": 2,
-            "niet_gemeld": 0,
-            "ingekort": 5,
-            "afgebroken": 1
-          },
-          {
-            "lijn": "307",
-            "naam": "Utrecht – Gouda",
-            "gevolgd": false,
-            "ritten": 106,
-            "uitval": 5,
-            "te_laat": 0
-          },
-          {
-            "lijn": "315",
-            "naam": "Amersfoort Vathorst – Utrecht Science Park",
-            "gevolgd": true,
-            "ritten": 12,
-            "uitval": 0,
-            "te_laat": 0,
-            "niet_gemeld": 0,
-            "ingekort": 1,
-            "afgebroken": 0
-          },
-          {
-            "lijn": "326",
-            "naam": "Mijdrecht – Amsterdam Bijlmer",
-            "gevolgd": false,
-            "ritten": 130,
-            "uitval": 2,
-            "te_laat": 0
-          },
-          {
-            "lijn": "341",
-            "naam": "Utrecht – Wijk bij Duurstede",
-            "gevolgd": false,
-            "ritten": 160,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "350",
-            "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
-            "gevolgd": false,
-            "ritten": 232,
-            "uitval": 1,
-            "te_laat": 1
-          },
-          {
-            "lijn": "376",
-            "naam": "Science Park – Bunschoten-Spakenburg",
-            "gevolgd": true,
-            "ritten": 136,
-            "uitval": 0,
-            "te_laat": 0,
-            "niet_gemeld": 0,
-            "ingekort": 0,
-            "afgebroken": 0
-          },
-          {
-            "lijn": "380",
-            "naam": "Amersfoort – Veenendaal",
-            "gevolgd": false,
-            "ritten": 27,
-            "uitval": 2,
-            "te_laat": 0
-          }
-        ],
-        "berichten": [
-          {
-            "tekst": "Lijn 1: Halte tijdelijk vervallen i.v.m. stremming",
-            "lijnen": [],
-            "haltes": [
-              "Utrecht, Van der Goesstraat",
-              "Utrecht, Brederoplein",
-              "Utrecht, Balijelaan"
-            ],
-            "haltes_aantal": 3,
-            "plaatsen": [
-              "Utrecht"
-            ]
-          },
-          {
-            "tekst": "Halte tijdelijk vervallen i.v.m. ongeval",
-            "lijnen": [],
-            "haltes": [
-              "Utrecht, De Bazelstraat",
-              "Utrecht, Prins Bernhardplein",
-              "Utrecht, Cornelis Smeenkstraat"
-            ],
-            "haltes_aantal": 3,
-            "plaatsen": [
-              "Utrecht"
-            ]
-          },
-          {
-            "tekst": "Vanaf 4 november 20:00 t/m 5 november 05:00 vervallen de perrons: Perron J, Perron K en Perron L.",
-            "lijnen": [
-              "56",
-              "80",
-              "376"
-            ],
-            "haltes": [
-              "Amersfoort, Centraal Station"
-            ],
-            "haltes_aantal": 1,
-            "plaatsen": [
-              "Amersfoort"
-            ]
-          },
-          {
-            "tekst": "Vanaf 3 oktober 06:00 t/m 7 november 05:00 vervallen de haltes: Lopik Zijdeweg, Lopik Vrijheidslaan, Lopik Gemeentehuis, Cabauw Provincialeweg richting Utrecht",
-            "lijnen": [
-              "395"
-            ],
-            "haltes": [
-              "Lopik, Gemeentehuis",
-              "Lopik, Vrijheidslaan",
-              "Lopik, Zijdeweg",
-              "Cabauw, Provincialeweg"
-            ],
-            "haltes_aantal": 4,
-            "plaatsen": [
-              "Lopik",
-              "Cabauw"
-            ]
-          },
-          {
-            "tekst": "Halte vervallen tot 7 november 08:00. Tijdelijke halte: op de parallelweg.",
-            "lijnen": [],
-            "haltes": [
-              "Utrecht, Kanaleneiland-Zuid"
-            ],
-            "haltes_aantal": 1,
-            "plaatsen": [
-              "Utrecht"
-            ]
-          },
-          {
-            "tekst": "Halte vervallen tot 7 november 08:00. Tijdelijke halte: op de hoek van de Winthontlaan.",
-            "lijnen": [],
-            "haltes": [
-              "Utrecht, Kanaleneiland-Zuid"
-            ],
-            "haltes_aantal": 1,
-            "plaatsen": [
-              "Utrecht"
-            ]
-          },
-          {
-            "tekst": "vanwege een eerdere tramverstoring is er nog sprake van enige vertraging.",
-            "lijnen": [],
-            "haltes": [],
-            "haltes_aantal": 9,
-            "plaatsen": [
-              "Utrecht"
             ]
           }
         ]
