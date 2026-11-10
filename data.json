@@ -1,8 +1,8 @@
 {
-  "bijgewerkt": "2026-11-10T06:05:18+01:00",
+  "bijgewerkt": "2026-11-10T06:20:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
-    "tot": "2026-11-09"
+    "tot": "2026-11-10"
   },
   "lijnen": {
     "272": {
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1077,
-      "gemeten": 1077,
+      "gepland": 1078,
+      "gemeten": 1078,
       "aantal": {
-        "gereden": 1032,
+        "gereden": 1033,
         "ingekort": 24,
         "uitval, op tijd": 17,
         "uitval, te laat": 2,
@@ -141,7 +141,7 @@
         "ritten_ingekort": 24,
         "haltes": 413,
         "haltes_op_tijd": 394,
-        "haltes_dicht": 484,
+        "haltes_dicht": 485,
         "mediaan_min_na_vertrek": -39,
         "ritten_na_vertrek": 2,
         "mediaan_min_na_vertrek_laat": 18.5,
@@ -149,7 +149,7 @@
       },
       "meetperiode": {
         "van": "2026-11-01",
-        "tot": "2026-11-09"
+        "tot": "2026-11-10"
       },
       "dicht": [
         {
@@ -464,13 +464,23 @@
       "uitval, te laat": 0,
       "niet gemeld": 1,
       "geen meting": 0
+    },
+    {
+      "datum": "2026-11-10",
+      "lijn": "376",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
     }
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-10T06:03:59+01:00",
-    "gelukt": 6675,
-    "verwacht": 6662,
+    "tot": "2026-11-10T06:19:59+01:00",
+    "gelukt": 6683,
+    "verwacht": 6670,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -545,7 +555,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-10T06:04+01:00",
+          "laatst_gezien": "2026-11-10T06:19+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -672,13 +682,25 @@
     "dagen": [
       {
         "datum": "2026-11-10",
-        "lijnen_gemeten": 6,
+        "lijnen_gemeten": 14,
         "totaal": {
-          "ritten": 7,
+          "ritten": 21,
           "uitval": 0,
           "te_laat": 0
         },
-        "lijnen": [],
+        "lijnen": [
+          {
+            "lijn": "376",
+            "naam": "Science Park – Bunschoten-Spakenburg",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          }
+        ],
         "berichten": []
       },
       {
