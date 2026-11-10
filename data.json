@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-10T23:20:18+01:00",
+  "bijgewerkt": "2026-11-10T23:35:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-10"
@@ -43,18 +43,18 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1138,
-      "gemeten": 1138,
+      "gepland": 1140,
+      "gemeten": 1140,
       "aantal": {
-        "gereden": 1083,
-        "ingekort": 36,
+        "gereden": 1084,
+        "ingekort": 37,
         "uitval, op tijd": 11,
         "uitval, te laat": 4,
         "niet gemeld": 4,
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 95.2,
+        "gereden": 95.1,
         "ingekort": 3.2,
         "uitval, op tijd": 1.0,
         "uitval, te laat": 0.4,
@@ -64,14 +64,14 @@
         "norm_percentage": 95,
         "ritten": 15,
         "ritten_vooraf": 11,
-        "ritten_ingekort": 37,
-        "haltes": 325,
-        "haltes_op_tijd": 277,
+        "ritten_ingekort": 38,
+        "haltes": 326,
+        "haltes_op_tijd": 278,
         "haltes_dicht": 0,
         "mediaan_min_na_vertrek": -12,
         "ritten_na_vertrek": 4,
         "mediaan_min_na_vertrek_laat": 14.0,
-        "percentage_op_tijd": 85.2
+        "percentage_op_tijd": 85.3
       },
       "meetperiode": {
         "van": "2026-11-01",
@@ -478,8 +478,8 @@
     {
       "datum": "2026-11-10",
       "lijn": "302",
-      "gereden": 113,
-      "ingekort": 26,
+      "gereden": 114,
+      "ingekort": 27,
       "uitval, op tijd": 1,
       "uitval, te laat": 0,
       "niet gemeld": 2,
@@ -508,9 +508,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-10T23:20:00+01:00",
-    "gelukt": 7193,
-    "verwacht": 7180,
+    "tot": "2026-11-10T23:34:00+01:00",
+    "gelukt": 7200,
+    "verwacht": 7187,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -585,7 +585,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-10T23:19+01:00",
+          "laatst_gezien": "2026-11-10T23:34+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -745,8 +745,8 @@
         "datum": "2026-11-10",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6566,
-          "uitval": 39,
+          "ritten": 6615,
+          "uitval": 40,
           "te_laat": 19
         },
         "lijnen": [
@@ -754,7 +754,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 131,
+            "ritten": 132,
             "uitval": 2,
             "te_laat": 0
           },
@@ -762,7 +762,7 @@
             "lijn": "2",
             "naam": "Amersfoort CS – Nieuwland",
             "gevolgd": false,
-            "ritten": 125,
+            "ritten": 126,
             "uitval": 1,
             "te_laat": 1
           },
@@ -770,7 +770,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 68,
+            "ritten": 69,
             "uitval": 3,
             "te_laat": 2
           },
@@ -786,7 +786,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 123,
+            "ritten": 124,
             "uitval": 1,
             "te_laat": 1
           },
@@ -842,7 +842,7 @@
             "lijn": "21",
             "naam": "Science Park – Utrecht CS – IJsselstein",
             "gevolgd": false,
-            "ritten": 118,
+            "ritten": 119,
             "uitval": 1,
             "te_laat": 1
           },
@@ -850,7 +850,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 171,
+            "ritten": 173,
             "uitval": 3,
             "te_laat": 1
           },
@@ -866,7 +866,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 77,
+            "ritten": 78,
             "uitval": 2,
             "te_laat": 2
           },
@@ -874,7 +874,7 @@
             "lijn": "70",
             "naam": "Hilversum – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 127,
+            "ritten": 128,
             "uitval": 2,
             "te_laat": 0
           },
@@ -882,7 +882,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 138,
+            "ritten": 140,
             "uitval": 1,
             "te_laat": 1
           },
@@ -890,7 +890,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 131,
+            "ritten": 133,
             "uitval": 1,
             "te_laat": 1
           },
@@ -898,7 +898,7 @@
             "lijn": "80",
             "naam": "Amersfoort – Veenendaal-De Klomp",
             "gevolgd": false,
-            "ritten": 69,
+            "ritten": 70,
             "uitval": 1,
             "te_laat": 1
           },
@@ -914,7 +914,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 88,
+            "ritten": 89,
             "uitval": 1,
             "te_laat": 0
           },
@@ -949,18 +949,18 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 142,
+            "ritten": 144,
             "uitval": 1,
             "te_laat": 0,
             "niet_gemeld": 2,
-            "ingekort": 26,
+            "ingekort": 27,
             "afgebroken": 1
           },
           {
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 98,
+            "ritten": 101,
             "uitval": 1,
             "te_laat": 0
           },
@@ -979,7 +979,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 121,
+            "ritten": 123,
             "uitval": 2,
             "te_laat": 0
           },
@@ -987,8 +987,8 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 202,
-            "uitval": 2,
+            "ritten": 204,
+            "uitval": 3,
             "te_laat": 1
           },
           {
