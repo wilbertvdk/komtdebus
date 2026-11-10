@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-10T00:50:18+01:00",
+  "bijgewerkt": "2026-11-10T01:05:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-09"
@@ -468,9 +468,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-10T00:49:59+01:00",
-    "gelukt": 6518,
-    "verwacht": 6505,
+    "tot": "2026-11-10T01:03:59+01:00",
+    "gelukt": 6525,
+    "verwacht": 6512,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -545,7 +545,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-10T00:49+01:00",
+          "laatst_gezien": "2026-11-10T01:04+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -674,8 +674,8 @@
         "datum": "2026-11-09",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6973,
-          "uitval": 48,
+          "ritten": 7017,
+          "uitval": 49,
           "te_laat": 3
         },
         "lijnen": [
@@ -683,7 +683,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 131,
+            "ritten": 132,
             "uitval": 3,
             "te_laat": 0
           },
@@ -691,7 +691,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 129,
+            "ritten": 130,
             "uitval": 1,
             "te_laat": 0
           },
@@ -699,7 +699,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 72,
+            "ritten": 73,
             "uitval": 1,
             "te_laat": 0
           },
@@ -707,7 +707,7 @@
             "lijn": "15",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 59,
+            "ritten": 61,
             "uitval": 1,
             "te_laat": 0
           },
@@ -715,7 +715,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 155,
+            "ritten": 156,
             "uitval": 1,
             "te_laat": 0
           },
@@ -731,7 +731,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 91,
+            "ritten": 92,
             "uitval": 3,
             "te_laat": 1
           },
@@ -796,7 +796,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 127,
+            "ritten": 129,
             "uitval": 14,
             "te_laat": 2
           },
@@ -804,8 +804,16 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 154,
+            "ritten": 155,
             "uitval": 5,
+            "te_laat": 0
+          },
+          {
+            "lijn": "350",
+            "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
+            "gevolgd": false,
+            "ritten": 223,
+            "uitval": 1,
             "te_laat": 0
           },
           {
