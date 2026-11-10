@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-10T01:05:18+01:00",
+  "bijgewerkt": "2026-11-10T01:20:15+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-09"
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1074,
-      "gemeten": 1074,
+      "gepland": 1075,
+      "gemeten": 1075,
       "aantal": {
-        "gereden": 1029,
+        "gereden": 1030,
         "ingekort": 24,
         "uitval, op tijd": 17,
         "uitval, te laat": 2,
@@ -141,7 +141,7 @@
         "ritten_ingekort": 24,
         "haltes": 413,
         "haltes_op_tijd": 394,
-        "haltes_dicht": 482,
+        "haltes_dicht": 483,
         "mediaan_min_na_vertrek": -39,
         "ritten_na_vertrek": 2,
         "mediaan_min_na_vertrek_laat": 18.5,
@@ -458,7 +458,7 @@
     {
       "datum": "2026-11-09",
       "lijn": "376",
-      "gereden": 125,
+      "gereden": 126,
       "ingekort": 1,
       "uitval, op tijd": 6,
       "uitval, te laat": 0,
@@ -468,9 +468,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-10T01:03:59+01:00",
-    "gelukt": 6525,
-    "verwacht": 6512,
+    "tot": "2026-11-10T01:19:59+01:00",
+    "gelukt": 6533,
+    "verwacht": 6520,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -545,7 +545,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-10T01:04+01:00",
+          "laatst_gezien": "2026-11-10T01:19+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -674,7 +674,7 @@
         "datum": "2026-11-09",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 7017,
+          "ritten": 7053,
           "uitval": 49,
           "te_laat": 3
         },
@@ -683,7 +683,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 132,
+            "ritten": 133,
             "uitval": 3,
             "te_laat": 0
           },
@@ -691,7 +691,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 130,
+            "ritten": 131,
             "uitval": 1,
             "te_laat": 0
           },
@@ -699,7 +699,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 73,
+            "ritten": 74,
             "uitval": 1,
             "te_laat": 0
           },
@@ -715,7 +715,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 156,
+            "ritten": 157,
             "uitval": 1,
             "te_laat": 0
           },
@@ -731,7 +731,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 92,
+            "ritten": 93,
             "uitval": 3,
             "te_laat": 1
           },
@@ -777,7 +777,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 103,
+            "ritten": 104,
             "uitval": 3,
             "te_laat": 0
           },
@@ -812,7 +812,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 223,
+            "ritten": 227,
             "uitval": 1,
             "te_laat": 0
           },
@@ -820,7 +820,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 133,
+            "ritten": 134,
             "uitval": 6,
             "te_laat": 0,
             "niet_gemeld": 1,
