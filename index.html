@@ -199,12 +199,14 @@ h2 { margin-top: 36px; }
 .lijn-grid .box { margin: 0; }
 .lijnkaart h3 { margin: 0; }
 .lijnkaart .naam { margin: 0 0 4px; font-size: 0.9rem; }
+.lijnkaart .periode { margin: 0; font-size: 0.9rem; font-weight: 600; }
 .lijnkaart .bar { height: 18px; margin: 10px 0; }
 .lijnkaart .zin { margin: 0 0 4px; }
 .lijnkaart details { margin: 6px 0 0; }
 .lijnkaart summary, .vandaag summary { color: var(--accent); }
 .vandaag details { margin: 0; border-top: 1px solid var(--border); }
-.vandaag details:first-of-type { margin-top: 4px; }
+.vandaag .tabelkop { margin: 18px 0 8px; }
+.vandaag .box { margin-bottom: 10px; }
 .vandaag details[open] { padding-bottom: 8px; }
 .melden-blok { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; }
 .melden-blok img { width: 100%; height: auto; border-radius: 8px; display: block; }
@@ -552,6 +554,16 @@ function lijnZin(info) {
   return delen.join(" ");
 }
 
+// "2026-11-01", "2026-11-11" -> "1 t/m 11 november" (andere maand: "28 oktober t/m 3 november")
+function periodeKort(van, tot) {
+  const a = /^(\d{4})-(\d{2})-(\d{2})/.exec(van || ""), b = /^(\d{4})-(\d{2})-(\d{2})/.exec(tot || "");
+  if (!a || !b) return "Sinds de start";
+  const dagA = parseInt(a[3], 10), dagB = parseInt(b[3], 10);
+  if (van === tot) return dagA + " " + MAANDEN[+a[2] - 1];
+  return a[2] === b[2] ? dagA + " t/m " + dagB + " " + MAANDEN[+b[2] - 1]
+                       : dagA + " " + MAANDEN[+a[2] - 1] + " t/m " + dagB + " " + MAANDEN[+b[2] - 1];
+}
+
 function renderLijnen(data, heeftMetingen) {
   const box = document.getElementById("lijnen-box");
   leeg(box);
@@ -564,7 +576,7 @@ function renderLijnen(data, heeftMetingen) {
   }
   const periode = data.meetperiode || {};
   if (periode.van) document.getElementById("lijnen-periode").textContent =
-    "Deze vier lijnen volgen we rit voor rit, sinds " + datumTekst(periode.van) + ".";
+    "Deze vier lijnen volgen we rit voor rit. De cijfers gaan over de hele periode sinds " + datumTekst(periode.van) + ", niet alleen vandaag.";
   Object.keys(data.lijnen).sort().forEach(function (lijn) {
     const info = data.lijnen[lijn];
     const kaart = el("article", { cls: "box lijnkaart", attrs: { id: "lijn-" + lijn } });
@@ -575,9 +587,11 @@ function renderLijnen(data, heeftMetingen) {
       box.appendChild(kaart);
       return;
     }
+    const mp = info.meetperiode || periode;
+    kaart.appendChild(el("p", { cls: "periode", text: periodeKort(mp.van, mp.tot) + ": " + aantal(info.gemeten) + " ritten" }));
     kaart.appendChild(renderBalk(lijn, info));
     kaart.appendChild(el("p", { cls: "zin", text: lijnZin(info) }));
-    const meer = el("details", null, [el("summary", { text: "Details (" + info.gemeten + " ritten)" }), renderLegenda(info)]);
+    const meer = el("details", null, [el("summary", { text: "Details" }), renderLegenda(info)]);
     const norm = renderMeldnorm(info.meldnorm);
     if (norm) meer.appendChild(norm);
     const dicht = renderDicht(info.dicht);
@@ -877,12 +891,15 @@ function renderProvincie(data) {
     const gemeld = meldingenZin(data, vandaag.datum);
     if (gemeld) box.appendChild(el("p", { cls: "muted", text: "Vandaag " + gemeld + "." }));
     const tabel = uitvalTabel(vandaag.lijnen);
-    if (tabel) box.appendChild(el("details", null, [
-      el("summary", { text: metUitval.length === 1 ? "De lijn met uitval vandaag" : "De " + metUitval.length + " lijnen met uitval vandaag" }),
-      tabel,
-      el("p", { cls: "muted klein", text: "Alleen afgeronde ritten. Ritten die we niet zagen rijden en die niet gemeld waren, tellen we alleen " +
-        "voor de vier lijnen die we helemaal volgen: op de andere lijnen kan het ook aan de meting liggen." }),
-    ]));
+    if (tabel) {
+      box.appendChild(el("h3", { cls: "tabelkop", text: metUitval.length === 1 ? "De lijn met uitval vandaag" : "De " + metUitval.length + " lijnen met uitval vandaag" }));
+      box.appendChild(el("div", { cls: "box" }, [tabel,
+        el("p", { cls: "muted klein", attrs: { style: "margin:10px 0 0" }, text: "Op de andere " + (vandaag.lijnen_gemeten - metUitval.length) +
+          " lijnen viel vandaag tot nu toe geen rit uit. Alleen afgeronde ritten. Ritten zonder bus en zonder melding tellen we alleen " +
+          "voor de vier lijnen die we helemaal volgen: op de andere lijnen kan het ook aan de meting liggen." })]));
+    } else {
+      box.appendChild(el("p", { cls: "muted", text: "Vandaag tot nu toe op geen enkele lijn uitval." }));
+    }
   }
 
   // Schermteksten die nu gelden
