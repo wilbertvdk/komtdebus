@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-11T02:35:19+01:00",
+  "bijgewerkt": "2026-11-11T02:50:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-10"
@@ -508,9 +508,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-11T02:33:49+01:00",
-    "gelukt": 7289,
-    "verwacht": 7277,
+    "tot": "2026-11-11T02:49:49+01:00",
+    "gelukt": 7297,
+    "verwacht": 7285,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -585,7 +585,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-11T02:31+01:00",
+          "laatst_gezien": "2026-11-11T02:46+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
