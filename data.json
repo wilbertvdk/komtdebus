@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-11T11:33:02+01:00",
+  "bijgewerkt": "2026-11-11T11:35:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-11"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1188,
-      "gemeten": 1188,
+      "gepland": 1189,
+      "gemeten": 1189,
       "aantal": {
-        "gereden": 1126,
+        "gereden": 1127,
         "ingekort": 41,
         "uitval, op tijd": 11,
         "uitval, te laat": 4,
@@ -55,7 +55,7 @@
       },
       "percentage": {
         "gereden": 94.8,
-        "ingekort": 3.5,
+        "ingekort": 3.4,
         "uitval, op tijd": 0.9,
         "uitval, te laat": 0.3,
         "niet gemeld": 0.5
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1259,
-      "gemeten": 1259,
+      "gepland": 1260,
+      "gemeten": 1260,
       "aantal": {
-        "gereden": 1201,
+        "gereden": 1202,
         "ingekort": 30,
         "uitval, op tijd": 17,
         "uitval, te laat": 3,
@@ -130,7 +130,7 @@
       "percentage": {
         "gereden": 95.4,
         "ingekort": 2.4,
-        "uitval, op tijd": 1.4,
+        "uitval, op tijd": 1.3,
         "uitval, te laat": 0.2,
         "niet gemeld": 0.6
       },
@@ -518,7 +518,7 @@
     {
       "datum": "2026-11-11",
       "lijn": "302",
-      "gereden": 40,
+      "gereden": 41,
       "ingekort": 2,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -538,7 +538,7 @@
     {
       "datum": "2026-11-11",
       "lijn": "376",
-      "gereden": 45,
+      "gereden": 46,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -548,9 +548,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-11T11:31:50+01:00",
-    "gelukt": 7558,
-    "verwacht": 7546,
+    "tot": "2026-11-11T11:33:50+01:00",
+    "gelukt": 7559,
+    "verwacht": 7547,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1029,7 +1029,7 @@
         "datum": "2026-11-11",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 2126,
+          "ritten": 2131,
           "uitval": 31,
           "te_laat": 12
         },
@@ -1038,7 +1038,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 36,
+            "ritten": 37,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1062,7 +1062,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 39,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1086,7 +1086,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 33,
+            "ritten": 34,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1190,7 +1190,7 @@
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 33,
+            "ritten": 34,
             "uitval": 1,
             "te_laat": 1
           },
