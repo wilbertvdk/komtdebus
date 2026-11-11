@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-11T02:05:18+01:00",
+  "bijgewerkt": "2026-11-11T02:20:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-10"
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1212,
-      "gemeten": 1212,
+      "gepland": 1213,
+      "gemeten": 1213,
       "aantal": {
-        "gereden": 1155,
+        "gereden": 1156,
         "ingekort": 29,
         "uitval, op tijd": 17,
         "uitval, te laat": 3,
@@ -498,7 +498,7 @@
     {
       "datum": "2026-11-10",
       "lijn": "376",
-      "gereden": 123,
+      "gereden": 124,
       "ingekort": 5,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -508,9 +508,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-11T02:03:49+01:00",
-    "gelukt": 7274,
-    "verwacht": 7262,
+    "tot": "2026-11-11T02:19:49+01:00",
+    "gelukt": 7282,
+    "verwacht": 7270,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -585,7 +585,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-11T02:01+01:00",
+          "laatst_gezien": "2026-11-11T02:16+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -925,7 +925,7 @@
         "datum": "2026-11-10",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6999,
+          "ritten": 7008,
           "uitval": 46,
           "te_laat": 19
         },
@@ -1046,7 +1046,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 87,
+            "ritten": 88,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1140,7 +1140,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 105,
+            "ritten": 106,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1175,7 +1175,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 135,
+            "ritten": 136,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 6,
