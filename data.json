@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-11T10:29:35+01:00",
+  "bijgewerkt": "2026-11-11T10:35:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-11"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1178,
-      "gemeten": 1178,
+      "gepland": 1179,
+      "gemeten": 1179,
       "aantal": {
-        "gereden": 1117,
+        "gereden": 1118,
         "ingekort": 40,
         "uitval, op tijd": 11,
         "uitval, te laat": 4,
@@ -80,10 +80,10 @@
       "dicht": []
     },
     "315": {
-      "gepland": 89,
-      "gemeten": 89,
+      "gepland": 90,
+      "gemeten": 90,
       "aantal": {
-        "gereden": 78,
+        "gereden": 79,
         "ingekort": 8,
         "uitval, op tijd": 2,
         "uitval, te laat": 0,
@@ -91,8 +91,8 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 87.6,
-        "ingekort": 9.0,
+        "gereden": 87.8,
+        "ingekort": 8.9,
         "uitval, op tijd": 2.2,
         "uitval, te laat": 0.0,
         "niet gemeld": 1.1
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1250,
-      "gemeten": 1250,
+      "gepland": 1251,
+      "gemeten": 1251,
       "aantal": {
-        "gereden": 1192,
+        "gereden": 1193,
         "ingekort": 30,
         "uitval, op tijd": 17,
         "uitval, te laat": 3,
@@ -518,7 +518,7 @@
     {
       "datum": "2026-11-11",
       "lijn": "302",
-      "gereden": 31,
+      "gereden": 32,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -528,7 +528,7 @@
     {
       "datum": "2026-11-11",
       "lijn": "315",
-      "gereden": 4,
+      "gereden": 5,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -538,7 +538,7 @@
     {
       "datum": "2026-11-11",
       "lijn": "376",
-      "gereden": 36,
+      "gereden": 37,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -548,9 +548,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-11T10:27:50+01:00",
-    "gelukt": 7526,
-    "verwacht": 7514,
+    "tot": "2026-11-11T10:33:50+01:00",
+    "gelukt": 7529,
+    "verwacht": 7517,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -625,7 +625,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-11T10:26+01:00",
+          "laatst_gezien": "2026-11-11T10:31+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -1013,7 +1013,7 @@
         "datum": "2026-11-11",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1687,
+          "ritten": 1722,
           "uitval": 22,
           "te_laat": 10
         },
@@ -1022,7 +1022,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 29,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1030,7 +1030,7 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 31,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1038,7 +1038,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 31,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1046,7 +1046,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 31,
             "uitval": 3,
             "te_laat": 2
           },
@@ -1054,7 +1054,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1062,7 +1062,7 @@
             "lijn": "11",
             "naam": "Vleuten – Overvecht",
             "gevolgd": false,
-            "ritten": 13,
+            "ritten": 14,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1086,7 +1086,7 @@
             "lijn": "31",
             "naam": "IJsselstein – Science Park",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1110,7 +1110,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1126,7 +1126,7 @@
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 26,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1161,7 +1161,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 34,
+            "ritten": 35,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 2,
@@ -1172,7 +1172,7 @@
             "lijn": "315",
             "naam": "Amersfoort Vathorst – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 5,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 1,
@@ -1183,7 +1183,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 37,
+            "ritten": 38,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
