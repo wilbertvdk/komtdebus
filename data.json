@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-12T04:50:15+01:00",
+  "bijgewerkt": "2026-11-12T05:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-11"
@@ -548,9 +548,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-12T04:49:50+01:00",
-    "gelukt": 8077,
-    "verwacht": 8065,
+    "tot": "2026-11-12T05:03:50+01:00",
+    "gelukt": 8084,
+    "verwacht": 8072,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -625,7 +625,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-12T04:46+01:00",
+          "laatst_gezien": "2026-11-12T05:01+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -1031,25 +1031,6 @@
         "haltes_aantal": 2,
         "plaatsen": [
           "Woudenberg"
-        ]
-      },
-      {
-        "begin": "2026-11-04T11:02+01:00",
-        "eind": "2026-11-05T05:00+01:00",
-        "tekst": "Vanaf 20.00 uur vervallen de haltes J, K en L i.v.m. werkzaamheden. De bussen stoppen dan op de naastgelegen haltes. Check de bestemming op de voorzijde bus.",
-        "lijnen": [
-          "56",
-          "80",
-          "376",
-          "380"
-        ],
-        "haltes": [
-          "Amersfoort, Centraal Station",
-          "Amersfoort, Centraal Station (K)"
-        ],
-        "haltes_aantal": 2,
-        "plaatsen": [
-          "Amersfoort"
         ]
       }
     ],
