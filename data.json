@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-12T08:35:15+01:00",
+  "bijgewerkt": "2026-11-12T08:50:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-12"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1302,
-      "gemeten": 1302,
+      "gepland": 1304,
+      "gemeten": 1304,
       "aantal": {
-        "gereden": 1216,
+        "gereden": 1218,
         "ingekort": 60,
         "uitval, op tijd": 13,
         "uitval, te laat": 4,
@@ -117,11 +117,11 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1366,
-      "gemeten": 1366,
+      "gepland": 1368,
+      "gemeten": 1368,
       "aantal": {
-        "gereden": 1297,
-        "ingekort": 37,
+        "gereden": 1298,
+        "ingekort": 38,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
         "niet gemeld": 11,
@@ -129,7 +129,7 @@
       },
       "percentage": {
         "gereden": 94.9,
-        "ingekort": 2.7,
+        "ingekort": 2.8,
         "uitval, op tijd": 1.2,
         "uitval, te laat": 0.3,
         "niet gemeld": 0.8
@@ -138,10 +138,10 @@
         "norm_percentage": 95,
         "ritten": 21,
         "ritten_vooraf": 17,
-        "ritten_ingekort": 38,
-        "haltes": 488,
-        "haltes_op_tijd": 445,
-        "haltes_dicht": 631,
+        "ritten_ingekort": 39,
+        "haltes": 489,
+        "haltes_op_tijd": 446,
+        "haltes_dicht": 632,
         "mediaan_min_na_vertrek": -24,
         "ritten_na_vertrek": 4,
         "mediaan_min_na_vertrek_laat": 9.0,
@@ -558,7 +558,7 @@
     {
       "datum": "2026-11-12",
       "lijn": "302",
-      "gereden": 10,
+      "gereden": 12,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -578,8 +578,8 @@
     {
       "datum": "2026-11-12",
       "lijn": "376",
-      "gereden": 8,
-      "ingekort": 6,
+      "gereden": 9,
+      "ingekort": 7,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
       "niet gemeld": 2,
@@ -588,9 +588,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-12T08:33:50+01:00",
-    "gelukt": 8189,
-    "verwacht": 8177,
+    "tot": "2026-11-12T08:49:50+01:00",
+    "gelukt": 8197,
+    "verwacht": 8185,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -665,7 +665,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-12T08:31+01:00",
+          "laatst_gezien": "2026-11-12T08:46+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -1077,13 +1077,21 @@
     "dagen": [
       {
         "datum": "2026-11-12",
-        "lijnen_gemeten": 91,
+        "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 671,
-          "uitval": 2,
+          "ritten": 808,
+          "uitval": 3,
           "te_laat": 1
         },
         "lijnen": [
+          {
+            "lijn": "102",
+            "naam": "Utrecht – Woerden",
+            "gevolgd": false,
+            "ritten": 8,
+            "uitval": 1,
+            "te_laat": 0
+          },
           {
             "lijn": "106",
             "naam": "IJsselstein – Gouda",
@@ -1107,7 +1115,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1129,11 +1137,11 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 2,
-            "ingekort": 6,
+            "ingekort": 7,
             "afgebroken": 0
           }
         ],
