@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-12T07:20:17+01:00",
+  "bijgewerkt": "2026-11-12T07:35:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-12"
   },
   "lijnen": {
     "272": {
-      "gepland": 136,
-      "gemeten": 136,
+      "gepland": 137,
+      "gemeten": 137,
       "aantal": {
-        "gereden": 135,
+        "gereden": 136,
         "ingekort": 1,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -38,7 +38,7 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-11"
+        "tot": "2026-11-12"
       },
       "dicht": []
     },
@@ -117,14 +117,14 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1353,
-      "gemeten": 1353,
+      "gepland": 1355,
+      "gemeten": 1355,
       "aantal": {
-        "gereden": 1290,
+        "gereden": 1291,
         "ingekort": 33,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
-        "niet gemeld": 9,
+        "niet gemeld": 10,
         "geen meting": 0
       },
       "percentage": {
@@ -547,6 +547,16 @@
     },
     {
       "datum": "2026-11-12",
+      "lijn": "272",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-12",
       "lijn": "302",
       "gereden": 1,
       "ingekort": 0,
@@ -558,19 +568,19 @@
     {
       "datum": "2026-11-12",
       "lijn": "376",
-      "gereden": 1,
+      "gereden": 2,
       "ingekort": 2,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
-      "niet gemeld": 0,
+      "niet gemeld": 1,
       "geen meting": 0
     }
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-12T07:19:50+01:00",
-    "gelukt": 8152,
-    "verwacht": 8140,
+    "tot": "2026-11-12T07:33:50+01:00",
+    "gelukt": 8159,
+    "verwacht": 8147,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -645,7 +655,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-12T07:16+01:00",
+          "laatst_gezien": "2026-11-12T07:31+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -1057,13 +1067,24 @@
     "dagen": [
       {
         "datum": "2026-11-12",
-        "lijnen_gemeten": 66,
+        "lijnen_gemeten": 78,
         "totaal": {
-          "ritten": 182,
+          "ritten": 255,
           "uitval": 1,
           "te_laat": 1
         },
         "lijnen": [
+          {
+            "lijn": "272",
+            "naam": "Baarn – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          },
           {
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
@@ -1079,10 +1100,10 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 1,
             "te_laat": 1,
-            "niet_gemeld": 0,
+            "niet_gemeld": 1,
             "ingekort": 2,
             "afgebroken": 0
           }
