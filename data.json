@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-12T13:05:19+01:00",
+  "bijgewerkt": "2026-11-12T13:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-12"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1349,
-      "gemeten": 1349,
+      "gepland": 1351,
+      "gemeten": 1351,
       "aantal": {
-        "gereden": 1262,
+        "gereden": 1264,
         "ingekort": 61,
         "uitval, op tijd": 13,
         "uitval, te laat": 4,
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1408,
-      "gemeten": 1408,
+      "gepland": 1410,
+      "gemeten": 1410,
       "aantal": {
-        "gereden": 1316,
+        "gereden": 1318,
         "ingekort": 58,
         "uitval, op tijd": 17,
         "uitval, te laat": 5,
@@ -141,7 +141,7 @@
         "ritten_ingekort": 59,
         "haltes": 532,
         "haltes_op_tijd": 467,
-        "haltes_dicht": 653,
+        "haltes_dicht": 654,
         "mediaan_min_na_vertrek": -22.0,
         "ritten_na_vertrek": 5,
         "mediaan_min_na_vertrek_laat": 12,
@@ -558,7 +558,7 @@
     {
       "datum": "2026-11-12",
       "lijn": "302",
-      "gereden": 56,
+      "gereden": 58,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -578,7 +578,7 @@
     {
       "datum": "2026-11-12",
       "lijn": "376",
-      "gereden": 27,
+      "gereden": 29,
       "ingekort": 27,
       "uitval, op tijd": 0,
       "uitval, te laat": 2,
@@ -588,9 +588,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-12T13:03:55+01:00",
-    "gelukt": 8324,
-    "verwacht": 8312,
+    "tot": "2026-11-12T13:19:55+01:00",
+    "gelukt": 8332,
+    "verwacht": 8320,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -665,7 +665,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-12T13:01+01:00",
+          "laatst_gezien": "2026-11-12T13:16+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -676,6 +676,19 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-15T12:00+01:00",
+        "eind": "2026-11-15T15:00+01:00",
+        "tekst": "Halte vervallen tot 15:00. Plan je reis op u-ov.nl.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Sint Jacobsstraat"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-12T13:30+01:00",
         "eind": "2026-11-15T15:00+01:00",
@@ -1121,7 +1134,7 @@
         "datum": "2026-11-12",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 2725,
+          "ritten": 2822,
           "uitval": 18,
           "te_laat": 11
         },
@@ -1130,7 +1143,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 26,
+            "ritten": 27,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1138,7 +1151,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 51,
+            "ritten": 53,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1146,7 +1159,7 @@
             "lijn": "13",
             "naam": "Utrecht CS – Lage Weide – Maarssen",
             "gevolgd": false,
-            "ritten": 36,
+            "ritten": 38,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1170,7 +1183,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 26,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1178,7 +1191,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 29,
+            "ritten": 30,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1186,7 +1199,7 @@
             "lijn": "71",
             "naam": "Soest Zuid – Soestdijk Noord",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1194,7 +1207,7 @@
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 39,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1202,7 +1215,7 @@
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1210,7 +1223,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 31,
+            "ritten": 32,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1237,7 +1250,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 57,
+            "ritten": 59,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1259,7 +1272,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 61,
+            "ritten": 63,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1267,7 +1280,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 59,
+            "ritten": 61,
             "uitval": 2,
             "te_laat": 2,
             "niet_gemeld": 3,
@@ -1276,6 +1289,17 @@
           }
         ],
         "berichten": [
+          {
+            "tekst": "Halte vervallen tot 15:00. Plan je reis op u-ov.nl.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Sint Jacobsstraat"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
           {
             "tekst": "op 15 november zijn er van 13:30 tot 15:00 diverse omleidingen. Plan je reis op u-ov.nl.",
             "lijnen": [],
