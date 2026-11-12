@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-12T07:50:18+01:00",
+  "bijgewerkt": "2026-11-12T08:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-12"
   },
   "lijnen": {
     "272": {
-      "gepland": 137,
-      "gemeten": 137,
+      "gepland": 138,
+      "gemeten": 138,
       "aantal": {
-        "gereden": 136,
+        "gereden": 137,
         "ingekort": 1,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1295,
-      "gemeten": 1295,
+      "gepland": 1296,
+      "gemeten": 1296,
       "aantal": {
-        "gereden": 1209,
+        "gereden": 1210,
         "ingekort": 60,
         "uitval, op tijd": 13,
         "uitval, te laat": 4,
@@ -80,10 +80,10 @@
       "dicht": []
     },
     "315": {
-      "gepland": 96,
-      "gemeten": 96,
+      "gepland": 97,
+      "gemeten": 97,
       "aantal": {
-        "gereden": 85,
+        "gereden": 86,
         "ingekort": 8,
         "uitval, op tijd": 2,
         "uitval, te laat": 0,
@@ -91,8 +91,8 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 88.5,
-        "ingekort": 8.3,
+        "gereden": 88.7,
+        "ingekort": 8.2,
         "uitval, op tijd": 2.1,
         "uitval, te laat": 0.0,
         "niet gemeld": 1.0
@@ -112,15 +112,15 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-11"
+        "tot": "2026-11-12"
       },
       "dicht": []
     },
     "376": {
-      "gepland": 1358,
-      "gemeten": 1358,
+      "gepland": 1360,
+      "gemeten": 1360,
       "aantal": {
-        "gereden": 1292,
+        "gereden": 1294,
         "ingekort": 35,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
@@ -130,7 +130,7 @@
       "percentage": {
         "gereden": 95.1,
         "ingekort": 2.6,
-        "uitval, op tijd": 1.3,
+        "uitval, op tijd": 1.2,
         "uitval, te laat": 0.3,
         "niet gemeld": 0.7
       },
@@ -548,7 +548,7 @@
     {
       "datum": "2026-11-12",
       "lijn": "272",
-      "gereden": 1,
+      "gereden": 2,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -558,7 +558,17 @@
     {
       "datum": "2026-11-12",
       "lijn": "302",
-      "gereden": 3,
+      "gereden": 4,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-12",
+      "lijn": "315",
+      "gereden": 1,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -568,7 +578,7 @@
     {
       "datum": "2026-11-12",
       "lijn": "376",
-      "gereden": 3,
+      "gereden": 5,
       "ingekort": 4,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -578,9 +588,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-12T07:49:50+01:00",
-    "gelukt": 8167,
-    "verwacht": 8155,
+    "tot": "2026-11-12T08:03:50+01:00",
+    "gelukt": 8174,
+    "verwacht": 8162,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -655,7 +665,7 @@
         },
         {
           "eerst_gezien": "2026-11-09T20:14+01:00",
-          "laatst_gezien": "2026-11-12T07:46+01:00",
+          "laatst_gezien": "2026-11-12T08:01+01:00",
           "kop": "U-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.",
           "tekst": "Oorzaak : onbekend Omleiding lijn 302 i.v.m. werkzaamheden.\nEffect : \nMaatregelen : \nU-OV: Van 10 t/m 13 november vervalt dagelijks tussen 20:00 en 05:00 uur de halte P+R Soesterberg.\n",
           "geldig_van": "2026-11-09T20:03+01:00",
@@ -1067,9 +1077,9 @@
     "dagen": [
       {
         "datum": "2026-11-12",
-        "lijnen_gemeten": 83,
+        "lijnen_gemeten": 87,
         "totaal": {
-          "ritten": 355,
+          "ritten": 448,
           "uitval": 1,
           "te_laat": 1
         },
@@ -1078,7 +1088,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1089,7 +1099,18 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 4,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          },
+          {
+            "lijn": "315",
+            "naam": "Amersfoort Vathorst – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1100,7 +1121,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 9,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 1,
