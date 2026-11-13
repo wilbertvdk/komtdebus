@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-13T07:20:19+01:00",
+  "bijgewerkt": "2026-11-13T07:35:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-13"
   },
   "lijnen": {
     "272": {
-      "gepland": 153,
-      "gemeten": 153,
+      "gepland": 154,
+      "gemeten": 154,
       "aantal": {
-        "gereden": 152,
+        "gereden": 153,
         "ingekort": 1,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -17,8 +17,8 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 99.3,
-        "ingekort": 0.7,
+        "gereden": 99.4,
+        "ingekort": 0.6,
         "uitval, op tijd": 0.0,
         "uitval, te laat": 0.0,
         "niet gemeld": 0.0
@@ -38,7 +38,7 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-12"
+        "tot": "2026-11-13"
       },
       "dicht": []
     },
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1489,
-      "gemeten": 1489,
+      "gepland": 1491,
+      "gemeten": 1491,
       "aantal": {
-        "gereden": 1393,
+        "gereden": 1395,
         "ingekort": 58,
         "uitval, op tijd": 19,
         "uitval, te laat": 5,
@@ -587,6 +587,16 @@
     },
     {
       "datum": "2026-11-13",
+      "lijn": "272",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-13",
       "lijn": "302",
       "gereden": 1,
       "ingekort": 0,
@@ -598,7 +608,7 @@
     {
       "datum": "2026-11-13",
       "lijn": "376",
-      "gereden": 4,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -608,9 +618,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-13T07:19:55+01:00",
-    "gelukt": 8872,
-    "verwacht": 8860,
+    "tot": "2026-11-13T07:33:55+01:00",
+    "gelukt": 8879,
+    "verwacht": 8867,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1052,18 +1062,26 @@
     "dagen": [
       {
         "datum": "2026-11-13",
-        "lijnen_gemeten": 66,
+        "lijnen_gemeten": 78,
         "totaal": {
-          "ritten": 182,
-          "uitval": 4,
-          "te_laat": 3
+          "ritten": 255,
+          "uitval": 5,
+          "te_laat": 4
         },
         "lijnen": [
+          {
+            "lijn": "1",
+            "naam": "Soesterkwartier – Amersfoort CS",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 1,
+            "te_laat": 1
+          },
           {
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 6,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1071,7 +1089,7 @@
             "lijn": "21",
             "naam": "Science Park – Utrecht CS – IJsselstein",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1087,9 +1105,20 @@
             "lijn": "195",
             "naam": "Utrecht – Benschop",
             "gevolgd": false,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 1,
             "te_laat": 1
+          },
+          {
+            "lijn": "272",
+            "naam": "Baarn – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
           },
           {
             "lijn": "302",
@@ -1106,7 +1135,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -3779,6 +3808,7 @@
       "2026-11-11": {
         "56": 1
       }
-    }
+    },
+    "gepubliceerd": []
   }
 }

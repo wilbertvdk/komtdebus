@@ -223,6 +223,15 @@ h2 { margin-top: 36px; }
 @media (max-width: 600px) { .over-foto { float: none; width: 100%; margin: 12px 0; } }
 /* Foto's van MxM Visuals: niet verder te verspreiden. Slepen en lang drukken uit; opslaan blijft technisch mogelijk. */
 .hero img, .melden-blok img, .over-foto img { -webkit-user-drag: none; user-select: none; -webkit-touch-callout: none; }
+.meld-lijst { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 10px; }
+.meld-lijst li { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+.meld-lijst .kop { font-weight: 600; margin: 0; }
+.meld-lijst p { margin: 4px 0 0; }
+.meld-lijst .quote { margin-top: 8px; }
+.meld-lijst .data { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 0.9rem; }
+#meld-lijst h3 { margin: 20px 0 4px; }
+#meld-lijst details { margin-top: 10px; }
+#meld-lijst summary { color: var(--accent); cursor: pointer; }
 footer.binnen { margin-top: 8px; padding-top: 16px; padding-bottom: 32px; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--muted); }
 </style>
 </head>
@@ -279,6 +288,7 @@ footer.binnen { margin-top: 8px; padding-top: 16px; padding-bottom: 32px; border
       <figcaption>Foto: MxM Visuals</figcaption>
     </figure>
   </div>
+  <div id="meld-lijst" hidden></div>
   <p class="muted">Een klacht kun je ook bij U-OV indienen; dat telt mee in hoe de provincie de vervoerder beoordeelt.</p>
 </section>
 
@@ -328,7 +338,7 @@ footer.binnen { margin-top: 8px; padding-top: 16px; padding-bottom: 32px; border
     <li><a href="https://www.ad.nl/eemnes/data-expert-wilbert-wil-uitval-spookbussen-in-kaart-brengen-reizigers-staan-voor-joker-in-de-kou~a8266035/" rel="noopener">AD Amersfoortse Courant</a>, 9 november 2026: "Data-expert Wilbert wil uitval spookbussen in kaart brengen"</li>
     <li><a href="https://www.soestercourant.nl/lokaal/lokaal/1324521/soester-meet-of-de-bus-komt-en-vraagt-reizigers-om-mee-te-melden" rel="noopener">Soester Courant</a>, 2 november 2026: "Soester meet of de bus komt, en vraagt reizigers om mee te melden"</li>
   </ul>
-    <p class="muted">Geen cookies. Bezoeken tellen we anoniem met <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a>. Meldingen zijn zonder naam en worden nooit herleidbaar gepubliceerd. Een e-mailadres in het formulier is optioneel, alleen voor een vervolgvraag, en wordt nooit gedeeld.</p>
+    <p class="muted">Geen cookies. Bezoeken tellen we anoniem met <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a>. Meldingen zijn zonder naam. Een melding staat alleen op deze site als de melder dat in het formulier aangaf, en pas nadat ik hem heb nagelezen; nooit met naam of e-mailadres. Een e-mailadres in het formulier is optioneel, alleen voor een vervolgvraag, en wordt nooit gedeeld.</p>
   </details>
 </section>
 </main>
@@ -863,6 +873,56 @@ function renderMeldTeller(data) {
   if (n) p.textContent = "Tot nu toe " + aantal(n) + (n === 1 ? " melding" : " meldingen") + " ontvangen. Dank je wel!";
 }
 
+// Wat de ritdata zegt over een gepubliceerde melding (zie formulier.py: de toets).
+function meldingData(t) {
+  if (!t) return "Nog niet nagekeken: dat kan pas als de rit voorbij is.";
+  if (t.reden) return t.reden === "lijn wordt niet gevolgd"
+    ? "Deze lijn volg ik (nog) niet rit voor rit, dus hier is geen ritdata bij."
+    : "Ik kon deze rit niet terugvinden in de dienstregeling.";
+  const v = t.afwijking_min;
+  const stipt = v == null ? "" : Math.abs(v) < 1 ? ", op tijd" : v > 0 ? ", " + Math.round(v) + " min later dan gepland" : ", " + Math.round(-v) + " min eerder dan gepland";
+  const zin = {
+    "gereden": "De bus reed" + (t.vertrek ? ": vertrok bij deze halte om " + t.vertrek + stipt : "") + ".",
+    "ingekort": "De rit is ingekort: een deel van de haltes viel uit.",
+    "uitval, op tijd": "De rit viel uit, en stond vóór vertrek als vervallen in de reisinformatie.",
+    "uitval, te laat": "De rit viel uit, en stond pas ná de vertrektijd als vervallen in de reisinformatie.",
+    "niet gemeld": "Er reed geen bus, en de rit is nooit als vervallen gemeld.",
+  }[t.klasse] || "Van deze dag heb ik geen meting.";
+  return zin + (t.twijfel ? " Rond die tijd reed nog een rit; misschien ging het om die." : "");
+}
+
+function meldingItem(m) {
+  const wat = [m.wat, m.minuten ? m.minuten + (/^\d+$/.test(m.minuten) ? " min" : "") : null].filter(Boolean).join(", ");
+  const scherm = m.scherm ? m.scherm + (m.bron ? " (" + m.bron + ")" : "") : null;
+  return el("li", null, [
+    el("p", { cls: "kop", text: "Lijn " + m.lijn + (m.halte ? ", " + m.halte : "") }),
+    el("p", { cls: "muted klein", text: hoofdletter(dagTekst(m.datum)) + (m.tijd ? ", bus van " + m.tijd : "") + (m.richting ? " (" + m.richting + ")" : "") }),
+    wat ? el("p", { text: wat }) : null,
+    scherm ? el("p", { cls: "muted", text: "App of scherm: " + scherm }) : null,
+    m.toelichting ? el("blockquote", { cls: "quote" }, [el("p", { text: "\u201C" + m.toelichting + "\u201D" })]) : null,
+    el("p", { cls: "data" }, [el("b", { text: "Wat de data zegt: " }), el("span", { text: meldingData(m.data) })]),
+  ]);
+}
+
+// Gepubliceerde meldingen: alleen met toestemming van de melder en na nalezen (meldingen.py). Nieuwste eerst.
+function renderMeldLijst(data) {
+  const box = document.getElementById("meld-lijst");
+  const lijst = (data && data.meldingen && data.meldingen.gepubliceerd) || [];
+  leeg(box);
+  box.hidden = !lijst.length;
+  if (!lijst.length) return;
+  box.appendChild(el("h3", { text: "Meldingen van reizigers" }));
+  box.appendChild(el("p", { cls: "muted", text: "Met toestemming van de melder, zonder naam. Bij elke melding staat wat de ritdata erover zegt." }));
+  const eerste = 5;
+  box.appendChild(el("ul", { cls: "meld-lijst" }, lijst.slice(0, eerste).map(meldingItem)));
+  if (lijst.length > eerste) {
+    box.appendChild(el("details", null, [
+      el("summary", { text: "Alle " + aantal(lijst.length) + " meldingen" }),
+      el("ul", { cls: "meld-lijst" }, lijst.slice(eerste).map(meldingItem)),
+    ]));
+  }
+}
+
 function renderProvincie(data) {
   const sectie = document.getElementById("provincie");
   const box = document.getElementById("provincie-box");
@@ -940,6 +1000,7 @@ function render(data) {
   renderStatus(data, heeftMetingen);
   renderProvincie(data);
   renderMeldTeller(data);
+  renderMeldLijst(data);
   renderLijnen(data, heeftMetingen);
   renderHaltes(data);
   renderDagen(data, heeftMetingen);
