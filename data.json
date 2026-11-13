@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-13T07:35:18+01:00",
+  "bijgewerkt": "2026-11-13T07:50:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-13"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1441,
-      "gemeten": 1441,
+      "gepland": 1443,
+      "gemeten": 1443,
       "aantal": {
-        "gereden": 1335,
+        "gereden": 1337,
         "ingekort": 65,
         "uitval, op tijd": 15,
         "uitval, te laat": 4,
@@ -54,7 +54,7 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 92.6,
+        "gereden": 92.7,
         "ingekort": 4.5,
         "uitval, op tijd": 1.0,
         "uitval, te laat": 0.3,
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1491,
-      "gemeten": 1491,
+      "gepland": 1494,
+      "gemeten": 1494,
       "aantal": {
-        "gereden": 1395,
+        "gereden": 1398,
         "ingekort": 58,
         "uitval, op tijd": 19,
         "uitval, te laat": 5,
@@ -141,7 +141,7 @@
         "ritten_ingekort": 59,
         "haltes": 567,
         "haltes_op_tijd": 502,
-        "haltes_dicht": 695,
+        "haltes_dicht": 697,
         "mediaan_min_na_vertrek": -31.5,
         "ritten_na_vertrek": 5,
         "mediaan_min_na_vertrek_laat": 12,
@@ -598,7 +598,7 @@
     {
       "datum": "2026-11-13",
       "lijn": "302",
-      "gereden": 1,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -608,7 +608,7 @@
     {
       "datum": "2026-11-13",
       "lijn": "376",
-      "gereden": 6,
+      "gereden": 9,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -618,9 +618,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-13T07:33:55+01:00",
-    "gelukt": 8879,
-    "verwacht": 8867,
+    "tot": "2026-11-13T07:49:55+01:00",
+    "gelukt": 8887,
+    "verwacht": 8875,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1062,9 +1062,9 @@
     "dagen": [
       {
         "datum": "2026-11-13",
-        "lijnen_gemeten": 78,
+        "lijnen_gemeten": 83,
         "totaal": {
-          "ritten": 255,
+          "ritten": 355,
           "uitval": 5,
           "te_laat": 4
         },
@@ -1073,7 +1073,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1081,7 +1081,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 6,
+            "ritten": 8,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1089,7 +1089,7 @@
             "lijn": "21",
             "naam": "Science Park – Utrecht CS – IJsselstein",
             "gevolgd": false,
-            "ritten": 7,
+            "ritten": 8,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1097,7 +1097,7 @@
             "lijn": "106",
             "naam": "IJsselstein – Gouda",
             "gevolgd": false,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1105,7 +1105,7 @@
             "lijn": "195",
             "naam": "Utrecht – Benschop",
             "gevolgd": false,
-            "ritten": 2,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1124,7 +1124,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1135,7 +1135,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 6,
+            "ritten": 9,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -3777,7 +3777,7 @@
     ]
   },
   "meldingen": {
-    "totaal": 14,
+    "totaal": 15,
     "per_dag": {
       "2026-10-29": {
         "302": 1,
@@ -3807,6 +3807,9 @@
       },
       "2026-11-11": {
         "56": 1
+      },
+      "2026-11-13": {
+        "272": 1
       }
     },
     "gepubliceerd": []
