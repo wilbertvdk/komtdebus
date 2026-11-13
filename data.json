@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-13T08:05:13+01:00",
+  "bijgewerkt": "2026-11-13T08:20:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-13"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1444,
-      "gemeten": 1444,
+      "gepland": 1447,
+      "gemeten": 1447,
       "aantal": {
-        "gereden": 1338,
+        "gereden": 1341,
         "ingekort": 65,
         "uitval, op tijd": 15,
         "uitval, te laat": 4,
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1496,
-      "gemeten": 1496,
+      "gepland": 1498,
+      "gemeten": 1498,
       "aantal": {
-        "gereden": 1400,
+        "gereden": 1402,
         "ingekort": 58,
         "uitval, op tijd": 19,
         "uitval, te laat": 5,
@@ -141,7 +141,7 @@
         "ritten_ingekort": 59,
         "haltes": 567,
         "haltes_op_tijd": 502,
-        "haltes_dicht": 697,
+        "haltes_dicht": 698,
         "mediaan_min_na_vertrek": -31.5,
         "ritten_na_vertrek": 5,
         "mediaan_min_na_vertrek_laat": 12,
@@ -598,7 +598,7 @@
     {
       "datum": "2026-11-13",
       "lijn": "302",
-      "gereden": 4,
+      "gereden": 7,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -618,7 +618,7 @@
     {
       "datum": "2026-11-13",
       "lijn": "376",
-      "gereden": 11,
+      "gereden": 13,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -628,9 +628,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-13T08:03:55+01:00",
-    "gelukt": 8894,
-    "verwacht": 8882,
+    "tot": "2026-11-13T08:19:55+01:00",
+    "gelukt": 8902,
+    "verwacht": 8890,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -716,6 +716,45 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-13T08:20+01:00",
+        "eind": "2026-11-16T19:59+01:00",
+        "tekst": "Lijn 28: halte vervalt van 16 november 20:00 t/m 18 november 05:00. Vervangende halte: Veldhuizerweg.",
+        "lijnen": [],
+        "haltes": [
+          "Vleuten, De Tuinlanden"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Vleuten"
+        ]
+      },
+      {
+        "begin": "2026-11-16T20:00+01:00",
+        "eind": "2026-11-18T05:00+01:00",
+        "tekst": "Lijn 28: halte vervallen t/m 18 november 05:00. Vervangende halte: Rivierkom-Zuid.",
+        "lijnen": [],
+        "haltes": [
+          "Vleuten, Vleuterweide-Centrum"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Vleuten"
+        ]
+      },
+      {
+        "begin": "2026-11-16T20:00+01:00",
+        "eind": "2026-11-18T05:00+01:00",
+        "tekst": "Lijn 28: halte vervallen t/m 18 november 05:00. Vervangende halte: Boterbloemsingel.",
+        "lijnen": [],
+        "haltes": [
+          "Vleuten, Eyckenstein"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Vleuten"
+        ]
+      },
       {
         "begin": "2026-11-15T12:00+01:00",
         "eind": "2026-11-15T15:00+01:00",
@@ -1072,10 +1111,10 @@
     "dagen": [
       {
         "datum": "2026-11-13",
-        "lijnen_gemeten": 87,
+        "lijnen_gemeten": 89,
         "totaal": {
-          "ritten": 448,
-          "uitval": 6,
+          "ritten": 559,
+          "uitval": 7,
           "te_laat": 4
         },
         "lijnen": [
@@ -1083,7 +1122,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 4,
+            "ritten": 5,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1091,7 +1130,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1099,7 +1138,7 @@
             "lijn": "21",
             "naam": "Science Park – Utrecht CS – IJsselstein",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1123,7 +1162,7 @@
             "lijn": "195",
             "naam": "Utrecht – Benschop",
             "gevolgd": false,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1139,10 +1178,18 @@
             "afgebroken": 0
           },
           {
+            "lijn": "298",
+            "naam": "Woudenberg – Utrecht Science Park",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 7,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1164,7 +1211,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 11,
+            "ritten": 13,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1172,7 +1219,41 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Lijn 28: halte vervalt van 16 november 20:00 t/m 18 november 05:00. Vervangende halte: Veldhuizerweg.",
+            "lijnen": [],
+            "haltes": [
+              "Vleuten, De Tuinlanden"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Vleuten"
+            ]
+          },
+          {
+            "tekst": "Lijn 28: halte vervallen t/m 18 november 05:00. Vervangende halte: Rivierkom-Zuid.",
+            "lijnen": [],
+            "haltes": [
+              "Vleuten, Vleuterweide-Centrum"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Vleuten"
+            ]
+          },
+          {
+            "tekst": "Lijn 28: halte vervallen t/m 18 november 05:00. Vervangende halte: Boterbloemsingel.",
+            "lijnen": [],
+            "haltes": [
+              "Vleuten, Eyckenstein"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Vleuten"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-12",
@@ -3806,7 +3887,7 @@
     ]
   },
   "meldingen": {
-    "totaal": 15,
+    "totaal": 14,
     "per_dag": {
       "2026-10-29": {
         "302": 1,
@@ -3836,9 +3917,6 @@
       },
       "2026-11-11": {
         "56": 1
-      },
-      "2026-11-13": {
-        "272": 1
       }
     },
     "gepubliceerd": []
