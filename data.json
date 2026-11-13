@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-13T05:50:18+01:00",
+  "bijgewerkt": "2026-11-13T06:05:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-12"
@@ -588,9 +588,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-13T05:49:55+01:00",
-    "gelukt": 8827,
-    "verwacht": 8815,
+    "tot": "2026-11-13T06:03:55+01:00",
+    "gelukt": 8834,
+    "verwacht": 8822,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -808,19 +808,6 @@
         ]
       },
       {
-        "begin": "2026-11-10T18:15+01:00",
-        "eind": "2026-11-13T00:59+01:00",
-        "tekst": "Halte vervallen op 13 november van 01:00 tot 06:00 i.v.m. werkzaamheden. Vervangende halte: Lageweg Zeist.",
-        "lijnen": [],
-        "haltes": [
-          "Zeist, Het Rond"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Zeist"
-        ]
-      },
-      {
         "begin": "2026-11-13T05:00+01:00",
         "eind": "2026-12-02T20:00+01:00",
         "tekst": "Van 16 november 05:00 t/m 2 december 20:00 vervallen de haltes Kamerik Centrum, Kamerik Overzicht. Op 23 november van 09:00 t/m 16:00 vervallen de haltes Woerden Oudelandseweg, Kruipin, Kamerik Sluis en Lindenlaan ook.",
@@ -842,22 +829,6 @@
         "haltes_aantal": 1,
         "plaatsen": [
           "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-10T01:00+01:00",
-        "eind": "2026-11-13T06:00+01:00",
-        "tekst": "Op 13 november van 01:00 t/m 06:00 vervalt de halte Zeist Het Rond richting Utrecht.",
-        "lijnen": [
-          "350",
-          "N50"
-        ],
-        "haltes": [
-          "Zeist, Het Rond"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Zeist"
         ]
       },
       {
@@ -1029,86 +1000,6 @@
         ]
       },
       {
-        "begin": null,
-        "eind": null,
-        "tekst": "Halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Den Hommel",
-          "Utrecht, Beethovenlaan"
-        ],
-        "haltes_aantal": 2,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": null,
-        "eind": null,
-        "tekst": "Lijn 5: halte vervalt van 11 novermber 20:00 t/m 13 november 06:00. Download de Transdev-app voor meer actuele reisinfo.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Thomas à Kempisplantsoen"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": null,
-        "eind": null,
-        "tekst": "Halte vervalt van 8 november 11:00 t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Racinelaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-11T20:00+01:00",
-        "eind": "2026-11-13T06:00+01:00",
-        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Plan uw reis in de app.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Thomas à Kempisplantsoen"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-11T20:00+01:00",
-        "eind": "2026-11-13T06:00+01:00",
-        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: Dafne Schippersbrug.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Everard Meysterlaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-11T20:00+01:00",
-        "eind": "2026-11-13T06:00+01:00",
-        "tekst": "Lijn 5: halte vervallen t/m 13 november 06:00. Vervangende halte: 24 Oktoberplein.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Den Hommel",
-          "Utrecht, Beethovenlaan"
-        ],
-        "haltes_aantal": 2,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
         "begin": "2026-11-09T09:00+01:00",
         "eind": "2026-11-13T15:00+01:00",
         "tekst": "Lijn 8 en 47: halte vervallen t/m 13 november 15:00. Vervangende halte: Waalstraat.",
@@ -1141,9 +1032,9 @@
     "dagen": [
       {
         "datum": "2026-11-13",
-        "lijnen_gemeten": 2,
+        "lijnen_gemeten": 6,
         "totaal": {
-          "ritten": 2,
+          "ritten": 7,
           "uitval": 0,
           "te_laat": 0
         },
