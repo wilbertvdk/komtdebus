@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-14T11:20:18+01:00",
+  "bijgewerkt": "2026-11-14T11:35:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-14"
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1638,
-      "gemeten": 1638,
+      "gepland": 1640,
+      "gemeten": 1640,
       "aantal": {
-        "gereden": 1544,
+        "gereden": 1546,
         "ingekort": 55,
         "uitval, op tijd": 20,
         "uitval, te laat": 5,
@@ -638,7 +638,7 @@
     {
       "datum": "2026-11-14",
       "lijn": "376",
-      "gereden": 17,
+      "gereden": 19,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -648,9 +648,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-14T11:19:18+01:00",
-    "gelukt": 9711,
-    "verwacht": 9700,
+    "tot": "2026-11-14T11:35:18+01:00",
+    "gelukt": 9719,
+    "verwacht": 9708,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1199,8 +1199,8 @@
         "datum": "2026-11-14",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 816,
-          "uitval": 6,
+          "ritten": 889,
+          "uitval": 7,
           "te_laat": 2
         },
         "lijnen": [
@@ -1208,7 +1208,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 13,
+            "ritten": 14,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1224,15 +1224,23 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 11,
+            "ritten": 12,
             "uitval": 2,
             "te_laat": 1
+          },
+          {
+            "lijn": "7",
+            "naam": "Amersfoort CS – Schothorst",
+            "gevolgd": false,
+            "ritten": 12,
+            "uitval": 1,
+            "te_laat": 0
           },
           {
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 16,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1251,7 +1259,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
