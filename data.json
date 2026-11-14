@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-14T09:20:18+01:00",
+  "bijgewerkt": "2026-11-14T09:35:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-14"
@@ -648,9 +648,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-14T09:19:18+01:00",
-    "gelukt": 9651,
-    "verwacht": 9640,
+    "tot": "2026-11-14T09:35:19+01:00",
+    "gelukt": 9659,
+    "verwacht": 9648,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1197,10 +1197,10 @@
     "dagen": [
       {
         "datum": "2026-11-14",
-        "lijnen_gemeten": 54,
+        "lijnen_gemeten": 56,
         "totaal": {
-          "ritten": 311,
-          "uitval": 1,
+          "ritten": 364,
+          "uitval": 2,
           "te_laat": 1
         },
         "lijnen": [
@@ -1208,8 +1208,8 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 7,
-            "uitval": 1,
+            "ritten": 8,
+            "uitval": 2,
             "te_laat": 1
           },
           {
