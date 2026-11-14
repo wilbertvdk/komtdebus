@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-14T13:05:19+01:00",
+  "bijgewerkt": "2026-11-14T13:20:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-14"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1600,
-      "gemeten": 1600,
+      "gepland": 1601,
+      "gemeten": 1601,
       "aantal": {
-        "gereden": 1508,
+        "gereden": 1509,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
@@ -54,7 +54,7 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 94.2,
+        "gereden": 94.3,
         "ingekort": 3.0,
         "uitval, op tijd": 1.1,
         "uitval, te laat": 0.2,
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1651,
-      "gemeten": 1651,
+      "gepland": 1653,
+      "gemeten": 1653,
       "aantal": {
-        "gereden": 1555,
+        "gereden": 1557,
         "ingekort": 55,
         "uitval, op tijd": 22,
         "uitval, te laat": 5,
@@ -628,7 +628,7 @@
     {
       "datum": "2026-11-14",
       "lijn": "302",
-      "gereden": 12,
+      "gereden": 13,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -638,7 +638,7 @@
     {
       "datum": "2026-11-14",
       "lijn": "376",
-      "gereden": 28,
+      "gereden": 30,
       "ingekort": 0,
       "uitval, op tijd": 2,
       "uitval, te laat": 0,
@@ -648,9 +648,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-14T13:05:18+01:00",
-    "gelukt": 9764,
-    "verwacht": 9753,
+    "tot": "2026-11-14T13:19:18+01:00",
+    "gelukt": 9771,
+    "verwacht": 9760,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -736,23 +736,6 @@
   ],
   "provincie": {
     "berichten_nu": [
-      {
-        "begin": "2026-11-14T11:53+01:00",
-        "eind": "2026-11-14T14:00+01:00",
-        "tekst": "In verband met een ongeval vervallen momenteel de haltes Elst Franseweg en Rhenen Rhenendael-West.",
-        "lijnen": [
-          "350"
-        ],
-        "haltes": [
-          "Elst, Franseweg",
-          "Rhenen, Rhenendael-West"
-        ],
-        "haltes_aantal": 2,
-        "plaatsen": [
-          "Elst",
-          "Rhenen"
-        ]
-      },
       {
         "begin": "2026-11-13T15:40+01:00",
         "eind": "2026-11-16T23:59+01:00",
@@ -1216,7 +1199,7 @@
         "datum": "2026-11-14",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 1345,
+          "ritten": 1417,
           "uitval": 12,
           "te_laat": 5
         },
@@ -1225,7 +1208,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 20,
+            "ritten": 21,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1233,7 +1216,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 21,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1249,7 +1232,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 34,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1257,7 +1240,7 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 26,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1265,7 +1248,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1289,7 +1272,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 12,
+            "ritten": 13,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1300,7 +1283,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 30,
+            "ritten": 32,
             "uitval": 2,
             "te_laat": 0,
             "niet_gemeld": 0,
