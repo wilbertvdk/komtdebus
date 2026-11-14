@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-14T11:35:18+01:00",
+  "bijgewerkt": "2026-11-14T11:50:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-14"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1597,
-      "gemeten": 1597,
+      "gepland": 1598,
+      "gemeten": 1598,
       "aantal": {
-        "gereden": 1505,
+        "gereden": 1506,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1640,
-      "gemeten": 1640,
+      "gepland": 1642,
+      "gemeten": 1642,
       "aantal": {
-        "gereden": 1546,
+        "gereden": 1548,
         "ingekort": 55,
         "uitval, op tijd": 20,
         "uitval, te laat": 5,
@@ -129,7 +129,7 @@
       },
       "percentage": {
         "gereden": 94.3,
-        "ingekort": 3.4,
+        "ingekort": 3.3,
         "uitval, op tijd": 1.2,
         "uitval, te laat": 0.3,
         "niet gemeld": 0.9
@@ -628,7 +628,7 @@
     {
       "datum": "2026-11-14",
       "lijn": "302",
-      "gereden": 9,
+      "gereden": 10,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -638,7 +638,7 @@
     {
       "datum": "2026-11-14",
       "lijn": "376",
-      "gereden": 19,
+      "gereden": 21,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -648,9 +648,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-14T11:35:18+01:00",
-    "gelukt": 9719,
-    "verwacht": 9708,
+    "tot": "2026-11-14T11:49:18+01:00",
+    "gelukt": 9726,
+    "verwacht": 9715,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1199,7 +1199,7 @@
         "datum": "2026-11-14",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 889,
+          "ritten": 959,
           "uitval": 7,
           "te_laat": 2
         },
@@ -1208,7 +1208,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 15,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1216,7 +1216,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 13,
+            "ritten": 15,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1224,7 +1224,7 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 14,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1232,7 +1232,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 13,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1248,7 +1248,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 9,
+            "ritten": 10,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1259,7 +1259,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 19,
+            "ritten": 21,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
