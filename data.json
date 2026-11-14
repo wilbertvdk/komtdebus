@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-14T10:20:19+01:00",
+  "bijgewerkt": "2026-11-14T10:35:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-14"
@@ -648,9 +648,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-14T10:19:18+01:00",
-    "gelukt": 9681,
-    "verwacht": 9670,
+    "tot": "2026-11-14T10:35:18+01:00",
+    "gelukt": 9689,
+    "verwacht": 9678,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1199,16 +1199,24 @@
         "datum": "2026-11-14",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 545,
-          "uitval": 2,
-          "te_laat": 1
+          "ritten": 607,
+          "uitval": 3,
+          "te_laat": 2
         },
         "lijnen": [
+          {
+            "lijn": "6",
+            "naam": "Amersfoort CS – Rustenburg/Liendert",
+            "gevolgd": false,
+            "ritten": 8,
+            "uitval": 1,
+            "te_laat": 1
+          },
           {
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 11,
+            "ritten": 12,
             "uitval": 2,
             "te_laat": 1
           },
