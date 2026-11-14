@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-14T09:35:19+01:00",
+  "bijgewerkt": "2026-11-14T09:50:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-14"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1593,
-      "gemeten": 1593,
+      "gepland": 1594,
+      "gemeten": 1594,
       "aantal": {
-        "gereden": 1501,
+        "gereden": 1502,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1629,
-      "gemeten": 1629,
+      "gepland": 1631,
+      "gemeten": 1631,
       "aantal": {
-        "gereden": 1535,
+        "gereden": 1537,
         "ingekort": 55,
         "uitval, op tijd": 20,
         "uitval, te laat": 5,
@@ -628,7 +628,7 @@
     {
       "datum": "2026-11-14",
       "lijn": "302",
-      "gereden": 5,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -638,7 +638,7 @@
     {
       "datum": "2026-11-14",
       "lijn": "376",
-      "gereden": 8,
+      "gereden": 10,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -648,9 +648,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-14T09:35:19+01:00",
-    "gelukt": 9659,
-    "verwacht": 9648,
+    "tot": "2026-11-14T09:49:18+01:00",
+    "gelukt": 9666,
+    "verwacht": 9655,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1197,9 +1197,9 @@
     "dagen": [
       {
         "datum": "2026-11-14",
-        "lijnen_gemeten": 56,
+        "lijnen_gemeten": 58,
         "totaal": {
-          "ritten": 364,
+          "ritten": 423,
           "uitval": 2,
           "te_laat": 1
         },
@@ -1208,7 +1208,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 8,
+            "ritten": 9,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1216,7 +1216,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 5,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1227,7 +1227,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 8,
+            "ritten": 10,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
