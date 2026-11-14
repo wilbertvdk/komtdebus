@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-14T01:50:18+01:00",
+  "bijgewerkt": "2026-11-14T02:05:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-13"
@@ -628,9 +628,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-14T01:49:47+01:00",
-    "gelukt": 9427,
-    "verwacht": 9415,
+    "tot": "2026-11-14T02:03:47+01:00",
+    "gelukt": 9434,
+    "verwacht": 9422,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1179,7 +1179,7 @@
         "datum": "2026-11-13",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6983,
+          "ritten": 6999,
           "uitval": 50,
           "te_laat": 20
         },
@@ -1220,7 +1220,7 @@
             "lijn": "5",
             "naam": "Maarssen – Utrecht CS – Voordorp",
             "gevolgd": false,
-            "ritten": 97,
+            "ritten": 98,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1228,7 +1228,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 129,
+            "ritten": 130,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1252,7 +1252,7 @@
             "lijn": "12",
             "naam": "Utrecht CS – Maarssen",
             "gevolgd": false,
-            "ritten": 67,
+            "ritten": 68,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1260,7 +1260,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 159,
+            "ritten": 160,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1268,7 +1268,7 @@
             "lijn": "21",
             "naam": "Science Park – Utrecht CS – IJsselstein",
             "gevolgd": false,
-            "ritten": 129,
+            "ritten": 130,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1284,7 +1284,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 185,
+            "ritten": 186,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1308,7 +1308,7 @@
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 76,
+            "ritten": 77,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1332,7 +1332,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 150,
+            "ritten": 152,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1340,7 +1340,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 141,
+            "ritten": 143,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1445,7 +1445,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 231,
+            "ritten": 232,
             "uitval": 5,
             "te_laat": 1
           },
