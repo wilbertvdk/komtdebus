@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T08:05:18+01:00",
+  "bijgewerkt": "2026-11-15T08:20:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1626,
-      "gemeten": 1626,
+      "gepland": 1627,
+      "gemeten": 1627,
       "aantal": {
-        "gereden": 1534,
+        "gereden": 1535,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
@@ -648,7 +648,7 @@
     {
       "datum": "2026-11-15",
       "lijn": "302",
-      "gereden": 2,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -658,9 +658,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T08:04:52+01:00",
-    "gelukt": 10333,
-    "verwacht": 10322,
+    "tot": "2026-11-15T08:18:52+01:00",
+    "gelukt": 10340,
+    "verwacht": 10329,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1054,9 +1054,9 @@
     "dagen": [
       {
         "datum": "2026-11-15",
-        "lijnen_gemeten": 4,
+        "lijnen_gemeten": 6,
         "totaal": {
-          "ritten": 6,
+          "ritten": 10,
           "uitval": 0,
           "te_laat": 0
         },
@@ -1065,7 +1065,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
