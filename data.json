@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T11:20:13+01:00",
+  "bijgewerkt": "2026-11-15T11:35:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -668,9 +668,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T11:19:31+01:00",
-    "gelukt": 10431,
-    "verwacht": 10420,
+    "tot": "2026-11-15T11:33:31+01:00",
+    "gelukt": 10438,
+    "verwacht": 10427,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -756,6 +756,20 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-15T11:30+01:00",
+        "eind": "2026-11-18T19:59+01:00",
+        "tekst": "Lijn 3: halte vervalt van 18 november 20:00 t/m 19 november 05:00. Download de U-OV-app voor meer actuele reisinfo.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Draaiweg",
+          "Utrecht, Willem Dreeslaan"
+        ],
+        "haltes_aantal": 2,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-13T15:40+01:00",
         "eind": "2026-11-16T23:59+01:00",
@@ -1066,7 +1080,7 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 443,
+          "ritten": 496,
           "uitval": 4,
           "te_laat": 3
         },
@@ -1075,7 +1089,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 11,
+            "ritten": 12,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1091,7 +1105,7 @@
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 6,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1118,7 +1132,20 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Lijn 3: halte vervalt van 18 november 20:00 t/m 19 november 05:00. Download de U-OV-app voor meer actuele reisinfo.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Draaiweg",
+              "Utrecht, Willem Dreeslaan"
+            ],
+            "haltes_aantal": 2,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-14",
