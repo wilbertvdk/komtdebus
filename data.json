@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T23:49:21+01:00",
+  "bijgewerkt": "2026-11-15T23:50:09+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -1018,7 +1018,7 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 53,
         "totaal": {
-          "ritten": 3285,
+          "ritten": 3287,
           "uitval": 33,
           "te_laat": 15
         },
