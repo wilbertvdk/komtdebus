@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T09:20:19+01:00",
+  "bijgewerkt": "2026-11-15T09:35:18+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -668,9 +668,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T09:18:52+01:00",
-    "gelukt": 10370,
-    "verwacht": 10359,
+    "tot": "2026-11-15T09:34:52+01:00",
+    "gelukt": 10378,
+    "verwacht": 10367,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1064,11 +1064,11 @@
     "dagen": [
       {
         "datum": "2026-11-15",
-        "lijnen_gemeten": 34,
+        "lijnen_gemeten": 39,
         "totaal": {
-          "ritten": 89,
-          "uitval": 2,
-          "te_laat": 2
+          "ritten": 118,
+          "uitval": 3,
+          "te_laat": 3
         },
         "lijnen": [
           {
@@ -1084,6 +1084,14 @@
             "naam": "Lunetten – Leidsche Rijn",
             "gevolgd": false,
             "ritten": 2,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
+            "lijn": "87",
+            "naam": "Veenendaal-De Klomp – Rhenen",
+            "gevolgd": false,
+            "ritten": 1,
             "uitval": 1,
             "te_laat": 1
           },
