@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T18:50:29+01:00",
+  "bijgewerkt": "2026-11-15T18:54:02+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -668,9 +668,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T18:49:45+01:00",
-    "gelukt": 10654,
-    "verwacht": 10645,
+    "tot": "2026-11-15T18:53:41+01:00",
+    "gelukt": 10656,
+    "verwacht": 10647,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -990,7 +990,7 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 2256,
+          "ritten": 2271,
           "uitval": 28,
           "te_laat": 16
         },
@@ -1007,7 +1007,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 78,
+            "ritten": 79,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1015,7 +1015,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 34,
+            "ritten": 35,
             "uitval": 3,
             "te_laat": 3
           },
@@ -1039,7 +1039,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 37,
+            "ritten": 38,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1087,7 +1087,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 100,
+            "ritten": 102,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1138,7 +1138,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 70,
+            "ritten": 71,
             "uitval": 1,
             "te_laat": 1
           },
