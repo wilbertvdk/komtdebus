@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T14:50:13+01:00",
+  "bijgewerkt": "2026-11-15T15:05:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -668,9 +668,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T14:49:31+01:00",
-    "gelukt": 10536,
-    "verwacht": 10525,
+    "tot": "2026-11-15T15:03:31+01:00",
+    "gelukt": 10543,
+    "verwacht": 10532,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -904,53 +904,6 @@
         ]
       },
       {
-        "begin": "2026-11-15T12:00+01:00",
-        "eind": "2026-11-15T15:00+01:00",
-        "tekst": "Halte vervallen tot 15:00. Plan je reis op u-ov.nl.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Sint Jacobsstraat"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-12T13:30+01:00",
-        "eind": "2026-11-15T15:00+01:00",
-        "tekst": "op 15 november zijn er van 13:30 tot 15:00 diverse omleidingen. Plan je reis op u-ov.nl.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Stadsschouwburg",
-          "Utrecht, Wittevrouwen",
-          "Utrecht, Oorsprongpark",
-          "Utrecht, Maliebaan",
-          "Utrecht, Burgemeester Reigerstraat"
-        ],
-        "haltes_aantal": 5,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-15T13:30+01:00",
-        "eind": "2026-11-15T15:00+01:00",
-        "tekst": "Halte vervallen tot 15:00. Vervangende halte: Diakonessenhuis-Noord (ri. Oorsprongpark).",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Oudwijkerdwarsstraat",
-          "Utrecht, Oosterstraat",
-          "Utrecht, Homeruslaan",
-          "Utrecht, Adriaen van Ostadelaan",
-          "Utrecht, Diakonessenhuis-Noord"
-        ],
-        "haltes_aantal": 5,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
         "begin": "2026-11-12T13:10+01:00",
         "eind": "2026-11-15T16:30+01:00",
         "tekst": "op 15 november zijn er van 11:00 tot 16:30 diverse omleidingen. Plan je reis op u-ov.nl.",
@@ -1027,23 +980,6 @@
         ]
       },
       {
-        "begin": "2026-11-12T13:30+01:00",
-        "eind": "2026-11-15T15:00+01:00",
-        "tekst": "Op 15 november van 13:30 t/m 15:00 vervallen de haltes Utrecht Neude, Utrecht Janskerkhof, Utrecht Stadsschouwburg.",
-        "lijnen": [
-          "350"
-        ],
-        "haltes": [
-          "Utrecht, Stadsschouwburg",
-          "Utrecht, Neude",
-          "Utrecht, Janskerkhof"
-        ],
-        "haltes_aantal": 3,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
         "begin": "2026-11-09T13:30+01:00",
         "eind": "2026-12-09T23:59+01:00",
         "tekst": "halte vervalt vanaf 13 december i.v.m. de nieuwe dienstregeling.",
@@ -1080,24 +1016,24 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 1267,
-          "uitval": 14,
-          "te_laat": 11
+          "ritten": 1334,
+          "uitval": 15,
+          "te_laat": 12
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 19,
-            "uitval": 2,
-            "te_laat": 2
+            "ritten": 20,
+            "uitval": 3,
+            "te_laat": 3
           },
           {
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1113,7 +1049,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 36,
+            "ritten": 38,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1121,7 +1057,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 35,
+            "ritten": 37,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1137,7 +1073,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 20,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1145,7 +1081,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1153,7 +1089,7 @@
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 13,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1172,7 +1108,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 40,
             "uitval": 1,
             "te_laat": 1
           },
