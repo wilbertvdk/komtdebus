@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T11:35:13+01:00",
+  "bijgewerkt": "2026-11-15T11:50:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -43,10 +43,10 @@
       "dicht": []
     },
     "302": {
-      "gepland": 1633,
-      "gemeten": 1633,
+      "gepland": 1634,
+      "gemeten": 1634,
       "aantal": {
-        "gereden": 1541,
+        "gereden": 1542,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 4,
@@ -117,10 +117,10 @@
       "dicht": []
     },
     "376": {
-      "gepland": 1759,
-      "gemeten": 1759,
+      "gepland": 1761,
+      "gemeten": 1761,
       "aantal": {
-        "gereden": 1638,
+        "gereden": 1640,
         "ingekort": 74,
         "uitval, op tijd": 28,
         "uitval, te laat": 5,
@@ -141,7 +141,7 @@
         "ritten_ingekort": 75,
         "haltes": 750,
         "haltes_op_tijd": 683,
-        "haltes_dicht": 766,
+        "haltes_dicht": 767,
         "mediaan_min_na_vertrek": -44,
         "ritten_na_vertrek": 5,
         "mediaan_min_na_vertrek_laat": 12,
@@ -648,7 +648,7 @@
     {
       "datum": "2026-11-15",
       "lijn": "302",
-      "gereden": 9,
+      "gereden": 10,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -658,7 +658,7 @@
     {
       "datum": "2026-11-15",
       "lijn": "376",
-      "gereden": 9,
+      "gereden": 11,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -668,9 +668,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T11:33:31+01:00",
-    "gelukt": 10438,
-    "verwacht": 10427,
+    "tot": "2026-11-15T11:49:31+01:00",
+    "gelukt": 10446,
+    "verwacht": 10435,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1080,7 +1080,7 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 496,
+          "ritten": 546,
           "uitval": 4,
           "te_laat": 3
         },
@@ -1089,7 +1089,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 13,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1097,7 +1097,7 @@
             "lijn": "10",
             "naam": "Lunetten – Leidsche Rijn",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1113,7 +1113,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 9,
+            "ritten": 10,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1124,7 +1124,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 9,
+            "ritten": 11,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
