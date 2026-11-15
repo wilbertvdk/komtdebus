@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T12:20:13+01:00",
+  "bijgewerkt": "2026-11-15T12:35:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -668,9 +668,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T12:19:31+01:00",
-    "gelukt": 10461,
-    "verwacht": 10450,
+    "tot": "2026-11-15T12:33:31+01:00",
+    "gelukt": 10468,
+    "verwacht": 10457,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1080,24 +1080,24 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 661,
-          "uitval": 5,
-          "te_laat": 4
+          "ritten": 726,
+          "uitval": 7,
+          "te_laat": 6
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 8,
-            "uitval": 1,
-            "te_laat": 1
+            "ritten": 9,
+            "uitval": 2,
+            "te_laat": 2
           },
           {
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 16,
+            "ritten": 18,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1113,7 +1113,7 @@
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
-            "ritten": 7,
+            "ritten": 8,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1127,6 +1127,14 @@
             "niet_gemeld": 0,
             "ingekort": 0,
             "afgebroken": 0
+          },
+          {
+            "lijn": "341",
+            "naam": "Utrecht – Wijk bij Duurstede",
+            "gevolgd": false,
+            "ritten": 20,
+            "uitval": 1,
+            "te_laat": 1
           },
           {
             "lijn": "376",
