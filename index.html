@@ -297,19 +297,19 @@ footer.binnen { margin-top: 8px; padding-top: 16px; padding-bottom: 32px; border
   <details id="methode">
     <summary>Hoe we meten, en de norm</summary>
     <div class="box" id="status"><div id="status-box"><p class="muted">Gegevens laden…</p></div></div>
-    <p>Dit is geen reisplanner: je ziet hier hoe vaak de informatie over je lijn klopte. We lezen alleen openbare reisinformatie: elke 2 minuten waar de bussen rijden, elke 5 minuten welke ritten vervallen, en elke dag de dienstregeling.</p>
+    <p>Dit is geen reisplanner: je ziet hier hoe vaak de informatie over je lijn klopte. We lezen alleen openbare reisinformatie: de berichten die de vervoerder over elke rit naar het landelijke <a href="https://ndovloket.nl" rel="noopener">NDOV-loket</a> stuurt, zodra ze binnenkomen; via <a href="https://gtfs.ovapi.nl/nl/" rel="noopener">OVapi</a> elke 2 minuten waar de bussen rijden en elke 5 minuten welke ritten vervallen; en elke dag de dienstregeling.</p>
   <h3>Wat betekenen de groepen?</h3>
     <dl class="def">
       <dt>Gereden</dt>
-      <dd>We hebben de bus zien rijden.</dd>
+      <dd>We hebben de bus zien rijden, of de bus stuurde zelf berichten bij de haltes.</dd>
       <dt>Ingekort</dt>
       <dd>De bus reed, maar niet de hele route: de vervoerder meldde een deel van de haltes als overgeslagen. Vaak keert een bus die te laat is eerder, om de terugrit te halen. Ook een rit die onderweg stopt en daarna wordt geannuleerd, telt als ingekort. Wie bij die haltes wacht, ziet de bus niet komen.</dd>
       <dt>Uitval, op tijd gemeld</dt>
-      <dd>De rit viel uit en dat stond vóór het geplande vertrek in de reisinformatie.</dd>
+      <dd>De rit viel uit en de vervoerder had dat vóór het geplande vertrek gemeld.</dd>
       <dt>Uitval, te laat gemeld</dt>
-      <dd>De rit viel uit, maar dat stond er pas ná het geplande vertrek.</dd>
+      <dd>De rit viel uit, maar de vervoerder meldde dat pas ná het geplande vertrek.</dd>
       <dt>Niet gemeld</dt>
-      <dd>Geen bus gezien en geen melding: de rit waar je tevergeefs op wacht. Dit is een bovengrens, want een bus met een kapot volgsysteem rijdt wel maar lijkt uitgevallen.</dd>
+      <dd>Geen bus gezien, geen berichten van de bus en geen melding: de rit waar je tevergeefs op wacht. Dit is een bovengrens, want een bus met een kapot volgsysteem rijdt wel maar lijkt uitgevallen.</dd>
       <dt>Geen meting</dt>
       <dd>Te weinig metingen, bijvoorbeeld door een storing bij ons. Telt niet mee.</dd>
     </dl>
@@ -317,7 +317,7 @@ footer.binnen { margin-top: 8px; padding-top: 16px; padding-bottom: 32px; border
   <h3>De norm</h3>
     <p>Volgens de landelijke afspraken over reisinformatie (<a href="https://dova.nu/document/concessiebijlagen" rel="noopener">DOVA, Concessiebijlage Datasets OV, eis KV17.2</a>) moet het bericht dat een bus een halte niet aandoet in <strong>95% van de gevallen binnen zijn vóór de geplande tijd van de bus bij die halte</strong>.</p>
     <p>De norm gaat dus alleen over bussen die niet komen, niet over alle ritten. Een lijn waarop bijna alles rijdt, kan de norm toch missen als de uitval die er is te laat gemeld wordt. Wij tellen bij een uitgevallen rit alle haltes, en bij een ingekorte rit de haltes die hij oversloeg.</p>
-    <p>Het Programma van Eisen van de Utrechtse busconcessies verwijst naar deze bijlage van DOVA (artikel 7.2.2). We hebben de provincie gevraagd te bevestigen dat de norm geldt. Ritten zonder bus én zonder melding ('niet gemeld') tellen hier niet mee; als dat echte uitval was, ligt het percentage lager. Wij kijken elke 5 minuten, dus een melding kan iets eerder binnen zijn geweest dan wij zagen.</p>
+    <p>Het Programma van Eisen van de Utrechtse busconcessies verwijst naar deze bijlage van DOVA (artikel 7.2.2). We hebben de provincie gevraagd te bevestigen dat de norm geldt. Ritten zonder bus én zonder melding ('niet gemeld') tellen hier niet mee; als dat echte uitval was, ligt het percentage lager. Als tijdstip van een melding nemen we het moment waarop die bij het NDOV-loket binnenkwam; daar meet de norm, en daar is de vervoerder verantwoordelijk voor. Alleen als dat bericht ontbreekt, geldt het moment waarop wij de melding bij OVapi zagen.</p>
 
   </details>
   <details id="dagen">
@@ -327,7 +327,7 @@ footer.binnen { margin-top: 8px; padding-top: 16px; padding-bottom: 32px; border
   <details id="over">
     <summary>Over dit project, en in de media</summary>
     <figure class="over-foto"><img src="fotos/wilbert.jpg" alt="Wilbert van der Kruk" width="900" height="600" loading="lazy"><figcaption>Foto: MxM Visuals</figcaption></figure>
-    <p>Een onafhankelijk burgerinitiatief van Wilbert van der Kruk, op basis van open data van <a href="https://gtfs.ovapi.nl/nl/" rel="noopener">OVapi</a>. Niet verbonden aan U-OV, de provincie, Rover of een partij. Ik ben lid van Volt; dit project staat daar los van.</p>
+    <p>Een onafhankelijk burgerinitiatief van Wilbert van der Kruk, op basis van open data van het <a href="https://ndovloket.nl" rel="noopener">NDOV-loket</a> en <a href="https://gtfs.ovapi.nl/nl/" rel="noopener">OVapi</a>. Niet verbonden aan U-OV, de provincie, Rover of een partij.</p>
     <p>Pers en contact: <a href="mailto:pers@komtdebus.nl">pers@komtdebus.nl</a></p>
     <h3>In de media</h3>
     <ul class="lijst">
