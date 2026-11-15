@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-15T10:50:13+01:00",
+  "bijgewerkt": "2026-11-15T11:05:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -668,9 +668,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-15T10:49:31+01:00",
-    "gelukt": 10416,
-    "verwacht": 10405,
+    "tot": "2026-11-15T11:03:31+01:00",
+    "gelukt": 10423,
+    "verwacht": 10412,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1066,7 +1066,7 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 51,
         "totaal": {
-          "ritten": 341,
+          "ritten": 392,
           "uitval": 4,
           "te_laat": 3
         },
@@ -1075,7 +1075,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 9,
+            "ritten": 10,
             "uitval": 1,
             "te_laat": 1
           },
