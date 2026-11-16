@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-16T06:20:12+01:00",
+  "bijgewerkt": "2026-11-16T06:35:40+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
@@ -706,9 +706,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T06:18:37+01:00",
-    "gelukt": 10999,
-    "verwacht": 10989,
+    "tot": "2026-11-16T06:34:37+01:00",
+    "gelukt": 11007,
+    "verwacht": 10997,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1000,9 +1000,9 @@
     "dagen": [
       {
         "datum": "2026-11-16",
-        "lijnen_gemeten": 14,
+        "lijnen_gemeten": 20,
         "totaal": {
-          "ritten": 21,
+          "ritten": 41,
           "uitval": 1,
           "te_laat": 0
         },
@@ -1011,7 +1011,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 1,
             "te_laat": 0
           },
