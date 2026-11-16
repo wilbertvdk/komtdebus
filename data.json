@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-16T09:05:10+01:00",
+  "bijgewerkt": "2026-11-16T09:20:10+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
   },
   "lijnen": {
     "272": {
-      "gepland": 174,
-      "gemeten": 174,
+      "gepland": 175,
+      "gemeten": 175,
       "aantal": {
-        "gereden": 171,
+        "gereden": 172,
         "ingekort": 3,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1674,
-      "gemeten": 1674,
+      "gepland": 1679,
+      "gemeten": 1679,
       "aantal": {
-        "gereden": 1581,
+        "gereden": 1586,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 5,
@@ -66,7 +66,7 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 94.4,
+        "gereden": 94.5,
         "ingekort": 2.9,
         "uitval, op tijd": 1.0,
         "uitval, te laat": 0.3,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 1839,
-      "gemeten": 1839,
+      "gepland": 1841,
+      "gemeten": 1841,
       "aantal": {
-        "gereden": 1757,
+        "gereden": 1759,
         "ingekort": 36,
         "uitval, op tijd": 28,
         "uitval, te laat": 5,
@@ -165,9 +165,9 @@
         "ritten": 33,
         "ritten_vooraf": 28,
         "ritten_ingekort": 36,
-        "haltes": 1547,
-        "haltes_op_tijd": 1489,
-        "haltes_dicht": 843,
+        "haltes": 1548,
+        "haltes_op_tijd": 1490,
+        "haltes_dicht": 844,
         "haltes_zonder": 711,
         "haltes_op_tijd_zonder": 653,
         "mediaan_min_na_vertrek": -49,
@@ -696,7 +696,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "272",
-      "gereden": 4,
+      "gereden": 5,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -706,7 +706,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "302",
-      "gereden": 13,
+      "gereden": 18,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -726,7 +726,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "376",
-      "gereden": 23,
+      "gereden": 25,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -736,9 +736,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T09:04:38+01:00",
-    "gelukt": 11082,
-    "verwacht": 11072,
+    "tot": "2026-11-16T09:18:38+01:00",
+    "gelukt": 11089,
+    "verwacht": 11079,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -825,20 +825,9 @@
   "provincie": {
     "berichten_nu": [
       {
-        "begin": "2026-11-16T08:07+01:00",
-        "eind": "2026-11-16T23:59+01:00",
-        "tekst": "vanwege een storing komt het traject P&R Westraven - CS Jaarbeursplein tijdelijk te vervallen.",
-        "lijnen": [],
-        "haltes": [],
-        "haltes_aantal": 7,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-16T08:07+01:00",
-        "eind": "2026-11-16T23:59+01:00",
-        "tekst": "vanwege een storing komt het traject CS Jaarbeursplein - P&R Westraven tijdelijk te vervallen.",
+        "begin": "2026-11-16T09:15+01:00",
+        "eind": "2026-11-16T10:00+01:00",
+        "tekst": "vanwege de opstart van het tramverkeer wordt er volgens een onregelmatige dienstregeling gereden.",
         "lijnen": [],
         "haltes": [],
         "haltes_aantal": 7,
@@ -1054,7 +1043,7 @@
         "datum": "2026-11-16",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 969,
+          "ritten": 1112,
           "uitval": 14,
           "te_laat": 2
         },
@@ -1063,7 +1052,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 26,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1071,7 +1060,7 @@
             "lijn": "70",
             "naam": "Hilversum – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 21,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1079,7 +1068,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 5,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1090,7 +1079,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 14,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 0,
@@ -1101,7 +1090,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 23,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1120,7 +1109,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 20,
             "uitval": 8,
             "te_laat": 0
           },
@@ -1128,7 +1117,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 27,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1136,7 +1125,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 23,
+            "ritten": 25,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1145,6 +1134,15 @@
           }
         ],
         "berichten": [
+          {
+            "tekst": "vanwege de opstart van het tramverkeer wordt er volgens een onregelmatige dienstregeling gereden.",
+            "lijnen": [],
+            "haltes": [],
+            "haltes_aantal": 7,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
           {
             "tekst": "vanwege een storing komt het traject P&R Westraven - CS Jaarbeursplein tijdelijk te vervallen.",
             "lijnen": [],
