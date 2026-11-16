@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-16T11:54:13+01:00",
+  "bijgewerkt": "2026-11-16T11:55:32+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1706,
-      "gemeten": 1706,
+      "gepland": 1707,
+      "gemeten": 1707,
       "aantal": {
-        "gereden": 1612,
+        "gereden": 1613,
         "ingekort": 49,
         "uitval, op tijd": 17,
         "uitval, te laat": 5,
@@ -706,7 +706,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "302",
-      "gereden": 44,
+      "gereden": 45,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -736,9 +736,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T11:52:38+01:00",
-    "gelukt": 11166,
-    "verwacht": 11156,
+    "tot": "2026-11-16T11:54:38+01:00",
+    "gelukt": 11167,
+    "verwacht": 11157,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1054,7 +1054,7 @@
         "datum": "2026-11-16",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 2299,
+          "ritten": 2307,
           "uitval": 27,
           "te_laat": 3
         },
@@ -1063,7 +1063,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 48,
+            "ritten": 49,
             "uitval": 5,
             "te_laat": 0
           },
@@ -1098,7 +1098,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 46,
+            "ritten": 47,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 0,
@@ -3875,7 +3875,9 @@
           "gepland": "10:19",
           "vertrek": null,
           "afwijking_min": null,
-          "twijfel": false
+          "twijfel": false,
+          "halte_vervallen": false,
+          "gemeld_min": null
         }
       },
       {
@@ -3894,7 +3896,9 @@
           "gepland": "09:37",
           "vertrek": null,
           "afwijking_min": null,
-          "twijfel": false
+          "twijfel": false,
+          "halte_vervallen": true,
+          "gemeld_min": 12
         }
       },
       {
@@ -3913,7 +3917,9 @@
           "gepland": "18:06",
           "vertrek": null,
           "afwijking_min": null,
-          "twijfel": false
+          "twijfel": false,
+          "halte_vervallen": false,
+          "gemeld_min": null
         }
       }
     ]
