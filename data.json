@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-16T17:50:11+01:00",
+  "bijgewerkt": "2026-11-16T18:05:11+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
   },
   "lijnen": {
     "272": {
-      "gepland": 183,
-      "gemeten": 183,
+      "gepland": 184,
+      "gemeten": 184,
       "aantal": {
-        "gereden": 180,
+        "gereden": 181,
         "ingekort": 3,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1763,
-      "gemeten": 1763,
+      "gepland": 1767,
+      "gemeten": 1767,
       "aantal": {
-        "gereden": 1666,
+        "gereden": 1670,
         "ingekort": 50,
         "uitval, op tijd": 17,
         "uitval, te laat": 7,
@@ -94,10 +94,10 @@
       "dicht": []
     },
     "315": {
-      "gepland": 129,
-      "gemeten": 129,
+      "gepland": 130,
+      "gemeten": 130,
       "aantal": {
-        "gereden": 121,
+        "gereden": 122,
         "ingekort": 5,
         "uitval, op tijd": 2,
         "uitval, te laat": 0,
@@ -106,8 +106,8 @@
       },
       "percentage": {
         "gereden": 93.8,
-        "ingekort": 3.9,
-        "uitval, op tijd": 1.6,
+        "ingekort": 3.8,
+        "uitval, op tijd": 1.5,
         "uitval, te laat": 0.0,
         "niet gemeld": 0.8
       },
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 1913,
-      "gemeten": 1913,
+      "gepland": 1915,
+      "gemeten": 1915,
       "aantal": {
-        "gereden": 1828,
+        "gereden": 1830,
         "ingekort": 36,
         "uitval, op tijd": 30,
         "uitval, te laat": 5,
@@ -165,9 +165,9 @@
         "ritten": 35,
         "ritten_vooraf": 30,
         "ritten_ingekort": 36,
-        "haltes": 1619,
-        "haltes_op_tijd": 1561,
-        "haltes_dicht": 881,
+        "haltes": 1620,
+        "haltes_op_tijd": 1562,
+        "haltes_dicht": 882,
         "haltes_zonder": 746,
         "haltes_op_tijd_zonder": 688,
         "mediaan_min_na_vertrek": -46,
@@ -696,7 +696,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "272",
-      "gereden": 13,
+      "gereden": 14,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -706,7 +706,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "302",
-      "gereden": 98,
+      "gereden": 102,
       "ingekort": 2,
       "uitval, op tijd": 0,
       "uitval, te laat": 3,
@@ -716,7 +716,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "315",
-      "gereden": 8,
+      "gereden": 9,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -726,7 +726,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "376",
-      "gereden": 94,
+      "gereden": 96,
       "ingekort": 0,
       "uitval, op tijd": 2,
       "uitval, te laat": 0,
@@ -736,9 +736,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T17:48:38+01:00",
-    "gelukt": 11344,
-    "verwacht": 11334,
+    "tot": "2026-11-16T18:04:38+01:00",
+    "gelukt": 11352,
+    "verwacht": 11342,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -825,9 +825,64 @@
   "provincie": {
     "berichten_nu": [
       {
+        "begin": "2026-11-20T17:00+01:00",
+        "eind": "2026-11-20T23:00+01:00",
+        "tekst": "Lijn 85: halte vervallen tot 23:00. Plan uw reis in de app.",
+        "lijnen": [],
+        "haltes": [
+          "Schoonrewoerd, Schoonrewoerd Dorp"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Schoonrewoerd"
+        ]
+      },
+      {
         "begin": "2026-11-20T20:00+01:00",
         "eind": "2026-11-23T06:00+01:00",
-        "tekst": "Lijn 6: halte vervallen t/m 23 november 06:00. Plan uw reis in de app.",
+        "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Vervangende halte: Station Leidsche Rijn (B).",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Berlijnplein"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-20T20:00+01:00",
+        "eind": "2026-11-23T06:00+01:00",
+        "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Plan uw reis in de app.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Rijnvliet-Oost",
+          "Utrecht, Papendorp-Midden",
+          "Utrecht, Papendorp-Noord P+R",
+          "Utrecht, Willem-Alexanderpark"
+        ],
+        "haltes_aantal": 4,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-20T20:00+01:00",
+        "eind": "2026-11-23T06:00+01:00",
+        "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Vervangende halte: Winkelc. Kanaleneiland.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Kanaleneiland"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-20T20:00+01:00",
+        "eind": "2026-11-23T06:00+01:00",
+        "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Vervangende halte: Everard Meysterlaan.",
         "lijnen": [],
         "haltes": [
           "Utrecht, Dafne Schippersbrug"
@@ -1122,8 +1177,8 @@
         "datum": "2026-11-16",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 4920,
-          "uitval": 37,
+          "ritten": 5051,
+          "uitval": 38,
           "te_laat": 5
         },
         "lijnen": [
@@ -1131,7 +1186,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 44,
+            "ritten": 45,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1139,15 +1194,15 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 100,
-            "uitval": 5,
+            "ritten": 103,
+            "uitval": 6,
             "te_laat": 0
           },
           {
             "lijn": "70",
             "naam": "Hilversum – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 94,
+            "ritten": 97,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1155,7 +1210,7 @@
             "lijn": "71",
             "naam": "Soest Zuid – Soestdijk Noord",
             "gevolgd": false,
-            "ritten": 43,
+            "ritten": 44,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1171,7 +1226,7 @@
             "lijn": "195",
             "naam": "Utrecht – Benschop",
             "gevolgd": false,
-            "ritten": 16,
+            "ritten": 17,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1187,7 +1242,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 13,
+            "ritten": 14,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1198,7 +1253,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 103,
+            "ritten": 107,
             "uitval": 3,
             "te_laat": 3,
             "niet_gemeld": 0,
@@ -1209,7 +1264,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 69,
+            "ritten": 71,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1217,7 +1272,7 @@
             "lijn": "315",
             "naam": "Amersfoort Vathorst – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 9,
+            "ritten": 10,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1228,7 +1283,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 88,
+            "ritten": 90,
             "uitval": 11,
             "te_laat": 1
           },
@@ -1236,7 +1291,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 69,
+            "ritten": 72,
             "uitval": 5,
             "te_laat": 0
           },
@@ -1244,7 +1299,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 105,
+            "ritten": 108,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1252,7 +1307,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 125,
+            "ritten": 129,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1260,7 +1315,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 97,
+            "ritten": 99,
             "uitval": 2,
             "te_laat": 0,
             "niet_gemeld": 1,
@@ -1270,7 +1325,54 @@
         ],
         "berichten": [
           {
-            "tekst": "Lijn 6: halte vervallen t/m 23 november 06:00. Plan uw reis in de app.",
+            "tekst": "Lijn 85: halte vervallen tot 23:00. Plan uw reis in de app.",
+            "lijnen": [],
+            "haltes": [
+              "Schoonrewoerd, Schoonrewoerd Dorp"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Schoonrewoerd"
+            ]
+          },
+          {
+            "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Vervangende halte: Station Leidsche Rijn (B).",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Berlijnplein"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Plan uw reis in de app.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Rijnvliet-Oost",
+              "Utrecht, Papendorp-Midden",
+              "Utrecht, Papendorp-Noord P+R",
+              "Utrecht, Willem-Alexanderpark"
+            ],
+            "haltes_aantal": 4,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Vervangende halte: Winkelc. Kanaleneiland.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Kanaleneiland"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 10: halte vervallen t/m 23 november 06:00. Vervangende halte: Everard Meysterlaan.",
             "lijnen": [],
             "haltes": [
               "Utrecht, Dafne Schippersbrug"
