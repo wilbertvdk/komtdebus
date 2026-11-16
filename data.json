@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-16T09:52:01+01:00",
+  "bijgewerkt": "2026-11-16T10:05:11+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
   },
   "lijnen": {
     "272": {
-      "gepland": 176,
-      "gemeten": 176,
+      "gepland": 177,
+      "gemeten": 177,
       "aantal": {
-        "gereden": 173,
+        "gereden": 174,
         "ingekort": 3,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1686,
-      "gemeten": 1686,
+      "gepland": 1689,
+      "gemeten": 1689,
       "aantal": {
-        "gereden": 1593,
+        "gereden": 1596,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 5,
@@ -94,10 +94,10 @@
       "dicht": []
     },
     "315": {
-      "gepland": 124,
-      "gemeten": 124,
+      "gepland": 125,
+      "gemeten": 125,
       "aantal": {
-        "gereden": 117,
+        "gereden": 118,
         "ingekort": 4,
         "uitval, op tijd": 2,
         "uitval, te laat": 0,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 1847,
-      "gemeten": 1847,
+      "gepland": 1850,
+      "gemeten": 1850,
       "aantal": {
-        "gereden": 1765,
+        "gereden": 1768,
         "ingekort": 36,
         "uitval, op tijd": 28,
         "uitval, te laat": 5,
@@ -165,9 +165,9 @@
         "ritten": 33,
         "ritten_vooraf": 28,
         "ritten_ingekort": 36,
-        "haltes": 1551,
-        "haltes_op_tijd": 1493,
-        "haltes_dicht": 847,
+        "haltes": 1553,
+        "haltes_op_tijd": 1495,
+        "haltes_dicht": 849,
         "haltes_zonder": 711,
         "haltes_op_tijd_zonder": 653,
         "mediaan_min_na_vertrek": -49,
@@ -696,7 +696,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "272",
-      "gereden": 6,
+      "gereden": 7,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -706,7 +706,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "302",
-      "gereden": 25,
+      "gereden": 28,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -716,7 +716,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "315",
-      "gereden": 4,
+      "gereden": 5,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -726,7 +726,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "376",
-      "gereden": 31,
+      "gereden": 34,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -736,9 +736,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T09:50:38+01:00",
-    "gelukt": 11105,
-    "verwacht": 11095,
+    "tot": "2026-11-16T10:04:38+01:00",
+    "gelukt": 11112,
+    "verwacht": 11102,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -824,17 +824,6 @@
   ],
   "provincie": {
     "berichten_nu": [
-      {
-        "begin": "2026-11-16T09:15+01:00",
-        "eind": "2026-11-16T10:00+01:00",
-        "tekst": "vanwege de opstart van het tramverkeer wordt er volgens een onregelmatige dienstregeling gereden.",
-        "lijnen": [],
-        "haltes": [],
-        "haltes_aantal": 7,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
       {
         "begin": "2026-11-15T11:30+01:00",
         "eind": "2026-11-18T19:59+01:00",
@@ -1043,8 +1032,8 @@
         "datum": "2026-11-16",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1397,
-          "uitval": 18,
+          "ritten": 1514,
+          "uitval": 19,
           "te_laat": 2
         },
         "lijnen": [
@@ -1052,7 +1041,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 34,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1060,7 +1049,7 @@
             "lijn": "70",
             "naam": "Hilversum – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 27,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1068,7 +1057,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1079,7 +1068,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 26,
+            "ritten": 29,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 0,
@@ -1090,7 +1079,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 29,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1098,7 +1087,7 @@
             "lijn": "315",
             "naam": "Amersfoort Vathorst – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 5,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1109,15 +1098,15 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 24,
-            "uitval": 9,
+            "ritten": 26,
+            "uitval": 10,
             "te_laat": 0
           },
           {
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 31,
+            "ritten": 34,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1125,7 +1114,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 34,
+            "ritten": 36,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1133,7 +1122,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 31,
+            "ritten": 34,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
