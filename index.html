@@ -223,12 +223,19 @@ h2 { margin-top: 36px; }
 @media (max-width: 600px) { .over-foto { float: none; width: 100%; margin: 12px 0; } }
 /* Foto's van MxM Visuals: niet verder te verspreiden. Slepen en lang drukken uit; opslaan blijft technisch mogelijk. */
 .hero img, .melden-blok img, .over-foto img { -webkit-user-drag: none; user-select: none; -webkit-touch-callout: none; }
-.meld-lijst { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 10px; }
-.meld-lijst li { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
-.meld-lijst .kop { font-weight: 600; margin: 0; }
-.meld-lijst p { margin: 4px 0 0; }
-.meld-lijst .quote { margin-top: 8px; }
-.meld-lijst .data { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 0.9rem; }
+table.meld-tabel { margin-top: 8px; }
+table.meld-tabel th, table.meld-tabel td { text-align: left; vertical-align: top; padding: 8px 6px; }
+table.meld-tabel td.wanneer { white-space: nowrap; }
+table.meld-tabel .toel { display: block; font-style: italic; color: var(--muted); }
+table.meld-tabel .app { display: block; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 600px) {
+  table.meld-tabel thead { display: none; }
+  table.meld-tabel tr { display: block; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  table.meld-tabel td { display: block; border: 0; padding: 2px 0; }
+  table.meld-tabel td.wanneer, table.meld-tabel td.lijn, table.meld-tabel td.halte { display: inline; font-weight: 600; }
+  table.meld-tabel td.wanneer::after, table.meld-tabel td.lijn::after { content: " · "; font-weight: 400; }
+  table.meld-tabel td.data::before { content: "Ritdata: "; color: var(--muted); }
+}
 #meld-lijst h3 { margin: 20px 0 4px; }
 #meld-lijst details { margin-top: 10px; }
 #meld-lijst summary { color: var(--accent); cursor: pointer; }
@@ -875,34 +882,61 @@ function renderMeldTeller(data) {
   if (n) p.textContent = "Tot nu toe " + aantal(n) + (n === 1 ? " melding" : " meldingen") + " ontvangen. Dank je wel!";
 }
 
-// Wat de ritdata zegt over een gepubliceerde melding (zie formulier.py: de toets).
+// Wat de ritdata zegt over een gepubliceerde melding (zie formulier.py: de toets), kort voor in de tabel.
 function meldingData(t) {
-  if (!t) return "Nog niet nagekeken: dat kan pas als de rit voorbij is.";
-  if (t.reden) return t.reden === "lijn wordt niet gevolgd"
-    ? "Deze lijn volg ik (nog) niet rit voor rit, dus hier is geen ritdata bij."
-    : "Ik kon deze rit niet terugvinden in de dienstregeling.";
+  if (!t) return "Nog niet nagekeken (kan pas als de rit voorbij is)";
+  if (t.reden) return t.reden === "lijn wordt niet gevolgd" ? "Geen ritdata voor deze lijn" : "Rit niet gevonden";
   const v = t.afwijking_min;
-  const stipt = v == null ? "" : Math.abs(v) < 1 ? ", op tijd" : v > 0 ? ", " + Math.round(v) + " min later dan gepland" : ", " + Math.round(-v) + " min eerder dan gepland";
+  const stipt = v == null ? "" : Math.abs(v) < 1 ? " (op tijd)" : v > 0 ? " (+" + Math.round(v) + " min)" : " (" + Math.round(v) + " min)";
+  const gemeld = t.gemeld_min == null ? "" : t.gemeld_min <= 0 ? ", op tijd gemeld" : ", " + t.gemeld_min + " min te laat gemeld";
   const zin = {
-    "gereden": "De bus reed" + (t.vertrek ? ": vertrok bij deze halte om " + t.vertrek + stipt : "") + ".",
-    "ingekort": "De rit is ingekort: een deel van de haltes viel uit.",
-    "uitval, op tijd": "De rit viel uit, en stond vóór vertrek als vervallen in de reisinformatie.",
-    "uitval, te laat": "De rit viel uit, en stond pas ná de vertrektijd als vervallen in de reisinformatie.",
-    "niet gemeld": "Er reed geen bus, en de rit is nooit als vervallen gemeld.",
-  }[t.klasse] || "Van deze dag heb ik geen meting.";
-  return zin + (t.twijfel ? " Rond die tijd reed nog een rit; misschien ging het om die." : "");
+    "gereden": "Reed" + (t.vertrek ? ", vertrok hier " + t.vertrek.slice(0, 5) + stipt : ""),
+    "ingekort": t.halte_vervallen === undefined ? "Ingekort" :
+      t.halte_vervallen ? "Ingekort: deze halte overgeslagen" + gemeld : "Ingekort, maar deze halte niet",
+    "uitval, op tijd": "Uitgevallen, op tijd gemeld",
+    "uitval, te laat": "Uitgevallen" + (gemeld || ", te laat gemeld"),
+    "niet gemeld": "Geen bus en geen melding",
+  }[t.klasse] || "Geen meting die dag";
+  return zin + (t.twijfel || (t.ook_mogelijk && t.ook_mogelijk.length) ? "; misschien de rit ervoor of erna" : "");
 }
 
-function meldingItem(m) {
+const MND = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+// "2026-11-16" + "09:33" -> "ma 16 nov 09:33"
+function meldMoment(iso, tijd) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+  if (!m) return tijd || "";
+  const dag = WEEKDAGEN[new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])).getUTCDay()].slice(0, 2);
+  return dag + " " + parseInt(m[3], 10) + " " + MND[+m[2] - 1] + (tijd ? " " + tijd : "");
+}
+
+// "302 naar Amersfoort" -> "302 → Amersfoort"; zonder richting alleen het lijnnummer.
+function meldLijn(m) {
+  let r = (m.richting || "").trim();
+  if (r.startsWith(m.lijn + " ")) r = r.slice(m.lijn.length + 1);
+  r = r.replace(/^(naar|richting)\s+/i, "");
+  return m.lijn + (r ? " → " + r : "");
+}
+
+function meldingRij(m) {
   const wat = [m.wat, m.minuten ? m.minuten + (/^\d+$/.test(m.minuten) ? " min" : "") : null].filter(Boolean).join(", ");
-  const scherm = m.scherm ? m.scherm + (m.bron ? " (" + m.bron + ")" : "") : null;
-  return el("li", null, [
-    el("p", { cls: "kop", text: "Lijn " + m.lijn + (m.halte ? ", " + m.halte : "") }),
-    el("p", { cls: "muted klein", text: hoofdletter(dagTekst(m.datum)) + (m.tijd ? ", bus van " + m.tijd : "") + (m.richting ? " (" + m.richting + ")" : "") }),
-    wat ? el("p", { text: wat }) : null,
-    scherm ? el("p", { cls: "muted", text: "App of scherm: " + scherm }) : null,
-    m.toelichting ? el("blockquote", { cls: "quote" }, [el("p", { text: "\u201C" + m.toelichting + "\u201D" })]) : null,
-    el("p", { cls: "data" }, [el("b", { text: "Wat de data zegt: " }), el("span", { text: meldingData(m.data) })]),
+  const app = m.scherm ? m.scherm + (m.bron ? " (" + m.bron + ")" : "") : null;
+  return el("tr", null, [
+    el("td", { cls: "wanneer", text: meldMoment(m.datum, m.tijd) }),
+    el("td", { cls: "lijn", text: meldLijn(m) }),
+    el("td", { cls: "halte", text: m.halte || "" }),
+    el("td", { cls: "wat" }, [
+      el("span", { text: wat }),
+      app ? el("span", { cls: "app", text: "App of scherm: " + app }) : null,
+      m.toelichting ? el("span", { cls: "toel", text: "“" + m.toelichting + "”" }) : null,
+    ]),
+    el("td", { cls: "data", text: meldingData(m.data) }),
+  ]);
+}
+
+function meldTabel(lijst) {
+  return el("table", { cls: "meld-tabel" }, [
+    el("thead", null, [el("tr", null, ["Wanneer", "Lijn", "Halte", "Melding", "Ritdata"].map(function (k) { return el("th", { text: k }); }))]),
+    el("tbody", null, lijst.map(meldingRij)),
   ]);
 }
 
@@ -914,13 +948,13 @@ function renderMeldLijst(data) {
   box.hidden = !lijst.length;
   if (!lijst.length) return;
   box.appendChild(el("h3", { text: "Meldingen van reizigers" }));
-  box.appendChild(el("p", { cls: "muted", text: "Met toestemming van de melder, zonder naam. Bij elke melding staat wat de ritdata erover zegt." }));
+  box.appendChild(el("p", { cls: "muted", text: "Met toestemming van de melder, zonder naam. Per melding wat de ritdata erover zegt." }));
   const eerste = 5;
-  box.appendChild(el("ul", { cls: "meld-lijst" }, lijst.slice(0, eerste).map(meldingItem)));
+  box.appendChild(meldTabel(lijst.slice(0, eerste)));
   if (lijst.length > eerste) {
     box.appendChild(el("details", null, [
       el("summary", { text: "Alle " + aantal(lijst.length) + " meldingen" }),
-      el("ul", { cls: "meld-lijst" }, lijst.slice(eerste).map(meldingItem)),
+      meldTabel(lijst.slice(eerste)),
     ]));
   }
 }
