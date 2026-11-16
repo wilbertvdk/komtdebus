@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-16T09:50:11+01:00",
+  "bijgewerkt": "2026-11-16T09:52:01+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1685,
-      "gemeten": 1685,
+      "gepland": 1686,
+      "gemeten": 1686,
       "aantal": {
-        "gereden": 1592,
+        "gereden": 1593,
         "ingekort": 48,
         "uitval, op tijd": 17,
         "uitval, te laat": 5,
@@ -706,7 +706,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "302",
-      "gereden": 24,
+      "gereden": 25,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -736,9 +736,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T09:48:38+01:00",
-    "gelukt": 11104,
-    "verwacht": 11094,
+    "tot": "2026-11-16T09:50:38+01:00",
+    "gelukt": 11105,
+    "verwacht": 11095,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1043,7 +1043,7 @@
         "datum": "2026-11-16",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1379,
+          "ritten": 1397,
           "uitval": 18,
           "te_laat": 2
         },
@@ -1079,7 +1079,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 25,
+            "ritten": 26,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 0,
@@ -3839,6 +3839,19 @@
       }
     },
     "gepubliceerd": [
+      {
+        "datum": "2026-11-16",
+        "tijd": "09:33",
+        "lijn": "302",
+        "richting": "302 naar Amersfoort",
+        "halte": "Wiersdijk",
+        "wat": "Bus kwam niet",
+        "minuten": null,
+        "scherm": "Bus stond gewoon gepland",
+        "bron": "NS-app, 9292",
+        "toelichting": "te laat op school",
+        "data": null
+      },
       {
         "datum": "2026-11-14",
         "tijd": "18:06",
