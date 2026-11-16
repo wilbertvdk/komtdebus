@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-16T01:50:11+01:00",
+  "bijgewerkt": "2026-11-16T02:05:30+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -696,9 +696,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T01:48:37+01:00",
-    "gelukt": 10864,
-    "verwacht": 10854,
+    "tot": "2026-11-16T02:04:37+01:00",
+    "gelukt": 10872,
+    "verwacht": 10862,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1018,7 +1018,7 @@
         "datum": "2026-11-15",
         "lijnen_gemeten": 53,
         "totaal": {
-          "ritten": 3595,
+          "ritten": 3610,
           "uitval": 33,
           "te_laat": 15
         },
@@ -1123,7 +1123,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 135,
+            "ritten": 136,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1131,7 +1131,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 158,
+            "ritten": 159,
             "uitval": 2,
             "te_laat": 1
           },
