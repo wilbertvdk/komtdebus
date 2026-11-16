@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-16T05:50:12+01:00",
+  "bijgewerkt": "2026-11-16T06:05:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-15"
@@ -696,9 +696,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T05:48:37+01:00",
-    "gelukt": 10984,
-    "verwacht": 10974,
+    "tot": "2026-11-16T06:04:37+01:00",
+    "gelukt": 10992,
+    "verwacht": 10982,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -932,32 +932,6 @@
         ]
       },
       {
-        "begin": "2026-11-11T15:30+01:00",
-        "eind": "2026-11-12T19:59+01:00",
-        "tekst": "Halte vervallen van 13 november 20:00 tot 16 november 06:00 i.v.m. werkzaamheden. Vervangende halte: Martinbaan.",
-        "lijnen": [],
-        "haltes": [
-          "Nieuwegein, Marconi (hoog)"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Nieuwegein"
-        ]
-      },
-      {
-        "begin": "2026-11-11T15:45+01:00",
-        "eind": "2026-11-13T19:59+01:00",
-        "tekst": "Halte vervallen van 13 november 20:00 tot 16 november 06:00 i.v.m. werkzaamheden. Vervangende halte: Fokkesteeg.",
-        "lijnen": [],
-        "haltes": [
-          "Nieuwegein, Merwesteintunnel"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Nieuwegein"
-        ]
-      },
-      {
         "begin": "2026-11-13T05:00+01:00",
         "eind": "2026-12-02T20:00+01:00",
         "tekst": "Van 16 november 05:00 t/m 2 december 20:00 vervallen de haltes Kamerik Centrum, Kamerik Overzicht. Op 23 november van 09:00 t/m 16:00 vervallen de haltes Woerden Oudelandseweg, Kruipin, Kamerik Sluis en Lindenlaan ook.",
@@ -1016,9 +990,9 @@
     "dagen": [
       {
         "datum": "2026-11-16",
-        "lijnen_gemeten": 2,
+        "lijnen_gemeten": 6,
         "totaal": {
-          "ritten": 2,
+          "ritten": 7,
           "uitval": 0,
           "te_laat": 0
         },
