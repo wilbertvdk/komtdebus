@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-16T11:08:41+01:00",
+  "bijgewerkt": "2026-11-16T11:20:11+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1701,
-      "gemeten": 1701,
+      "gepland": 1703,
+      "gemeten": 1703,
       "aantal": {
-        "gereden": 1607,
+        "gereden": 1609,
         "ingekort": 49,
         "uitval, op tijd": 17,
         "uitval, te laat": 5,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 1860,
-      "gemeten": 1860,
+      "gepland": 1861,
+      "gemeten": 1861,
       "aantal": {
-        "gereden": 1776,
+        "gereden": 1777,
         "ingekort": 36,
         "uitval, op tijd": 30,
         "uitval, te laat": 5,
@@ -706,7 +706,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "302",
-      "gereden": 39,
+      "gereden": 41,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -726,7 +726,7 @@
     {
       "datum": "2026-11-16",
       "lijn": "376",
-      "gereden": 42,
+      "gereden": 43,
       "ingekort": 0,
       "uitval, op tijd": 2,
       "uitval, te laat": 0,
@@ -736,9 +736,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-16T11:08:39+01:00",
-    "gelukt": 11144,
-    "verwacht": 11134,
+    "tot": "2026-11-16T11:18:38+01:00",
+    "gelukt": 11149,
+    "verwacht": 11139,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1054,7 +1054,7 @@
         "datum": "2026-11-16",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1986,
+          "ritten": 2069,
           "uitval": 26,
           "te_laat": 3
         },
@@ -1063,7 +1063,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 42,
+            "ritten": 44,
             "uitval": 5,
             "te_laat": 0
           },
@@ -1071,7 +1071,7 @@
             "lijn": "70",
             "naam": "Hilversum – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 35,
+            "ritten": 37,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1079,7 +1079,7 @@
             "lijn": "71",
             "naam": "Soest Zuid – Soestdijk Noord",
             "gevolgd": false,
-            "ritten": 16,
+            "ritten": 17,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1098,7 +1098,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 41,
+            "ritten": 43,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 0,
@@ -1109,7 +1109,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 34,
+            "ritten": 35,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1128,7 +1128,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 35,
+            "ritten": 36,
             "uitval": 11,
             "te_laat": 1
           },
@@ -1136,7 +1136,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 39,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1144,7 +1144,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 45,
+            "ritten": 47,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1152,7 +1152,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 44,
+            "ritten": 45,
             "uitval": 2,
             "te_laat": 0,
             "niet_gemeld": 0,
