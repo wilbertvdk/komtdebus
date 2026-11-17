@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-17T08:35:32+01:00",
+  "bijgewerkt": "2026-11-17T08:50:11+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-17"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1818,
-      "gemeten": 1818,
+      "gepland": 1820,
+      "gemeten": 1820,
       "aantal": {
-        "gereden": 1717,
+        "gereden": 1719,
         "ingekort": 52,
         "uitval, op tijd": 19,
         "uitval, te laat": 7,
@@ -66,7 +66,7 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 94.4,
+        "gereden": 94.5,
         "ingekort": 2.9,
         "uitval, op tijd": 1.0,
         "uitval, te laat": 0.4,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 1969,
-      "gemeten": 1969,
+      "gepland": 1971,
+      "gemeten": 1971,
       "aantal": {
-        "gereden": 1881,
+        "gereden": 1883,
         "ingekort": 36,
         "uitval, op tijd": 31,
         "uitval, te laat": 6,
@@ -165,9 +165,9 @@
         "ritten": 37,
         "ritten_vooraf": 31,
         "ritten_ingekort": 36,
-        "haltes": 1682,
-        "haltes_op_tijd": 1622,
-        "haltes_dicht": 910,
+        "haltes": 1683,
+        "haltes_op_tijd": 1623,
+        "haltes_dicht": 911,
         "haltes_zonder": 781,
         "haltes_op_tijd_zonder": 721,
         "mediaan_min_na_vertrek": -44,
@@ -746,7 +746,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "302",
-      "gereden": 10,
+      "gereden": 12,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -766,7 +766,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "376",
-      "gereden": 17,
+      "gereden": 19,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -776,9 +776,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-17T08:34:14+01:00",
-    "gelukt": 11786,
-    "verwacht": 11777,
+    "tot": "2026-11-17T08:48:14+01:00",
+    "gelukt": 11793,
+    "verwacht": 11784,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1083,9 +1083,9 @@
     "dagen": [
       {
         "datum": "2026-11-17",
-        "lijnen_gemeten": 91,
+        "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 671,
+          "ritten": 808,
           "uitval": 3,
           "te_laat": 2
         },
@@ -1094,7 +1094,7 @@
             "lijn": "2",
             "naam": "Amersfoort CS – Nieuwland",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1113,7 +1113,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1124,7 +1124,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 17,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1143,7 +1143,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 16,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1151,7 +1151,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
