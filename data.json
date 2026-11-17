@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-17T19:35:11+01:00",
+  "bijgewerkt": "2026-11-17T19:38:23+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-17"
   },
   "lijnen": {
     "272": {
-      "gepland": 203,
-      "gemeten": 203,
+      "gepland": 204,
+      "gemeten": 204,
       "aantal": {
-        "gereden": 200,
+        "gereden": 201,
         "ingekort": 3,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -736,7 +736,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "272",
-      "gereden": 16,
+      "gereden": 17,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -776,9 +776,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-17T19:33:23+01:00",
-    "gelukt": 12114,
-    "verwacht": 12107,
+    "tot": "2026-11-17T19:37:23+01:00",
+    "gelukt": 12116,
+    "verwacht": 12109,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1115,7 +1115,7 @@
         "datum": "2026-11-17",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 5662,
+          "ritten": 5676,
           "uitval": 146,
           "te_laat": 60
         },
@@ -1212,7 +1212,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 106,
+            "ritten": 107,
             "uitval": 5,
             "te_laat": 2
           },
@@ -1252,7 +1252,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 139,
+            "ritten": 140,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1292,7 +1292,7 @@
             "lijn": "48",
             "naam": "Houten – Nieuwegein – Maarssen",
             "gevolgd": false,
-            "ritten": 51,
+            "ritten": 52,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1324,7 +1324,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 106,
+            "ritten": 107,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1380,7 +1380,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 74,
+            "ritten": 75,
             "uitval": 3,
             "te_laat": 1
           },
@@ -1420,7 +1420,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 16,
+            "ritten": 17,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1461,7 +1461,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 102,
+            "ritten": 103,
             "uitval": 8,
             "te_laat": 1
           },
@@ -1469,7 +1469,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 83,
+            "ritten": 84,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1485,7 +1485,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 153,
+            "ritten": 155,
             "uitval": 1,
             "te_laat": 1
           },
@@ -4620,6 +4620,30 @@
             "afwijking_min": 10.1,
             "verwacht": "18:17:06"
           },
+          "volgende": null
+        }
+      },
+      {
+        "datum": "2026-11-09",
+        "tijd": "17:06",
+        "lijn": "200",
+        "richting": "200 Van Huizen busstation",
+        "halte": "Huizen busstation",
+        "wat": "Bus kwam niet",
+        "minuten": null,
+        "scherm": "Bus stond gewoon gepland",
+        "bron": "9292, Google Maps, Scherm bij de halte, Scherm in de bus",
+        "toelichting": "Omreizen (want het was de laatste bus) en ruim 1 uur later thuis",
+        "verstuurd": "2026-11-17T18:16",
+        "data": {
+          "klasse": "uitval, te laat",
+          "gepland": "17:06",
+          "vertrek": null,
+          "afwijking_min": null,
+          "twijfel": false,
+          "halte_vervallen": null,
+          "gemeld_min": 8,
+          "eerder_vertrek": null,
           "volgende": null
         }
       }
