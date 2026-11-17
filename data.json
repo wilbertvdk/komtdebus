@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-17T14:57:01+01:00",
+  "bijgewerkt": "2026-11-17T14:58:19+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-17"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1879,
-      "gemeten": 1879,
+      "gepland": 1880,
+      "gemeten": 1880,
       "aantal": {
-        "gereden": 1775,
+        "gereden": 1776,
         "ingekort": 52,
         "uitval, op tijd": 20,
         "uitval, te laat": 8,
@@ -746,7 +746,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "302",
-      "gereden": 68,
+      "gereden": 69,
       "ingekort": 0,
       "uitval, op tijd": 1,
       "uitval, te laat": 1,
@@ -776,9 +776,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-17T14:56:44+01:00",
-    "gelukt": 11976,
-    "verwacht": 11968,
+    "tot": "2026-11-17T14:58:14+01:00",
+    "gelukt": 11977,
+    "verwacht": 11969,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1070,9 +1070,9 @@
         "datum": "2026-11-17",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 3459,
-          "uitval": 69,
-          "te_laat": 32
+          "ritten": 3471,
+          "uitval": 71,
+          "te_laat": 33
         },
         "lijnen": [
           {
@@ -1095,9 +1095,9 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 33,
-            "uitval": 7,
-            "te_laat": 2
+            "ritten": 34,
+            "uitval": 8,
+            "te_laat": 3
           },
           {
             "lijn": "3",
@@ -1247,8 +1247,8 @@
             "lijn": "128",
             "naam": "Maarssen – Vleuten",
             "gevolgd": false,
-            "ritten": 30,
-            "uitval": 7,
+            "ritten": 31,
+            "uitval": 8,
             "te_laat": 5
           },
           {
@@ -1282,7 +1282,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 71,
+            "ritten": 72,
             "uitval": 2,
             "te_laat": 1,
             "niet_gemeld": 1,
@@ -4327,7 +4327,7 @@
       {
         "datum": "2026-11-17",
         "tijd": "09:53",
-        "lijn": "6, Amersfoort",
+        "lijn": "6",
         "richting": "6 naar centrum",
         "halte": "wielewaalstraat",
         "wat": "Bus kwam niet",
