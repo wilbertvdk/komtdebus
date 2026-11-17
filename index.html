@@ -897,8 +897,6 @@ function meldingData(t) {
     gereden += Math.abs(e.afwijking_min) < 1 ? ", op tijd" : ", ongeveer " + afw(e.afwijking_min);
     gereden += ": vertrok " + e.vertrek.slice(0, 5) + (e.halte ? " bij " + e.halte : " eerder op de route");
     if (Math.abs(e.afwijking_min) >= 1) gereden += ", hier verwacht rond " + e.verwacht.slice(0, 5);
-    if (t.verstuurd && e.afwijking_min >= 1 && t.verstuurd < e.verwacht.slice(0, 5))
-      gereden += ". De melding kwam om " + t.verstuurd;
   }
   const zin = {
     "gereden": gereden,
@@ -928,6 +926,13 @@ function meldLijn(m) {
   return m.lijn + (r ? " → " + r : "");
 }
 
+// Wanneer de reiziger meldde: "18:15" op de dag van de rit, anders "ma 16 nov 20:10".
+function meldGemeld(m) {
+  const v = /^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/.exec(m.verstuurd || "");
+  if (!v) return null;
+  return "Gemeld " + (v[1] === m.datum ? v[2] : meldMoment(v[1], v[2])) + ": ";
+}
+
 function meldingRij(m) {
   const wat = [m.wat, m.minuten ? m.minuten + (/^\d+$/.test(m.minuten) ? " min" : "") : null].filter(Boolean).join(", ");
   const app = m.scherm ? m.scherm + (m.bron ? " (" + m.bron + ")" : "") : null;
@@ -936,7 +941,7 @@ function meldingRij(m) {
     el("td", { cls: "lijn", text: meldLijn(m) }),
     el("td", { cls: "halte", text: m.halte || "" }),
     el("td", { cls: "wat" }, [
-      el("span", { text: wat }),
+      el("span", { text: (meldGemeld(m) || "") + wat }),
       app ? el("span", { cls: "app", text: "App of scherm: " + app }) : null,
       m.toelichting ? el("span", { cls: "toel", text: "“" + m.toelichting + "”" }) : null,
     ]),

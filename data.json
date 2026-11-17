@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-17T09:05:51+01:00",
+  "bijgewerkt": "2026-11-17T09:09:04+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-17"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1822,
-      "gemeten": 1822,
+      "gepland": 1823,
+      "gemeten": 1823,
       "aantal": {
-        "gereden": 1721,
+        "gereden": 1722,
         "ingekort": 52,
         "uitval, op tijd": 19,
         "uitval, te laat": 7,
@@ -746,7 +746,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "302",
-      "gereden": 14,
+      "gereden": 15,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -776,9 +776,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-17T09:04:14+01:00",
-    "gelukt": 11801,
-    "verwacht": 11792,
+    "tot": "2026-11-17T09:08:14+01:00",
+    "gelukt": 11803,
+    "verwacht": 11794,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1085,8 +1085,8 @@
         "datum": "2026-11-17",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 951,
-          "uitval": 6,
+          "ritten": 989,
+          "uitval": 7,
           "te_laat": 2
         },
         "lijnen": [
@@ -1110,7 +1110,15 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 18,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "19",
+            "naam": "Utrecht CS – De Meern",
+            "gevolgd": false,
+            "ritten": 8,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1129,7 +1137,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 14,
+            "ritten": 15,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1159,7 +1167,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 2,
             "te_laat": 0
           },
@@ -4154,6 +4162,7 @@
         "scherm": "Bus stond gewoon gepland",
         "bron": "NS-app, 9292, Scherm bij de halte",
         "toelichting": "Te laat bij bij college",
+        "verstuurd": "2026-11-16T10:52",
         "data": {
           "klasse": "niet gemeld",
           "gepland": "10:19",
@@ -4162,8 +4171,7 @@
           "twijfel": false,
           "halte_vervallen": false,
           "gemeld_min": null,
-          "eerder_vertrek": null,
-          "verstuurd": "10:52"
+          "eerder_vertrek": null
         }
       },
       {
@@ -4177,6 +4185,7 @@
         "scherm": "Bus stond gewoon gepland",
         "bron": "NS-app, 9292",
         "toelichting": "te laat op school",
+        "verstuurd": "2026-11-16T09:41",
         "data": {
           "klasse": "ingekort",
           "gepland": "09:37",
@@ -4185,8 +4194,7 @@
           "twijfel": false,
           "halte_vervallen": true,
           "gemeld_min": 12,
-          "eerder_vertrek": null,
-          "verstuurd": "09:41"
+          "eerder_vertrek": null
         }
       },
       {
@@ -4200,6 +4208,7 @@
         "scherm": "Bus stond gewoon gepland",
         "bron": "Scherm bij de halte",
         "toelichting": null,
+        "verstuurd": "2026-11-14T18:15",
         "data": {
           "klasse": "gereden",
           "gepland": "18:06",
@@ -4213,8 +4222,7 @@
             "vertrek": "18:13:17",
             "afwijking_min": 10.1,
             "verwacht": "18:17:06"
-          },
-          "verstuurd": "18:15"
+          }
         }
       }
     ]
