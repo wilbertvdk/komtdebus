@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-17T04:50:11+01:00",
+  "bijgewerkt": "2026-11-17T05:05:11+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-16"
@@ -736,9 +736,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-17T04:48:13+01:00",
-    "gelukt": 11673,
-    "verwacht": 11664,
+    "tot": "2026-11-17T05:04:13+01:00",
+    "gelukt": 11681,
+    "verwacht": 11672,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -962,71 +962,6 @@
         ]
       },
       {
-        "begin": "2026-11-16T20:00+01:00",
-        "eind": "2026-11-17T05:00+01:00",
-        "tekst": "Lijn 29: halte vervallen tot 17 november 05:00. Vervangende halte: Waalstraat.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Balijelaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-16T20:00+01:00",
-        "eind": "2026-11-17T05:00+01:00",
-        "tekst": "Lijn 8 en 47: halte vervallen tot 17 november 05:00. Vervangende halte: Waalstraat.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Tolsteegplantsoen"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-16T20:00+01:00",
-        "eind": "2026-11-17T05:00+01:00",
-        "tekst": "Lijn 29: halte vervallen tot 17 november 05:00. Plan je reis op u-ov.nl.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Balijelaan"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-16T20:00+01:00",
-        "eind": "2026-11-17T05:00+01:00",
-        "tekst": "Lijn 8 en 47: halte vervallen tot 17 november 05:00. Plan je reis op u-ov.nl.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Tolsteegplantsoen"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-16T20:00+01:00",
-        "eind": "2026-11-17T05:00+01:00",
-        "tekst": "Lijn 8, 28 en 47: halte vervallen tot 17 november 05:00. Plan je reis op u-ov.nl.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Station Vaartsche Rijn"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
         "begin": null,
         "eind": null,
         "tekst": "Lijn 28: halte vervalt van 16 november 20:00 t/m 18 november 05:00. Vervangende halte: Veldhuizerweg.",
@@ -1075,21 +1010,6 @@
         "plaatsen": []
       },
       {
-        "begin": "2026-11-13T20:00+01:00",
-        "eind": "2026-11-17T05:00+01:00",
-        "tekst": "Op 16 november vanaf 20:00 vervalt de halte Utrecht Station Vaartsche Rijn.",
-        "lijnen": [
-          "341"
-        ],
-        "haltes": [
-          "Utrecht, Station Vaartsche Rijn"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
         "begin": "2026-11-09T13:30+01:00",
         "eind": "2026-12-09T23:59+01:00",
         "tekst": "halte vervalt vanaf 13 december i.v.m. de nieuwe dienstregeling.",
@@ -1102,22 +1022,6 @@
           "Breukeleveen",
           "Tienhoven",
           "Nieuw-Loosdrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-06T20:00+01:00",
-        "eind": "2026-11-17T05:00+01:00",
-        "tekst": "van 9 t/m 13 en op 16 november vervallen de volgende haltes vanaf 20:00: Woudenberg Zegheweg, Woudenberg Europaweg richting Veenendaal.",
-        "lijnen": [
-          "80"
-        ],
-        "haltes": [
-          "Woudenberg, Europaweg",
-          "Woudenberg, Zegheweg"
-        ],
-        "haltes_aantal": 2,
-        "plaatsen": [
-          "Woudenberg"
         ]
       }
     ],
