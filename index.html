@@ -885,11 +885,23 @@ function renderMeldTeller(data) {
 function meldingData(t) {
   if (!t) return "Nog niet nagekeken (kan pas als de rit voorbij is)";
   if (t.reden) return t.reden === "lijn wordt niet gevolgd" ? "Geen ritdata voor deze lijn" : "Rit niet gevonden";
-  const v = t.afwijking_min;
-  const stipt = v == null ? "" : Math.abs(v) < 1 ? " (op tijd)" : v > 0 ? " (+" + Math.round(v) + " min)" : " (" + Math.round(v) + " min)";
+  // "op tijd", "10 min te laat", "2 min te vroeg"
+  const afw = v => Math.abs(v) < 1 ? "op tijd" : Math.round(Math.abs(v)) + " min te " + (v > 0 ? "laat" : "vroeg");
   const gemeld = t.gemeld_min == null ? "" : t.gemeld_min <= 0 ? ", op tijd gemeld" : ", " + t.gemeld_min + " min te laat gemeld";
+  let gereden = "Reed";
+  if (t.vertrek && t.afwijking_min != null) {
+    gereden += ", vertrok hier om " + t.vertrek.slice(0, 5) + " (" + afw(t.afwijking_min) + ")";
+  } else if (t.eerder_vertrek) {
+    // Geen vertrektijd bij deze halte, wel eerder op de route: die vertraging doorgetrokken als schatting.
+    const e = t.eerder_vertrek;
+    gereden += Math.abs(e.afwijking_min) < 1 ? ", op tijd" : ", ongeveer " + afw(e.afwijking_min);
+    gereden += ": vertrok " + e.vertrek.slice(0, 5) + (e.halte ? " bij " + e.halte : " eerder op de route");
+    if (Math.abs(e.afwijking_min) >= 1) gereden += ", hier verwacht rond " + e.verwacht.slice(0, 5);
+    if (t.verstuurd && e.afwijking_min >= 1 && t.verstuurd < e.verwacht.slice(0, 5))
+      gereden += ". De melding kwam om " + t.verstuurd;
+  }
   const zin = {
-    "gereden": "Reed" + (t.vertrek ? ", vertrok hier " + t.vertrek.slice(0, 5) + stipt : ""),
+    "gereden": gereden,
     "ingekort": t.halte_vervallen === undefined ? "Ingekort" :
       t.halte_vervallen ? "Ingekort: deze halte overgeslagen" + gemeld : "Ingekort, maar deze halte niet",
     "uitval, op tijd": "Uitgevallen, op tijd gemeld",
