@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-17T07:20:12+01:00",
+  "bijgewerkt": "2026-11-17T07:35:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-17"
   },
   "lijnen": {
     "272": {
-      "gepland": 187,
-      "gemeten": 187,
+      "gepland": 188,
+      "gemeten": 188,
       "aantal": {
-        "gereden": 184,
+        "gereden": 185,
         "ingekort": 3,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -40,7 +40,7 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-16"
+        "tot": "2026-11-17"
       },
       "dicht": [
         {
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 1956,
-      "gemeten": 1956,
+      "gepland": 1958,
+      "gemeten": 1958,
       "aantal": {
-        "gereden": 1868,
+        "gereden": 1870,
         "ingekort": 36,
         "uitval, op tijd": 31,
         "uitval, te laat": 6,
@@ -735,6 +735,16 @@
     },
     {
       "datum": "2026-11-17",
+      "lijn": "272",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-17",
       "lijn": "302",
       "gereden": 1,
       "ingekort": 0,
@@ -746,7 +756,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "376",
-      "gereden": 4,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -756,9 +766,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-17T07:18:14+01:00",
-    "gelukt": 11748,
-    "verwacht": 11739,
+    "tot": "2026-11-17T07:34:14+01:00",
+    "gelukt": 11756,
+    "verwacht": 11747,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -844,6 +854,21 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-17T07:40+01:00",
+        "eind": "2026-11-17T16:00+01:00",
+        "tekst": "Lijn 3: halte vervallen tot nader order i.v.m. werkzaamheden. Download de U-OV-app voor meer actuele reisinfo.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Willem Dreeslaan",
+          "Utrecht, Draaiweg",
+          "Utrecht, David van Mollemstraat"
+        ],
+        "haltes_aantal": 3,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-20T17:00+01:00",
         "eind": "2026-11-20T23:00+01:00",
@@ -1048,13 +1073,24 @@
     "dagen": [
       {
         "datum": "2026-11-17",
-        "lijnen_gemeten": 66,
+        "lijnen_gemeten": 78,
         "totaal": {
-          "ritten": 182,
+          "ritten": 255,
           "uitval": 0,
           "te_laat": 0
         },
         "lijnen": [
+          {
+            "lijn": "272",
+            "naam": "Baarn – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          },
           {
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
@@ -1070,7 +1106,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1078,7 +1114,21 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Lijn 3: halte vervallen tot nader order i.v.m. werkzaamheden. Download de U-OV-app voor meer actuele reisinfo.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Willem Dreeslaan",
+              "Utrecht, Draaiweg",
+              "Utrecht, David van Mollemstraat"
+            ],
+            "haltes_aantal": 3,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-16",
