@@ -886,6 +886,8 @@ function renderMeldTeller(data) {
 function meldingData(t) {
   if (!t) return "Nog niet nagekeken (kan pas als de rit voorbij is)";
   if (t.reden) return t.reden === "lijn wordt niet gevolgd" ? "Geen ritdata voor deze lijn" : "Rit niet gevonden";
+  // 90 -> "1,5 uur", 25 -> "25 min"
+  const vooraf = m => m >= 60 ? (Math.round(m / 6) / 10).toString().replace(".", ",") + " uur" : Math.round(m) + " min";
   // "op tijd", "10 min te laat", "2 min te vroeg"
   const afw = v => Math.abs(v) < 1 ? "op tijd" : Math.round(Math.abs(v)) + " min te " + (v > 0 ? "laat" : "vroeg");
   const gemeld = t.gemeld_min == null ? "" : t.gemeld_min <= 0 ? ", op tijd gemeld" : ", " + t.gemeld_min + " min te laat gemeld";
@@ -903,11 +905,17 @@ function meldingData(t) {
     "gereden": gereden,
     "ingekort": t.halte_vervallen === undefined ? "Ingekort" :
       t.halte_vervallen ? "Ingekort: deze halte overgeslagen" + gemeld : "Ingekort, maar deze halte niet",
-    "uitval, op tijd": "Uitgevallen, op tijd gemeld",
+    "uitval, op tijd": "Uitgevallen" + (t.gemeld_min != null && t.gemeld_min < 0 ? ", " + vooraf(-t.gemeld_min) + " vooraf gemeld" : ", op tijd gemeld"),
     "uitval, te laat": "Uitgevallen" + (gemeld || ", te laat gemeld"),
     "niet gemeld": "Geen bus en geen melding",
   }[t.klasse] || "Geen meting die dag";
-  return zin + (t.twijfel || (t.ook_mogelijk && t.ook_mogelijk.length) ? "; misschien de rit ervoor of erna" : "");
+  // Kwam de bus niet: wanneer vertrok de volgende hier echt?
+  const vb = t.volgende;
+  const volgende = !vb ? "" : vb.vertrek
+    ? ". Volgende bus: gepland " + vb.gepland.slice(0, 5) + ", vertrok " + vb.vertrek.slice(0, 5) +
+      (Math.abs(vb.afwijking_min) >= 1 ? " (" + afw(vb.afwijking_min) + ")" : "")
+    : ". Volgende bus: gepland " + vb.gepland.slice(0, 5);
+  return zin + volgende + (t.twijfel || (t.ook_mogelijk && t.ook_mogelijk.length) ? "; misschien de rit ervoor of erna" : "");
 }
 
 const MND = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
