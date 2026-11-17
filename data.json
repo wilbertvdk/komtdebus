@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-17T07:50:11+01:00",
+  "bijgewerkt": "2026-11-17T08:05:32+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-17"
   },
   "lijnen": {
     "272": {
-      "gepland": 188,
-      "gemeten": 188,
+      "gepland": 189,
+      "gemeten": 189,
       "aantal": {
-        "gereden": 185,
+        "gereden": 186,
         "ingekort": 3,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1811,
-      "gemeten": 1811,
+      "gepland": 1812,
+      "gemeten": 1812,
       "aantal": {
-        "gereden": 1710,
+        "gereden": 1711,
         "ingekort": 52,
         "uitval, op tijd": 19,
         "uitval, te laat": 7,
@@ -94,10 +94,10 @@
       "dicht": []
     },
     "315": {
-      "gepland": 132,
-      "gemeten": 132,
+      "gepland": 133,
+      "gemeten": 133,
       "aantal": {
-        "gereden": 123,
+        "gereden": 124,
         "ingekort": 6,
         "uitval, op tijd": 2,
         "uitval, te laat": 0,
@@ -128,7 +128,7 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-16"
+        "tot": "2026-11-17"
       },
       "dicht": [
         {
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 1961,
-      "gemeten": 1961,
+      "gepland": 1963,
+      "gemeten": 1963,
       "aantal": {
-        "gereden": 1873,
+        "gereden": 1875,
         "ingekort": 36,
         "uitval, op tijd": 31,
         "uitval, te laat": 6,
@@ -736,7 +736,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "272",
-      "gereden": 1,
+      "gereden": 2,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -746,7 +746,17 @@
     {
       "datum": "2026-11-17",
       "lijn": "302",
-      "gereden": 3,
+      "gereden": 4,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-17",
+      "lijn": "315",
+      "gereden": 1,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -756,7 +766,7 @@
     {
       "datum": "2026-11-17",
       "lijn": "376",
-      "gereden": 9,
+      "gereden": 11,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -766,9 +776,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-17T07:48:14+01:00",
-    "gelukt": 11763,
-    "verwacht": 11754,
+    "tot": "2026-11-17T08:04:14+01:00",
+    "gelukt": 11771,
+    "verwacht": 11762,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1073,9 +1083,9 @@
     "dagen": [
       {
         "datum": "2026-11-17",
-        "lijnen_gemeten": 83,
+        "lijnen_gemeten": 87,
         "totaal": {
-          "ritten": 355,
+          "ritten": 448,
           "uitval": 0,
           "te_laat": 0
         },
@@ -1084,7 +1094,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1095,7 +1105,18 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 4,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          },
+          {
+            "lijn": "315",
+            "naam": "Amersfoort Vathorst – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1106,7 +1127,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 9,
+            "ritten": 11,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
