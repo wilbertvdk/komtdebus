@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-18T04:50:12+01:00",
+  "bijgewerkt": "2026-11-18T05:05:12+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-17"
@@ -776,9 +776,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-18T04:49:25+01:00",
-    "gelukt": 12392,
-    "verwacht": 12385,
+    "tot": "2026-11-18T05:03:25+01:00",
+    "gelukt": 12399,
+    "verwacht": 12392,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -964,45 +964,6 @@
         ]
       },
       {
-        "begin": "2026-11-16T16:10+01:00",
-        "eind": "2026-11-18T05:00+01:00",
-        "tekst": "Halte vervalt op 16 en 17 november dagelijks van 16:00 tot 05:00. Vervangende halte: Boterbloemsingel.",
-        "lijnen": [],
-        "haltes": [
-          "Vleuten, Eyckenstein"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Vleuten"
-        ]
-      },
-      {
-        "begin": "2026-11-16T16:10+01:00",
-        "eind": "2026-11-18T05:00+01:00",
-        "tekst": "Halte vervalt op 16 en 17 november dagelijks van 16:00 tot 05:00. Vervangende halte: Rivierkom-Zuid.",
-        "lijnen": [],
-        "haltes": [
-          "Vleuten, Vleuterweide-Centrum"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Vleuten"
-        ]
-      },
-      {
-        "begin": "2026-11-16T16:10+01:00",
-        "eind": "2026-11-18T05:00+01:00",
-        "tekst": "Halte vervalt op 16 en 17 november dagelijks van 16:00 tot 05:00. Vervangende halte: Veldhuizerweg.",
-        "lijnen": [],
-        "haltes": [
-          "Vleuten, De Tuinlanden"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Vleuten"
-        ]
-      },
-      {
         "begin": "2026-11-15T11:30+01:00",
         "eind": "2026-11-18T19:59+01:00",
         "tekst": "Lijn 3: halte vervalt van 18 november 20:00 t/m 19 november 05:00. Download de U-OV-app voor meer actuele reisinfo.",
@@ -1014,45 +975,6 @@
         "haltes_aantal": 2,
         "plaatsen": [
           "Utrecht"
-        ]
-      },
-      {
-        "begin": null,
-        "eind": null,
-        "tekst": "Lijn 28: halte vervalt van 16 november 20:00 t/m 18 november 05:00. Vervangende halte: Veldhuizerweg.",
-        "lijnen": [],
-        "haltes": [
-          "Vleuten, De Tuinlanden"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Vleuten"
-        ]
-      },
-      {
-        "begin": "2026-11-16T20:00+01:00",
-        "eind": "2026-11-18T05:00+01:00",
-        "tekst": "Lijn 28: halte vervallen t/m 18 november 05:00. Vervangende halte: Rivierkom-Zuid.",
-        "lijnen": [],
-        "haltes": [
-          "Vleuten, Vleuterweide-Centrum"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Vleuten"
-        ]
-      },
-      {
-        "begin": null,
-        "eind": null,
-        "tekst": "Lijn 28: halte vervalt van 16 november 20:00 t/m 18 november 05:00. Vervangende halte: Boterbloemsingel.",
-        "lijnen": [],
-        "haltes": [
-          "Vleuten, Eyckenstein"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Vleuten"
         ]
       },
       {
