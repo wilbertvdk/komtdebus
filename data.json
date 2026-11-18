@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-18T06:20:12+01:00",
+  "bijgewerkt": "2026-11-18T06:35:12+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-18"
@@ -786,9 +786,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-18T06:19:25+01:00",
-    "gelukt": 12437,
-    "verwacht": 12430,
+    "tot": "2026-11-18T06:33:25+01:00",
+    "gelukt": 12444,
+    "verwacht": 12437,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1063,9 +1063,9 @@
     "dagen": [
       {
         "datum": "2026-11-18",
-        "lijnen_gemeten": 14,
+        "lijnen_gemeten": 21,
         "totaal": {
-          "ritten": 21,
+          "ritten": 41,
           "uitval": 1,
           "te_laat": 1
         },
@@ -1074,7 +1074,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 3,
+            "ritten": 6,
             "uitval": 1,
             "te_laat": 1
           },
