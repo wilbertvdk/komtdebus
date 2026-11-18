@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-18T09:20:12+01:00",
+  "bijgewerkt": "2026-11-18T09:35:12+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-18"
   },
   "lijnen": {
     "272": {
-      "gepland": 209,
-      "gemeten": 209,
+      "gepland": 210,
+      "gemeten": 210,
       "aantal": {
-        "gereden": 206,
+        "gereden": 207,
         "ingekort": 3,
         "uitval, op tijd": 0,
         "uitval, te laat": 0,
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1975,
-      "gemeten": 1975,
+      "gepland": 1977,
+      "gemeten": 1977,
       "aantal": {
-        "gereden": 1868,
+        "gereden": 1870,
         "ingekort": 49,
         "uitval, op tijd": 24,
         "uitval, te laat": 10,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2113,
-      "gemeten": 2113,
+      "gepland": 2117,
+      "gemeten": 2117,
       "aantal": {
-        "gereden": 2019,
+        "gereden": 2023,
         "ingekort": 38,
         "uitval, op tijd": 32,
         "uitval, te laat": 7,
@@ -165,9 +165,9 @@
         "ritten": 39,
         "ritten_vooraf": 32,
         "ritten_ingekort": 38,
-        "haltes": 1803,
-        "haltes_op_tijd": 1737,
-        "haltes_dicht": 983,
+        "haltes": 1805,
+        "haltes_op_tijd": 1739,
+        "haltes_dicht": 985,
         "haltes_zonder": 830,
         "haltes_op_tijd_zonder": 764,
         "mediaan_min_na_vertrek": -40,
@@ -776,7 +776,7 @@
     {
       "datum": "2026-11-18",
       "lijn": "272",
-      "gereden": 5,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -786,7 +786,7 @@
     {
       "datum": "2026-11-18",
       "lijn": "302",
-      "gereden": 19,
+      "gereden": 21,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -806,7 +806,7 @@
     {
       "datum": "2026-11-18",
       "lijn": "376",
-      "gereden": 23,
+      "gereden": 27,
       "ingekort": 2,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -816,9 +816,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-18T09:19:25+01:00",
-    "gelukt": 12527,
-    "verwacht": 12520,
+    "tot": "2026-11-18T09:33:25+01:00",
+    "gelukt": 12534,
+    "verwacht": 12527,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -904,6 +904,23 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-18T10:00+01:00",
+        "eind": "2026-11-21T15:00+01:00",
+        "tekst": "Lijn 77: halte vervalt op 21 november van 11:00 t/m 15:00",
+        "lijnen": [],
+        "haltes": [
+          "De Bilt, Alfred Nobellaan",
+          "De Bilt, Hessenweg",
+          "De Bilt, Looydijk",
+          "De Bilt, Doctor Letteplein",
+          "De Bilt, Groenekanseweg"
+        ],
+        "haltes_aantal": 5,
+        "plaatsen": [
+          "De Bilt"
+        ]
+      },
       {
         "begin": "2026-10-26T05:00+01:00",
         "eind": "2026-12-04T17:00+01:00",
@@ -1095,16 +1112,16 @@
         "datum": "2026-11-18",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1093,
-          "uitval": 17,
-          "te_laat": 3
+          "ritten": 1226,
+          "uitval": 20,
+          "te_laat": 4
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1112,7 +1129,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 22,
+            "ritten": 23,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1120,7 +1137,15 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 20,
+            "ritten": 22,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
+            "lijn": "18",
+            "naam": "Utrecht CS – Rijnsweerd",
+            "gevolgd": false,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1128,15 +1153,15 @@
             "lijn": "19",
             "naam": "Amersfoort CS – Rusthof",
             "gevolgd": false,
-            "ritten": 7,
-            "uitval": 1,
+            "ritten": 8,
+            "uitval": 2,
             "te_laat": 0
           },
           {
             "lijn": "30",
             "naam": "Overvecht – Science Park",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 15,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1144,7 +1169,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1152,7 +1177,7 @@
             "lijn": "203",
             "naam": "Amersfoort Schothorst – Utrecht Science Park",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1160,7 +1185,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 5,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1171,7 +1196,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 19,
+            "ritten": 21,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1193,15 +1218,15 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 27,
-            "uitval": 5,
+            "ritten": 29,
+            "uitval": 6,
             "te_laat": 2
           },
           {
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 25,
+            "ritten": 29,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1217,7 +1242,23 @@
             "te_laat": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Lijn 77: halte vervalt op 21 november van 11:00 t/m 15:00",
+            "lijnen": [],
+            "haltes": [
+              "De Bilt, Alfred Nobellaan",
+              "De Bilt, Hessenweg",
+              "De Bilt, Looydijk",
+              "De Bilt, Doctor Letteplein",
+              "De Bilt, Groenekanseweg"
+            ],
+            "haltes_aantal": 5,
+            "plaatsen": [
+              "De Bilt"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-17",
