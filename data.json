@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-18T08:05:12+01:00",
+  "bijgewerkt": "2026-11-18T08:20:59+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-18"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 1960,
-      "gemeten": 1960,
+      "gepland": 1963,
+      "gemeten": 1963,
       "aantal": {
-        "gereden": 1853,
+        "gereden": 1856,
         "ingekort": 49,
         "uitval, op tijd": 24,
         "uitval, te laat": 10,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2099,
-      "gemeten": 2099,
+      "gepland": 2101,
+      "gemeten": 2101,
       "aantal": {
-        "gereden": 2007,
+        "gereden": 2009,
         "ingekort": 36,
         "uitval, op tijd": 32,
         "uitval, te laat": 7,
@@ -165,9 +165,9 @@
         "ritten": 39,
         "ritten_vooraf": 32,
         "ritten_ingekort": 36,
-        "haltes": 1784,
-        "haltes_op_tijd": 1718,
-        "haltes_dicht": 976,
+        "haltes": 1785,
+        "haltes_op_tijd": 1719,
+        "haltes_dicht": 977,
         "haltes_zonder": 818,
         "haltes_op_tijd_zonder": 752,
         "mediaan_min_na_vertrek": -40,
@@ -786,7 +786,7 @@
     {
       "datum": "2026-11-18",
       "lijn": "302",
-      "gereden": 4,
+      "gereden": 7,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -806,7 +806,7 @@
     {
       "datum": "2026-11-18",
       "lijn": "376",
-      "gereden": 11,
+      "gereden": 13,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -816,9 +816,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-18T08:03:25+01:00",
-    "gelukt": 12489,
-    "verwacht": 12482,
+    "tot": "2026-11-18T08:19:25+01:00",
+    "gelukt": 12497,
+    "verwacht": 12490,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1093,18 +1093,26 @@
     "dagen": [
       {
         "datum": "2026-11-18",
-        "lijnen_gemeten": 87,
+        "lijnen_gemeten": 89,
         "totaal": {
-          "ritten": 448,
-          "uitval": 8,
+          "ritten": 559,
+          "uitval": 9,
           "te_laat": 1
         },
         "lijnen": [
           {
+            "lijn": "3",
+            "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
+            "gevolgd": false,
+            "ritten": 5,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1112,7 +1120,7 @@
             "lijn": "30",
             "naam": "Overvecht – Science Park",
             "gevolgd": false,
-            "ritten": 2,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1120,7 +1128,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 8,
+            "ritten": 10,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1139,7 +1147,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 7,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1161,7 +1169,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 20,
             "uitval": 4,
             "te_laat": 1
           },
@@ -1169,7 +1177,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 11,
+            "ritten": 13,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -4173,7 +4181,7 @@
     ]
   },
   "meldingen": {
-    "totaal": 21,
+    "totaal": 22,
     "per_dag": {
       "2026-10-29": {
         "302": 1,
@@ -4214,7 +4222,7 @@
       },
       "2026-11-17": {
         "6, Amersfoort": 1,
-        "302": 1,
+        "302": 2,
         "30": 1
       }
     },
