@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-18T06:50:12+01:00",
+  "bijgewerkt": "2026-11-18T07:05:12+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-18"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2090,
-      "gemeten": 2090,
+      "gepland": 2091,
+      "gemeten": 2091,
       "aantal": {
-        "gereden": 1998,
+        "gereden": 1999,
         "ingekort": 36,
         "uitval, op tijd": 32,
         "uitval, te laat": 7,
@@ -165,9 +165,9 @@
         "ritten": 39,
         "ritten_vooraf": 32,
         "ritten_ingekort": 36,
-        "haltes": 1781,
-        "haltes_op_tijd": 1715,
-        "haltes_dicht": 973,
+        "haltes": 1782,
+        "haltes_op_tijd": 1716,
+        "haltes_dicht": 974,
         "haltes_zonder": 818,
         "haltes_op_tijd_zonder": 752,
         "mediaan_min_na_vertrek": -40,
@@ -776,7 +776,7 @@
     {
       "datum": "2026-11-18",
       "lijn": "376",
-      "gereden": 2,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -786,9 +786,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-18T06:49:25+01:00",
-    "gelukt": 12452,
-    "verwacht": 12445,
+    "tot": "2026-11-18T07:03:25+01:00",
+    "gelukt": 12459,
+    "verwacht": 12452,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1063,18 +1063,26 @@
     "dagen": [
       {
         "datum": "2026-11-18",
-        "lijnen_gemeten": 34,
+        "lijnen_gemeten": 49,
         "totaal": {
-          "ritten": 72,
-          "uitval": 2,
+          "ritten": 116,
+          "uitval": 3,
           "te_laat": 1
         },
         "lijnen": [
           {
+            "lijn": "6",
+            "naam": "Terwijde – Utrecht CS – Overvecht",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 8,
+            "ritten": 10,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1082,7 +1090,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
