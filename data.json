@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-18T12:35:11+01:00",
+  "bijgewerkt": "2026-11-18T12:36:01+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-18"
@@ -816,9 +816,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-18T12:33:26+01:00",
-    "gelukt": 12624,
-    "verwacht": 12617,
+    "tot": "2026-11-18T12:35:26+01:00",
+    "gelukt": 12625,
+    "verwacht": 12618,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1125,7 +1125,7 @@
         "datum": "2026-11-18",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 2525,
+          "ritten": 2533,
           "uitval": 49,
           "te_laat": 17
         },
@@ -1166,7 +1166,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 47,
+            "ritten": 48,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1246,7 +1246,7 @@
             "lijn": "27",
             "naam": "Zuilen – Science Park",
             "gevolgd": false,
-            "ritten": 36,
+            "ritten": 37,
             "uitval": 4,
             "te_laat": 3
           },
@@ -1294,7 +1294,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 33,
             "uitval": 2,
             "te_laat": 0
           },
@@ -4446,6 +4446,31 @@
     "gepubliceerd": [
       {
         "datum": "2026-11-17",
+        "tijd": "18:02",
+        "lijn": "302",
+        "richting": "302 naar Vianen",
+        "halte": "Padualaan",
+        "wat": "Bus reed een andere route",
+        "minuten": "De bus kwam niet, hij sloeg het science park over",
+        "scherm": "Bus stond gewoon gepland",
+        "bron": "9292",
+        "toelichting": null,
+        "verstuurd": "2026-11-18T08:14",
+        "data": {
+          "klasse": "ingekort",
+          "gepland": "17:58",
+          "vertrek": null,
+          "afwijking_min": null,
+          "twijfel": false,
+          "halte_vervallen": true,
+          "gemeld_min": null,
+          "niet_gemeld": true,
+          "eerder_vertrek": null,
+          "volgende": null
+        }
+      },
+      {
+        "datum": "2026-11-17",
         "tijd": "09:53",
         "lijn": "6",
         "richting": "6 naar centrum",
@@ -4464,6 +4489,7 @@
           "twijfel": false,
           "halte_vervallen": true,
           "gemeld_min": -90,
+          "niet_gemeld": false,
           "eerder_vertrek": null,
           "volgende": {
             "gepland": "10:07:48",
@@ -4492,6 +4518,7 @@
           "twijfel": false,
           "halte_vervallen": false,
           "gemeld_min": null,
+          "niet_gemeld": false,
           "eerder_vertrek": null,
           "volgende": {
             "gepland": "10:35:28",
@@ -4520,6 +4547,7 @@
           "twijfel": false,
           "halte_vervallen": true,
           "gemeld_min": 12,
+          "niet_gemeld": false,
           "eerder_vertrek": null,
           "volgende": {
             "gepland": "10:07:15",
@@ -4548,6 +4576,7 @@
           "twijfel": false,
           "halte_vervallen": false,
           "gemeld_min": null,
+          "niet_gemeld": false,
           "eerder_vertrek": {
             "halte": "Amersfoort, Centraal Station",
             "vertrek": "18:13:17",
@@ -4577,6 +4606,7 @@
           "twijfel": false,
           "halte_vervallen": null,
           "gemeld_min": 8,
+          "niet_gemeld": false,
           "eerder_vertrek": null,
           "volgende": null
         }

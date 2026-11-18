@@ -890,7 +890,9 @@ function meldingData(t) {
   const vooraf = m => m >= 60 ? (Math.round(m / 6) / 10).toString().replace(".", ",") + " uur" : Math.round(m) + " min";
   // "op tijd", "10 min te laat", "2 min te vroeg"
   const afw = v => Math.abs(v) < 1 ? "op tijd" : Math.round(Math.abs(v)) + " min te " + (v > 0 ? "laat" : "vroeg");
-  const gemeld = t.gemeld_min == null ? "" : t.gemeld_min <= 0 ? ", op tijd gemeld" : ", " + t.gemeld_min + " min te laat gemeld";
+  // niet_gemeld: met de hand gezet als de ritdata (KV6) een overslag of uitval tonen die nooit gemeld is
+  const gemeld = t.niet_gemeld ? ", niet gemeld" : t.gemeld_min == null ? "" :
+    t.gemeld_min <= 0 ? ", op tijd gemeld" : ", " + t.gemeld_min + " min te laat gemeld";
   let gereden = "Reed";
   if (t.vertrek && t.afwijking_min != null) {
     gereden += ", vertrok hier om " + t.vertrek.slice(0, 5) + " (" + afw(t.afwijking_min) + ")";
