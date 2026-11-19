@@ -337,7 +337,7 @@ footer.binnen { margin-top: 8px; padding-top: 16px; padding-bottom: 32px; border
     <p>Pers en contact: <a href="mailto:pers@komtdebus.nl">pers@komtdebus.nl</a></p>
     <h3>In de media</h3>
     <ul class="lijst">
-    <li><a href="https://www.gooieneemlander.nl/regio/gooi-en-eemland/soester-vader-jaagt-op-stiekem-uitvallende-spookbussen-want-niets-is-erger-dan-blijven-wachten-op-een-bus-die-helemaal-niet-komt/164192832.html" rel="noopener">De Gooi- en Eemlander</a>, 16 november 2026: "Soester vader jaagt op 'stiekem' uitvallende spookbussen, want niets is erger dan blijven wachten op een bus die helemaal niet komt"</li>
+    <li><a href="https://www.gooieneemlander.nl/regio/gooi-en-eemland/soester-vader-jaagt-op-stiekem-uitvallende-spookbussen-want-niets-is-erger-dan-blijven-wachten-op-een-bus-die-helemaal-niet-komt/164192832.html" rel="noopener">De Gooi- en Eemlander</a>, 17 november 2026: "Soester vader jaagt op 'stiekem' uitvallende spookbussen, want niets is erger dan blijven wachten op een bus die helemaal niet komt"</li>
     <li><a href="https://www.nporadio1.nl/uitzendingen/eenvandaag/019a9be6-65e6-70d9-86ee-db9463a50cc6/2026-11-13-eenvandaag" rel="noopener">NPO Radio 1, EenVandaag</a>, 13 november 2026, reportage om 12:44 (ongeveer 44 minuten na het begin van de uitzending)</li>
     <li><a href="https://www.eemland1.nl/nieuws/betrouwbaarheid-openbaar-vervoer-voor-veel-reizigers-bron-van-frustratie/" rel="noopener">Eemland1</a>, nieuws op de website, 11 november 2026: "Betrouwbaarheid openbaar vervoer voor veel reizigers bron van frustratie"</li>
     <li><a href="https://uitzendinggemist.onrcloud.com/v2/eemland1/programma/2026-11-11/0900" rel="noopener">Eemland1 Actueel</a>, 11 november 2026, interview van minuut 6:45 tot 27:16 (in de speler: −53:15 tot −32:44)</li>
@@ -433,6 +433,15 @@ function totaalGemeten(data) {
   const l = (data && data.lijnen) || {};
   Object.keys(l).forEach(function (k) { n += (l[k] && l[k].gemeten) || 0; });
   return n;
+}
+
+// Stakingsdagen (data.stakingsdagen, datum -> omschrijving): wel per dag zichtbaar, niet in de totalen per lijn.
+function stakingsdag(data, iso) { return (data && data.stakingsdagen && data.stakingsdagen[iso]) || null; }
+function stakingsdagenTekst(data) {
+  const d = Object.keys((data && data.stakingsdagen) || {}).sort();
+  if (!d.length) return "";
+  const t = d.map(datumTekst);
+  return t.length > 1 ? t.slice(0, -1).join(", ") + " en " + t[t.length - 1] : t[0];
 }
 
 function renderStatus(data, heeftMetingen) {
@@ -598,7 +607,8 @@ function renderLijnen(data, heeftMetingen) {
   }
   const periode = data.meetperiode || {};
   if (periode.van) document.getElementById("lijnen-periode").textContent =
-    "Deze vier lijnen volgen we rit voor rit. De cijfers gaan over de hele periode sinds " + datumTekst(periode.van) + ", niet alleen vandaag.";
+    "Deze vier lijnen volgen we rit voor rit. De cijfers gaan over de hele periode sinds " + datumTekst(periode.van) + ", niet alleen vandaag." +
+    (stakingsdagenTekst(data) ? " De stakingsdagen (" + stakingsdagenTekst(data) + ") tellen hier niet mee; die staan per dag onderaan de pagina." : "");
   Object.keys(data.lijnen).sort().forEach(function (lijn) {
     const info = data.lijnen[lijn];
     const kaart = el("article", { cls: "box lijnkaart", attrs: { id: "lijn-" + lijn } });
@@ -721,7 +731,7 @@ function renderDagen(data, heeftMetingen) {
   kop.appendChild(el("th", { text: "Geen meting", attrs: { scope: "col" } }));
   const body = el("tbody");
   dagen.forEach(function (d) {
-    const tr = el("tr", null, [el("td", { text: datumTekst(d.datum) }), el("td", { text: d.lijn })]);
+    const tr = el("tr", null, [el("td", { text: datumTekst(d.datum) + (stakingsdag(data, d.datum) ? " (staking)" : "") }), el("td", { text: d.lijn })]);
     KLASSEN.forEach(function (k) { tr.appendChild(el("td", { text: getal(d[k.sleutel]) })); });
     tr.appendChild(el("td", { text: getal(d["geen meting"]) }));
     body.appendChild(tr);
@@ -1005,6 +1015,11 @@ function renderProvincie(data) {
   const vandaagIso = (data.bijgewerkt || "").slice(0, 10);
   const isVandaag = vandaag.datum === vandaagIso;
 
+  if (isVandaag && stakingsdag(data, vandaag.datum)) {
+    box.appendChild(el("p", { cls: "box warn", text: "Vandaag is er een " + stakingsdag(data, vandaag.datum) +
+      ". Veel bussen rijden niet. De cijfers hieronder laten zien hoeveel ritten uitvielen en of dat op tijd in de reisinformatie stond." }));
+  }
+
   // Uitval vandaag: drie getallen en één zin; de rest achter een klik
   if (isVandaag) {
     const t = vandaag.totaal || {};
@@ -1042,7 +1057,7 @@ function renderProvincie(data) {
     const blok = el("details", null, [el("summary", { text: "Eerdere dagen (" + eerder.length + ")" })]);
     eerder.forEach(function (d) {
       const t = d.totaal || {};
-      const kop = hoofdletter(dagTekst(d.datum)) + ": " + aantal(t.uitval) + " van " + aantal(t.ritten) + " ritten uitgevallen, " +
+      const kop = hoofdletter(dagTekst(d.datum)) + (stakingsdag(data, d.datum) ? " (staking)" : "") + ": " + aantal(t.uitval) + " van " + aantal(t.ritten) + " ritten uitgevallen, " +
         aantal(t.te_laat) + " te laat gemeld";
       const berichten = d.berichten || [];
       blok.appendChild(el("details", { cls: "dag-details" }, [
