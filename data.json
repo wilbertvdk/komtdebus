@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-19T06:50:13+01:00",
+  "bijgewerkt": "2026-11-19T07:05:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-19"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2226,
-      "gemeten": 2226,
+      "gepland": 2227,
+      "gemeten": 2227,
       "aantal": {
-        "gereden": 2130,
+        "gereden": 2131,
         "ingekort": 39,
         "uitval, op tijd": 32,
         "uitval, te laat": 8,
@@ -165,9 +165,9 @@
         "ritten": 40,
         "ritten_vooraf": 32,
         "ritten_ingekort": 39,
-        "haltes": 1885,
-        "haltes_op_tijd": 1814,
-        "haltes_dicht": 1043,
+        "haltes": 1886,
+        "haltes_op_tijd": 1815,
+        "haltes_dicht": 1044,
         "haltes_zonder": 852,
         "haltes_op_tijd_zonder": 781,
         "mediaan_min_na_vertrek": -34.5,
@@ -816,7 +816,7 @@
     {
       "datum": "2026-11-19",
       "lijn": "376",
-      "gereden": 2,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -826,9 +826,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-19T06:49:24+01:00",
-    "gelukt": 13168,
-    "verwacht": 13165,
+    "tot": "2026-11-19T07:03:24+01:00",
+    "gelukt": 13175,
+    "verwacht": 13172,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1119,18 +1119,26 @@
     "dagen": [
       {
         "datum": "2026-11-19",
-        "lijnen_gemeten": 34,
+        "lijnen_gemeten": 49,
         "totaal": {
-          "ritten": 72,
-          "uitval": 0,
-          "te_laat": 0
+          "ritten": 116,
+          "uitval": 1,
+          "te_laat": 1
         },
         "lijnen": [
+          {
+            "lijn": "6",
+            "naam": "Terwijde – Utrecht CS – Overvecht",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 1,
+            "te_laat": 1
+          },
           {
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
