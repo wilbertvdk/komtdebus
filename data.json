@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-19T12:35:13+01:00",
+  "bijgewerkt": "2026-11-19T12:50:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-19"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2157,
-      "gemeten": 2157,
+      "gepland": 2159,
+      "gemeten": 2159,
       "aantal": {
-        "gereden": 2041,
+        "gereden": 2043,
         "ingekort": 52,
         "uitval, op tijd": 29,
         "uitval, te laat": 11,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2279,
-      "gemeten": 2279,
+      "gepland": 2281,
+      "gemeten": 2281,
       "aantal": {
-        "gereden": 2183,
+        "gereden": 2185,
         "ingekort": 39,
         "uitval, op tijd": 32,
         "uitval, te laat": 8,
@@ -165,9 +165,9 @@
         "ritten": 40,
         "ritten_vooraf": 32,
         "ritten_ingekort": 39,
-        "haltes": 1911,
-        "haltes_op_tijd": 1840,
-        "haltes_dicht": 1069,
+        "haltes": 1912,
+        "haltes_op_tijd": 1841,
+        "haltes_dicht": 1070,
         "haltes_zonder": 852,
         "haltes_op_tijd_zonder": 781,
         "mediaan_min_na_vertrek": -34.5,
@@ -826,7 +826,7 @@
     {
       "datum": "2026-11-19",
       "lijn": "302",
-      "gereden": 49,
+      "gereden": 51,
       "ingekort": 2,
       "uitval, op tijd": 2,
       "uitval, te laat": 0,
@@ -846,7 +846,7 @@
     {
       "datum": "2026-11-19",
       "lijn": "376",
-      "gereden": 55,
+      "gereden": 57,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -856,9 +856,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-19T12:33:24+01:00",
-    "gelukt": 13340,
-    "verwacht": 13337,
+    "tot": "2026-11-19T12:49:24+01:00",
+    "gelukt": 13348,
+    "verwacht": 13345,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -944,6 +944,58 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-19T13:00+01:00",
+        "eind": "2026-11-24T23:59+01:00",
+        "tekst": "op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
+        "lijnen": [],
+        "haltes": [],
+        "haltes_aantal": 690,
+        "plaatsen": [
+          "Utrecht",
+          "De Bilt",
+          "Zeist",
+          "Bilthoven",
+          "Driebergen",
+          "Huis ter Heide",
+          "Maartensdijk",
+          "Austerlitz",
+          "Soesterberg",
+          "Odijk",
+          "Amersfoort",
+          "De Meern",
+          "Nieuwegein",
+          "Houten",
+          "Vleuten",
+          "Haarzuilens",
+          "IJsselstein",
+          "Vianen",
+          "Hoef en Haag",
+          "Lexmond",
+          "Zijderveld",
+          "Ameide",
+          "Meerkerk",
+          "Hoogblokland",
+          "Schoonrewoerd",
+          "Leerdam",
+          "Groenekan",
+          "Westbroek",
+          "Hollandsche Rading",
+          "Kockengen",
+          "Maarssen",
+          "Maarssenbroek",
+          "Oud-Maarsseveen",
+          "Breukelen",
+          "Loosdrecht",
+          "Breukeleveen",
+          "Tienhoven",
+          "Bosch en Duin",
+          "Den Dolder",
+          "Soest",
+          "Lage Vuursche",
+          "Nieuw-Loosdrecht"
+        ]
+      },
       {
         "begin": "2026-11-20T13:00+01:00",
         "eind": "2026-11-20T14:15+01:00",
@@ -1151,24 +1203,24 @@
         "datum": "2026-11-19",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 2525,
-          "uitval": 25,
-          "te_laat": 9
+          "ritten": 2623,
+          "uitval": 28,
+          "te_laat": 12
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 24,
-            "uitval": 1,
-            "te_laat": 1
+            "ritten": 25,
+            "uitval": 2,
+            "te_laat": 2
           },
           {
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1176,7 +1228,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 46,
+            "ritten": 48,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1192,7 +1244,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 47,
+            "ritten": 49,
             "uitval": 3,
             "te_laat": 2
           },
@@ -1200,7 +1252,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 24,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1208,7 +1260,7 @@
             "lijn": "8",
             "naam": "Amersfoort CS – Schuilenburg",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 26,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1216,15 +1268,31 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 42,
+            "ritten": 44,
             "uitval": 1,
             "te_laat": 0
+          },
+          {
+            "lijn": "10",
+            "naam": "Lunetten – Leidsche Rijn",
+            "gevolgd": false,
+            "ritten": 24,
+            "uitval": 1,
+            "te_laat": 1
           },
           {
             "lijn": "13",
             "naam": "Utrecht CS – Lage Weide – Maarssen",
             "gevolgd": false,
-            "ritten": 34,
+            "ritten": 36,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
+            "lijn": "17",
+            "naam": "Amersfoort CS – Leusden",
+            "gevolgd": false,
+            "ritten": 56,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1232,7 +1300,7 @@
             "lijn": "30",
             "naam": "Overvecht – Science Park",
             "gevolgd": false,
-            "ritten": 40,
+            "ritten": 42,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1248,7 +1316,7 @@
             "lijn": "66",
             "naam": "Nieuwegein Het Klooster – Utrecht CS",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1256,7 +1324,7 @@
             "lijn": "71",
             "naam": "Soest Zuid – Soestdijk Noord",
             "gevolgd": false,
-            "ritten": 22,
+            "ritten": 23,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1264,7 +1332,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 44,
+            "ritten": 46,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1272,7 +1340,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 29,
+            "ritten": 30,
             "uitval": 3,
             "te_laat": 1
           },
@@ -1291,7 +1359,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 53,
+            "ritten": 55,
             "uitval": 2,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1313,7 +1381,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 55,
+            "ritten": 57,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1321,7 +1389,58 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
+            "lijnen": [],
+            "haltes": [],
+            "haltes_aantal": 690,
+            "plaatsen": [
+              "Utrecht",
+              "De Bilt",
+              "Zeist",
+              "Bilthoven",
+              "Driebergen",
+              "Huis ter Heide",
+              "Maartensdijk",
+              "Austerlitz",
+              "Soesterberg",
+              "Odijk",
+              "Amersfoort",
+              "De Meern",
+              "Nieuwegein",
+              "Houten",
+              "Vleuten",
+              "Haarzuilens",
+              "IJsselstein",
+              "Vianen",
+              "Hoef en Haag",
+              "Lexmond",
+              "Zijderveld",
+              "Ameide",
+              "Meerkerk",
+              "Hoogblokland",
+              "Schoonrewoerd",
+              "Leerdam",
+              "Groenekan",
+              "Westbroek",
+              "Hollandsche Rading",
+              "Kockengen",
+              "Maarssen",
+              "Maarssenbroek",
+              "Oud-Maarsseveen",
+              "Breukelen",
+              "Loosdrecht",
+              "Breukeleveen",
+              "Tienhoven",
+              "Bosch en Duin",
+              "Den Dolder",
+              "Soest",
+              "Lage Vuursche",
+              "Nieuw-Loosdrecht"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-18",
