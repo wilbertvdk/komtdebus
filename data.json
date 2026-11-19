@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-19T07:20:12+01:00",
+  "bijgewerkt": "2026-11-19T07:35:12+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-19"
   },
   "lijnen": {
     "272": {
-      "gepland": 221,
-      "gemeten": 221,
+      "gepland": 222,
+      "gemeten": 222,
       "aantal": {
-        "gereden": 217,
+        "gereden": 218,
         "ingekort": 3,
         "uitval, op tijd": 1,
         "uitval, te laat": 0,
@@ -40,7 +40,7 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-18"
+        "tot": "2026-11-19"
       },
       "dicht": [
         {
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2228,
-      "gemeten": 2228,
+      "gepland": 2230,
+      "gemeten": 2230,
       "aantal": {
-        "gereden": 2132,
+        "gereden": 2134,
         "ingekort": 39,
         "uitval, op tijd": 32,
         "uitval, te laat": 8,
@@ -155,7 +155,7 @@
       },
       "percentage": {
         "gereden": 95.7,
-        "ingekort": 1.8,
+        "ingekort": 1.7,
         "uitval, op tijd": 1.4,
         "uitval, te laat": 0.4,
         "niet gemeld": 0.8
@@ -815,6 +815,16 @@
     },
     {
       "datum": "2026-11-19",
+      "lijn": "272",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-19",
       "lijn": "302",
       "gereden": 1,
       "ingekort": 0,
@@ -826,7 +836,7 @@
     {
       "datum": "2026-11-19",
       "lijn": "376",
-      "gereden": 4,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -836,9 +846,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-19T07:19:24+01:00",
-    "gelukt": 13183,
-    "verwacht": 13180,
+    "tot": "2026-11-19T07:33:24+01:00",
+    "gelukt": 13190,
+    "verwacht": 13187,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1129,20 +1139,39 @@
     "dagen": [
       {
         "datum": "2026-11-19",
-        "lijnen_gemeten": 66,
+        "lijnen_gemeten": 78,
         "totaal": {
-          "ritten": 182,
-          "uitval": 1,
-          "te_laat": 1
+          "ritten": 255,
+          "uitval": 3,
+          "te_laat": 3
         },
         "lijnen": [
           {
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
+            "ritten": 6,
+            "uitval": 2,
+            "te_laat": 2
+          },
+          {
+            "lijn": "8",
+            "naam": "Amersfoort CS – Schuilenburg",
+            "gevolgd": false,
             "ritten": 5,
             "uitval": 1,
             "te_laat": 1
+          },
+          {
+            "lijn": "272",
+            "naam": "Baarn – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
           },
           {
             "lijn": "302",
@@ -1159,7 +1188,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
