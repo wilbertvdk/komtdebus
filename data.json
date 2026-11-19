@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-19T04:50:13+01:00",
+  "bijgewerkt": "2026-11-19T05:05:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-18"
@@ -816,9 +816,9 @@
   ],
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-19T04:49:24+01:00",
-    "gelukt": 13108,
-    "verwacht": 13105,
+    "tot": "2026-11-19T05:03:24+01:00",
+    "gelukt": 13115,
+    "verwacht": 13112,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1029,20 +1029,6 @@
           "Utrecht, Kreekraklaan"
         ],
         "haltes_aantal": 4,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-15T11:30+01:00",
-        "eind": "2026-11-18T19:59+01:00",
-        "tekst": "Lijn 3: halte vervalt van 18 november 20:00 t/m 19 november 05:00. Download de U-OV-app voor meer actuele reisinfo.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Draaiweg",
-          "Utrecht, Willem Dreeslaan"
-        ],
-        "haltes_aantal": 2,
         "plaatsen": [
           "Utrecht"
         ]
