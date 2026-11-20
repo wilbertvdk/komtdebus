@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-20T06:20:12+01:00",
+  "bijgewerkt": "2026-11-20T06:35:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-20"
@@ -870,9 +870,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-20T06:20:01+01:00",
-    "gelukt": 13872,
-    "verwacht": 13870,
+    "tot": "2026-11-20T06:34:01+01:00",
+    "gelukt": 13879,
+    "verwacht": 13877,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -955,7 +955,7 @@
         },
         {
           "eerst_gezien": "2026-11-19T15:03+01:00",
-          "laatst_gezien": "2026-11-20T06:18+01:00",
+          "laatst_gezien": "2026-11-20T06:33+01:00",
           "kop": "U-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN\n",
           "geldig_van": "2026-11-19T14:00+01:00",
@@ -1408,13 +1408,21 @@
     "dagen": [
       {
         "datum": "2026-11-20",
-        "lijnen_gemeten": 14,
+        "lijnen_gemeten": 21,
         "totaal": {
-          "ritten": 21,
-          "uitval": 0,
-          "te_laat": 0
+          "ritten": 41,
+          "uitval": 1,
+          "te_laat": 1
         },
         "lijnen": [
+          {
+            "lijn": "6",
+            "naam": "Terwijde – Utrecht CS – Overvecht",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 1
+          },
           {
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
