@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-20T07:20:12+01:00",
+  "bijgewerkt": "2026-11-20T07:35:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-20"
   },
   "lijnen": {
     "272": {
-      "gepland": 238,
-      "gemeten": 238,
+      "gepland": 239,
+      "gemeten": 239,
       "aantal": {
-        "gereden": 234,
+        "gereden": 235,
         "ingekort": 3,
         "uitval, op tijd": 1,
         "uitval, te laat": 0,
@@ -40,7 +40,7 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-19"
+        "tot": "2026-11-20"
       },
       "dicht": [
         {
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2364,
-      "gemeten": 2364,
+      "gepland": 2366,
+      "gemeten": 2366,
       "aantal": {
-        "gereden": 2263,
+        "gereden": 2265,
         "ingekort": 41,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -855,6 +855,16 @@
     },
     {
       "datum": "2026-11-20",
+      "lijn": "272",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-20",
       "lijn": "302",
       "gereden": 1,
       "ingekort": 0,
@@ -866,7 +876,7 @@
     {
       "datum": "2026-11-20",
       "lijn": "376",
-      "gereden": 4,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -880,9 +890,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-20T07:20:01+01:00",
-    "gelukt": 13902,
-    "verwacht": 13900,
+    "tot": "2026-11-20T07:34:01+01:00",
+    "gelukt": 13909,
+    "verwacht": 13907,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -965,7 +975,7 @@
         },
         {
           "eerst_gezien": "2026-11-19T15:03+01:00",
-          "laatst_gezien": "2026-11-20T07:19+01:00",
+          "laatst_gezien": "2026-11-20T07:34+01:00",
           "kop": "U-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN\n",
           "geldig_van": "2026-11-19T14:00+01:00",
@@ -1418,28 +1428,47 @@
     "dagen": [
       {
         "datum": "2026-11-20",
-        "lijnen_gemeten": 66,
+        "lijnen_gemeten": 78,
         "totaal": {
-          "ritten": 182,
-          "uitval": 4,
-          "te_laat": 2
+          "ritten": 255,
+          "uitval": 6,
+          "te_laat": 3
         },
         "lijnen": [
           {
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 6,
             "uitval": 2,
+            "te_laat": 1
+          },
+          {
+            "lijn": "55",
+            "naam": "Utrecht – Maartensdijk",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 1,
             "te_laat": 1
           },
           {
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 1,
             "te_laat": 0
+          },
+          {
+            "lijn": "272",
+            "naam": "Baarn – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
           },
           {
             "lijn": "302",
@@ -1456,15 +1485,15 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 11,
-            "uitval": 1,
+            "ritten": 14,
+            "uitval": 2,
             "te_laat": 1
           },
           {
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
