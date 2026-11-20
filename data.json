@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-20T05:35:33+01:00",
+  "bijgewerkt": "2026-11-20T05:50:12+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-19"
@@ -860,9 +860,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-20T05:34:01+01:00",
-    "gelukt": 13849,
-    "verwacht": 13847,
+    "tot": "2026-11-20T05:50:01+01:00",
+    "gelukt": 13857,
+    "verwacht": 13855,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -945,7 +945,7 @@
         },
         {
           "eerst_gezien": "2026-11-19T15:03+01:00",
-          "laatst_gezien": "2026-11-20T05:33+01:00",
+          "laatst_gezien": "2026-11-20T05:48+01:00",
           "kop": "U-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN\n",
           "geldig_van": "2026-11-19T14:00+01:00",
@@ -1396,6 +1396,17 @@
       }
     ],
     "dagen": [
+      {
+        "datum": "2026-11-20",
+        "lijnen_gemeten": 2,
+        "totaal": {
+          "ritten": 2,
+          "uitval": 0,
+          "te_laat": 0
+        },
+        "lijnen": [],
+        "berichten": []
+      },
       {
         "datum": "2026-11-19",
         "lijnen_gemeten": 103,
