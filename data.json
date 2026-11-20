@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-20T14:50:13+01:00",
+  "bijgewerkt": "2026-11-20T15:06:00+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-20"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2323,
-      "gemeten": 2323,
+      "gepland": 2325,
+      "gemeten": 2325,
       "aantal": {
-        "gereden": 2201,
+        "gereden": 2203,
         "ingekort": 55,
         "uitval, op tijd": 31,
         "uitval, te laat": 12,
@@ -66,7 +66,7 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 94.7,
+        "gereden": 94.8,
         "ingekort": 2.4,
         "uitval, op tijd": 1.3,
         "uitval, te laat": 0.5,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2433,
-      "gemeten": 2433,
+      "gepland": 2435,
+      "gemeten": 2435,
       "aantal": {
-        "gereden": 2332,
+        "gereden": 2334,
         "ingekort": 41,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -154,7 +154,7 @@
         "geen meting": 0
       },
       "percentage": {
-        "gereden": 95.8,
+        "gereden": 95.9,
         "ingekort": 1.7,
         "uitval, op tijd": 1.4,
         "uitval, te laat": 0.4,
@@ -165,9 +165,9 @@
         "ritten": 43,
         "ritten_vooraf": 34,
         "ritten_ingekort": 41,
-        "haltes": 2068,
-        "haltes_op_tijd": 1995,
-        "haltes_dicht": 1147,
+        "haltes": 2069,
+        "haltes_op_tijd": 1996,
+        "haltes_dicht": 1148,
         "haltes_zonder": 931,
         "haltes_op_tijd_zonder": 858,
         "mediaan_min_na_vertrek": -27,
@@ -866,7 +866,7 @@
     {
       "datum": "2026-11-20",
       "lijn": "302",
-      "gereden": 69,
+      "gereden": 71,
       "ingekort": 2,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -886,7 +886,7 @@
     {
       "datum": "2026-11-20",
       "lijn": "376",
-      "gereden": 73,
+      "gereden": 75,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -900,9 +900,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-20T14:50:05+01:00",
-    "gelukt": 14126,
-    "verwacht": 14125,
+    "tot": "2026-11-20T15:04:04+01:00",
+    "gelukt": 14133,
+    "verwacht": 14132,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -993,7 +993,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-20T14:49+01:00",
+          "laatst_gezien": "2026-11-20T15:04+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1004,6 +1004,32 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-20T15:15+01:00",
+        "eind": "2026-11-21T15:59+01:00",
+        "tekst": "Lijn 9: halte vervalt op 21 november van 16:00 tot 22:30. Plan je reis op u-ov.nl.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Diakonessenhuis-Zuid"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-20T15:15+01:00",
+        "eind": "2026-11-21T15:59+01:00",
+        "tekst": "Halte vervalt op 21 november van 16:00 tot 22:30. Plan je reis op u-ov.nl.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Herculesplein/Stadion"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-19T18:53+01:00",
         "eind": "2026-11-24T05:00+01:00",
@@ -1352,8 +1378,8 @@
         "datum": "2026-11-20",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 3412,
-          "uitval": 56,
+          "ritten": 3513,
+          "uitval": 57,
           "te_laat": 18
         },
         "lijnen": [
@@ -1361,7 +1387,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 33,
+            "ritten": 34,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1369,7 +1395,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 33,
             "uitval": 3,
             "te_laat": 1
           },
@@ -1377,15 +1403,23 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 65,
+            "ritten": 66,
             "uitval": 3,
             "te_laat": 2
+          },
+          {
+            "lijn": "7",
+            "naam": "Zuilen – Utrecht CS – Westraven",
+            "gevolgd": false,
+            "ritten": 67,
+            "uitval": 1,
+            "te_laat": 0
           },
           {
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 63,
+            "ritten": 65,
             "uitval": 7,
             "te_laat": 1
           },
@@ -1393,7 +1427,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 60,
+            "ritten": 62,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1409,7 +1443,7 @@
             "lijn": "11",
             "naam": "Vleuten – Overvecht",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 31,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1425,7 +1459,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 72,
+            "ritten": 74,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1441,7 +1475,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 81,
+            "ritten": 83,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1449,7 +1483,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 65,
+            "ritten": 69,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1457,7 +1491,7 @@
             "lijn": "31",
             "naam": "IJsselstein – Science Park",
             "gevolgd": false,
-            "ritten": 44,
+            "ritten": 46,
             "uitval": 3,
             "te_laat": 2
           },
@@ -1473,7 +1507,7 @@
             "lijn": "47",
             "naam": "Utrecht – Houten",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 39,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1481,7 +1515,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 33,
             "uitval": 5,
             "te_laat": 2
           },
@@ -1489,7 +1523,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 63,
+            "ritten": 65,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1497,7 +1531,7 @@
             "lijn": "82",
             "naam": "Amersfoort – Doorn",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 20,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1505,7 +1539,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 39,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1513,7 +1547,7 @@
             "lijn": "106",
             "naam": "IJsselstein – Gouda",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 18,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1529,7 +1563,7 @@
             "lijn": "203",
             "naam": "Amersfoort Schothorst – Utrecht Science Park",
             "gevolgd": false,
-            "ritten": 35,
+            "ritten": 36,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1556,7 +1590,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 71,
+            "ritten": 73,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1578,7 +1612,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 53,
+            "ritten": 54,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1586,7 +1620,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 75,
+            "ritten": 77,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1594,7 +1628,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 82,
+            "ritten": 84,
             "uitval": 3,
             "te_laat": 1
           },
@@ -1602,7 +1636,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 73,
+            "ritten": 75,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1611,6 +1645,39 @@
           }
         ],
         "berichten": [
+          {
+            "tekst": "Lijn 9: halte vervalt op 21 november van 16:00 tot 22:30. Tijdelijke halte: op de Gansstraat (bij Oosterspoorbaan).",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Ina Boudier-Bakkerlaan"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 9: halte vervalt op 21 november van 16:00 tot 22:30. Plan je reis op u-ov.nl.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Diakonessenhuis-Zuid"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Halte vervalt op 21 november van 16:00 tot 22:30. Plan je reis op u-ov.nl.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Herculesplein/Stadion"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
           {
             "tekst": "Transdev: op 23 en 24 november wordt er gestaakt in het streekvervoer. Download de Transdev-app voor meer actuele reisinfo.",
             "lijnen": [],
