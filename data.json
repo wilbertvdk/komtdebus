@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-20T07:05:13+01:00",
+  "bijgewerkt": "2026-11-20T07:20:12+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-20"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2252,
-      "gemeten": 2252,
+      "gepland": 2253,
+      "gemeten": 2253,
       "aantal": {
-        "gereden": 2132,
+        "gereden": 2133,
         "ingekort": 53,
         "uitval, op tijd": 31,
         "uitval, te laat": 12,
@@ -89,7 +89,7 @@
       },
       "meetperiode": {
         "van": "2026-11-01",
-        "tot": "2026-11-19"
+        "tot": "2026-11-20"
       },
       "dicht": []
     },
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2363,
-      "gemeten": 2363,
+      "gepland": 2364,
+      "gemeten": 2364,
       "aantal": {
-        "gereden": 2262,
+        "gereden": 2263,
         "ingekort": 41,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -855,8 +855,18 @@
     },
     {
       "datum": "2026-11-20",
+      "lijn": "302",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-20",
       "lijn": "376",
-      "gereden": 3,
+      "gereden": 4,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -870,9 +880,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-20T07:04:01+01:00",
-    "gelukt": 13894,
-    "verwacht": 13892,
+    "tot": "2026-11-20T07:20:01+01:00",
+    "gelukt": 13902,
+    "verwacht": 13900,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -955,7 +965,7 @@
         },
         {
           "eerst_gezien": "2026-11-19T15:03+01:00",
-          "laatst_gezien": "2026-11-20T07:03+01:00",
+          "laatst_gezien": "2026-11-20T07:19+01:00",
           "kop": "U-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: 23 EN 24 NOVEMBER: STAKING VAKBONDEN STREEKVERVOER – DE HELE DAG MINDER BUSSEN EN REGIONALE TREINEN\n",
           "geldig_van": "2026-11-19T14:00+01:00",
@@ -1408,10 +1418,10 @@
     "dagen": [
       {
         "datum": "2026-11-20",
-        "lijnen_gemeten": 49,
+        "lijnen_gemeten": 66,
         "totaal": {
-          "ritten": 116,
-          "uitval": 3,
+          "ritten": 182,
+          "uitval": 4,
           "te_laat": 2
         },
         "lijnen": [
@@ -1419,15 +1429,34 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 3,
+            "ritten": 5,
             "uitval": 2,
             "te_laat": 1
+          },
+          {
+            "lijn": "102",
+            "naam": "Utrecht – Woerden",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "302",
+            "naam": "Amersfoort – Vianen",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
           },
           {
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1435,7 +1464,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
