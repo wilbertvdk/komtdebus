@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-21T13:50:13+01:00",
+  "bijgewerkt": "2026-11-21T14:05:33+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2532,
-      "gemeten": 2532,
+      "gepland": 2534,
+      "gemeten": 2534,
       "aantal": {
-        "gereden": 2430,
+        "gereden": 2432,
         "ingekort": 42,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -906,7 +906,7 @@
     {
       "datum": "2026-11-21",
       "lijn": "376",
-      "gereden": 36,
+      "gereden": 38,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T13:50:10+01:00",
-    "gelukt": 14815,
-    "verwacht": 14815,
+    "tot": "2026-11-21T14:04:10+01:00",
+    "gelukt": 14822,
+    "verwacht": 14822,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T13:49+01:00",
+          "laatst_gezien": "2026-11-21T14:04+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1024,17 +1024,6 @@
   ],
   "provincie": {
     "berichten_nu": [
-      {
-        "begin": "2026-11-21T12:15+01:00",
-        "eind": "2026-11-21T17:00+01:00",
-        "tekst": "Bushalte tijdelijk vervallen. Plan uw reis via de reisplanner!",
-        "lijnen": [],
-        "haltes": [],
-        "haltes_aantal": 7,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
       {
         "begin": "2026-11-21T11:40+01:00",
         "eind": "2026-11-25T05:00+01:00",
@@ -1534,7 +1523,7 @@
         "datum": "2026-11-21",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 1564,
+          "ritten": 1644,
           "uitval": 20,
           "te_laat": 5
         },
@@ -1543,7 +1532,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 22,
+            "ritten": 23,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1551,7 +1540,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1559,7 +1548,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 43,
+            "ritten": 45,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1575,7 +1564,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 40,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1583,7 +1572,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1591,7 +1580,7 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 26,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1607,7 +1596,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 21,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1615,7 +1604,7 @@
             "lijn": "58",
             "naam": "Hilversum – Zeist via Maartensdijk",
             "gevolgd": false,
-            "ritten": 13,
+            "ritten": 14,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1623,7 +1612,7 @@
             "lijn": "80",
             "naam": "Amersfoort – Veenendaal-De Klomp",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 26,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1631,7 +1620,7 @@
             "lijn": "111",
             "naam": "Vleuten – Breukelen",
             "gevolgd": false,
-            "ritten": 16,
+            "ritten": 18,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1639,7 +1628,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 26,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1658,7 +1647,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 34,
+            "ritten": 36,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1666,7 +1655,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 36,
+            "ritten": 38,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1677,14 +1666,14 @@
             "lijn": "395",
             "naam": "Rotterdam – Utrecht CS",
             "gevolgd": false,
-            "ritten": 16,
+            "ritten": 17,
             "uitval": 1,
             "te_laat": 1
           }
         ],
         "berichten": [
           {
-            "tekst": "Van 7 december 05:00 t/m 12 december 18:00 vervalt de halte Montfoort Wollegras richting Benschop.",
+            "tekst": "Van 7 december 05:00 t/m 18 december 18:00 vervalt de halte Montfoort Wollegras richting Benschop.",
             "lijnen": [],
             "haltes": [],
             "haltes_aantal": 0,
