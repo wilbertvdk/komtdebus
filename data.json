@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-21T09:20:13+01:00",
+  "bijgewerkt": "2026-11-21T09:35:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T09:20:05+01:00",
-    "gelukt": 14681,
-    "verwacht": 14680,
+    "tot": "2026-11-21T09:34:05+01:00",
+    "gelukt": 14688,
+    "verwacht": 14687,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T09:19+01:00",
+          "laatst_gezien": "2026-11-21T09:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1521,9 +1521,9 @@
     "dagen": [
       {
         "datum": "2026-11-21",
-        "lijnen_gemeten": 54,
+        "lijnen_gemeten": 56,
         "totaal": {
-          "ritten": 311,
+          "ritten": 364,
           "uitval": 2,
           "te_laat": 0
         },
@@ -1532,7 +1532,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 7,
+            "ritten": 8,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1551,7 +1551,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 8,
+            "ritten": 10,
             "uitval": 1,
             "te_laat": 0
           },
