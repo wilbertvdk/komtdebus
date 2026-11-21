@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-21T12:05:14+01:00",
+  "bijgewerkt": "2026-11-21T12:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2410,
-      "gemeten": 2410,
+      "gepland": 2411,
+      "gemeten": 2411,
       "aantal": {
-        "gereden": 2282,
+        "gereden": 2283,
         "ingekort": 57,
         "uitval, op tijd": 33,
         "uitval, te laat": 14,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2519,
-      "gemeten": 2519,
+      "gepland": 2521,
+      "gemeten": 2521,
       "aantal": {
-        "gereden": 2417,
+        "gereden": 2419,
         "ingekort": 42,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -896,7 +896,7 @@
     {
       "datum": "2026-11-21",
       "lijn": "302",
-      "gereden": 9,
+      "gereden": 10,
       "ingekort": 0,
       "uitval, op tijd": 1,
       "uitval, te laat": 0,
@@ -906,7 +906,7 @@
     {
       "datum": "2026-11-21",
       "lijn": "376",
-      "gereden": 23,
+      "gereden": 25,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T12:04:05+01:00",
-    "gelukt": 14763,
-    "verwacht": 14762,
+    "tot": "2026-11-21T12:20:05+01:00",
+    "gelukt": 14771,
+    "verwacht": 14770,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T12:04+01:00",
+          "laatst_gezien": "2026-11-21T12:19+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1024,6 +1024,17 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-21T12:15+01:00",
+        "eind": "2026-11-21T17:00+01:00",
+        "tekst": "Bushalte tijdelijk vervallen. Plan uw reis via de reisplanner!",
+        "lijnen": [],
+        "haltes": [],
+        "haltes_aantal": 7,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-21T11:40+01:00",
         "eind": "2026-11-25T05:00+01:00",
@@ -1523,16 +1534,24 @@
         "datum": "2026-11-21",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 1041,
-          "uitval": 14,
+          "ritten": 1114,
+          "uitval": 15,
           "te_laat": 4
         },
         "lijnen": [
           {
+            "lijn": "3",
+            "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
+            "gevolgd": false,
+            "ritten": 15,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 15,
+            "ritten": 17,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1540,7 +1559,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 26,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1548,7 +1567,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 15,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1556,7 +1575,7 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1572,7 +1591,7 @@
             "lijn": "58",
             "naam": "Hilversum – Zeist via Maartensdijk",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1604,7 +1623,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 10,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1615,7 +1634,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 20,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1623,7 +1642,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 23,
+            "ritten": 25,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1634,12 +1653,21 @@
             "lijn": "395",
             "naam": "Rotterdam – Utrecht CS",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 13,
             "uitval": 1,
             "te_laat": 1
           }
         ],
         "berichten": [
+          {
+            "tekst": "Bushalte tijdelijk vervallen. Plan uw reis via de reisplanner!",
+            "lijnen": [],
+            "haltes": [],
+            "haltes_aantal": 7,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
           {
             "tekst": "Halte vervalt op 24 november en 25 november tot 05:00",
             "lijnen": [],
