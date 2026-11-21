@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-21T08:20:13+01:00",
+  "bijgewerkt": "2026-11-21T08:35:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T08:20:06+01:00",
-    "gelukt": 14651,
-    "verwacht": 14650,
+    "tot": "2026-11-21T08:34:05+01:00",
+    "gelukt": 14658,
+    "verwacht": 14657,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T08:19+01:00",
+          "laatst_gezien": "2026-11-21T08:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1024,6 +1024,22 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-21T09:00+01:00",
+        "eind": "2026-11-24T04:59+01:00",
+        "tekst": "Halte vervalt van 24 t/m 29 november.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Otto Hahnweg",
+          "Utrecht, Savannahweg",
+          "Utrecht, Niels Bohrweg",
+          "Utrecht, Ambachtsweg"
+        ],
+        "haltes_aantal": 4,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-20T21:00+01:00",
         "eind": "2026-11-23T23:59+01:00",
@@ -1505,10 +1521,10 @@
     "dagen": [
       {
         "datum": "2026-11-21",
-        "lijnen_gemeten": 41,
+        "lijnen_gemeten": 42,
         "totaal": {
-          "ritten": 119,
-          "uitval": 1,
+          "ritten": 151,
+          "uitval": 2,
           "te_laat": 0
         },
         "lijnen": [
@@ -1516,7 +1532,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1532,6 +1548,14 @@
             "afgebroken": 0
           },
           {
+            "lijn": "307",
+            "naam": "Utrecht – Gouda",
+            "gevolgd": false,
+            "ritten": 6,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
@@ -1543,7 +1567,22 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Halte vervalt van 24 t/m 29 november.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Otto Hahnweg",
+              "Utrecht, Savannahweg",
+              "Utrecht, Niels Bohrweg",
+              "Utrecht, Ambachtsweg"
+            ],
+            "haltes_aantal": 4,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-20",
