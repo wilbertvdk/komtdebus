@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-21T14:20:13+01:00",
+  "bijgewerkt": "2026-11-21T14:35:33+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2536,
-      "gemeten": 2536,
+      "gepland": 2538,
+      "gemeten": 2538,
       "aantal": {
-        "gereden": 2434,
+        "gereden": 2436,
         "ingekort": 42,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -906,7 +906,7 @@
     {
       "datum": "2026-11-21",
       "lijn": "376",
-      "gereden": 40,
+      "gereden": 42,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T14:20:10+01:00",
-    "gelukt": 14830,
-    "verwacht": 14830,
+    "tot": "2026-11-21T14:34:10+01:00",
+    "gelukt": 14837,
+    "verwacht": 14837,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T14:19+01:00",
+          "laatst_gezien": "2026-11-21T14:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1024,6 +1024,22 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-24T20:00+01:00",
+        "eind": "2026-11-27T05:00+01:00",
+        "tekst": "Lijn 1: halte vervalt t/m 27 november 05:00",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Socrateslaan",
+          "Utrecht, Balijelaan",
+          "Utrecht, Waalstraat",
+          "Utrecht, Maasplein"
+        ],
+        "haltes_aantal": 4,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-24T20:00+01:00",
         "eind": "2026-11-27T05:00+01:00",
@@ -1488,23 +1504,6 @@
         "plaatsen": []
       },
       {
-        "begin": "2026-11-18T11:30+01:00",
-        "eind": "2026-11-21T14:30+01:00",
-        "tekst": "Op 21 november van 11:30 t/m 14:30 vervallen de haltes De Bilt KNMI, De Bilt Looydijk, De Bilt dr. Letteplein.",
-        "lijnen": [
-          "58"
-        ],
-        "haltes": [
-          "De Bilt, KNMI",
-          "De Bilt, Looydijk",
-          "De Bilt, Doctor Letteplein"
-        ],
-        "haltes_aantal": 3,
-        "plaatsen": [
-          "De Bilt"
-        ]
-      },
-      {
         "begin": "2026-11-09T13:30+01:00",
         "eind": "2026-12-09T23:59+01:00",
         "tekst": "halte vervalt vanaf 13 december i.v.m. de nieuwe dienstregeling.",
@@ -1539,16 +1538,24 @@
         "datum": "2026-11-21",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 1718,
-          "uitval": 21,
-          "te_laat": 5
+          "ritten": 1795,
+          "uitval": 22,
+          "te_laat": 6
         },
         "lijnen": [
+          {
+            "lijn": "1",
+            "naam": "Soesterkwartier – Amersfoort CS",
+            "gevolgd": false,
+            "ritten": 26,
+            "uitval": 1,
+            "te_laat": 1
+          },
           {
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 26,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1556,7 +1563,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1564,7 +1571,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 47,
+            "ritten": 49,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1580,7 +1587,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 42,
+            "ritten": 44,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1588,7 +1595,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 24,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1596,7 +1603,7 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 27,
+            "ritten": 28,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1604,7 +1611,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1620,7 +1627,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 23,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1636,7 +1643,7 @@
             "lijn": "80",
             "naam": "Amersfoort – Veenendaal-De Klomp",
             "gevolgd": false,
-            "ritten": 26,
+            "ritten": 28,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1644,7 +1651,7 @@
             "lijn": "111",
             "naam": "Vleuten – Breukelen",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 20,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1652,7 +1659,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 26,
+            "ritten": 28,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1671,7 +1678,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 40,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1679,7 +1686,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 40,
+            "ritten": 42,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1690,12 +1697,26 @@
             "lijn": "395",
             "naam": "Rotterdam – Utrecht CS",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 1
           }
         ],
         "berichten": [
+          {
+            "tekst": "Lijn 1: halte vervalt t/m 27 november 05:00",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Socrateslaan",
+              "Utrecht, Balijelaan",
+              "Utrecht, Waalstraat",
+              "Utrecht, Maasplein"
+            ],
+            "haltes_aantal": 4,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
           {
             "tekst": "halte vervallen t/m 27 november 05:00",
             "lijnen": [],
