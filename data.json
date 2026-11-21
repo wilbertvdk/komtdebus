@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-21T03:05:43+01:00",
+  "bijgewerkt": "2026-11-21T03:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-20"
@@ -900,9 +900,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T03:04:04+01:00",
-    "gelukt": 14493,
-    "verwacht": 14492,
+    "tot": "2026-11-21T03:20:05+01:00",
+    "gelukt": 14501,
+    "verwacht": 14500,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -993,7 +993,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T03:04+01:00",
+          "laatst_gezien": "2026-11-21T03:19+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1485,9 +1485,9 @@
     "dagen": [
       {
         "datum": "2026-11-20",
-        "lijnen_gemeten": 104,
+        "lijnen_gemeten": 107,
         "totaal": {
-          "ritten": 7012,
+          "ritten": 7015,
           "uitval": 163,
           "te_laat": 72
         },
