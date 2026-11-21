@@ -1,8 +1,8 @@
 {
-  "bijgewerkt": "2026-11-21T07:05:13+01:00",
+  "bijgewerkt": "2026-11-21T07:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
-    "tot": "2026-11-20"
+    "tot": "2026-11-21"
   },
   "lijnen": {
     "272": {
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2400,
-      "gemeten": 2400,
+      "gepland": 2401,
+      "gemeten": 2401,
       "aantal": {
-        "gereden": 2273,
+        "gereden": 2274,
         "ingekort": 57,
         "uitval, op tijd": 32,
         "uitval, te laat": 14,
@@ -89,7 +89,7 @@
       },
       "meetperiode": {
         "van": "2026-11-01",
-        "tot": "2026-11-20"
+        "tot": "2026-11-21"
       },
       "dicht": []
     },
@@ -892,6 +892,16 @@
       "uitval, te laat": 0,
       "niet gemeld": 0,
       "geen meting": 0
+    },
+    {
+      "datum": "2026-11-21",
+      "lijn": "302",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
     }
   ],
   "stakingsdagen": {
@@ -900,9 +910,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T07:04:04+01:00",
-    "gelukt": 14613,
-    "verwacht": 14612,
+    "tot": "2026-11-21T07:20:05+01:00",
+    "gelukt": 14621,
+    "verwacht": 14620,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -993,7 +1003,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T07:04+01:00",
+          "laatst_gezien": "2026-11-21T07:19+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1485,13 +1495,25 @@
     "dagen": [
       {
         "datum": "2026-11-21",
-        "lijnen_gemeten": 5,
+        "lijnen_gemeten": 7,
         "totaal": {
-          "ritten": 5,
+          "ritten": 10,
           "uitval": 0,
           "te_laat": 0
         },
-        "lijnen": [],
+        "lijnen": [
+          {
+            "lijn": "302",
+            "naam": "Amersfoort – Vianen",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          }
+        ],
         "berichten": []
       },
       {
