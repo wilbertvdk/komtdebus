@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-21T10:20:13+01:00",
+  "bijgewerkt": "2026-11-21T10:35:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-21T10:20:05+01:00",
-    "gelukt": 14711,
-    "verwacht": 14710,
+    "tot": "2026-11-21T10:34:05+01:00",
+    "gelukt": 14718,
+    "verwacht": 14717,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-21T10:19+01:00",
+          "laatst_gezien": "2026-11-21T10:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1523,16 +1523,16 @@
         "datum": "2026-11-21",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 545,
-          "uitval": 6,
-          "te_laat": 0
+          "ritten": 607,
+          "uitval": 7,
+          "te_laat": 1
         },
         "lijnen": [
           {
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 9,
+            "ritten": 10,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1540,7 +1540,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 7,
+            "ritten": 8,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1548,15 +1548,23 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 11,
+            "ritten": 12,
             "uitval": 2,
             "te_laat": 0
+          },
+          {
+            "lijn": "55",
+            "naam": "Utrecht – Maartensdijk",
+            "gevolgd": false,
+            "ritten": 7,
+            "uitval": 1,
+            "te_laat": 1
           },
           {
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 11,
+            "ritten": 12,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1575,7 +1583,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 14,
             "uitval": 1,
             "te_laat": 0
           },
