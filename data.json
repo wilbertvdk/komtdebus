@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T14:20:14+01:00",
+  "bijgewerkt": "2026-11-22T14:35:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -940,9 +940,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T14:20:10+01:00",
-    "gelukt": 15549,
-    "verwacht": 15550,
+    "tot": "2026-11-22T14:34:07+01:00",
+    "gelukt": 15556,
+    "verwacht": 15557,
     "aandeel": 0.9999
   },
   "haltesluitingen": [
@@ -1033,7 +1033,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T14:19+01:00",
+          "laatst_gezien": "2026-11-22T14:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1503,7 +1503,7 @@
         "datum": "2026-11-22",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 1147,
+          "ritten": 1213,
           "uitval": 6,
           "te_laat": 2
         },
@@ -1520,7 +1520,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 20,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1528,7 +1528,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 32,
+            "ritten": 34,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1536,7 +1536,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 47,
+            "ritten": 50,
             "uitval": 2,
             "te_laat": 0
           },
