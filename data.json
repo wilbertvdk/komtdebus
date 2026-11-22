@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T10:05:14+01:00",
+  "bijgewerkt": "2026-11-22T10:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2442,
-      "gemeten": 2442,
+      "gepland": 2443,
+      "gemeten": 2443,
       "aantal": {
-        "gereden": 2311,
+        "gereden": 2312,
         "ingekort": 60,
         "uitval, op tijd": 33,
         "uitval, te laat": 14,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2628,
-      "gemeten": 2628,
+      "gepland": 2630,
+      "gemeten": 2630,
       "aantal": {
-        "gereden": 2526,
+        "gereden": 2528,
         "ingekort": 42,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -165,9 +165,9 @@
         "ritten": 43,
         "ritten_vooraf": 34,
         "ritten_ingekort": 42,
-        "haltes": 2130,
-        "haltes_op_tijd": 2056,
-        "haltes_dicht": 1200,
+        "haltes": 2131,
+        "haltes_op_tijd": 2057,
+        "haltes_dicht": 1201,
         "haltes_zonder": 940,
         "haltes_op_tijd_zonder": 866,
         "mediaan_min_na_vertrek": -27,
@@ -916,7 +916,7 @@
     {
       "datum": "2026-11-22",
       "lijn": "302",
-      "gereden": 6,
+      "gereden": 7,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -926,7 +926,7 @@
     {
       "datum": "2026-11-22",
       "lijn": "376",
-      "gereden": 3,
+      "gereden": 5,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -940,9 +940,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T10:04:10+01:00",
-    "gelukt": 15422,
-    "verwacht": 15422,
+    "tot": "2026-11-22T10:20:10+01:00",
+    "gelukt": 15430,
+    "verwacht": 15430,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1033,7 +1033,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T10:04+01:00",
+          "laatst_gezien": "2026-11-22T10:19+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1489,11 +1489,19 @@
         "datum": "2026-11-22",
         "lijnen_gemeten": 49,
         "totaal": {
-          "ritten": 206,
-          "uitval": 1,
+          "ritten": 251,
+          "uitval": 2,
           "te_laat": 1
         },
         "lijnen": [
+          {
+            "lijn": "7",
+            "naam": "Amersfoort CS – Schothorst",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 1,
+            "te_laat": 0
+          },
           {
             "lijn": "20",
             "naam": "Science Park – Utrecht CS – Nieuwegein",
@@ -1506,7 +1514,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1517,7 +1525,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 5,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
