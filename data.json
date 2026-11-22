@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T01:50:12+01:00",
+  "bijgewerkt": "2026-11-22T02:05:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T01:50:12+01:00",
-    "gelukt": 15175,
-    "verwacht": 15175,
+    "tot": "2026-11-22T02:04:10+01:00",
+    "gelukt": 15182,
+    "verwacht": 15182,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T01:49+01:00",
+          "laatst_gezien": "2026-11-22T02:04+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1469,7 +1469,7 @@
         "datum": "2026-11-21",
         "lijnen_gemeten": 62,
         "totaal": {
-          "ritten": 4726,
+          "ritten": 4744,
           "uitval": 78,
           "te_laat": 41
         },
@@ -1478,7 +1478,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 151,
+            "ritten": 152,
             "uitval": 7,
             "te_laat": 2
           },
@@ -1526,7 +1526,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 71,
+            "ritten": 72,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1542,7 +1542,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 109,
+            "ritten": 110,
             "uitval": 7,
             "te_laat": 3
           },
@@ -1622,7 +1622,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 56,
             "uitval": 2,
             "te_laat": 2
           },
