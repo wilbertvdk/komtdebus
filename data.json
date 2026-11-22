@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T03:05:13+01:00",
+  "bijgewerkt": "2026-11-22T03:20:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-21"
@@ -183,9 +183,9 @@
         {
           "halte": "Spakenburg, Broerswetering",
           "van": "2026-11-01",
-          "tot": "2026-11-21",
-          "dagen": 21,
-          "ritten": 1200,
+          "tot": "2026-11-22",
+          "dagen": 22,
+          "ritten": 1233,
           "sinds": "2026-07-10",
           "gemeld_tot": "2026-12-31"
         }
@@ -920,9 +920,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T03:04:10+01:00",
-    "gelukt": 15212,
-    "verwacht": 15212,
+    "tot": "2026-11-22T03:20:10+01:00",
+    "gelukt": 15220,
+    "verwacht": 15220,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1013,7 +1013,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T03:04+01:00",
+          "laatst_gezien": "2026-11-22T03:19+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1467,9 +1467,9 @@
     "dagen": [
       {
         "datum": "2026-11-21",
-        "lijnen_gemeten": 70,
+        "lijnen_gemeten": 74,
         "totaal": {
-          "ritten": 4766,
+          "ritten": 4771,
           "uitval": 78,
           "te_laat": 41
         },
