@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T08:35:13+01:00",
+  "bijgewerkt": "2026-11-22T08:50:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2439,
-      "gemeten": 2439,
+      "gepland": 2440,
+      "gemeten": 2440,
       "aantal": {
-        "gereden": 2308,
+        "gereden": 2309,
         "ingekort": 60,
         "uitval, op tijd": 33,
         "uitval, te laat": 14,
@@ -916,7 +916,7 @@
     {
       "datum": "2026-11-22",
       "lijn": "302",
-      "gereden": 3,
+      "gereden": 4,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -930,9 +930,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T08:34:10+01:00",
-    "gelukt": 15377,
-    "verwacht": 15377,
+    "tot": "2026-11-22T08:50:10+01:00",
+    "gelukt": 15385,
+    "verwacht": 15385,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1023,7 +1023,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T08:34+01:00",
+          "laatst_gezien": "2026-11-22T08:49+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1477,9 +1477,9 @@
     "dagen": [
       {
         "datum": "2026-11-22",
-        "lijnen_gemeten": 9,
+        "lijnen_gemeten": 20,
         "totaal": {
-          "ritten": 16,
+          "ritten": 36,
           "uitval": 0,
           "te_laat": 0
         },
@@ -1488,7 +1488,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
