@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T14:05:23+01:00",
+  "bijgewerkt": "2026-11-22T14:20:14+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2450,
-      "gemeten": 2450,
+      "gepland": 2451,
+      "gemeten": 2451,
       "aantal": {
-        "gereden": 2318,
+        "gereden": 2319,
         "ingekort": 60,
         "uitval, op tijd": 33,
         "uitval, te laat": 15,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2644,
-      "gemeten": 2644,
+      "gepland": 2646,
+      "gemeten": 2646,
       "aantal": {
-        "gereden": 2542,
+        "gereden": 2544,
         "ingekort": 42,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -165,9 +165,9 @@
         "ritten": 43,
         "ritten_vooraf": 34,
         "ritten_ingekort": 42,
-        "haltes": 2138,
-        "haltes_op_tijd": 2064,
-        "haltes_dicht": 1208,
+        "haltes": 2139,
+        "haltes_op_tijd": 2065,
+        "haltes_dicht": 1209,
         "haltes_zonder": 940,
         "haltes_op_tijd_zonder": 866,
         "mediaan_min_na_vertrek": -27,
@@ -916,7 +916,7 @@
     {
       "datum": "2026-11-22",
       "lijn": "302",
-      "gereden": 13,
+      "gereden": 14,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 1,
@@ -926,7 +926,7 @@
     {
       "datum": "2026-11-22",
       "lijn": "376",
-      "gereden": 19,
+      "gereden": 21,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -940,9 +940,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T14:04:07+01:00",
-    "gelukt": 15541,
-    "verwacht": 15542,
+    "tot": "2026-11-22T14:20:10+01:00",
+    "gelukt": 15549,
+    "verwacht": 15550,
     "aandeel": 0.9999
   },
   "haltesluitingen": [
@@ -1033,7 +1033,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T14:04+01:00",
+          "laatst_gezien": "2026-11-22T14:19+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1503,7 +1503,7 @@
         "datum": "2026-11-22",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 1087,
+          "ritten": 1147,
           "uitval": 6,
           "te_laat": 2
         },
@@ -1512,7 +1512,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 21,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1520,7 +1520,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1528,7 +1528,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 32,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1536,7 +1536,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 44,
+            "ritten": 47,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1544,7 +1544,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 14,
+            "ritten": 15,
             "uitval": 1,
             "te_laat": 1,
             "niet_gemeld": 0,
@@ -1555,7 +1555,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 19,
+            "ritten": 21,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
