@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T20:20:14+01:00",
+  "bijgewerkt": "2026-11-22T20:35:34+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -940,9 +940,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T20:20:10+01:00",
-    "gelukt": 15729,
-    "verwacht": 15730,
+    "tot": "2026-11-22T20:34:07+01:00",
+    "gelukt": 15736,
+    "verwacht": 15737,
     "aandeel": 0.9999
   },
   "haltesluitingen": [
@@ -1033,7 +1033,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T20:19+01:00",
+          "laatst_gezien": "2026-11-22T20:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1503,8 +1503,8 @@
         "datum": "2026-11-22",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 2602,
-          "uitval": 20,
+          "ritten": 2658,
+          "uitval": 21,
           "te_laat": 8
         },
         "lijnen": [
@@ -1512,7 +1512,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 81,
+            "ritten": 83,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1520,7 +1520,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 41,
+            "ritten": 42,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1528,7 +1528,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 41,
+            "ritten": 42,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1536,7 +1536,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 45,
+            "ritten": 46,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1544,7 +1544,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 43,
+            "ritten": 44,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1552,7 +1552,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 80,
+            "ritten": 82,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1560,8 +1560,16 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 113,
+            "ritten": 115,
             "uitval": 3,
+            "te_laat": 0
+          },
+          {
+            "lijn": "102",
+            "naam": "Utrecht – Woerden",
+            "gevolgd": false,
+            "ritten": 24,
+            "uitval": 1,
             "te_laat": 0
           },
           {
@@ -1587,7 +1595,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 37,
+            "ritten": 39,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1595,7 +1603,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 82,
+            "ritten": 83,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1603,7 +1611,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 86,
+            "ritten": 89,
             "uitval": 1,
             "te_laat": 1
           },
