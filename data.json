@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-22T11:20:13+01:00",
+  "bijgewerkt": "2026-11-22T11:36:00+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -940,9 +940,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-22T11:20:10+01:00",
-    "gelukt": 15460,
-    "verwacht": 15460,
+    "tot": "2026-11-22T11:34:10+01:00",
+    "gelukt": 15467,
+    "verwacht": 15467,
     "aandeel": 1.0
   },
   "haltesluitingen": [
@@ -1033,7 +1033,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-22T11:19+01:00",
+          "laatst_gezien": "2026-11-22T11:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1503,7 +1503,7 @@
         "datum": "2026-11-22",
         "lijnen_gemeten": 52,
         "totaal": {
-          "ritten": 443,
+          "ritten": 496,
           "uitval": 3,
           "te_laat": 1
         },
@@ -1512,7 +1512,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 9,
+            "ritten": 10,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1520,7 +1520,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 7,
+            "ritten": 8,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1528,7 +1528,7 @@
             "lijn": "20",
             "naam": "Science Park – Utrecht CS – Nieuwegein",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 14,
             "uitval": 1,
             "te_laat": 1
           },
