@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-23T06:20:16+01:00",
+  "bijgewerkt": "2026-11-23T06:35:13+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -950,9 +950,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-23T06:20:07+01:00",
-    "gelukt": 16026,
-    "verwacht": 16030,
+    "tot": "2026-11-23T06:34:07+01:00",
+    "gelukt": 16033,
+    "verwacht": 16037,
     "aandeel": 0.9998
   },
   "haltesluitingen": [
@@ -1043,7 +1043,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-23T06:19+01:00",
+          "laatst_gezien": "2026-11-23T06:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1474,10 +1474,10 @@
     "dagen": [
       {
         "datum": "2026-11-23",
-        "lijnen_gemeten": 14,
+        "lijnen_gemeten": 20,
         "totaal": {
-          "ritten": 21,
-          "uitval": 9,
+          "ritten": 41,
+          "uitval": 21,
           "te_laat": 1
         },
         "lijnen": [
@@ -1490,8 +1490,48 @@
             "te_laat": 1
           },
           {
+            "lijn": "6",
+            "naam": "Amersfoort CS – Rustenburg/Liendert",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "17",
+            "naam": "Amersfoort CS – Leusden",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "20",
+            "naam": "Science Park – Utrecht CS – Nieuwegein",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 2,
+            "te_laat": 0
+          },
+          {
             "lijn": "21",
             "naam": "Science Park – Utrecht CS – IJsselstein",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 2,
+            "te_laat": 0
+          },
+          {
+            "lijn": "66",
+            "naam": "Nieuwegein Het Klooster – Utrecht CS",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "85",
+            "naam": "Utrecht – Leerdam",
             "gevolgd": false,
             "ritten": 1,
             "uitval": 1,
@@ -1501,6 +1541,14 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
+            "ritten": 2,
+            "uitval": 2,
+            "te_laat": 0
+          },
+          {
+            "lijn": "307",
+            "naam": "Utrecht – Gouda",
+            "gevolgd": false,
             "ritten": 1,
             "uitval": 1,
             "te_laat": 0
@@ -1509,16 +1557,16 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 2,
-            "uitval": 2,
+            "ritten": 3,
+            "uitval": 3,
             "te_laat": 0
           },
           {
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 3,
-            "uitval": 3,
+            "ritten": 6,
+            "uitval": 5,
             "te_laat": 0
           },
           {
