@@ -554,8 +554,18 @@ function renderDicht(lijst) {
   function periode(h) {
     return h.van === h.tot ? datumTekst(h.van) : datumTekst(h.van) + " t/m " + datumTekst(h.tot);
   }
+  // Afgelopen: in onze meting sinds eergisteren niet meer dicht, en het servicebericht loopt niet tot vandaag of later.
+  // Die blijven staan (ze tellen mee in de cijfers sinds 1 november), maar in de verleden tijd.
+  function isoDag(ms) { return new Date(ms).toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" }); }
+  const vandaag = isoDag(Date.now()), gisteren = isoDag(Date.now() - 86400000);
   const items = lijst.slice(0, MAX_DICHT).map(function (h) {
     const dagen = h.dagen === 1 ? "1 dag" : h.dagen + " dagen";
+    if (h.tot < gisteren && !(h.gemeld_tot && h.gemeld_tot >= vandaag)) {
+      const wanneer = h.dagen === 1 ? datumTekst(h.van) : dagen + " (" + periode(h) + ")";
+      const bericht = h.sinds && h.gemeld_tot ? " (volgens het servicebericht " +
+        (h.sinds === h.gemeld_tot ? datumTekst(h.sinds) : datumTekst(h.sinds) + " t/m " + datumTekst(h.gemeld_tot)) + ")" : "";
+      return el("li", { text: h.halte + ": was dicht op " + wanneer + bericht + ". De bussen reden erlangs zonder te stoppen." });
+    }
     if (h.sinds) {
       const tot = h.gemeld_tot ? " (volgens het servicebericht tot en met " + datumTekst(h.gemeld_tot) + ")" : "";
       return el("li", { text: h.halte + ": de bussen rijden erlangs zonder te stoppen, sinds " + datumTekst(h.sinds) + tot +
