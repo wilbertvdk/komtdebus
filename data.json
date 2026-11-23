@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-23T01:20:13+01:00",
+  "bijgewerkt": "2026-11-23T01:35:23+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -940,9 +940,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-23T01:20:07+01:00",
-    "gelukt": 15878,
-    "verwacht": 15880,
+    "tot": "2026-11-23T01:34:07+01:00",
+    "gelukt": 15885,
+    "verwacht": 15887,
     "aandeel": 0.9999
   },
   "haltesluitingen": [
@@ -1033,7 +1033,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-23T01:19+01:00",
+          "laatst_gezien": "2026-11-23T01:34+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1521,7 +1521,7 @@
         "datum": "2026-11-22",
         "lijnen_gemeten": 53,
         "totaal": {
-          "ritten": 3534,
+          "ritten": 3562,
           "uitval": 24,
           "te_laat": 8
         },
@@ -1530,7 +1530,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 107,
+            "ritten": 108,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1546,7 +1546,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 55,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1554,7 +1554,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 65,
+            "ritten": 66,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1562,7 +1562,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 63,
+            "ritten": 64,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1578,7 +1578,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 154,
+            "ritten": 156,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1621,7 +1621,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 102,
+            "ritten": 104,
             "uitval": 4,
             "te_laat": 0
           },
