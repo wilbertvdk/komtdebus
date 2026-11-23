@@ -895,7 +895,9 @@ function renderMeldTeller(data) {
 // Wat de ritdata zegt over een gepubliceerde melding (zie formulier.py: de toets), kort voor in de tabel.
 function meldingData(t) {
   if (!t) return "Nog niet nagekeken (kan pas als de rit voorbij is)";
-  if (t.reden) return t.reden === "lijn wordt niet gevolgd" ? "Geen ritdata voor deze lijn" : "Rit niet gevonden";
+  // Een met de hand gezette tekst voor een lijn buiten de provincie Utrecht begint met "Buiten de provincie" en staat letterlijk op de site.
+  if (t.reden) return t.reden === "lijn wordt niet gevolgd" ? "Geen ritdata voor deze lijn" :
+    t.reden.indexOf("Buiten de provincie") === 0 ? t.reden : "Rit niet gevonden";
   // 90 -> "1,5 uur", 25 -> "25 min"
   const vooraf = m => m >= 60 ? (Math.round(m / 6) / 10).toString().replace(".", ",") + " uur" : Math.round(m) + " min";
   // "op tijd", "10 min te laat", "2 min te vroeg"
