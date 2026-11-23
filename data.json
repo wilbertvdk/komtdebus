@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-23T01:50:13+01:00",
+  "bijgewerkt": "2026-11-23T02:06:00+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -940,9 +940,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-23T01:50:07+01:00",
-    "gelukt": 15893,
-    "verwacht": 15895,
+    "tot": "2026-11-23T02:04:07+01:00",
+    "gelukt": 15900,
+    "verwacht": 15902,
     "aandeel": 0.9999
   },
   "haltesluitingen": [
@@ -1033,7 +1033,7 @@
         },
         {
           "eerst_gezien": "2026-11-20T10:48+01:00",
-          "laatst_gezien": "2026-11-23T01:49+01:00",
+          "laatst_gezien": "2026-11-23T02:04+01:00",
           "kop": "U-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: op 23 en 24 november wordt er gestaakt in het streekvervoer. Kijk voor meer informatie op u-ov.nl/staken.\n",
           "geldig_van": "2026-11-20T10:40+01:00",
@@ -1521,7 +1521,7 @@
         "datum": "2026-11-22",
         "lijnen_gemeten": 53,
         "totaal": {
-          "ritten": 3595,
+          "ritten": 3611,
           "uitval": 24,
           "te_laat": 8
         },
@@ -1530,7 +1530,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 109,
+            "ritten": 110,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1578,7 +1578,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 158,
+            "ritten": 159,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1629,7 +1629,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 139,
+            "ritten": 140,
             "uitval": 2,
             "te_laat": 1
           },
