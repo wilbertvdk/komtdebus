@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-24T19:35:45+01:00",
+  "bijgewerkt": "2026-11-24T19:37:58+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -1020,9 +1020,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-24T19:34:06+01:00",
-    "gelukt": 17135,
-    "verwacht": 17147,
+    "tot": "2026-11-24T19:36:06+01:00",
+    "gelukt": 17136,
+    "verwacht": 17148,
     "aandeel": 0.9993
   },
   "haltesluitingen": [
@@ -1704,8 +1704,8 @@
         "datum": "2026-11-24",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 5662,
-          "uitval": 4882,
+          "ritten": 5672,
+          "uitval": 4889,
           "te_laat": 65
         },
         "lijnen": [
@@ -1881,8 +1881,8 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 106,
-            "uitval": 106,
+            "ritten": 107,
+            "uitval": 107,
             "te_laat": 0
           },
           {
@@ -2009,7 +2009,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 139,
+            "ritten": 140,
             "uitval": 23,
             "te_laat": 0
           },
@@ -2097,8 +2097,8 @@
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 50,
-            "uitval": 49,
+            "ritten": 51,
+            "uitval": 50,
             "te_laat": 1
           },
           {
@@ -2169,7 +2169,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 106,
+            "ritten": 107,
             "uitval": 48,
             "te_laat": 0
           },
@@ -2185,7 +2185,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 107,
+            "ritten": 108,
             "uitval": 29,
             "te_laat": 0
           },
@@ -2217,8 +2217,8 @@
             "lijn": "83",
             "naam": "Veenendaal Station Centrum – V'daal-De Klomp",
             "gevolgd": false,
-            "ritten": 26,
-            "uitval": 26,
+            "ritten": 27,
+            "uitval": 27,
             "te_laat": 0
           },
           {
@@ -2281,8 +2281,8 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 74,
-            "uitval": 67,
+            "ritten": 75,
+            "uitval": 68,
             "te_laat": 5
           },
           {
@@ -2426,8 +2426,8 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 83,
-            "uitval": 74,
+            "ritten": 84,
+            "uitval": 75,
             "te_laat": 5
           },
           {
@@ -2442,8 +2442,8 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 153,
-            "uitval": 153,
+            "ritten": 155,
+            "uitval": 155,
             "te_laat": 7
           },
           {
