@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-24T04:50:15+01:00",
+  "bijgewerkt": "2026-11-24T05:05:15+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -980,9 +980,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-24T04:50:07+01:00",
-    "gelukt": 16695,
-    "verwacht": 16705,
+    "tot": "2026-11-24T05:04:07+01:00",
+    "gelukt": 16702,
+    "verwacht": 16712,
     "aandeel": 0.9994
   },
   "haltesluitingen": [
@@ -1081,7 +1081,7 @@
         },
         {
           "eerst_gezien": "2026-11-23T23:19+01:00",
-          "laatst_gezien": "2026-11-24T04:49+01:00",
+          "laatst_gezien": "2026-11-24T05:04+01:00",
           "kop": "U-OV: Dinsdag 24 november rijden er de hele dag geen U-OV bussen in Utrecht Buiten. Er rijden ook geen buurtbussen. Meer info op U-OV.nl.",
           "tekst": "Oorzaak : onbekend Landelijke staking van de vakbonden in het streekvervoer.\nEffect : \nMaatregelen : \nU-OV: Dinsdag 24 november rijden er de hele dag geen U-OV bussen in Utrecht Buiten. Er rijden ook geen buurtbussen. Meer info op U-OV.nl.\n",
           "geldig_van": "2026-11-24T04:00+01:00",
@@ -1440,21 +1440,6 @@
           "Utrecht",
           "Hilversum",
           "Nieuw-Loosdrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-19T18:53+01:00",
-        "eind": "2026-11-24T05:00+01:00",
-        "tekst": "Halte vervallen t/m 24 november 05:00. Download de U-OV app voor meer actuele reisinfo.",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Niels Bohrweg",
-          "Utrecht, Ambachtsweg",
-          "Utrecht, Computerweg"
-        ],
-        "haltes_aantal": 3,
-        "plaatsen": [
-          "Utrecht"
         ]
       },
       {
