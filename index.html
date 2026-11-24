@@ -555,7 +555,7 @@ function renderDicht(lijst) {
     return h.van === h.tot ? datumTekst(h.van) : datumTekst(h.van) + " t/m " + datumTekst(h.tot);
   }
   // Afgelopen: in onze meting sinds eergisteren niet meer dicht, en het servicebericht loopt niet tot vandaag of later.
-  // Die blijven staan (ze tellen mee in de cijfers sinds 1 november), maar in de verleden tijd (tip van een lezer, 23 nov).
+  // Die blijven staan (ze tellen mee in de cijfers sinds 1 november), maar in de verleden tijd.
   function isoDag(ms) { return new Date(ms).toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" }); }
   const vandaag = isoDag(Date.now()), gisteren = isoDag(Date.now() - 86400000);
   const items = lijst.slice(0, MAX_DICHT).map(function (h) {
