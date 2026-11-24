@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-24T06:20:15+01:00",
+  "bijgewerkt": "2026-11-24T06:35:15+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -990,9 +990,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-24T06:20:08+01:00",
-    "gelukt": 16740,
-    "verwacht": 16750,
+    "tot": "2026-11-24T06:34:07+01:00",
+    "gelukt": 16747,
+    "verwacht": 16757,
     "aandeel": 0.9994
   },
   "haltesluitingen": [
@@ -1091,7 +1091,7 @@
         },
         {
           "eerst_gezien": "2026-11-23T23:19+01:00",
-          "laatst_gezien": "2026-11-24T06:19+01:00",
+          "laatst_gezien": "2026-11-24T06:34+01:00",
           "kop": "U-OV: Dinsdag 24 november rijden er de hele dag geen U-OV bussen in Utrecht Buiten. Er rijden ook geen buurtbussen. Meer info op U-OV.nl.",
           "tekst": "Oorzaak : onbekend Landelijke staking van de vakbonden in het streekvervoer.\nEffect : \nMaatregelen : \nU-OV: Dinsdag 24 november rijden er de hele dag geen U-OV bussen in Utrecht Buiten. Er rijden ook geen buurtbussen. Meer info op U-OV.nl.\n",
           "geldig_van": "2026-11-24T04:00+01:00",
@@ -1645,19 +1645,19 @@
     "dagen": [
       {
         "datum": "2026-11-24",
-        "lijnen_gemeten": 14,
+        "lijnen_gemeten": 21,
         "totaal": {
-          "ritten": 21,
-          "uitval": 8,
-          "te_laat": 0
+          "ritten": 41,
+          "uitval": 19,
+          "te_laat": 2
         },
         "lijnen": [
           {
             "lijn": "2",
             "naam": "Amersfoort CS – Nieuwland",
             "gevolgd": false,
-            "ritten": 2,
-            "uitval": 1,
+            "ritten": 3,
+            "uitval": 2,
             "te_laat": 0
           },
           {
@@ -1669,16 +1669,72 @@
             "te_laat": 0
           },
           {
+            "lijn": "4",
+            "naam": "Amersfoort CS – Schothorst",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
+            "lijn": "6",
+            "naam": "Terwijde – Utrecht CS – Overvecht",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "8",
+            "naam": "Amersfoort CS – Schuilenburg",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
+            "lijn": "9",
+            "naam": "Amersfoort CS – Leusderkwartier",
+            "gevolgd": false,
+            "ritten": 2,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
+            "gevolgd": false,
+            "ritten": 3,
+            "uitval": 3,
+            "te_laat": 0
+          },
+          {
+            "lijn": "20",
+            "naam": "Science Park – Utrecht CS – Nieuwegein",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "21",
+            "naam": "Science Park – Utrecht CS – IJsselstein",
             "gevolgd": false,
             "ritten": 2,
             "uitval": 2,
             "te_laat": 0
           },
           {
-            "lijn": "21",
-            "naam": "Science Park – Utrecht CS – IJsselstein",
+            "lijn": "66",
+            "naam": "Nieuwegein Het Klooster – Utrecht CS",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "85",
+            "naam": "Utrecht – Leerdam",
             "gevolgd": false,
             "ritten": 1,
             "uitval": 1,
@@ -1688,8 +1744,8 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 1,
-            "uitval": 1,
+            "ritten": 2,
+            "uitval": 2,
             "te_laat": 0
           },
           {
