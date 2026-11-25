@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-25T04:50:16+01:00",
+  "bijgewerkt": "2026-11-25T05:05:35+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -1020,9 +1020,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-25T04:50:06+01:00",
-    "gelukt": 17410,
-    "verwacht": 17425,
+    "tot": "2026-11-25T05:04:06+01:00",
+    "gelukt": 17416,
+    "verwacht": 17432,
     "aandeel": 0.9991
   },
   "haltesluitingen": [
@@ -1254,23 +1254,6 @@
           "Utrecht, 't Goylaan"
         ],
         "haltes_aantal": 4,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-21T11:40+01:00",
-        "eind": "2026-11-25T05:00+01:00",
-        "tekst": "Halte vervalt op 24 november en 25 november tot 05:00",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Uraniumweg",
-          "Utrecht, Mesonweg",
-          "Utrecht, Hyperonenweg",
-          "Utrecht, Niels Bohrweg",
-          "Utrecht, Ambachtsweg"
-        ],
-        "haltes_aantal": 5,
         "plaatsen": [
           "Utrecht"
         ]
