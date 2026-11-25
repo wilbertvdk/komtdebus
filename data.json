@@ -1,8 +1,8 @@
 {
-  "bijgewerkt": "2026-11-25T06:05:46+01:00",
+  "bijgewerkt": "2026-11-25T06:20:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
-    "tot": "2026-11-22"
+    "tot": "2026-11-25"
   },
   "lijnen": {
     "272": {
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2691,
-      "gemeten": 2691,
+      "gepland": 2692,
+      "gemeten": 2692,
       "aantal": {
-        "gereden": 2587,
+        "gereden": 2588,
         "ingekort": 44,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -165,9 +165,9 @@
         "ritten": 43,
         "ritten_vooraf": 34,
         "ritten_ingekort": 44,
-        "haltes": 2182,
-        "haltes_op_tijd": 2104,
-        "haltes_dicht": 1232,
+        "haltes": 2183,
+        "haltes_op_tijd": 2105,
+        "haltes_dicht": 1233,
         "haltes_zonder": 960,
         "haltes_op_tijd_zonder": 882,
         "mediaan_min_na_vertrek": -27,
@@ -177,7 +177,7 @@
       },
       "meetperiode": {
         "van": "2026-11-01",
-        "tot": "2026-11-22"
+        "tot": "2026-11-25"
       },
       "dicht": [
         {
@@ -1012,6 +1012,16 @@
       "uitval, te laat": 3,
       "niet gemeld": 0,
       "geen meting": 0
+    },
+    {
+      "datum": "2026-11-25",
+      "lijn": "376",
+      "gereden": 1,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
     }
   ],
   "stakingsdagen": {
@@ -1020,9 +1030,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-25T06:04:06+01:00",
-    "gelukt": 17446,
-    "verwacht": 17462,
+    "tot": "2026-11-25T06:20:08+01:00",
+    "gelukt": 17454,
+    "verwacht": 17470,
     "aandeel": 0.9991
   },
   "haltesluitingen": [
@@ -1379,9 +1389,9 @@
     "dagen": [
       {
         "datum": "2026-11-25",
-        "lijnen_gemeten": 6,
+        "lijnen_gemeten": 14,
         "totaal": {
-          "ritten": 7,
+          "ritten": 21,
           "uitval": 1,
           "te_laat": 0
         },
@@ -1390,9 +1400,20 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 1,
             "te_laat": 0
+          },
+          {
+            "lijn": "376",
+            "naam": "Science Park – Bunschoten-Spakenburg",
+            "gevolgd": true,
+            "ritten": 1,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
           }
         ],
         "berichten": []
