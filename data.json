@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-25T06:50:16+01:00",
+  "bijgewerkt": "2026-11-25T07:05:42+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-25"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2693,
-      "gemeten": 2693,
+      "gepland": 2694,
+      "gemeten": 2694,
       "aantal": {
-        "gereden": 2589,
+        "gereden": 2590,
         "ingekort": 44,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -165,9 +165,9 @@
         "ritten": 43,
         "ritten_vooraf": 34,
         "ritten_ingekort": 44,
-        "haltes": 2184,
-        "haltes_op_tijd": 2106,
-        "haltes_dicht": 1234,
+        "haltes": 2185,
+        "haltes_op_tijd": 2107,
+        "haltes_dicht": 1235,
         "haltes_zonder": 960,
         "haltes_op_tijd_zonder": 882,
         "mediaan_min_na_vertrek": -27,
@@ -1016,7 +1016,7 @@
     {
       "datum": "2026-11-25",
       "lijn": "376",
-      "gereden": 2,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1030,9 +1030,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-25T06:50:08+01:00",
-    "gelukt": 17469,
-    "verwacht": 17485,
+    "tot": "2026-11-25T07:04:06+01:00",
+    "gelukt": 17476,
+    "verwacht": 17492,
     "aandeel": 0.9991
   },
   "haltesluitingen": [
@@ -1389,26 +1389,34 @@
     "dagen": [
       {
         "datum": "2026-11-25",
-        "lijnen_gemeten": 34,
+        "lijnen_gemeten": 49,
         "totaal": {
-          "ritten": 72,
-          "uitval": 1,
-          "te_laat": 0
+          "ritten": 116,
+          "uitval": 2,
+          "te_laat": 1
         },
         "lijnen": [
           {
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 0
+          },
+          {
+            "lijn": "111",
+            "naam": "Vleuten – Breukelen",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 1
           },
           {
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
