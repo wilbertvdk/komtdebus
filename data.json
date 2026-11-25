@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-25T02:05:16+01:00",
+  "bijgewerkt": "2026-11-25T02:20:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-22"
@@ -1008,7 +1008,7 @@
       "lijn": "376",
       "gereden": 0,
       "ingekort": 0,
-      "uitval, op tijd": 132,
+      "uitval, op tijd": 133,
       "uitval, te laat": 3,
       "niet gemeld": 0,
       "geen meting": 0
@@ -1020,9 +1020,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-25T02:04:06+01:00",
-    "gelukt": 17328,
-    "verwacht": 17342,
+    "tot": "2026-11-25T02:20:08+01:00",
+    "gelukt": 17336,
+    "verwacht": 17350,
     "aandeel": 0.9992
   },
   "haltesluitingen": [
@@ -1121,7 +1121,7 @@
         },
         {
           "eerst_gezien": "2026-11-23T23:19+01:00",
-          "laatst_gezien": "2026-11-25T02:04+01:00",
+          "laatst_gezien": "2026-11-25T02:19+01:00",
           "kop": "U-OV: Dinsdag 24 november rijden er de hele dag geen U-OV bussen in Utrecht Buiten. Er rijden ook geen buurtbussen. Meer info op U-OV.nl.",
           "tekst": "Oorzaak : onbekend Landelijke staking van de vakbonden in het streekvervoer.\nEffect : \nMaatregelen : \nU-OV: Dinsdag 24 november rijden er de hele dag geen U-OV bussen in Utrecht Buiten. Er rijden ook geen buurtbussen. Meer info op U-OV.nl.\n",
           "geldig_van": "2026-11-24T04:00+01:00",
@@ -1552,8 +1552,8 @@
         "datum": "2026-11-24",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6999,
-          "uitval": 6061,
+          "ritten": 7008,
+          "uitval": 6069,
           "te_laat": 65
         },
         "lijnen": [
@@ -1985,8 +1985,8 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 87,
-            "uitval": 86,
+            "ritten": 88,
+            "uitval": 87,
             "te_laat": 0
           },
           {
@@ -2025,8 +2025,8 @@
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 138,
-            "uitval": 62,
+            "ritten": 140,
+            "uitval": 63,
             "te_laat": 0
           },
           {
@@ -2081,8 +2081,8 @@
             "lijn": "85",
             "naam": "Utrecht – Leerdam",
             "gevolgd": false,
-            "ritten": 90,
-            "uitval": 90,
+            "ritten": 91,
+            "uitval": 91,
             "te_laat": 0
           },
           {
@@ -2105,8 +2105,8 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 94,
-            "uitval": 92,
+            "ritten": 95,
+            "uitval": 93,
             "te_laat": 3
           },
           {
@@ -2255,8 +2255,8 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 105,
-            "uitval": 102,
+            "ritten": 106,
+            "uitval": 103,
             "te_laat": 6
           },
           {
@@ -2290,8 +2290,8 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 159,
-            "uitval": 155,
+            "ritten": 160,
+            "uitval": 156,
             "te_laat": 3
           },
           {
@@ -2306,8 +2306,8 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 135,
-            "uitval": 135,
+            "ritten": 136,
+            "uitval": 136,
             "te_laat": 3,
             "niet_gemeld": 0,
             "ingekort": 0,
@@ -2325,8 +2325,8 @@
             "lijn": "395",
             "naam": "Rotterdam – Utrecht CS",
             "gevolgd": false,
-            "ritten": 82,
-            "uitval": 81,
+            "ritten": 83,
+            "uitval": 82,
             "te_laat": 2
           },
           {
