@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-26T09:43:14+01:00",
+  "bijgewerkt": "2026-11-26T09:50:47+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-26"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2643,
-      "gemeten": 2643,
+      "gepland": 2645,
+      "gemeten": 2645,
       "aantal": {
-        "gereden": 2501,
+        "gereden": 2503,
         "ingekort": 62,
         "uitval, op tijd": 35,
         "uitval, te laat": 18,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2857,
-      "gemeten": 2857,
+      "gepland": 2858,
+      "gemeten": 2858,
       "aantal": {
-        "gereden": 2745,
+        "gereden": 2746,
         "ingekort": 44,
         "uitval, op tijd": 39,
         "uitval, te laat": 9,
@@ -1066,7 +1066,7 @@
     {
       "datum": "2026-11-26",
       "lijn": "302",
-      "gereden": 23,
+      "gereden": 25,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1086,7 +1086,7 @@
     {
       "datum": "2026-11-26",
       "lijn": "376",
-      "gereden": 25,
+      "gereden": 26,
       "ingekort": 0,
       "uitval, op tijd": 5,
       "uitval, te laat": 0,
@@ -1100,10 +1100,10 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-26T09:41:37+01:00",
-    "gelukt": 18270,
-    "verwacht": 18291,
-    "aandeel": 0.9989
+    "tot": "2026-11-26T09:50:16+01:00",
+    "gelukt": 18271,
+    "verwacht": 18295,
+    "aandeel": 0.9987
   },
   "haltesluitingen": [
     {
@@ -1450,16 +1450,16 @@
         "datum": "2026-11-26",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 1308,
-          "uitval": 23,
-          "te_laat": 11
+          "ritten": 1363,
+          "uitval": 24,
+          "te_laat": 12
         },
         "lijnen": [
           {
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 24,
+            "ritten": 25,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1483,7 +1483,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 16,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1499,7 +1499,7 @@
             "lijn": "16",
             "naam": "De Meern – Utrecht CS",
             "gevolgd": false,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1515,7 +1515,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 27,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1523,9 +1523,9 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 21,
-            "uitval": 1,
-            "te_laat": 1
+            "ritten": 23,
+            "uitval": 2,
+            "te_laat": 2
           },
           {
             "lijn": "81",
@@ -1574,7 +1574,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 23,
+            "ritten": 25,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1596,7 +1596,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 24,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1604,7 +1604,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 35,
+            "ritten": 38,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1612,7 +1612,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 30,
+            "ritten": 31,
             "uitval": 5,
             "te_laat": 0,
             "niet_gemeld": 0,
