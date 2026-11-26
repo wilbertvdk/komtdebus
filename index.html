@@ -168,7 +168,6 @@ details.meer[open] summary { padding-bottom: 10px; }
 table.prov th:nth-child(2), table.prov td:nth-child(2) { text-align: right; }
 table.prov th, table.prov td { padding: 8px 4px; }
 table.prov td.telaat { color: var(--c-telaat); font-weight: 600; }
-a.meld { font-size: 0.85rem; white-space: nowrap; }
 .dag-details { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2px 16px; margin: 0 0 10px; }
 footer { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16px; font-size: 0.9rem; color: var(--muted); }
 
@@ -810,12 +809,6 @@ function meldUrl(lijn, gevolgd) {
   return u.href;
 }
 
-function meldLink(r) {
-  const a = el("a", { cls: "meld", text: "Meld", attrs: { href: meldUrl(r.lijn, r.gevolgd), rel: "noopener", "aria-label": "Meld iets over lijn " + r.lijn } });
-  a.addEventListener("click", function () { telKlik("meldformulier-lijn"); });
-  return a;
-}
-
 function opLijnnummer(a, b) {
   return a.lijn.localeCompare(b.lijn, "nl", { numeric: true });
 }
@@ -825,7 +818,7 @@ function uitvalTabel(lijnen) {
   const body = el("tbody");
   lijnen.filter(function (r) { return r.uitval > 0; }).sort(opLijnnummer).forEach(function (r) {
     body.appendChild(el("tr", null, [
-      el("td", null, [el("strong", { text: r.lijn + " " }), el("span", { cls: "muted", text: r.naam + " · " }), meldLink(r)]),
+      el("td", null, [el("strong", { text: r.lijn + " " }), el("span", { cls: "muted", text: r.naam })]),
       el("td", { text: getal(r.ritten) }),
       el("td", { text: getal(r.uitval) }),
       el("td", { cls: r.te_laat ? "telaat" : "", text: getal(r.te_laat) }),
