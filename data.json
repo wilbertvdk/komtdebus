@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-26T06:35:16+01:00",
+  "bijgewerkt": "2026-11-26T06:50:15+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-26"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2828,
-      "gemeten": 2828,
+      "gepland": 2829,
+      "gemeten": 2829,
       "aantal": {
-        "gereden": 2721,
+        "gereden": 2722,
         "ingekort": 44,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -165,9 +165,9 @@
         "ritten": 43,
         "ritten_vooraf": 34,
         "ritten_ingekort": 44,
-        "haltes": 2251,
-        "haltes_op_tijd": 2173,
-        "haltes_dicht": 1303,
+        "haltes": 2252,
+        "haltes_op_tijd": 2174,
+        "haltes_dicht": 1304,
         "haltes_zonder": 960,
         "haltes_op_tijd_zonder": 882,
         "mediaan_min_na_vertrek": -27,
@@ -1056,7 +1056,7 @@
     {
       "datum": "2026-11-26",
       "lijn": "376",
-      "gereden": 1,
+      "gereden": 2,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1070,9 +1070,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-26T06:34:24+01:00",
-    "gelukt": 18177,
-    "verwacht": 18197,
+    "tot": "2026-11-26T06:48:24+01:00",
+    "gelukt": 18184,
+    "verwacht": 18204,
     "aandeel": 0.9989
   },
   "haltesluitingen": [
@@ -1418,9 +1418,9 @@
     "dagen": [
       {
         "datum": "2026-11-26",
-        "lijnen_gemeten": 21,
+        "lijnen_gemeten": 34,
         "totaal": {
-          "ritten": 41,
+          "ritten": 72,
           "uitval": 2,
           "te_laat": 2
         },
@@ -1429,7 +1429,7 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1445,7 +1445,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
