@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-26T01:50:16+01:00",
+  "bijgewerkt": "2026-11-26T02:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-25"
@@ -1060,9 +1060,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-26T01:48:23+01:00",
-    "gelukt": 18034,
-    "verwacht": 18054,
+    "tot": "2026-11-26T02:04:23+01:00",
+    "gelukt": 18042,
+    "verwacht": 18062,
     "aandeel": 0.9989
   },
   "haltesluitingen": [
@@ -1180,22 +1180,6 @@
   ],
   "provincie": {
     "berichten_nu": [
-      {
-        "begin": "2026-10-08T17:51+02:00",
-        "eind": "2026-11-26T02:00+01:00",
-        "tekst": "Van 12 oktober tot en met 25 november zijn er wegwerkzaamheden aan de N233 tussen Rhenen en Veenendaal. Hierdoor rijden lijn 87, lijn 680 en nachtbus N8 in verschillende periodes een aangepaste route. Kijk op u-ov.nl/nieuws voor meer informatie.",
-        "lijnen": [
-          "87",
-          "N8",
-          "680"
-        ],
-        "haltes": [],
-        "haltes_aantal": 13,
-        "plaatsen": [
-          "Rhenen",
-          "Veenendaal"
-        ]
-      },
       {
         "begin": "2026-11-24T10:35+01:00",
         "eind": "2026-11-29T18:59+01:00",
@@ -1426,8 +1410,8 @@
         "datum": "2026-11-25",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6983,
-          "uitval": 203,
+          "ritten": 6999,
+          "uitval": 204,
           "te_laat": 80
         },
         "lijnen": [
@@ -1435,7 +1419,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 141,
+            "ritten": 142,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1483,7 +1467,7 @@
             "lijn": "5",
             "naam": "Maarssen – Utrecht CS – Voordorp",
             "gevolgd": false,
-            "ritten": 97,
+            "ritten": 98,
             "uitval": 3,
             "te_laat": 3
           },
@@ -1515,7 +1499,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 129,
+            "ritten": 130,
             "uitval": 7,
             "te_laat": 3
           },
@@ -1563,7 +1547,7 @@
             "lijn": "12",
             "naam": "Utrecht CS – Maarssen",
             "gevolgd": false,
-            "ritten": 67,
+            "ritten": 68,
             "uitval": 4,
             "te_laat": 2
           },
@@ -1595,8 +1579,8 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 159,
-            "uitval": 7,
+            "ritten": 160,
+            "uitval": 8,
             "te_laat": 1
           },
           {
@@ -1627,7 +1611,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 185,
+            "ritten": 186,
             "uitval": 4,
             "te_laat": 4
           },
@@ -1691,7 +1675,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 64,
+            "ritten": 66,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1731,7 +1715,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 150,
+            "ritten": 152,
             "uitval": 5,
             "te_laat": 4
           },
@@ -1747,7 +1731,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 141,
+            "ritten": 143,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1916,7 +1900,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 158,
+            "ritten": 159,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1924,7 +1908,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 231,
+            "ritten": 232,
             "uitval": 2,
             "te_laat": 1
           },
