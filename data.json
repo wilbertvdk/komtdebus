@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-26T15:50:18+01:00",
+  "bijgewerkt": "2026-11-26T16:05:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-26"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2699,
-      "gemeten": 2682,
+      "gepland": 2700,
+      "gemeten": 2683,
       "aantal": {
-        "gereden": 2535,
+        "gereden": 2536,
         "ingekort": 64,
         "uitval, op tijd": 36,
         "uitval, te laat": 20,
@@ -143,7 +143,7 @@
       ]
     },
     "376": {
-      "gepland": 2908,
+      "gepland": 2909,
       "gemeten": 2889,
       "aantal": {
         "gereden": 2774,
@@ -151,7 +151,7 @@
         "uitval, op tijd": 42,
         "uitval, te laat": 9,
         "niet gemeld": 20,
-        "geen meting": 19
+        "geen meting": 20
       },
       "percentage": {
         "gereden": 96.0,
@@ -167,7 +167,7 @@
         "ritten_ingekort": 44,
         "haltes": 2423,
         "haltes_op_tijd": 2345,
-        "haltes_dicht": 1343,
+        "haltes_dicht": 1344,
         "haltes_zonder": 1100,
         "haltes_op_tijd_zonder": 1022,
         "mediaan_min_na_vertrek": -39,
@@ -1066,7 +1066,7 @@
     {
       "datum": "2026-11-26",
       "lijn": "302",
-      "gereden": 57,
+      "gereden": 58,
       "ingekort": 2,
       "uitval, op tijd": 1,
       "uitval, te laat": 2,
@@ -1091,7 +1091,7 @@
       "uitval, op tijd": 8,
       "uitval, te laat": 0,
       "niet gemeld": 0,
-      "geen meting": 19
+      "geen meting": 20
     }
   ],
   "stakingsdagen": {
@@ -1100,9 +1100,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-26T15:49:10+01:00",
-    "gelukt": 18355,
-    "verwacht": 18475,
+    "tot": "2026-11-26T16:05:13+01:00",
+    "gelukt": 18363,
+    "verwacht": 18483,
     "aandeel": 0.9935
   },
   "haltesluitingen": [
@@ -1220,6 +1220,65 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-26T16:15+01:00",
+        "eind": "2026-11-29T19:00+01:00",
+        "tekst": "Lijn 48: halte vervallen t/m 29 november 19:00. Vervangende halte: Computerweg.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Otto Hahnweg",
+          "Utrecht, Savannahweg",
+          "Utrecht, Niels Bohrweg"
+        ],
+        "haltes_aantal": 3,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-26T16:15+01:00",
+        "eind": "2026-11-29T19:00+01:00",
+        "tekst": "Lijn 73: halte vervallen t/m 29 november 19:00. Plan uw reis op de U-OV app.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Otto Hahnweg",
+          "Utrecht, Savannahweg",
+          "Maarssenbroek, Zonnebaan"
+        ],
+        "haltes_aantal": 3,
+        "plaatsen": [
+          "Utrecht",
+          "Maarssenbroek"
+        ]
+      },
+      {
+        "begin": "2026-11-26T16:15+01:00",
+        "eind": "2026-11-29T19:00+01:00",
+        "tekst": "Lijn 73/48: halte vervallen t/m 29 november 19:00. Plan uw reis op de U-OV app.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Rijpwetering"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-26T16:15+01:00",
+        "eind": "2026-11-29T19:00+01:00",
+        "tekst": "Lijn 48: halte vervallen t/m 29 november 19:00. Vervangende halte: Zonnebaan.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Otto Hahnweg",
+          "Utrecht, Savannahweg",
+          "Utrecht, Niels Bohrweg"
+        ],
+        "haltes_aantal": 3,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-24T10:35+01:00",
         "eind": "2026-11-29T18:59+01:00",
@@ -1434,16 +1493,16 @@
         "datum": "2026-11-26",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 3041,
-          "uitval": 65,
-          "te_laat": 27
+          "ritten": 3107,
+          "uitval": 67,
+          "te_laat": 29
         },
         "lijnen": [
           {
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 56,
+            "ritten": 58,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1451,7 +1510,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 56,
+            "ritten": 58,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1467,7 +1526,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 58,
+            "ritten": 59,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1475,7 +1534,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 59,
+            "ritten": 62,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1499,7 +1558,7 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 29,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1507,7 +1566,7 @@
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 47,
+            "ritten": 49,
             "uitval": 4,
             "te_laat": 1
           },
@@ -1523,7 +1582,7 @@
             "lijn": "12",
             "naam": "Utrecht CS – Maarssen",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 31,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1531,7 +1590,7 @@
             "lijn": "15",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 21,
+            "ritten": 22,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1539,7 +1598,7 @@
             "lijn": "16",
             "naam": "De Meern – Utrecht CS",
             "gevolgd": false,
-            "ritten": 8,
+            "ritten": 9,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1547,7 +1606,7 @@
             "lijn": "19",
             "naam": "Utrecht CS – De Meern",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 15,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1555,7 +1614,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 76,
+            "ritten": 78,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1563,15 +1622,15 @@
             "lijn": "48",
             "naam": "Houten – Nieuwegein – Maarssen",
             "gevolgd": false,
-            "ritten": 30,
-            "uitval": 1,
-            "te_laat": 1
+            "ritten": 31,
+            "uitval": 2,
+            "te_laat": 2
           },
           {
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 30,
+            "ritten": 31,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1587,7 +1646,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 60,
+            "ritten": 62,
             "uitval": 3,
             "te_laat": 3
           },
@@ -1595,7 +1654,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 62,
+            "ritten": 63,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1616,6 +1675,14 @@
             "te_laat": 0
           },
           {
+            "lijn": "85",
+            "naam": "Utrecht – Leerdam",
+            "gevolgd": false,
+            "ritten": 42,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
@@ -1627,7 +1694,7 @@
             "lijn": "111",
             "naam": "Vleuten – Breukelen",
             "gevolgd": false,
-            "ritten": 15,
+            "ritten": 16,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1635,7 +1702,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 41,
+            "ritten": 42,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1651,7 +1718,7 @@
             "lijn": "128",
             "naam": "Maarssen – Vleuten",
             "gevolgd": false,
-            "ritten": 23,
+            "ritten": 24,
             "uitval": 4,
             "te_laat": 1
           },
@@ -1686,7 +1753,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 62,
+            "ritten": 63,
             "uitval": 3,
             "te_laat": 2,
             "niet_gemeld": 0,
@@ -1716,7 +1783,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 84,
+            "ritten": 85,
             "uitval": 3,
             "te_laat": 1
           },
@@ -1732,7 +1799,59 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Lijn 48: halte vervallen t/m 29 november 19:00. Vervangende halte: Computerweg.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Otto Hahnweg",
+              "Utrecht, Savannahweg",
+              "Utrecht, Niels Bohrweg"
+            ],
+            "haltes_aantal": 3,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 73: halte vervallen t/m 29 november 19:00. Plan uw reis op de U-OV app.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Otto Hahnweg",
+              "Utrecht, Savannahweg",
+              "Maarssenbroek, Zonnebaan"
+            ],
+            "haltes_aantal": 3,
+            "plaatsen": [
+              "Utrecht",
+              "Maarssenbroek"
+            ]
+          },
+          {
+            "tekst": "Lijn 73/48: halte vervallen t/m 29 november 19:00. Plan uw reis op de U-OV app.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Rijpwetering"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 48: halte vervallen t/m 29 november 19:00. Vervangende halte: Zonnebaan.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Otto Hahnweg",
+              "Utrecht, Savannahweg",
+              "Utrecht, Niels Bohrweg"
+            ],
+            "haltes_aantal": 3,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-25",
