@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-26T05:50:16+01:00",
+  "bijgewerkt": "2026-11-26T06:05:26+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-25"
@@ -1060,9 +1060,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-26T05:48:24+01:00",
-    "gelukt": 18154,
-    "verwacht": 18174,
+    "tot": "2026-11-26T06:04:24+01:00",
+    "gelukt": 18162,
+    "verwacht": 18182,
     "aandeel": 0.9989
   },
   "haltesluitingen": [
@@ -1408,13 +1408,22 @@
     "dagen": [
       {
         "datum": "2026-11-26",
-        "lijnen_gemeten": 2,
+        "lijnen_gemeten": 6,
         "totaal": {
-          "ritten": 2,
-          "uitval": 0,
-          "te_laat": 0
+          "ritten": 7,
+          "uitval": 1,
+          "te_laat": 1
         },
-        "lijnen": [],
+        "lijnen": [
+          {
+            "lijn": "6",
+            "naam": "Amersfoort CS – Rustenburg/Liendert",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 1
+          }
+        ],
         "berichten": []
       },
       {
