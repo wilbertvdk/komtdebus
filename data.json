@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-26T07:35:16+01:00",
+  "bijgewerkt": "2026-11-26T07:50:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-26"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2621,
-      "gemeten": 2621,
+      "gepland": 2623,
+      "gemeten": 2623,
       "aantal": {
-        "gereden": 2479,
+        "gereden": 2481,
         "ingekort": 62,
         "uitval, op tijd": 35,
         "uitval, te laat": 18,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2833,
-      "gemeten": 2833,
+      "gepland": 2836,
+      "gemeten": 2836,
       "aantal": {
-        "gereden": 2726,
+        "gereden": 2729,
         "ingekort": 44,
         "uitval, op tijd": 34,
         "uitval, te laat": 9,
@@ -165,9 +165,9 @@
         "ritten": 43,
         "ritten_vooraf": 34,
         "ritten_ingekort": 44,
-        "haltes": 2253,
-        "haltes_op_tijd": 2175,
-        "haltes_dicht": 1305,
+        "haltes": 2255,
+        "haltes_op_tijd": 2177,
+        "haltes_dicht": 1307,
         "haltes_zonder": 960,
         "haltes_op_tijd_zonder": 882,
         "mediaan_min_na_vertrek": -27,
@@ -1066,7 +1066,7 @@
     {
       "datum": "2026-11-26",
       "lijn": "302",
-      "gereden": 1,
+      "gereden": 3,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1076,7 +1076,7 @@
     {
       "datum": "2026-11-26",
       "lijn": "376",
-      "gereden": 6,
+      "gereden": 9,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1090,9 +1090,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-26T07:34:24+01:00",
-    "gelukt": 18207,
-    "verwacht": 18227,
+    "tot": "2026-11-26T07:48:24+01:00",
+    "gelukt": 18214,
+    "verwacht": 18234,
     "aandeel": 0.9989
   },
   "haltesluitingen": [
@@ -1438,18 +1438,18 @@
     "dagen": [
       {
         "datum": "2026-11-26",
-        "lijnen_gemeten": 78,
+        "lijnen_gemeten": 83,
         "totaal": {
-          "ritten": 255,
-          "uitval": 5,
-          "te_laat": 3
+          "ritten": 355,
+          "uitval": 6,
+          "te_laat": 4
         },
         "lijnen": [
           {
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 7,
+            "ritten": 9,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1457,7 +1457,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1465,7 +1465,15 @@
             "lijn": "8",
             "naam": "Amersfoort CS – Schuilenburg",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 6,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
+            "lijn": "19",
+            "naam": "Utrecht CS – De Meern",
+            "gevolgd": false,
+            "ritten": 3,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1473,7 +1481,7 @@
             "lijn": "81",
             "naam": "Vianen – Meerkerk",
             "gevolgd": false,
-            "ritten": 1,
+            "ritten": 3,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1481,7 +1489,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1500,7 +1508,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 3,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1511,7 +1519,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 6,
+            "ritten": 9,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
