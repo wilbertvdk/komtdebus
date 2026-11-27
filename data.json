@@ -1,15 +1,15 @@
 {
-  "bijgewerkt": "2026-11-27T07:50:25+01:00",
+  "bijgewerkt": "2026-11-27T08:05:25+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-27"
   },
   "lijnen": {
     "272": {
-      "gepland": 290,
-      "gemeten": 289,
+      "gepland": 291,
+      "gemeten": 290,
       "aantal": {
-        "gereden": 285,
+        "gereden": 286,
         "ingekort": 3,
         "uitval, op tijd": 1,
         "uitval, te laat": 0,
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2771,
-      "gemeten": 2754,
+      "gepland": 2772,
+      "gemeten": 2755,
       "aantal": {
-        "gereden": 2604,
+        "gereden": 2605,
         "ingekort": 65,
         "uitval, op tijd": 37,
         "uitval, te laat": 21,
@@ -94,10 +94,10 @@
       "dicht": []
     },
     "315": {
-      "gepland": 204,
-      "gemeten": 204,
+      "gepland": 205,
+      "gemeten": 205,
       "aantal": {
-        "gereden": 193,
+        "gereden": 194,
         "ingekort": 7,
         "uitval, op tijd": 2,
         "uitval, te laat": 1,
@@ -128,7 +128,7 @@
       },
       "meetperiode": {
         "van": "2026-11-02",
-        "tot": "2026-11-26"
+        "tot": "2026-11-27"
       },
       "dicht": [
         {
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2972,
-      "gemeten": 2952,
+      "gepland": 2974,
+      "gemeten": 2954,
       "aantal": {
-        "gereden": 2833,
+        "gereden": 2835,
         "ingekort": 45,
         "uitval, op tijd": 44,
         "uitval, te laat": 10,
@@ -1096,7 +1096,7 @@
     {
       "datum": "2026-11-27",
       "lijn": "272",
-      "gereden": 1,
+      "gereden": 2,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1106,7 +1106,17 @@
     {
       "datum": "2026-11-27",
       "lijn": "302",
-      "gereden": 3,
+      "gereden": 4,
+      "ingekort": 0,
+      "uitval, op tijd": 0,
+      "uitval, te laat": 0,
+      "niet gemeld": 0,
+      "geen meting": 0
+    },
+    {
+      "datum": "2026-11-27",
+      "lijn": "315",
+      "gereden": 1,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1116,7 +1126,7 @@
     {
       "datum": "2026-11-27",
       "lijn": "376",
-      "gereden": 9,
+      "gereden": 11,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1130,9 +1140,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-27T07:49:26+01:00",
-    "gelukt": 18829,
-    "verwacht": 18955,
+    "tot": "2026-11-27T08:03:26+01:00",
+    "gelukt": 18836,
+    "verwacht": 18962,
     "aandeel": 0.9934
   },
   "haltesluitingen": [
@@ -1250,6 +1260,84 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-30T05:00+01:00",
+        "eind": "2026-12-04T19:00+01:00",
+        "tekst": "Lijn 7 en 27: halte vervallen t/m 4 december 19:00. Tijdelijke halte: Royaards van den Hamkade.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Ondiep"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-30T05:00+01:00",
+        "eind": "2026-12-04T19:00+01:00",
+        "tekst": "Lijn 7 en 27: halte vervallen t/m 4 december 19:00. Vervangende halte: Van Hoornekade.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Van Hoornekade"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-30T05:00+01:00",
+        "eind": "2026-12-04T19:00+01:00",
+        "tekst": "Lijn 6: halte vervallen t/m 4 december 19:00. Vervangende halte: Draaiweg.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Nijenoord"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-30T05:00+01:00",
+        "eind": "2026-12-04T19:00+01:00",
+        "tekst": "Lijn 6: halte vervallen t/m 4 december 19:00. Vervangende halte: Willem Dreeslaan.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Anton Geesinkstraat"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-27T08:01+01:00",
+        "eind": "2026-11-30T04:59+01:00",
+        "tekst": "Lijn 6: halte vervalt van 30 november 05:00 t/m 4 december 19:00. Vervangende halte: Brailledreef.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, Loevenhoutsedijk"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
+      {
+        "begin": "2026-11-27T08:01+01:00",
+        "eind": "2026-11-30T04:59+01:00",
+        "tekst": "Lijn 6: halte vervalt van 30 november 05:00 t/m 4 december 19:00. Vervangende halte: David van Mollemstraat.",
+        "lijnen": [],
+        "haltes": [
+          "Utrecht, David van Mollemstraat"
+        ],
+        "haltes_aantal": 1,
+        "plaatsen": [
+          "Utrecht"
+        ]
+      },
       {
         "begin": "2026-11-26T16:15+01:00",
         "eind": "2026-11-29T19:00+01:00",
@@ -1512,18 +1600,34 @@
     "dagen": [
       {
         "datum": "2026-11-27",
-        "lijnen_gemeten": 83,
+        "lijnen_gemeten": 87,
         "totaal": {
-          "ritten": 355,
-          "uitval": 4,
-          "te_laat": 2
+          "ritten": 448,
+          "uitval": 6,
+          "te_laat": 3
         },
         "lijnen": [
+          {
+            "lijn": "6",
+            "naam": "Amersfoort CS – Rustenburg/Liendert",
+            "gevolgd": false,
+            "ritten": 11,
+            "uitval": 1,
+            "te_laat": 1
+          },
+          {
+            "lijn": "19",
+            "naam": "Utrecht CS – De Meern",
+            "gevolgd": false,
+            "ritten": 4,
+            "uitval": 1,
+            "te_laat": 0
+          },
           {
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1539,7 +1643,7 @@
             "lijn": "82",
             "naam": "Amersfoort – Doorn",
             "gevolgd": false,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1555,7 +1659,7 @@
             "lijn": "272",
             "naam": "Baarn – Utrecht Science Park",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1566,7 +1670,18 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 4,
+            "uitval": 0,
+            "te_laat": 0,
+            "niet_gemeld": 0,
+            "ingekort": 0,
+            "afgebroken": 0
+          },
+          {
+            "lijn": "315",
+            "naam": "Amersfoort Vathorst – Utrecht Science Park",
+            "gevolgd": true,
+            "ritten": 1,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1577,7 +1692,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 9,
+            "ritten": 11,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1585,7 +1700,74 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Lijn 7 en 27: halte vervallen t/m 4 december 19:00. Tijdelijke halte: Royaards van den Hamkade.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Ondiep"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 7 en 27: halte vervallen t/m 4 december 19:00. Vervangende halte: Van Hoornekade.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Van Hoornekade"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 6: halte vervallen t/m 4 december 19:00. Vervangende halte: Draaiweg.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Nijenoord"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 6: halte vervallen t/m 4 december 19:00. Vervangende halte: Willem Dreeslaan.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Anton Geesinkstraat"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 6: halte vervalt van 30 november 05:00 t/m 4 december 19:00. Vervangende halte: Brailledreef.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Loevenhoutsedijk"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
+          {
+            "tekst": "Lijn 6: halte vervalt van 30 november 05:00 t/m 4 december 19:00. Vervangende halte: David van Mollemstraat.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, David van Mollemstraat"
+            ],
+            "haltes_aantal": 1,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-26",
