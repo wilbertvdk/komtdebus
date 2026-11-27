@@ -898,6 +898,8 @@ function renderMeldTeller(data) {
 // Wat de ritdata zegt over een gepubliceerde melding (zie formulier.py: de toets), kort voor in de tabel.
 function meldingData(t) {
   if (!t) return "Nog niet nagekeken (kan pas als de rit voorbij is)";
+  // Met de hand gezet als de automatische toets misleidt (bv. de bus pas later op de route in de data): letterlijk tonen.
+  if (t.tekst) return t.tekst;
   // Een met de hand gezette tekst voor een lijn buiten de provincie Utrecht begint met "Buiten de provincie" en staat letterlijk op de site.
   if (t.reden) return t.reden === "lijn wordt niet gevolgd" ? "Geen ritdata voor deze lijn" :
     t.reden.indexOf("Buiten de provincie") === 0 ? t.reden : "Rit niet gevonden";
