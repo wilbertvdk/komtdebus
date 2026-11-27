@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-27T06:35:17+01:00",
+  "bijgewerkt": "2026-11-27T06:50:24+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-27"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2964,
-      "gemeten": 2944,
+      "gepland": 2965,
+      "gemeten": 2945,
       "aantal": {
-        "gereden": 2825,
+        "gereden": 2826,
         "ingekort": 45,
         "uitval, op tijd": 44,
         "uitval, te laat": 10,
@@ -165,9 +165,9 @@
         "ritten": 54,
         "ritten_vooraf": 44,
         "ritten_ingekort": 45,
-        "haltes": 2530,
-        "haltes_op_tijd": 2435,
-        "haltes_dicht": 1372,
+        "haltes": 2531,
+        "haltes_op_tijd": 2436,
+        "haltes_dicht": 1373,
         "haltes_zonder": 1179,
         "haltes_op_tijd_zonder": 1084,
         "mediaan_min_na_vertrek": -28.0,
@@ -1096,7 +1096,7 @@
     {
       "datum": "2026-11-27",
       "lijn": "376",
-      "gereden": 1,
+      "gereden": 2,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1110,9 +1110,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-27T06:33:26+01:00",
-    "gelukt": 18791,
-    "verwacht": 18917,
+    "tot": "2026-11-27T06:49:26+01:00",
+    "gelukt": 18799,
+    "verwacht": 18925,
     "aandeel": 0.9933
   },
   "haltesluitingen": [
@@ -1492,9 +1492,9 @@
     "dagen": [
       {
         "datum": "2026-11-27",
-        "lijnen_gemeten": 21,
+        "lijnen_gemeten": 34,
         "totaal": {
-          "ritten": 41,
+          "ritten": 72,
           "uitval": 0,
           "te_laat": 0
         },
@@ -1503,7 +1503,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 1,
+            "ritten": 2,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
