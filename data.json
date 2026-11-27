@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-27T20:20:26+01:00",
+  "bijgewerkt": "2026-11-27T20:35:20+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-27"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2898,
-      "gemeten": 2881,
+      "gepland": 2900,
+      "gemeten": 2883,
       "aantal": {
-        "gereden": 2728,
+        "gereden": 2730,
         "ingekort": 65,
         "uitval, op tijd": 39,
         "uitval, te laat": 22,
@@ -1106,7 +1106,7 @@
     {
       "datum": "2026-11-27",
       "lijn": "302",
-      "gereden": 127,
+      "gereden": 129,
       "ingekort": 0,
       "uitval, op tijd": 2,
       "uitval, te laat": 1,
@@ -1140,9 +1140,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-27T20:19:26+01:00",
-    "gelukt": 19200,
-    "verwacht": 19330,
+    "tot": "2026-11-27T20:33:26+01:00",
+    "gelukt": 19207,
+    "verwacht": 19337,
     "aandeel": 0.9933
   },
   "haltesluitingen": [
@@ -1257,7 +1257,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-27T20:20+01:00",
+          "laatst_gezien": "2026-11-27T20:35+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1639,16 +1639,16 @@
         "datum": "2026-11-27",
         "lijnen_gemeten": 99,
         "totaal": {
-          "ritten": 5914,
-          "uitval": 181,
-          "te_laat": 66
+          "ritten": 5978,
+          "uitval": 184,
+          "te_laat": 67
         },
         "lijnen": [
           {
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 113,
+            "ritten": 115,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1656,7 +1656,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 55,
             "uitval": 4,
             "te_laat": 0
           },
@@ -1664,7 +1664,7 @@
             "lijn": "2",
             "naam": "Amersfoort CS – Nieuwland",
             "gevolgd": false,
-            "ritten": 112,
+            "ritten": 113,
             "uitval": 5,
             "te_laat": 2
           },
@@ -1672,7 +1672,7 @@
             "lijn": "3",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 110,
+            "ritten": 112,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1680,7 +1680,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 58,
+            "ritten": 59,
             "uitval": 6,
             "te_laat": 3
           },
@@ -1688,7 +1688,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Zuilen / Overvecht – Utrecht CS",
             "gevolgd": false,
-            "ritten": 58,
+            "ritten": 59,
             "uitval": 6,
             "te_laat": 3
           },
@@ -1696,7 +1696,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 108,
+            "ritten": 111,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1712,7 +1712,7 @@
             "lijn": "5",
             "naam": "Maarssen – Utrecht CS – Voordorp",
             "gevolgd": false,
-            "ritten": 75,
+            "ritten": 76,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1728,7 +1728,7 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 109,
+            "ritten": 111,
             "uitval": 6,
             "te_laat": 2
           },
@@ -1736,7 +1736,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 107,
+            "ritten": 108,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1744,7 +1744,7 @@
             "lijn": "7",
             "naam": "Zuilen – Utrecht CS – Westraven",
             "gevolgd": false,
-            "ritten": 115,
+            "ritten": 117,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1752,7 +1752,7 @@
             "lijn": "8",
             "naam": "Wilhelminapark – Utrecht CS – Lunetten",
             "gevolgd": false,
-            "ritten": 113,
+            "ritten": 115,
             "uitval": 4,
             "te_laat": 3
           },
@@ -1760,7 +1760,7 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 57,
+            "ritten": 58,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1816,7 +1816,7 @@
             "lijn": "15",
             "naam": "Amersfoort CS – Vathorst",
             "gevolgd": false,
-            "ritten": 41,
+            "ritten": 43,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1832,7 +1832,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 124,
+            "ritten": 126,
             "uitval": 4,
             "te_laat": 1
           },
@@ -1872,7 +1872,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 146,
+            "ritten": 149,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1880,7 +1880,7 @@
             "lijn": "29",
             "naam": "Vleuterweide – Science Park – Bilthoven",
             "gevolgd": false,
-            "ritten": 108,
+            "ritten": 110,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1928,7 +1928,7 @@
             "lijn": "48",
             "naam": "Houten – Nieuwegein – Maarssen",
             "gevolgd": false,
-            "ritten": 54,
+            "ritten": 55,
             "uitval": 4,
             "te_laat": 3
           },
@@ -1936,9 +1936,9 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 53,
-            "uitval": 5,
-            "te_laat": 2
+            "ritten": 54,
+            "uitval": 6,
+            "te_laat": 3
           },
           {
             "lijn": "56",
@@ -1960,7 +1960,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 65,
+            "ritten": 66,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1984,15 +1984,15 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 112,
-            "uitval": 7,
+            "ritten": 114,
+            "uitval": 8,
             "te_laat": 5
           },
           {
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 105,
+            "ritten": 107,
             "uitval": 2,
             "te_laat": 1
           },
@@ -2000,15 +2000,15 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 113,
-            "uitval": 3,
+            "ritten": 115,
+            "uitval": 4,
             "te_laat": 1
           },
           {
             "lijn": "80",
             "naam": "Amersfoort – Veenendaal-De Klomp",
             "gevolgd": false,
-            "ritten": 57,
+            "ritten": 58,
             "uitval": 3,
             "te_laat": 0
           },
@@ -2032,7 +2032,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 73,
+            "ritten": 74,
             "uitval": 1,
             "te_laat": 0
           },
@@ -2040,7 +2040,7 @@
             "lijn": "120",
             "naam": "Utrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 78,
+            "ritten": 79,
             "uitval": 1,
             "te_laat": 0
           },
@@ -2083,7 +2083,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 130,
+            "ritten": 132,
             "uitval": 3,
             "te_laat": 1,
             "niet_gemeld": 0,
@@ -2094,7 +2094,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 86,
+            "ritten": 87,
             "uitval": 2,
             "te_laat": 1
           },
@@ -2113,7 +2113,7 @@
             "lijn": "326",
             "naam": "Mijdrecht – Amsterdam Bijlmer",
             "gevolgd": false,
-            "ritten": 108,
+            "ritten": 110,
             "uitval": 10,
             "te_laat": 0
           },
@@ -2121,7 +2121,7 @@
             "lijn": "330",
             "naam": "Breukelen – Uithoorn",
             "gevolgd": false,
-            "ritten": 89,
+            "ritten": 90,
             "uitval": 1,
             "te_laat": 0
           },
@@ -2129,7 +2129,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 134,
+            "ritten": 136,
             "uitval": 9,
             "te_laat": 2
           },
@@ -2137,7 +2137,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 166,
+            "ritten": 169,
             "uitval": 4,
             "te_laat": 0
           },
