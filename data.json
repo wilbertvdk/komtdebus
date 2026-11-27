@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-27T08:35:23+01:00",
+  "bijgewerkt": "2026-11-27T08:50:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-27"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2778,
-      "gemeten": 2761,
+      "gepland": 2780,
+      "gemeten": 2763,
       "aantal": {
-        "gereden": 2611,
+        "gereden": 2613,
         "ingekort": 65,
         "uitval, op tijd": 37,
         "uitval, te laat": 21,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 2980,
-      "gemeten": 2960,
+      "gepland": 2982,
+      "gemeten": 2962,
       "aantal": {
-        "gereden": 2841,
+        "gereden": 2843,
         "ingekort": 45,
         "uitval, op tijd": 44,
         "uitval, te laat": 10,
@@ -165,9 +165,9 @@
         "ritten": 54,
         "ritten_vooraf": 44,
         "ritten_ingekort": 45,
-        "haltes": 2537,
-        "haltes_op_tijd": 2442,
-        "haltes_dicht": 1379,
+        "haltes": 2538,
+        "haltes_op_tijd": 2443,
+        "haltes_dicht": 1380,
         "haltes_zonder": 1179,
         "haltes_op_tijd_zonder": 1084,
         "mediaan_min_na_vertrek": -28.0,
@@ -1106,7 +1106,7 @@
     {
       "datum": "2026-11-27",
       "lijn": "302",
-      "gereden": 10,
+      "gereden": 12,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1126,7 +1126,7 @@
     {
       "datum": "2026-11-27",
       "lijn": "376",
-      "gereden": 17,
+      "gereden": 19,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1140,9 +1140,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-27T08:33:26+01:00",
-    "gelukt": 18851,
-    "verwacht": 18977,
+    "tot": "2026-11-27T08:49:26+01:00",
+    "gelukt": 18859,
+    "verwacht": 18985,
     "aandeel": 0.9934
   },
   "haltesluitingen": [
@@ -1600,10 +1600,10 @@
     "dagen": [
       {
         "datum": "2026-11-27",
-        "lijnen_gemeten": 91,
+        "lijnen_gemeten": 96,
         "totaal": {
-          "ritten": 671,
-          "uitval": 15,
+          "ritten": 808,
+          "uitval": 18,
           "te_laat": 3
         },
         "lijnen": [
@@ -1611,7 +1611,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1619,7 +1619,7 @@
             "lijn": "3",
             "naam": "Utrecht CS – Overvecht / Zuilen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1635,7 +1635,7 @@
             "lijn": "6",
             "naam": "Amersfoort CS – Rustenburg/Liendert",
             "gevolgd": false,
-            "ritten": 15,
+            "ritten": 17,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1643,7 +1643,7 @@
             "lijn": "16",
             "naam": "De Meern – Utrecht CS",
             "gevolgd": false,
-            "ritten": 2,
+            "ritten": 3,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1651,7 +1651,7 @@
             "lijn": "19",
             "naam": "Utrecht CS – De Meern",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 6,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1667,7 +1667,7 @@
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 9,
+            "ritten": 12,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1675,7 +1675,7 @@
             "lijn": "80",
             "naam": "Amersfoort – Veenendaal-De Klomp",
             "gevolgd": false,
-            "ritten": 9,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1683,15 +1683,15 @@
             "lijn": "82",
             "naam": "Amersfoort – Doorn",
             "gevolgd": false,
-            "ritten": 5,
-            "uitval": 1,
+            "ritten": 6,
+            "uitval": 2,
             "te_laat": 1
           },
           {
             "lijn": "203",
             "naam": "Amersfoort Schothorst – Utrecht Science Park",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1710,7 +1710,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 10,
+            "ritten": 12,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1729,18 +1729,26 @@
             "afgebroken": 0
           },
           {
+            "lijn": "341",
+            "naam": "Utrecht – Wijk bij Duurstede",
+            "gevolgd": false,
+            "ritten": 21,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 16,
-            "uitval": 1,
+            "ritten": 20,
+            "uitval": 2,
             "te_laat": 0
           },
           {
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1751,12 +1759,24 @@
             "lijn": "395",
             "naam": "Rotterdam – Utrecht CS",
             "gevolgd": false,
-            "ritten": 7,
+            "ritten": 9,
             "uitval": 1,
             "te_laat": 0
           }
         ],
         "berichten": [
+          {
+            "tekst": "Halte vervallen t/m 4 december 17:00. Vervangende halte: Savannahweg.",
+            "lijnen": [],
+            "haltes": [
+              "Utrecht, Niels Bohrweg",
+              "Utrecht, Ambachtsweg"
+            ],
+            "haltes_aantal": 2,
+            "plaatsen": [
+              "Utrecht"
+            ]
+          },
           {
             "tekst": "Lijn 7 en 27: halte vervallen t/m 4 december 19:00. Tijdelijke halte: Royaards van den Hamkade.",
             "lijnen": [],
