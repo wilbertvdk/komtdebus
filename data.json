@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T07:50:25+01:00",
+  "bijgewerkt": "2026-11-28T08:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-28"
@@ -1160,9 +1160,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T07:48:36+01:00",
-    "gelukt": 19540,
-    "verwacht": 19674,
+    "tot": "2026-11-28T08:04:36+01:00",
+    "gelukt": 19548,
+    "verwacht": 19682,
     "aandeel": 0.9932
   },
   "haltesluitingen": [
@@ -1277,7 +1277,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T07:47+01:00",
+          "laatst_gezien": "2026-11-28T08:02+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1633,13 +1633,21 @@
     "dagen": [
       {
         "datum": "2026-11-28",
-        "lijnen_gemeten": 21,
+        "lijnen_gemeten": 31,
         "totaal": {
-          "ritten": 37,
-          "uitval": 0,
+          "ritten": 71,
+          "uitval": 1,
           "te_laat": 0
         },
         "lijnen": [
+          {
+            "lijn": "8",
+            "naam": "Amersfoort CS – Schuilenburg",
+            "gevolgd": false,
+            "ritten": 1,
+            "uitval": 1,
+            "te_laat": 0
+          },
           {
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
