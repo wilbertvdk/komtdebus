@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T12:35:19+01:00",
+  "bijgewerkt": "2026-11-28T12:50:22+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-28"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2927,
-      "gemeten": 2910,
+      "gepland": 2928,
+      "gemeten": 2911,
       "aantal": {
-        "gereden": 2757,
+        "gereden": 2758,
         "ingekort": 65,
         "uitval, op tijd": 39,
         "uitval, te laat": 22,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 3126,
-      "gemeten": 3106,
+      "gepland": 3128,
+      "gemeten": 3108,
       "aantal": {
-        "gereden": 2986,
+        "gereden": 2988,
         "ingekort": 46,
         "uitval, op tijd": 44,
         "uitval, te laat": 10,
@@ -1136,7 +1136,7 @@
     {
       "datum": "2026-11-28",
       "lijn": "302",
-      "gereden": 11,
+      "gereden": 12,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1146,7 +1146,7 @@
     {
       "datum": "2026-11-28",
       "lijn": "376",
-      "gereden": 27,
+      "gereden": 29,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1160,9 +1160,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T12:34:36+01:00",
-    "gelukt": 19683,
-    "verwacht": 19817,
+    "tot": "2026-11-28T12:48:36+01:00",
+    "gelukt": 19690,
+    "verwacht": 19824,
     "aandeel": 0.9932
   },
   "haltesluitingen": [
@@ -1277,7 +1277,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T12:32+01:00",
+          "laatst_gezien": "2026-11-28T12:47+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1651,8 +1651,8 @@
         "datum": "2026-11-28",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 1193,
-          "uitval": 17,
+          "ritten": 1266,
+          "uitval": 19,
           "te_laat": 3
         },
         "lijnen": [
@@ -1660,7 +1660,7 @@
             "lijn": "1",
             "naam": "Soesterkwartier – Amersfoort CS",
             "gevolgd": false,
-            "ritten": 18,
+            "ritten": 19,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1668,7 +1668,7 @@
             "lijn": "4",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1676,7 +1676,7 @@
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 16,
+            "ritten": 17,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1684,7 +1684,7 @@
             "lijn": "8",
             "naam": "Amersfoort CS – Schuilenburg",
             "gevolgd": false,
-            "ritten": 19,
+            "ritten": 20,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1692,15 +1692,15 @@
             "lijn": "9",
             "naam": "Amersfoort CS – Leusderkwartier",
             "gevolgd": false,
-            "ritten": 20,
-            "uitval": 1,
+            "ritten": 21,
+            "uitval": 2,
             "te_laat": 0
           },
           {
             "lijn": "9",
             "naam": "Galgenwaard – Utrecht CS",
             "gevolgd": false,
-            "ritten": 25,
+            "ritten": 27,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1708,7 +1708,7 @@
             "lijn": "47",
             "naam": "Utrecht – Houten",
             "gevolgd": false,
-            "ritten": 15,
+            "ritten": 16,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1724,7 +1724,7 @@
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 17,
+            "ritten": 18,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1740,7 +1740,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 11,
+            "ritten": 12,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1751,15 +1751,15 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 24,
-            "uitval": 1,
+            "ritten": 26,
+            "uitval": 2,
             "te_laat": 0
           },
           {
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 38,
+            "ritten": 40,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1767,7 +1767,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 27,
+            "ritten": 29,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
