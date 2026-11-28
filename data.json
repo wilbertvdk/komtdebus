@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T11:20:26+01:00",
+  "bijgewerkt": "2026-11-28T11:35:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-28"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 3116,
-      "gemeten": 3096,
+      "gepland": 3118,
+      "gemeten": 3098,
       "aantal": {
-        "gereden": 2976,
+        "gereden": 2978,
         "ingekort": 46,
         "uitval, op tijd": 44,
         "uitval, te laat": 10,
@@ -1146,7 +1146,7 @@
     {
       "datum": "2026-11-28",
       "lijn": "376",
-      "gereden": 17,
+      "gereden": 19,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1160,9 +1160,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T11:18:36+01:00",
-    "gelukt": 19645,
-    "verwacht": 19779,
+    "tot": "2026-11-28T11:34:36+01:00",
+    "gelukt": 19653,
+    "verwacht": 19787,
     "aandeel": 0.9932
   },
   "haltesluitingen": [
@@ -1277,7 +1277,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T11:17+01:00",
+          "laatst_gezien": "2026-11-28T11:32+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1288,6 +1288,22 @@
   ],
   "provincie": {
     "berichten_nu": [
+      {
+        "begin": "2026-11-28T11:25+01:00",
+        "eind": "2026-11-28T15:00+01:00",
+        "tekst": "Lijn 307 rijdt momenteel niet tussen halte Montfoort, De Groen en halte De Meern, Reierscop wegens een wegafzetting.",
+        "lijnen": [
+          "307"
+        ],
+        "haltes": [],
+        "haltes_aantal": 10,
+        "plaatsen": [
+          "De Meern",
+          "Achthoven",
+          "Heeswijk",
+          "Montfoort"
+        ]
+      },
       {
         "begin": "2026-11-27T21:00+01:00",
         "eind": "2026-11-30T23:59+01:00",
@@ -1635,16 +1651,16 @@
         "datum": "2026-11-28",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 819,
-          "uitval": 10,
-          "te_laat": 1
+          "ritten": 892,
+          "uitval": 11,
+          "te_laat": 2
         },
         "lijnen": [
           {
             "lijn": "7",
             "naam": "Amersfoort CS – Schothorst",
             "gevolgd": false,
-            "ritten": 11,
+            "ritten": 12,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1652,7 +1668,7 @@
             "lijn": "8",
             "naam": "Amersfoort CS – Schuilenburg",
             "gevolgd": false,
-            "ritten": 14,
+            "ritten": 15,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1660,7 +1676,7 @@
             "lijn": "47",
             "naam": "Utrecht – Houten",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1668,15 +1684,15 @@
             "lijn": "48",
             "naam": "Houten – Nieuwegein – Maarssen",
             "gevolgd": false,
-            "ritten": 10,
-            "uitval": 1,
-            "te_laat": 0
+            "ritten": 12,
+            "uitval": 2,
+            "te_laat": 1
           },
           {
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 12,
+            "ritten": 13,
             "uitval": 2,
             "te_laat": 0
           },
@@ -1703,7 +1719,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 28,
+            "ritten": 30,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1711,7 +1727,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 17,
+            "ritten": 19,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1719,7 +1735,22 @@
             "afgebroken": 0
           }
         ],
-        "berichten": []
+        "berichten": [
+          {
+            "tekst": "Lijn 307 rijdt momenteel niet tussen halte Montfoort, De Groen en halte De Meern, Reierscop wegens een wegafzetting.",
+            "lijnen": [
+              "307"
+            ],
+            "haltes": [],
+            "haltes_aantal": 10,
+            "plaatsen": [
+              "De Meern",
+              "Achthoven",
+              "Heeswijk",
+              "Montfoort"
+            ]
+          }
+        ]
       },
       {
         "datum": "2026-11-27",
