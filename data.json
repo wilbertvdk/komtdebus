@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T08:35:19+01:00",
+  "bijgewerkt": "2026-11-28T08:50:20+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-28"
@@ -55,10 +55,10 @@
       ]
     },
     "302": {
-      "gepland": 2919,
-      "gemeten": 2902,
+      "gepland": 2920,
+      "gemeten": 2903,
       "aantal": {
-        "gereden": 2749,
+        "gereden": 2750,
         "ingekort": 65,
         "uitval, op tijd": 39,
         "uitval, te laat": 22,
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 3103,
-      "gemeten": 3083,
+      "gepland": 3105,
+      "gemeten": 3085,
       "aantal": {
-        "gereden": 2963,
+        "gereden": 2965,
         "ingekort": 46,
         "uitval, op tijd": 44,
         "uitval, te laat": 10,
@@ -1136,7 +1136,7 @@
     {
       "datum": "2026-11-28",
       "lijn": "302",
-      "gereden": 3,
+      "gereden": 4,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1146,7 +1146,7 @@
     {
       "datum": "2026-11-28",
       "lijn": "376",
-      "gereden": 4,
+      "gereden": 6,
       "ingekort": 0,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1160,9 +1160,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T08:34:36+01:00",
-    "gelukt": 19563,
-    "verwacht": 19697,
+    "tot": "2026-11-28T08:48:36+01:00",
+    "gelukt": 19570,
+    "verwacht": 19704,
     "aandeel": 0.9932
   },
   "haltesluitingen": [
@@ -1277,7 +1277,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T08:32+01:00",
+          "laatst_gezien": "2026-11-28T08:47+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1633,9 +1633,9 @@
     "dagen": [
       {
         "datum": "2026-11-28",
-        "lijnen_gemeten": 42,
+        "lijnen_gemeten": 48,
         "totaal": {
-          "ritten": 152,
+          "ritten": 202,
           "uitval": 1,
           "te_laat": 0
         },
@@ -1644,7 +1644,7 @@
             "lijn": "8",
             "naam": "Amersfoort CS – Schuilenburg",
             "gevolgd": false,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1652,7 +1652,7 @@
             "lijn": "302",
             "naam": "Amersfoort – Vianen",
             "gevolgd": true,
-            "ritten": 3,
+            "ritten": 4,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -1663,7 +1663,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 4,
+            "ritten": 6,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
