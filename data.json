@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T01:50:17+01:00",
+  "bijgewerkt": "2026-11-28T02:05:16+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-27"
@@ -1140,9 +1140,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T01:49:00+01:00",
-    "gelukt": 19363,
-    "verwacht": 19494,
+    "tot": "2026-11-28T02:05:00+01:00",
+    "gelukt": 19371,
+    "verwacht": 19502,
     "aandeel": 0.9933
   },
   "haltesluitingen": [
@@ -1257,7 +1257,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T01:48+01:00",
+          "laatst_gezien": "2026-11-28T02:03+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1511,60 +1511,6 @@
         ]
       },
       {
-        "begin": "2026-11-23T05:00+01:00",
-        "eind": "2026-11-28T02:00+01:00",
-        "tekst": "Halte vervallen 28 november 02:00. Vervangende halte: Janskerkhof (ri. Utrecht CS).",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Janskerkhof"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-23T05:00+01:00",
-        "eind": "2026-11-28T02:00+01:00",
-        "tekst": "Halte vervallen t/m 28 november 02:00. Tijdelijke halte: op de Maliesingel (t.h.v. het Spoorwegmuseum).",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Domplein"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-20T18:40+01:00",
-        "eind": "2026-11-23T04:59+01:00",
-        "tekst": "Halte vervalt van 23 november 05:00 t/m 28 november 02:00. Tijdelijke halte: op de Maliesingel (t.h.v. de Herenbrug).",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Catharijneconvent"
-        ],
-        "haltes_aantal": 1,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
-        "begin": "2026-11-23T05:00+01:00",
-        "eind": "2026-11-28T02:00+01:00",
-        "tekst": "Halte vervallen t/m 28 november 02:00. Tijdelijke halte: op de Maliesingel (t.h.v. de Abstederbrug).",
-        "lijnen": [],
-        "haltes": [
-          "Utrecht, Universiteitsmuseum",
-          "Utrecht, Centraal Museum",
-          "Utrecht, Tolsteegbrug"
-        ],
-        "haltes_aantal": 3,
-        "plaatsen": [
-          "Utrecht"
-        ]
-      },
-      {
         "begin": "2026-11-27T05:00+01:00",
         "eind": "2026-12-02T19:00+01:00",
         "tekst": "Van 30 november 05:00 t/m 2 december 19:00 vervallen de haltes Amersfoort Daam Fockemalaan, Amersfoort Dierenpark, Amersfoort Soesterweg, Soest Zandlaan, Soest De Birkt, Soest Van Lenneplaan.",
@@ -1669,7 +1615,7 @@
         "datum": "2026-11-27",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6983,
+          "ritten": 6999,
           "uitval": 201,
           "te_laat": 76
         },
@@ -1678,7 +1624,7 @@
             "lijn": "1",
             "naam": "Overvecht – Utrecht CS – Hoograven",
             "gevolgd": false,
-            "ritten": 141,
+            "ritten": 142,
             "uitval": 3,
             "te_laat": 2
           },
@@ -1742,7 +1688,7 @@
             "lijn": "5",
             "naam": "Maarssen – Utrecht CS – Voordorp",
             "gevolgd": false,
-            "ritten": 97,
+            "ritten": 98,
             "uitval": 1,
             "te_laat": 1
           },
@@ -1774,7 +1720,7 @@
             "lijn": "6",
             "naam": "Terwijde – Utrecht CS – Overvecht",
             "gevolgd": false,
-            "ritten": 129,
+            "ritten": 130,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1846,7 +1792,7 @@
             "lijn": "12",
             "naam": "Utrecht CS – Maarssen",
             "gevolgd": false,
-            "ritten": 67,
+            "ritten": 68,
             "uitval": 2,
             "te_laat": 1
           },
@@ -1878,7 +1824,7 @@
             "lijn": "17",
             "naam": "Amersfoort CS – Leusden",
             "gevolgd": false,
-            "ritten": 159,
+            "ritten": 160,
             "uitval": 4,
             "te_laat": 1
           },
@@ -1918,7 +1864,7 @@
             "lijn": "28",
             "naam": "Vleuterweide – Utrecht CS – Science Park",
             "gevolgd": false,
-            "ritten": 185,
+            "ritten": 186,
             "uitval": 3,
             "te_laat": 0
           },
@@ -1982,7 +1928,7 @@
             "lijn": "55",
             "naam": "Utrecht – Maartensdijk",
             "gevolgd": false,
-            "ritten": 64,
+            "ritten": 66,
             "uitval": 6,
             "te_laat": 3
           },
@@ -1990,7 +1936,7 @@
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 76,
+            "ritten": 77,
             "uitval": 2,
             "te_laat": 2
           },
@@ -2038,7 +1984,7 @@
             "lijn": "73",
             "naam": "Maarssenbroek – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 150,
+            "ritten": 152,
             "uitval": 12,
             "te_laat": 6
           },
@@ -2054,7 +2000,7 @@
             "lijn": "77",
             "naam": "Nieuwegein – Utrecht CS – Bilthoven",
             "gevolgd": false,
-            "ritten": 141,
+            "ritten": 143,
             "uitval": 5,
             "te_laat": 2
           },
@@ -2183,7 +2129,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 158,
+            "ritten": 159,
             "uitval": 10,
             "te_laat": 2
           },
@@ -2191,7 +2137,7 @@
             "lijn": "350",
             "naam": "Utrecht – Veenendaal-De Klomp/Wageningen",
             "gevolgd": false,
-            "ritten": 231,
+            "ritten": 232,
             "uitval": 4,
             "te_laat": 0
           },
