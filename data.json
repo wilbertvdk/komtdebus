@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T02:05:16+01:00",
+  "bijgewerkt": "2026-11-28T02:20:25+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-27"
@@ -143,10 +143,10 @@
       ]
     },
     "376": {
-      "gepland": 3098,
-      "gemeten": 3078,
+      "gepland": 3099,
+      "gemeten": 3079,
       "aantal": {
-        "gereden": 2958,
+        "gereden": 2959,
         "ingekort": 46,
         "uitval, op tijd": 44,
         "uitval, te laat": 10,
@@ -165,9 +165,9 @@
         "ritten": 54,
         "ritten_vooraf": 44,
         "ritten_ingekort": 46,
-        "haltes": 2608,
-        "haltes_op_tijd": 2513,
-        "haltes_dicht": 1440,
+        "haltes": 2609,
+        "haltes_op_tijd": 2514,
+        "haltes_dicht": 1441,
         "haltes_zonder": 1189,
         "haltes_op_tijd_zonder": 1094,
         "mediaan_min_na_vertrek": -28.0,
@@ -1126,7 +1126,7 @@
     {
       "datum": "2026-11-27",
       "lijn": "376",
-      "gereden": 134,
+      "gereden": 135,
       "ingekort": 1,
       "uitval, op tijd": 0,
       "uitval, te laat": 0,
@@ -1140,9 +1140,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T02:05:00+01:00",
-    "gelukt": 19371,
-    "verwacht": 19502,
+    "tot": "2026-11-28T02:19:00+01:00",
+    "gelukt": 19378,
+    "verwacht": 19509,
     "aandeel": 0.9933
   },
   "haltesluitingen": [
@@ -1257,7 +1257,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T02:03+01:00",
+          "laatst_gezien": "2026-11-28T02:18+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1615,7 +1615,7 @@
         "datum": "2026-11-27",
         "lijnen_gemeten": 100,
         "totaal": {
-          "ritten": 6999,
+          "ritten": 7008,
           "uitval": 201,
           "te_laat": 76
         },
@@ -1952,7 +1952,7 @@
             "lijn": "65",
             "naam": "Vianen – Utrecht CS",
             "gevolgd": false,
-            "ritten": 87,
+            "ritten": 88,
             "uitval": 2,
             "te_laat": 2
           },
@@ -1992,7 +1992,7 @@
             "lijn": "74",
             "naam": "Hoef en Haag – Utrecht CS – Zeist",
             "gevolgd": false,
-            "ritten": 138,
+            "ritten": 140,
             "uitval": 2,
             "te_laat": 1
           },
@@ -2032,7 +2032,7 @@
             "lijn": "102",
             "naam": "Utrecht – Woerden",
             "gevolgd": false,
-            "ritten": 94,
+            "ritten": 95,
             "uitval": 1,
             "te_laat": 0
           },
@@ -2094,7 +2094,7 @@
             "lijn": "307",
             "naam": "Utrecht – Gouda",
             "gevolgd": false,
-            "ritten": 105,
+            "ritten": 106,
             "uitval": 2,
             "te_laat": 1
           },
@@ -2129,7 +2129,7 @@
             "lijn": "341",
             "naam": "Utrecht – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 159,
+            "ritten": 160,
             "uitval": 10,
             "te_laat": 2
           },
@@ -2145,7 +2145,7 @@
             "lijn": "376",
             "naam": "Science Park – Bunschoten-Spakenburg",
             "gevolgd": true,
-            "ritten": 135,
+            "ritten": 136,
             "uitval": 0,
             "te_laat": 0,
             "niet_gemeld": 0,
@@ -2156,7 +2156,7 @@
             "lijn": "395",
             "naam": "Rotterdam – Utrecht CS",
             "gevolgd": false,
-            "ritten": 82,
+            "ritten": 83,
             "uitval": 3,
             "te_laat": 0
           }
