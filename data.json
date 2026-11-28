@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T09:20:25+01:00",
+  "bijgewerkt": "2026-11-28T09:35:25+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-28"
@@ -1160,9 +1160,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T09:18:36+01:00",
-    "gelukt": 19585,
-    "verwacht": 19719,
+    "tot": "2026-11-28T09:34:36+01:00",
+    "gelukt": 19593,
+    "verwacht": 19727,
     "aandeel": 0.9932
   },
   "haltesluitingen": [
@@ -1277,7 +1277,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T09:17+01:00",
+          "laatst_gezien": "2026-11-28T09:32+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1633,10 +1633,10 @@
     "dagen": [
       {
         "datum": "2026-11-28",
-        "lijnen_gemeten": 54,
+        "lijnen_gemeten": 56,
         "totaal": {
-          "ritten": 312,
-          "uitval": 2,
+          "ritten": 366,
+          "uitval": 3,
           "te_laat": 0
         },
         "lijnen": [
@@ -1644,7 +1644,7 @@
             "lijn": "8",
             "naam": "Amersfoort CS – Schuilenburg",
             "gevolgd": false,
-            "ritten": 6,
+            "ritten": 7,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1652,7 +1652,15 @@
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 5,
+            "ritten": 6,
+            "uitval": 1,
+            "te_laat": 0
+          },
+          {
+            "lijn": "87",
+            "naam": "Veenendaal-De Klomp – Rhenen",
+            "gevolgd": false,
+            "ritten": 2,
             "uitval": 1,
             "te_laat": 0
           },
