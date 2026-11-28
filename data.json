@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T06:50:25+01:00",
+  "bijgewerkt": "2026-11-28T07:05:28+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-27"
@@ -1140,9 +1140,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T06:49:00+01:00",
-    "gelukt": 19511,
-    "verwacht": 19644,
+    "tot": "2026-11-28T07:04:36+01:00",
+    "gelukt": 19518,
+    "verwacht": 19652,
     "aandeel": 0.9932
   },
   "haltesluitingen": [
@@ -1257,7 +1257,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T06:48+01:00",
+          "laatst_gezien": "2026-11-28T07:02+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1613,9 +1613,9 @@
     "dagen": [
       {
         "datum": "2026-11-28",
-        "lijnen_gemeten": 1,
+        "lijnen_gemeten": 5,
         "totaal": {
-          "ritten": 1,
+          "ritten": 5,
           "uitval": 0,
           "te_laat": 0
         },
