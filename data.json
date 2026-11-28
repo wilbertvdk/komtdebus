@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-28T10:20:20+01:00",
+  "bijgewerkt": "2026-11-28T10:35:17+01:00",
   "meetperiode": {
     "van": "2026-11-01",
     "tot": "2026-11-28"
@@ -1160,9 +1160,9 @@
   },
   "meetdekking": {
     "van": "2026-11-01T00:01:09+01:00",
-    "tot": "2026-11-28T10:18:36+01:00",
-    "gelukt": 19615,
-    "verwacht": 19749,
+    "tot": "2026-11-28T10:34:36+01:00",
+    "gelukt": 19623,
+    "verwacht": 19757,
     "aandeel": 0.9932
   },
   "haltesluitingen": [
@@ -1277,7 +1277,7 @@
         },
         {
           "eerst_gezien": "2026-11-27T18:50+01:00",
-          "laatst_gezien": "2026-11-28T10:17+01:00",
+          "laatst_gezien": "2026-11-28T10:32+01:00",
           "kop": "U-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.",
           "tekst": "Oorzaak : onbekend \nEffect : \nMaatregelen : \nU-OV: Nieuwe dienstregeling vanaf zondag 13 december. Kijk op u-ov.nl voor meer informatie.\n",
           "geldig_van": "2026-12-05T06:00+01:00",
@@ -1635,8 +1635,8 @@
         "datum": "2026-11-28",
         "lijnen_gemeten": 60,
         "totaal": {
-          "ritten": 548,
-          "uitval": 3,
+          "ritten": 610,
+          "uitval": 5,
           "te_laat": 0
         },
         "lijnen": [
@@ -1644,7 +1644,7 @@
             "lijn": "8",
             "naam": "Amersfoort CS – Schuilenburg",
             "gevolgd": false,
-            "ritten": 10,
+            "ritten": 11,
             "uitval": 1,
             "te_laat": 0
           },
@@ -1652,16 +1652,16 @@
             "lijn": "56",
             "naam": "Amersfoort – Wijk bij Duurstede",
             "gevolgd": false,
-            "ritten": 8,
-            "uitval": 1,
+            "ritten": 9,
+            "uitval": 2,
             "te_laat": 0
           },
           {
             "lijn": "87",
             "naam": "Veenendaal-De Klomp – Rhenen",
             "gevolgd": false,
-            "ritten": 3,
-            "uitval": 1,
+            "ritten": 4,
+            "uitval": 2,
             "te_laat": 0
           },
           {
